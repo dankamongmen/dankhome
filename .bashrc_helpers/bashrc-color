@@ -1,0 +1,13 @@
+if [ -r $HOME/.pcolor ] ; then
+	PCOLOR=`cat $HOME/.pcolor`
+else
+	PCOLOR=white
+fi
+
+if ~/bin/color &> /dev/null ; then
+	export PS1=`color -p $PCOLOR`'[\h]($?) \$'`color -p none`' '
+else
+	export PS1='[\h]($?) \$ '
+fi
+
+unset PCOLOR

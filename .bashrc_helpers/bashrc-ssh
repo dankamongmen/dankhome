@@ -1,0 +1,15 @@
+# this should only be alias where alias is set up in ~/.ssh/config
+
+[ -z "$DISPLAY" ] || export SSH_ASKPASS=ssh-askpass-fullscreen
+
+if [[ ! -z `which ssh` && -f `which ssh` ]]; then
+
+	# vps
+	alias qemfd="ssh qemfd.net"
+	alias recombinator="ssh recombinator.qemfd.net"
+
+	# tech community boxen
+	alias havoc="ssh havoc"
+	alias hogwarts="ssh hogwarts"
+
+fi
