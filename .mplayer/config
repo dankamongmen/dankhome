@@ -1,0 +1,49 @@
+[default]
+# Write your default config options here!
+
+# xv works well and is the default, but requires lots of memory and supports
+#  only one instance per "port". it doesn't work well with beryl.
+# gl and gl2 both require DRI to work well. gl suggests -dr for a speedup, if
+#  it works with our hardware. -glfinish gives possibly more correct output at
+#  a possible speed cost. they are unwieldy with xfwm, at best eating CPU.
+# gl* doesn't work well with translucent desktops.
+# gl (as opposed to gl2) blocks upon workspace changes
+# x11 can't fullscreen, but almost always works
+# fbdev disconnects the video hardware out from under x, works in console
+# directfb usually locks the terminal/machine
+# dga -- says framebuffer allocation failed, obsolete
+#fbdev,directfb,xvidix
+#vo=xv,gl2,x11,fbdev,caca
+#vo=gl2,caca
+#vo=vdpau,xvmc,xv,gl2,fbdev,caca
+vo=xvmc,xv,gl2
+#dr=1
+#rtc=1
+#fstype=below
+# See http://www.pulseaudio.org/wiki/PerfectSetup
+#ao=pulse
+#mixer=hw:0
+ao=alsa
+#volume=500.1
+mixer-channel=PCM
+idx=yes
+autosync=1
+quiet=yes
+#really-quiet=yes
+nomouseinput=1
+#ignore-start=yes
+fontconfig=yes
+font="Bitstream Vera Sans"
+# anti-aliasing for fonts
+spuaa=4
+stop-xscreensaver=yes
+geometry=50%:50%
+use-filename-title=yes
+# Video Filters
+#
+# screenshot -- Allows acquiring screenshots of the movie using the screenshot
+# command (bound to the s key by default). Files named shotNNNN.png will be
+# saved in the working directory, using the first available number - no files
+# will be overwritten. The filter has no overhead when not used and accepts an
+# arbitrary colorspace, so it is safe to add it to the configuration file.
+vf=screenshot,scale
