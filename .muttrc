@@ -1,0 +1,291 @@
+# .muttrc for Mutt 1.5.13
+# sources:
+#  http://wiki.mutt.org/?action=browse&diff=1&id=UserStory/MultiAccounts
+#  /usr/share/doc/spamassassin/examples/muttrc, spamassassin 3.1.7-1
+
+# Global hooks must come first
+folder-hook . set sort=date-sent
+
+set sort=threads
+
+set use_from
+set hidden_host
+set from="nick black <dank@qemfd.net>"
+set realname="nick black"
+
+#set edit_headers
+
+# http://wiki.mutt.org/?UserStory/MultiAccounts
+set reverse_name=yes
+#set reverse_realname=yes
+
+alternates	^dank@qemfd\\.net$	^nickblack@qemfd\\.net$
+
+# Switch to securecomputing address in From when sending there
+send-hook '~C \.qemfd\.net$' 'set from="nick black <nickblack@qemfd.net>"'
+
+macro generic <f3> ":unset use_from<return>:set from="dankamongmen@acm.org"<return>:set 'mail source set to dankamongmen@acm.org'<return>" \
+	"send mail from dankamongmen@acm.org"
+#macro generic <f4> ":unset use_from<return>:set from="nicholas_black@mcafee.com"<return>:set 'mail source set to nickblack@qemfd.net'<return>" \
+#	"send mail from nicholas_black@mcafee.com"
+macro compose <f3> "<esc>f^Unick black <dank@qemfd.net><return>" \
+	"send mail from dank@qemfd.net"
+#macro compose <f4> "<esc>f^Unick black <nicholas_black@mcafee.com><return>" \
+#	"send mail from nicholas_black@mcafee.com"
+
+# spamassassin report and classify as spam
+macro index S "|/usr/bin/spamassassin -r"
+# spamassassin classify as ham
+macro index H "|/usr/bin/sa-learn --ham  --no-sync"
+# rebuild the spamassassin bayes filter db
+macro index R "!/usr/bin/sa-learn --sync"
+
+#ignore everything, essentially, save message-specific headers
+ignore *
+unignore from: date subject to cc bcc
+
+bind index 'j' next-entry
+bind index 'k' previous-entry
+
+# we use a real editor, with 76-char wrapping. invoke spellchecking.
+set editor="vim \"+set tw=76\" +/^$/"
+
+#get rid of annoyances (questions, beeping)
+unset beep		# don't beep at me on error
+unset help		# don't display a line of help text
+unset move		# don't ask me whether I want to move read messages
+unset allow_8bit	# produce correct MIME
+unset confirmappend	# don't confirm saving to an existing folder
+unset abort_nosubject	# don't abort due to empty subject line
+set autoedit=yes
+set delete=yes
+set abort_unmodified=yes
+set include=yes
+unset suspend
+unset markers			# can't directly open links
+
+set record=/home/dank/Mail/sent
+set fcc_clear		# save sent PGP messages in the clear
+set fcc_attach		# save sent attachments
+
+#explicitly deny, in case of typos
+set imap_user="null@null"
+set pop_user="null@null"
+
+#use utf-8 before iso-8859-1
+set send_charset="us-ascii:utf-8:iso-8859-1"
+
+#somebody set us up the gpg
+set pgp_replysign
+set pgp_replyencrypt
+set pgp_verify_sig=yes
+set pgp_timeout=0
+set pgp_sign_as="0x81ABE3DF"
+set pgp_strict_enc
+set pgp_use_gpg_agent = yes
+unset pgp_autosign
+unset pgp_autoencrypt
+unset pgp_long_ids
+unset smime_is_default
+set crypt_autosign
+unset crypt_autoencrypt
+set crypt_autopgp
+unset crypt_autosmime
+
+# a little bit of ssl
+set ssl_starttls=yes
+
+#something cooler (man mutt ; /index_format)
+set attribution="%n left as an exercise for the reader:"
+set forward_format="[%s]"
+
+#make it pretty 
+set menu_scroll
+color hdrdefault cyan black
+color quoted	green black
+color signature cyan black
+color attachment brightyellow black
+color indicator black cyan
+color status	brightgreen blue
+color tree	red black
+color markers	brightred black
+color tilde	blue black
+
+# print it pretty (from muttprint(1) man page)
+set print_command="muttprint"
+
+subscribe chat@havoc.gtf.org
+subscribe geek@havoc.gtf.org
+subscribe football@havoc.gtf.org
+subscribe debian-security-announce@lists.debian.org
+subscribe PHISH-NEWS@LISTS.NETSPACE.ORG
+subscribe splinterfaction@googlegroups.com
+subscribe getrealerect@googlegroups.com
+set followup_to
+set honor_followup_to=yes
+
+# securecomputing aliases
+alias alex Hernicious Knid <ahernandez@purewire.com>
+alias brad Brad McArthur <bmcarthu@gmail.com>
+alias gknight Greg Knight <gknight.dev@gmail.com>
+alias gtolar Greg Tolar <ghettohaxor@gmail.com>
+alias guru Guru Rajan <rajanguru@gmail.com>
+alias jeremy Jeremy Gould <bubble.mack@gmail.com>
+alias vijay Vijay Arvind Balasubramaniyan <vijayab@cc.gatech.edu>
+
+# NetApp aliases
+alias guntrip Mark Guntrip <mark.guntrip@netapp.com>
+alias ricleung Ric Leung <ric.leung@netapp.com>
+
+# Reflex aliases
+alias lunz Jason Lunz <lunz@acm.org>
+alias grep Greg Pourier <grep@binary-snobbery.com>
+alias diiorio Matt Di Iorio <doo@pobox.com>
+
+# family aliases
+alias dad Greg Black <beerbythebay@yahoo.com>
+alias papa Eugene Blystone <eblystone@nc.rr.com>
+
+# friend aliases
+alias splinterfaction splinterfags <splinterfaction@googlegroups.com>
+alias marilyn Marilyn Cole <marilyn.cole@gmail.com>
+alias mazz Nick Mazzolini <mazzdef@gmail.com>
+alias erin Erin Davis <erin.davis@gmail.com>
+alias jaehn Matt Jaehn <matt.jaehn@gmail.com>
+alias onef Jef Spelman <itsonef@gmail.com>
+alias zach Zach Sycks <zach@sycks.com>
+alias faff Mike Faff <mike@midtownonsite.com>
+alias zb Elizabeth Warren <ewarren@gmail.com>
+alias rhett Kathryn Rhett Nichols <krhettn@alum.mit.edu>
+alias juju Julien Li <julienli@gmail.com>
+alias elise Elise White <elise.white@gmail.com>
+alias shaggz Eric Mickley <shaggz@gmail.com>
+alias ellie.harmon ellie <ellie.harmon@gmail.com>
+alias danielle Danielle Hendrick <Danihendrick@aol.com>
+alias robert.stallworth Adam Stallworth <robert.stallworth@gmail.com>
+alias paul Paul 'Call the Doctor!' Judge <pjudge@pjudge.com>
+alias diana Diana Blanshey <concrete.brunette@gmail.com>
+alias saaronson Scott Aaronson <aaronson@csail.mit.edu>
+alias tgailey Ty Gailey <thgailey@hotmail.com>
+alias ramnath Ramnath Venugopalan <Ramnath_Venugopalan@securecomputing.com>
+alias sumi Sumithra Dhandayuthapani <Sumithra_Dhandayuthapani@securecomputing.com>
+alias stambolsky Jeff Stambolsky <Jeff_Stambolsky@securecomputing.com>
+alias parker Parker <substance818@gmail.com>
+alias sarahmillard Sarah Millard <sarah.e.millard@gmail.com>
+alias chadh Chad Huneycutt <chadh@cc.gatech.edu>
+alias twitch Lee Hall <twitch@gtf.org>
+alias stephanie stephanie <stellaluna1984@hotmail.com>
+alias nate Nate Jacobson <natecj@gmail.com>
+alias holmes Stephen Holmes <stephen@banjosteve.com>
+alias hoffman Billy Hoffman <acidus@msblabs.org>
+alias wade Wade Malone <malone.wade@gmail.com>
+alias stierwalt Elizabeth Stierwalt <stier002@gmail.com>
+alias keri Keri Leigh Merritt <kerileighm@yahoo.com>
+alias joecamel \"Daniel R. Blair\" <joecamel@realcoders.org>
+alias annmarie Annmarie Burnette <aburnette1@aol.com>
+alias marilynjlittle Marilyn Little <marilynjlittle@aol.com>
+alias nestrud Mike Nestrud <mike@ataraxis.org>
+alias edmonds Robert Edmonds <edmonds@gtisc.gatech.edu>
+alias amanda Amanda Jacob <synaptotastic@gmail.com>
+alias annika Annika Kleinwaechter <akleinwaechter@northhighland.com>
+alias marlena Marlena Voudy <miamigirlmarlena@gmail.com>
+
+# linux kernel
+alias mmappacket Ulisses Alonso Camaró <uaca@alumni.uv.es>
+alias lkml linux-kernel@vger.kernel.org
+alias mpages man-pages <mtk.manpages@gmail.com>
+alias wli William Irwin <wli@holomorphy.com>
+alias linus Linus Torvalds <torvalds@linux-foundation.org>
+alias amorton Andrew Morton <akpm@linux-foundation.org>
+
+# GT
+alias wenke Wenke Lee <wenke@cc.gatech.edu>
+alias dagon David Dagon <dagon@cc.gatech.edu>
+alias chrislee Chris Lee <chrislee@gatech.edu>
+alias biograd Laura Cook <laura.cook@biology.gatech.edu>
+alias ccgrad Rebecca Lee Wilson <becky@cc.gatech.edu>
+alias mccracken Mike McCracken <mike@cc.gatech.edu>
+alias giffin Jonathon Giffin <giffin@cc.gatech.edu>
+alias borodovsky Mark Borodovsky <mark.borodovsky@biology.gatech.edu>
+alias hyesoon Hyesoon Kim <hyesoon@cc.gatech.edu>
+alias conte Tom Conte <conte@cc.gatech.edu>
+alias lipton Richard Lipton <richard.lipton@cc.gatech.edu>
+alias lisa Lisa Guethlein <lgueth@cc.gatech.edu>
+alias mustaque Mustaque Ahamad <mustaque.ahamad@cc.gatech.edu>
+alias vuduc Rich Vuduc <richie@cc.gatech.edu>
+alias santosh Santosh Pande <santosh@cc.gatech.edu>
+alias weston Weston Stacey <weston.stacey@nre.gatech.edu>
+alias traynor Patrick Traynor <traynor@cc.gatech.edu>
+alias mhunter Mike Hunter <mhunter@cc.gatech.edu>
+alias phipps Keith Phipps <keith_phipps@securecomputing.com>
+alias anthony anthony aragues <Anthony_Aragues@securecomputing.com>
+alias cdunnahoo Cathy Dunnahoo <cathy.dunnahoo@cc.gatech.edu>
+alias jdavis Joshua Davis <Joshua.Davis@gtri.gatech.edu>
+alias yingli Ying Li <yingli@cc.gatech.edu>
+alias seeyam Seeyam Lim <Seeyam_Lim@securecomputing.com>
+alias nickhood Nick Hood <nickhood123@gmail.com>
+alias jpaterson Jon Paterson <Jon_Paterson@securecomputing.com>
+alias ralabate Nick Ralabate <ralabate@gmail.com>
+alias priyank Priyank Raj <priyank.raj@gatech.edu>
+alias c2h6o you can\'t spell computing without ethanol <c2h6o@cc.gatech.edu>
+alias lana Lana Yarosh <lana@cc.gatech.edu>
+alias plaue Chris Plaue <chris.plaue@gmail.com>
+alias cash David Cash <cdc@cc.gatech.edu>
+alias minjang Minjang Kim <minjang@gatech.edu>
+alias paulb paul bryan <paul.bryan@gatech.edu>
+alias mcrosier Chad Rosier <mcrosier@gatech.edu>
+alias deb Deb Whitehead <Deb_Whitehead@securecomputing.com>
+alias ryan Ryan Parsley <Ryan_Parsley@securecomputing.com>
+alias katherinemills Katherine Mills <katherinemills@gmail.com>
+alias travers Matt Travers <mokgima@gmail.com>
+alias allison Allison Elliott Tew <allison@cc.gatech.edu>
+alias bdakirby Bridget Kirby <bdakirby@gmail.com>
+alias lamar Lamar 'The L-Train' Willis <lamar@synque.com>
+alias royal Paul Royal <paul.royal@gmail.com>
+alias mcb Mary Catherine Petermann <mc@purewire.com>
+alias johannbaudy <johann.baudy@gnu-log.net>
+alias shinn shinn <patronanejo@gmail.com>
+alias derek.turney Derek Turney <derek.turney@comcast.net>
+alias mflagg Matt Flagg <mflagg@cc.gatech.edu>
+alias crenshaw Patrick Crenshaw <patrick.crenshaw@gmail.com>
+alias spence Spence Minear <spencer_minear@securecomputing.com>
+alias nstricker Nick Stricker <nick-stricker@sbcglobal.net>
+alias gre gre crew <getrealerect@googlegroups.com>
+alias mcmanus Scott McManus <smcmanus@cc.gatech.edu>
+alias rugaber Spencer Rugaber <spencer@cc.gatech.edu>
+#alias slush mighty slushy <slush@cc.gatech.edu>
+alias cse6230 cse6230-fall2009 <cse6230-hpcta-fa09@googlegroups.com>
+alias bader David A. Bader <bader@cc.gatech.edu>
+alias milos Milos Prvulovic <milos@cc.gatech.edu>
+alias jbeu Jesse Beu <jbeu3@gatech.edu>
+alias nclark Nate Clark <ntclark@cc.gatech.edu>
+alias rebekah Rebekah Gilliam <rebekah.gilliam@gmail.com>
+alias danielbrowne Daniel Browne <danielcbrowne@gatech.edu>
+alias ndepalma Nicholas Depalma <ndepalma@gatech.edu>
+alias amoneill Adam O\'Neill <amoneill@cc.gatech.edu>
+alias lindsey Lindsey Black <listentotheinnersilenceofself@gmail.com>
+alias dpc Dan Campbell <dan.campbell@gtri.gatech.edu>
+alias lmoon Logan Moon <lmoon3@gatech.edu>
+alias dmitri Dmitri Alperovitch <Dmitri_Alperovitch@McAfee.com>
+alias skrasser Sven Krasser <Sven_Krasser@McAfee.com>
+alias natalie Natalie Ballard <ghostinmarble@gmail.com>
+alias bbruderman Britney Bruderman <bbruderman@gmail.com>
+alias lindsey.boop Lindsey Boop <lindsey.boop@gmail.com>
+alias mgilbert mg <mgilbert@securecomputing.com>
+alias ashley Ashley Boyce <ashley.boyce@gmail.com>
+alias ada Ada Gavrilovska <ada@cc.gatech.edu>
+alias logan Logan Moon <lmoon3@gatech.edu>
+alias yacin Yacin Nadji <yacin@gatech.edu>
+alias heather Heather Frazier <sassylass25@gmail.com>
+alias boop Lindsey Boop <lindsey.boop@gmail.com>
+alias provos Neils Provos <provos@umich.edu>
+alias nickm Nick Mathewson <nickm@alum.mit.edu>
+alias patrick Patrick Chisholm <patrickchisholm@gmail.com>
+alias brendan Brendan Dolan-Gavitt <brendandg@gatech.edu>
+alias carmen carmen zumot <purplesockscz@gmail.com>
+alias bowen rebecca bowen <trebuchet@gmail.com>
+alias rodzik Jason Rodzik <rodzikj@gatech.edu>
+alias rfreedman Rian Freedman <rfreedman@xpectsvc.com>
+alias puyan Puyan Lotfi <puyan@gatech.edu>
+alias malcolm James Malcolm <malcolm@accelereyes.com>
+alias catherine Catherine Anderson <catherinetx@gmail.com>
