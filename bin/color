@@ -1,0 +1,77 @@
+#!/usr/bin/env bash
+
+# works for both zsh and bash on linux and bsd, which is a much bigger
+# pain in the ass than you might think
+
+tokens=`getopt p $*`
+test "$?" = "0" || return
+eval "set -- $tokens"
+
+while true
+do
+case "$1" in
+	-p)
+	if [ $ZSH_NAME ]
+	then
+		esc_open='%{'
+		esc_close='%}'
+	else
+		esc_open='\['
+		esc_close='\]'
+	fi
+	shift
+	;;
+	--) shift; break; ;;
+	*) echo "option parsing error for '$1'" ; return ;;
+esac
+done
+
+NONE=$esc_open'\033[0m'$esc_close
+BLACK=$esc_open'\033[0;30m'$esc_close
+RED=$esc_open'\033[0;31m'$esc_close
+GREEN=$esc_open'\033[0;32m'$esc_close
+BROWN=$esc_open'\033[0;33m'$esc_close
+BLUE=$esc_open'\033[0;34m'$esc_close
+PURPLE=$esc_open'\033[0;35m'$esc_close
+CYAN=$esc_open'\033[0;36m'$esc_close
+LIGHT_GREY=$esc_open'\033[0;37m'$esc_close
+
+GREY=$esc_open'\033[1;30m'$esc_close
+LIGHT_RED=$esc_open'\033[1;31m'$esc_close
+LIGHT_GREEN=$esc_open'\033[1;32m'$esc_close
+YELLOW=$esc_open'\033[1;33m'$esc_close
+LIGHT_BLUE=$esc_open'\033[1;34m'$esc_close
+LIGHT_PURPLE=$esc_open'\033[1;35m'$esc_close
+LIGHT_CYAN=$esc_open'\033[1;36m'$esc_close
+WHITE=$esc_open'\033[1;37m'$esc_close
+
+echo_opt='-ne'
+case $1 in
+none) echo $echo_opt $NONE ;;
+black) echo $echo_opt $BLACK ;;
+blue) echo $echo_opt $BLUE ;;
+brown) echo $echo_opt $BROWN ;;
+cyan) echo $echo_opt $CYAN ;;
+grey) echo $echo_opt $GREY ;;
+green) echo $echo_opt $GREEN ;;
+lightgrey) echo $echo_opt $LIGHT_GREY ;;
+lightblue) echo $echo_opt $LIGHT_BLUE ;;
+lightcyan) echo $echo_opt $LIGHT_CYAN ;;
+lightgreen) echo $echo_opt $LIGHT_GREEN ;;
+lightpurple) echo $echo_opt $LIGHT_PURPLE ;;
+lightred) echo $echo_opt $LIGHT_RED ;;
+purple) echo $echo_opt $PURPLE ;;
+red) echo $echo_opt $RED ;;
+white) echo $echo_opt $WHITE ;;
+yellow) echo $echo_opt $YELLOW ;;
+all|show|*)
+	for c in black blue brown cyan grey green lightblue \
+	lightcyan lightgreen lightgrey lightpurple lightred purple \
+	red white yellow
+	do
+	color $c
+	echo $c
+	done
+	color none
+;;
+esac
