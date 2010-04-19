@@ -1,0 +1,14 @@
+aptitude "";
+aptitude::Keep-Unused-Pattern "";
+aptitude::Delete-Unused-Pattern "";
+aptitude::UI "";
+aptitude::UI::HelpBar "false";
+aptitude::UI::Menubar-Autohide "true";
+aptitude::UI::Prompt-On-Exit "false";
+aptitude::UI::Minibuf-Download-Bar "true";
+aptitude::UI::Advance-On-Action "true";
+aptitude::UI::Minibuf-Prompts "true";
+aptitude::Auto-Upgrade "true";
+aptitude::AutoClean-After-Update "false";
+aptitude::Forget-New-On-Update "false";
+aptitude::Delete-Unused "true";
