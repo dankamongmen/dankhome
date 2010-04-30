@@ -14,8 +14,8 @@
 # dga -- says framebuffer allocation failed, obsolete
 #fbdev,directfb,xvidix
 #vo=xv,gl2,x11,fbdev,caca
-#vo=gl2,caca
-vo=xvmc,vdpau,xv,gl2,fbdev,caca
+#vo=xvmc,gl2,caca
+vo=vdpau,xv,gl2,fbdev,caca
 #dr=1
 #rtc=1
 #fstype=below
