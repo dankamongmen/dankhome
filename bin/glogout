@@ -1,0 +1,3 @@
+#!/bin/sh
+
+gnome-session-save --kill --silent
