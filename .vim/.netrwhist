@@ -1,11 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/home/dank/.mplayer'
-let g:netrw_dirhist_2='/home/dank/src/libtorque/src/libtorque'
-let g:netrw_dirhist_3='/home/dank/src/libtorque/src/libtorque/ssl'
-let g:netrw_dirhist_4='/home/dank/local/gt/hotpar2010/nickblack--hotpar10'
-let g:netrw_dirhist_5='/home/dank/files/wdp/.git'
-let g:netrw_dirhist_6='/home/dank/files/wdp/cs8803dc-project'
-let g:netrw_dirhist_7='/home/dank/files/wdp/cs8803ss-project/util'
-let g:netrw_dirhist_8='/usr/include/linux/sunrpc'
-let g:netrw_dirhist_9='/home/dank/local/dynamorio-read-only/build/api/samples/CMakeFiles/inc2add.dir'
+let g:netrw_dirhist_cnt =0
