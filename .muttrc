@@ -121,6 +121,8 @@ subscribe debian-devel-announce@lists.debian.org
 subscribe debian-security-announce@lists.debian.org
 subscribe PHISH-NEWS@LISTS.NETSPACE.ORG
 subscribe splinterfaction@googlegroups.com
+subscribe technical@accelereyes.com
+subscribe jacket_dev@accelereyes.com
 set followup_to
 set honor_followup_to=yes
 
