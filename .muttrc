@@ -117,10 +117,10 @@ set print_command="muttprint"
 subscribe chat@havoc.gtf.org
 subscribe geek@havoc.gtf.org
 subscribe football@havoc.gtf.org
+subscribe debian-devel-announce@lists.debian.org
 subscribe debian-security-announce@lists.debian.org
 subscribe PHISH-NEWS@LISTS.NETSPACE.ORG
 subscribe splinterfaction@googlegroups.com
-subscribe getrealerect@googlegroups.com
 set followup_to
 set honor_followup_to=yes
 
