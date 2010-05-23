@@ -117,10 +117,10 @@ set print_command="muttprint"
 subscribe chat@havoc.gtf.org
 subscribe geek@havoc.gtf.org
 subscribe football@havoc.gtf.org
+subscribe debian-devel-announce@lists.debian.org
 subscribe debian-security-announce@lists.debian.org
 subscribe PHISH-NEWS@LISTS.NETSPACE.ORG
 subscribe splinterfaction@googlegroups.com
-subscribe getrealerect@googlegroups.com
 set followup_to
 set honor_followup_to=yes
 
@@ -275,6 +275,7 @@ alias ashley Ashley Boyce <ashley.boyce@gmail.com>
 alias ada Ada Gavrilovska <ada@cc.gatech.edu>
 alias logan Logan Moon <lmoon3@gatech.edu>
 alias yacin Yacin Nadji <yacin@gatech.edu>
+alias carmen Carmen Zumot <purplesockscz@gmail.com>
 alias heathere Heathere Frazier <sassylass25@gmail.com>
 alias boop Lindsey Boop <lindsey.boop@gmail.com>
 alias provos Neils Provos <provos@umich.edu>

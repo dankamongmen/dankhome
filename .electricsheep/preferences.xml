@@ -1,0 +1,17 @@
+<electricsheep_preferences
+ version="LNX_2.7b12"
+ nick=""
+ url=""
+ password_md5=""
+ cache="2000"
+ nrepeats="2"
+ frame_rate="23"
+ play_evenly="1"
+ uid="3373A91A9BA1AFC5"
+ zoom="1"
+ video_driver=""
+ no_animation="0"
+ standalone="0"
+ hide_errors="0"
+ save_frames="0"
+/>
