@@ -132,6 +132,7 @@ alias anthony anthony aragues <Anthony_Aragues@securecomputing.com>
 alias deb Deb Whitehead <Deb_Whitehead@securecomputing.com>
 alias ryan Ryan Parsley <Ryan_Parsley@securecomputing.com>
 alias seeyam Seeyam Lim <Seeyam_Lim@securecomputing.com>
+alias spence Spence Minear <spencer_minear@securecomputing.com>
 alias jpaterson Jon Paterson <Jon_Paterson@securecomputing.com>
 alias ramnath Ramnath Venugopalan <Ramnath_Venugopalan@securecomputing.com>
 alias sumi Sumithra Dhandayuthapani <Sumithra_Dhandayuthapani@securecomputing.com>
@@ -206,11 +207,21 @@ alias michele Michele Hardeman <rwiawa@gmail.com>
 alias leflor Stevie Fredericks <leflor@gmail.com>
 alias natalie Natalie Ballard <ghostinmarble@gmail.com>
 alias bbruderman Britney Bruderman <bbruderman@gmail.com>
-alias lindsey.boop Lindsey Boop <lindsey.boop@gmail.com>
+alias boop Lindsey Boop <lindsey.boop@gmail.com>
 alias ashley Ashley Boyce <ashley.boyce@gmail.com>
 alias carmen Carmen Zumot <purplesockscz@gmail.com>
 alias heathere Heathere Frazier <sassylass25@gmail.com>
 alias dpc Dan Campbell <dan.campbell@gtri.gatech.edu>
+alias rfreedman Rian Freedman <rfreedman@xpectsvc.com>
+alias rebekah Rebekah Gilliam <rebekah.gilliam@gmail.com>
+alias mcb Mary Catherine Petermann <mc@purewire.com>
+alias shinn shinn <patronanejo@gmail.com>
+alias derek.turney Derek Turney <derek.turney@comcast.net>
+alias mflagg Matt Flagg <mflagg@cc.gatech.edu>
+alias nstricker Nick Stricker <nick-stricker@sbcglobal.net>
+alias dmitri Dmitri Alperovitch <Dmitri_Alperovitch@McAfee.com>
+alias skrasser Sven Krasser <Sven_Krasser@McAfee.com>
+alias mgilbert mg <mgilbert@securecomputing.com>
 
 # linux kernel
 alias mmappacket Ulisses Alonso Camaró <uaca@alumni.uv.es>
@@ -223,6 +234,7 @@ alias amorton Andrew Morton <akpm@linux-foundation.org>
 # other open source
 alias provos Neils Provos <provos@umich.edu>
 alias nickm Nick Mathewson <nickm@alum.mit.edu>
+alias johannbaudy Johann Baudy <johann.baudy@gnu-log.net>
 
 # (non-work-related) mailing lists and newsgroups
 alias splinterfaction splinterfags <splinterfaction@googlegroups.com>
@@ -261,35 +273,22 @@ alias paulb paul bryan <paul.bryan@gatech.edu>
 alias mcrosier Chad Rosier <mcrosier@gatech.edu>
 alias allison Allison Elliott Tew <allison@cc.gatech.edu>
 alias royal Paul Royal <paul.royal@gmail.com>
-alias mcb Mary Catherine Petermann <mc@purewire.com>
-alias johannbaudy <johann.baudy@gnu-log.net>
-alias shinn shinn <patronanejo@gmail.com>
-alias derek.turney Derek Turney <derek.turney@comcast.net>
-alias mflagg Matt Flagg <mflagg@cc.gatech.edu>
 alias crenshaw Patrick Crenshaw <patrick.crenshaw@gmail.com>
-alias spence Spence Minear <spencer_minear@securecomputing.com>
-alias nstricker Nick Stricker <nick-stricker@sbcglobal.net>
 alias mcmanus Scott McManus <smcmanus@cc.gatech.edu>
 alias rugaber Spencer Rugaber <spencer@cc.gatech.edu>
 alias bader David A. Bader <bader@cc.gatech.edu>
 alias milos Milos Prvulovic <milos@cc.gatech.edu>
 alias jbeu Jesse Beu <jbeu3@gatech.edu>
 alias nclark Nate Clark <ntclark@cc.gatech.edu>
-alias rebekah Rebekah Gilliam <rebekah.gilliam@gmail.com>
 alias danielbrowne Daniel Browne <danielcbrowne@gatech.edu>
 alias ndepalma Nicholas Depalma <ndepalma@gatech.edu>
 alias amoneill Adam O\'Neill <amoneill@cc.gatech.edu>
 alias lmoon Logan Moon <lmoon3@gatech.edu>
-alias dmitri Dmitri Alperovitch <Dmitri_Alperovitch@McAfee.com>
-alias skrasser Sven Krasser <Sven_Krasser@McAfee.com>
-alias mgilbert mg <mgilbert@securecomputing.com>
 alias ada Ada Gavrilovska <ada@cc.gatech.edu>
 alias logan Logan Moon <lmoon3@gatech.edu>
 alias yacin Yacin Nadji <yacin@gatech.edu>
-alias boop Lindsey Boop <lindsey.boop@gmail.com>
 alias brendan Brendan Dolan-Gavitt <brendandg@gatech.edu>
 alias rodzik Jason Rodzik <rodzikj@gatech.edu>
-alias rfreedman Rian Freedman <rfreedman@xpectsvc.com>
 alias puyan Puyan Lotfi <puyan@gatech.edu>
 alias leslie.thomas Leslie Thomas <leslie.thomas@gatech.edu>
 
