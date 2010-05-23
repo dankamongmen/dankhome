@@ -26,12 +26,12 @@ send-hook '~C \.qemfd\.net$' 'set from="nick black <nickblack@qemfd.net>"'
 
 macro generic <f3> ":unset use_from<return>:set from="dankamongmen@acm.org"<return>:set 'mail source set to dankamongmen@acm.org'<return>" \
 	"send mail from dankamongmen@acm.org"
-#macro generic <f4> ":unset use_from<return>:set from="nicholas_black@mcafee.com"<return>:set 'mail source set to nickblack@qemfd.net'<return>" \
-#	"send mail from nicholas_black@mcafee.com"
+macro generic <f4> ":unset use_from<return>:set from="nick.black@accelereyes.com"<return>:set 'mail source set to nickblack@qemfd.net'<return>" \
+	"send mail from nick.black@accelereyes.com"
 macro compose <f3> "<esc>f^Unick black <dank@qemfd.net><return>" \
 	"send mail from dank@qemfd.net"
-#macro compose <f4> "<esc>f^Unick black <nicholas_black@mcafee.com><return>" \
-#	"send mail from nicholas_black@mcafee.com"
+macro compose <f4> "<esc>f^Unick black <nick.black@accelereyes.com><return>" \
+	"send mail from nick.black@accelereyes.com"
 
 # spamassassin report and classify as spam
 macro index S "|/usr/bin/spamassassin -r"
@@ -288,5 +288,12 @@ alias puyan Puyan Lotfi <puyan@gatech.edu>
 alias malcolm James Malcolm <malcolm@accelereyes.com>
 alias catherine Catherine Anderson <catherinetx@gmail.com>
 alias michele Michele Hardeman <rwiawa@gmail.com>
-alias joeuhl Joe Uhl <joeuhl@gmail.com>
+alias joeuhl Joe Uhl <joe.uhl@accelereyes.com>
 alias melonakos John Melonakos <john.melonakos@accelereyes.com>
+alias leflor Stevie Fredericks <leflor@gmail.com>
+alias leslie.thomas Leslie Thomas <leslie.thomas@gatech.edu>
+
+# accelereyes
+alias tech accelerdev <technical@accelereyes.com>
+alias dev accelerdev <jacket_dev@accelereyes.com>
+alias brett.lucey Brett Lucey <brett.lucey@accelereyes.com>
