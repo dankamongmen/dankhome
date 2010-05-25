@@ -1,5 +1,12 @@
 .ICEauthority
 .aptitude/cache
 .cups
+.electricsheep/*.avi
+.electricsheep/lock
+.electricsheep/play_counts
+.fontconfig
+.gtklp
 .hplip
+.ssh/id_rsa
+.ssh/id_rsa.pub
 .viminfo
