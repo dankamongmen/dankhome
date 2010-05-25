@@ -44,6 +44,7 @@ set ignorecase				" case-insensitive matching
 set smartcase				" 'smart' case-matching
 set incsearch				" incremental search
 set infercase
+set number
 set lazyredraw
 "set mouse=a				" enable mouse w/o gvim (all modes)
 set nobackup
