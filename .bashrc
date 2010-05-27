@@ -120,5 +120,3 @@ unset MAILPATH
 unset MAIL
 
 unset DANKRC
-
-#fi
