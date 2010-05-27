@@ -4,7 +4,7 @@ else
 	PCOLOR=white
 fi
 
-if ~/bin/color &> /dev/null ; then
+if [ -x "$HOME/bin/color" ] ; then
 	export PS1=`color -p $PCOLOR`'[\h]($?) \$'`color -p none`' '
 else
 	export PS1='[\h]($?) \$ '
