@@ -15,7 +15,7 @@
 #fbdev,directfb,xvidix
 #vo=xv,gl2,x11,fbdev,caca
 #vo=xvmc,gl2,caca
-vo=gl2,xv,vdpau,fbdev,caca
+vo=vdpau,gl2,xv,fbdev,caca
 #dr=1
 #rtc=1
 #fstype=below
@@ -25,7 +25,8 @@ vo=gl2,xv,vdpau,fbdev,caca
 ao=alsa
 #volume=500.1
 mixer-channel=PCM
-idx=yes
+#idx=yes
+framedrop=1
 autosync=1
 quiet=yes
 #really-quiet=yes

@@ -1,6 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_cnt =5
 let g:netrw_dirhist_1='/home/dank/src/jacket/branches/blackbranch'
 let g:netrw_dirhist_2='/home/dank/src/jacket/branches/blackbranch/toolbox/frontend/kernels'
 let g:netrw_dirhist_3='/home/dank/src/jacket/branches/blackbranch/toolbox/frontend/kernelstore'
 let g:netrw_dirhist_4='/home/dank/src/jacket/branches/dankification/toolbox'
+let g:netrw_dirhist_5='/home/dank/src/jacket/branches/dankification/test'
