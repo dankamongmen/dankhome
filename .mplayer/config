@@ -38,7 +38,7 @@ font="Bitstream Vera Sans"
 spuaa=4
 stop-xscreensaver=yes
 geometry=50%:50%
-use-filename-title=yes
+#use-filename-title=yes
 # Video Filters
 #
 # screenshot -- Allows acquiring screenshots of the movie using the screenshot
