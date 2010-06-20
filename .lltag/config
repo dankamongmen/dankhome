@@ -1,0 +1,7 @@
+format="%n - %t"
+format=".* - %n - %t"
+format="%a - %A (%d) - %n - %t"
+format="%a - %A - %n - %t"
+maj=1
+clear_tags=1
+preserve_time=1
