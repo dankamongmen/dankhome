@@ -11,13 +11,13 @@ set use_header_numbers 1
 
 % The "From:" header will be generated from the following three variables.
 % With the example settings, it would read "john@doe.com (John Doe)".
-set realname "Nick Black"
-set username "nblack"
-set hostname securecomputing.com
+set realname "nick black"
+set username "nick.black"
+set hostname accelereyes.com
 
 % Set this if you want replies to your articles to go to a address different
 % from the one in "From:".
-set replyto "nblack@securecomputing.com"
+set replyto "nick.black@accelereyes.com"
 
 % What to put into the "Organization:" header line.
 set organization "Castalian Province"
@@ -33,6 +33,7 @@ set signature ".signature"
 % Note: This does *not* set the default server; you need to set the
 %       NNTPSERVER environment variable for this.
 server "news.gmane.org" ".jnewsrc"
+server "svn.localdomain" ".jnewsrc.accelereyes"
 
 % If a server requires authentication, add a nnrpaccess line for it.
 % If you leave username and/or password empty, slrn will prompt for it.
