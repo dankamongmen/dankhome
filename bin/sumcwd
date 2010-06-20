@@ -1,0 +1,5 @@
+#!/bin/sh
+
+[ -n "$1" ] || { echo "Usage: $0 sumfile" >&2 ; exit 1 ; }
+
+find . ! -type d -exec md5sum -b "{}" \; | sort > "$1"
