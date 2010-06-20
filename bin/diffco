@@ -1,0 +1,33 @@
+#!/bin/bash
+
+usage () {
+	echo "Usage: $0 checkout-path [ checkout-path ]"
+	exit 1
+}
+
+checkdir () {
+	if [ -d "$1"/CVS ] ; then
+		echo "$1 looks like a CVS checkout."
+	elif [ -d "$1"/.svn ] ; then
+		echo "$1 looks like a Subversion checkout."
+	else
+		echo "$1 does not look like a CVS or Subversion checkout."
+		usage
+	fi
+}
+
+if [ $# -eq 1 ] ; then
+	D2="."
+elif [ $# -eq 2 ] ; then
+	D2="$2"
+else
+	usage
+fi
+
+D1="$1"
+
+checkdir $D1
+checkdir $D2
+
+echo "Diffing checkouts in $D1 and $D2"
+diff -ur -xCVS -x.svn "$D1" "$D2"
