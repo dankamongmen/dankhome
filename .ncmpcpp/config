@@ -1,0 +1,7 @@
+cyclic_scrolling=yes
+ask_before_clearing_main_playlist = yes
+ignore_leading_the=yes
+allow_physical_files_deletion=no
+allow_physical_directories_deletion=no
+media_library_display_date = yes
+enable_window_title = yes

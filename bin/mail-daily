@@ -7,16 +7,13 @@ set -o pipefail
 DAY="`date +%Y-%j`"
 if [ -r $HOME/Mail/spam ] ; then
 	mv -v $HOME/Mail/spam $HOME/Mail/spam-archive/spam-$DAY
-	svn add $HOME/Mail/spam-archive/spam-$DAY
 fi
 if [ -r $HOME/Mail/spamfn ] ; then
 	mv -v $HOME/Mail/spamfn $HOME/Mail/spam-archive/spamfn-$DAY
 	sa-learn -D --spam --mbox --use-ignores --sync $HOME/Mail/spam-archive/spamfn-$DAY
-	svn add $HOME/Mail/spam-archive/spamfn-$DAY
 fi
 if [ -r $HOME/Mail/spamfp ] ; then
 	mv -v $HOME/Mail/spamfp $HOME/Mail/spam-archive/spamfp-$DAY
 	sa-learn -D --ham --mbox --use-ignores --sync $HOME/Mail/spam-archive/spamfp-$DAY
-	svn add $HOME/Mail/spam-archive/spamfp-$DAY
 fi
 rm -f $HOME/var/log/procmaillog
