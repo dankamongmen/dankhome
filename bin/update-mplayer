@@ -15,3 +15,5 @@ svn up
 
 DEB_BUILD_OPTIONS="--enable-gui --enable-menu --enable-xvmc --disable-ossaudio" fakeroot debian/rules clean
 DEB_BUILD_OPTIONS="--enable-gui --enable-menu --enable-xvmc --disable-ossaudio" fakeroot debian/rules binary
+sudo dpkg -i ../mplayer*deb # FIXME
+rm ../mplayer*deb

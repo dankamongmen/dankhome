@@ -5,7 +5,15 @@ else
 fi
 
 if [ -x "$HOME/bin/color" ] ; then
-	export PS1=`color -p $PCOLOR`'[\h]($?) \$'`color -p none`' '
+	case $TERM in
+	xterm*)
+		# http://www.faqs.org/docs/Linux-mini/Xterm-Title.html#ss4.3
+		export PS1='\[\033]0;\u@\h\007\]'`color -p $PCOLOR`'[\h]($?) \$'`color -p none`' '
+		;;
+	*)
+		export PS1=`color -p $PCOLOR`'[\h]($?) \$'`color -p none`' '
+		;;
+	esac
 else
 	export PS1='[\h]($?) \$ '
 fi
