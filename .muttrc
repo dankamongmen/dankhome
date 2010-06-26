@@ -99,6 +99,9 @@ set ssl_starttls=yes
 set attribution="%n left as an exercise for the reader:"
 set forward_format="[%s]"
 
+# work even if atimes are disabled
+set check_mbox_size
+
 #make it pretty 
 set menu_scroll
 color hdrdefault cyan black
