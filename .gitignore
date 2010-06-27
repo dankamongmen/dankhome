@@ -7,6 +7,10 @@
 .fontconfig
 .gtklp
 .hplip
+.ssh/agent-*
 .ssh/id_rsa
 .ssh/id_rsa.pub
+.ssh/known_hosts.old
+.thumbnails
 .viminfo
+.xsession-errors
