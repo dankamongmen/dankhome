@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# to see current status of beep, use 'xset q | grep bell'
+xset b off
+
+# for GNU readline programs, include in .inputrc:
+# set bell-style none

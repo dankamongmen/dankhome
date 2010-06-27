@@ -1,0 +1,18 @@
+#!/bin/sh
+
+set -e
+set -o nounset
+
+# Accepts mbox on stdin, which will be broken up by formail and piped into
+# procmail (the MDA) for local delivery to the user. This honors the local
+# .procmailrc, etc -- it's just as if the mails had been received by the MTA.
+
+usage () { echo "usage: `basename $0`" ; }
+usageerr () { usage >&2 ; return 1 ; }
+
+FORMAIL=`which formail`
+PROCMAIL=`which procmail`
+
+[ $# -eq 0 ] || usageerr
+
+"$FORMAIL" -s "$PROCMAIL" -d $USER
