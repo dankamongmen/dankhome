@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+
+KEYDIRS="/home/dank/.ssh"
+
+# FIXME We need to let ssh-add fail, so set -e only after. find a better way!
+ssh-add -l > /dev/null
+RESULT=$?
+
+set -e || exit 1
+set -o pipefail || exit 1
+
+if [ $((RESULT)) -eq 1 ] ; then
+	echo "ssh-agent active with no identities"
+elif [ $((RESULT)) -eq 0 ] ; then
+	echo "ssh-agent active with `ssh-add -l | wc -l` identities"
+else
+	echo "ssh-agent not found (result code $RESULT)" >&2
+	if [ `realpath $0` != "$0" ] ; then
+		echo "launching ssh-agent `realpath $0`"
+		exec ssh-agent "`realpath $0`"
+	fi
+	exit 1
+fi
+
+for i in $KEYDIRS ; do
+	for j in $i/*rsa $i/*dsa $i/scursvn ; do
+		if ssh-add -l | grep $j > /dev/null ; then
+			echo "$j is already loaded"
+		elif ssh-add $j < /dev/null ; then
+			echo "Successfully added $j"
+		else
+			echo "Failure adding $j" >&2
+		fi
+	done
+done
+
+bash
