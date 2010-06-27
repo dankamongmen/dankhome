@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+set -e || exit 1
+set -o pipefail
+
+eject -t || true
+
+# we depend on a config file with the following:
+#OUTPUTTYPE=flac
+#OUTPUTFORMAT='$ARTISTFILE/$ALBUMFILE ($YEAR)/$ARTISTFILE - $ALBUMFILE ($YEAR) - $TRACKNUM - $TRACKFILE'
+#VAOUTPUTFORMAT='$ALBUMFILE ($YEAR)/$ALBUMFILE ($YEAR) - $TRACKNUM - $ARTISTFILE - $TRACKFILE'
+[ -r $HOME/.abcde.conf ] || { echo "couldn't find config file" ; exit 1 ; }
+
+# $@ options can include:
+#  use -t and -T to change external and internal track number origin
+#  provide optional list of tracks
+abcde -M -p -P -U -V -x "$@"
