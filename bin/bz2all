@@ -1,0 +1,4 @@
+for i in *bz2 ; do
+	echo "bunzip2 $i"
+	bunzip2 $i
+done
