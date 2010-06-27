@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+set -e
+
+echo -ne "\e]0;$*\a"
