@@ -23,6 +23,7 @@ audio_output {
 	name "Intel HDAudio ALSA"
 	device "default"
 	buffer_time 2000000
+	use_mmap "yes"
 }
 mixer_type alsa
 #mixer_device dmix
