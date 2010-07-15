@@ -1,11 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/home/dank/src/jacket/branches/blackbranch'
-let g:netrw_dirhist_2='/home/dank/src/jacket/branches/blackbranch/toolbox/frontend/kernels'
-let g:netrw_dirhist_3='/home/dank/src/jacket/branches/blackbranch/toolbox/frontend/kernelstore'
-let g:netrw_dirhist_4='/home/dank/src/jacket/branches/dankification/toolbox'
-let g:netrw_dirhist_5='/home/dank/src/jacket/branches/dankification/test'
-let g:netrw_dirhist_6='/home/dank/src/jacket/branches/nlalloc/toolbox/mm'
-let g:netrw_dirhist_7='/usr/share/doc/libpam-gnome-keyring'
-let g:netrw_dirhist_8='/home/dank/src/jacket/branches/dankification'
-let g:netrw_dirhist_9='/media/ssd/jacket/releases/jacket-1.4'
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/media/ssd/home/dank/src/jacket/trunk/erp'
+let g:netrw_dirhist_2='/media/ssd/home/dank/src/jacket/trunk/src'
+let g:netrw_dirhist_3='/media/ssd/home/dank/src/jacket/trunk/common/bin'
+let g:netrw_dirhist_4='/media/ssd/home/dank/src/jacket/trunk/common'
+let g:netrw_dirhist_5='/media/ssd/home/dank/src/jacket/trunk/src'

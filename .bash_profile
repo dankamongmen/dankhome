@@ -10,8 +10,6 @@ export PAGER="less"
 # xfce4-terminal both to invoke links2 under this config...
 #export BROWSER="links2"
 
-export NNTPSERVER=news.research.sys
-
 #if `tty | grep /dev/tty1$ > /dev/null` ; then
 #	for i in `seq 2 7` ; do
 #		sudo openvt -u
