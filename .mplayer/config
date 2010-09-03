@@ -10,12 +10,13 @@
 # gl (as opposed to gl2) blocks upon workspace changes
 # x11 can't fullscreen, but almost always works
 # fbdev disconnects the video hardware out from under x, works in console
+# fbdev2 works better than fbdev on at least intel
 # directfb usually locks the terminal/machine
 # dga -- says framebuffer allocation failed, obsolete
 #fbdev,directfb,xvidix
 #vo=xv,gl2,x11,fbdev,caca
 #vo=xvmc,gl2,caca
-vo=xv,vdpau,gl2,fbdev,caca
+vo=xv,vdpau,gl2,fbdev2,caca
 #dr=1
 #rtc=1
 #fstype=below
