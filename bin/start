@@ -1,0 +1,54 @@
+#!/bin/sh
+
+set -e
+set -o nounset
+
+usage () { echo "usage: $0" ; }
+usageerr () { usage >&2 ; return 1 ; }
+
+[ $# -eq 0 ] || usageerr
+
+case `hostname` in
+	recombinator)
+		sudo iptables -I INPUT -i lo -p tcp --dport 11110:11111 -j ACCEPT
+		daemon -r ssh -N -f -L 11110:localhost:110 qemfd.net
+		daemon -r ssh -N -f -L 11111:localhost:25 qemfd.net
+		! which fetchmail 2> /dev/null || fetchmail
+		commitpidgin
+		if ! sudo aptitude -s -V -v -Z update ; then
+			echo "aptitude returned $?" >&2
+		fi
+		cd tmp/torrenting && screen nice rtorrent
+		cd
+		;;
+	hyperbox)
+		# don't exit on failures here
+		if ! ssh -f -L 6600:localhost:6600 recombinator -N ; then
+			echo "Couldn't set up MPD SSH tunnel..."
+		fi
+		if ! sshfs -o noatime -o reconnect recombinator:/media /media/sshfs ; then
+			echo "Couldn't set up SSHfs..."
+		fi
+		if ! sshfs -o noatime -o reconnect recombinator:/home/dank /media/sshfshome ; then
+			echo "Couldn't set up SSHfs..."
+		fi
+		rsync --progress --stats -ziau recombinator:.purple . || true
+		rsync --progress --stats -ziau recombinator:files . || true
+		sudo aptitude update
+		;;
+
+	areopagod)
+		sudo openvt -u
+		ssh-add $HOME/.ssh/qemu.rsa $HOME/.ssh/swps.rsa
+		svn revert -R .purple
+		commitpidgin
+		sudo aptitude update
+		svn up ~/files
+		cd src/libtorque && git pull && cd -
+		cd src/libdank && git pull && cd -
+		;;
+	*)
+		echo "No support for hostname `hostname`" >&2
+		exit 1
+		;;
+esac
