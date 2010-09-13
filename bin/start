@@ -11,8 +11,8 @@ usageerr () { usage >&2 ; return 1 ; }
 case `hostname` in
 	recombinator)
 		sudo iptables -I INPUT -i lo -p tcp --dport 11110:11111 -j ACCEPT
-		daemon -r ssh -N -f -L 11110:localhost:110 qemfd.net
-		daemon -r ssh -N -f -L 11111:localhost:25 qemfd.net
+		daemonizer -r 0 -- ssh -N -L 11110:localhost:110 qemfd.net &
+		daemonizer -r 0 -- ssh -N -L 11111:localhost:25 qemfd.net &
 		! which fetchmail 2> /dev/null || fetchmail
 		commitpidgin
 		if ! sudo aptitude -s -V -v -Z update ; then
