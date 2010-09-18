@@ -1,3 +1,13 @@
 #!/bin/sh
 
-gnome-session-save --kill --silent
+set -e
+
+GSS="`which gnome-session-save`" || echo "No gnome-session utilitites..."
+
+if [ -x "$GSS" ] ; then
+	#"$GSS" --kill --silent
+	"$GSS" --logout-dialog --gui
+	exit 1
+else
+	sudo kill `pidof X`
+fi
