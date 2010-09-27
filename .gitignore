@@ -22,4 +22,5 @@
 .w3m/cookie
 .w3m/history
 .wireshark
+.wpa_cli_history
 .xsession-errors
