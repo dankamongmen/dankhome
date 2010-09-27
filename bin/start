@@ -23,6 +23,9 @@ case `hostname` in
 		;;
 	hyperbox)
 		# don't exit on failures here
+		if ! ssh -f -L 11110:localhost:110 recombinator -N ; then
+			echo "Couldn't set up POP SSH tunnel..."
+		fi
 		if ! ssh -f -L 6600:localhost:6600 recombinator -N ; then
 			echo "Couldn't set up MPD SSH tunnel..."
 		fi
@@ -32,8 +35,10 @@ case `hostname` in
 		if ! sshfs -o noatime -o reconnect recombinator:/home/dank /media/sshfshome ; then
 			echo "Couldn't set up SSHfs..."
 		fi
-		rsync --progress --stats -ziau recombinator:.purple . || true
-		rsync --progress --stats -ziau recombinator:files . || true
+		#rsync --progress --stats -ziau .purple recombinator.qemfd.net:.purple || true
+		rsync --progress --stats -ziau recombinator.qemfd.net:.purple . || true
+		#rsync --progress --stats -ziau files recombinator.qemfd.net:files || true
+		rsync --progress --stats -ziau recombinator.qemfd.net:files . || true
 		sudo aptitude update
 		;;
 

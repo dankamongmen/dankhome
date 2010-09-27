@@ -2,7 +2,7 @@
 
 set -e || exit 1
 set -o nounset
-set -o pipefail
+
 SRC="/usr/include"
 TAGS="/home/dank/var/cache/glibc-tags"
 
