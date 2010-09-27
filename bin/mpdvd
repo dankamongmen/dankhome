@@ -1,0 +1,45 @@
+#!/bin/bash
+
+OPTIONS="-alang en"
+
+exithandle () {
+	setterm -cursor on
+	setterm -blank 15
+	echo "restored terminal settings"
+}
+
+trap exithandle EXIT HUP INT QUIT || { echo "Couldn't register exit handler." >&2 ; exit 1 ; }
+
+setterm -blank 0
+setterm -cursor off
+
+#set | grep ^DISPLAY= > /dev/null || OPTIONS="$OPTIONS -vo fbdev"
+
+case "`basename $0`" in
+	mp)
+		;;
+	mpfs)
+		OPTIONS="$OPTIONS -fs"
+		;;
+	mpfsna)
+		OPTIONS="$OPTIONS -fs -nosound"
+		;;
+	mpna)
+		OPTIONS="$OPTIONS -nosound"
+		;;
+	mpdvd)
+		OPTIONS="$OPTIONS -aspect 16:9 -fs -dvd-device /dev/dvd"
+		echo mplayer $OPTIONS dvd://$1 -slang en
+		mplayer $OPTIONS dvd://$1 -slang en
+		shift
+		;;
+	*)
+		echo "Unknown calling method: $0...sleeping for 10s"
+		sleep 10
+		;;
+esac
+
+for i in "$@" ; do
+	echo mplayer $OPTIONS "$i"
+	mplayer $OPTIONS "$i"
+done
