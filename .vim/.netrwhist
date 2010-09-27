@@ -1,8 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/media/ssd/home/dank/src/jacket/trunk/erp'
 let g:netrw_dirhist_2='/media/ssd/home/dank/src/jacket/trunk/src'
 let g:netrw_dirhist_3='/media/ssd/home/dank/src/jacket/trunk/common/bin'
 let g:netrw_dirhist_4='/media/ssd/home/dank/src/jacket/trunk/common'
 let g:netrw_dirhist_5='/media/ssd/home/dank/src/jacket/trunk/src'
 let g:netrw_dirhist_6='/home/dank/.ncmpcpp'
+let g:netrw_dirhist_7='/home/dank/.crontab'
+let g:netrw_dirhist_8='/home/dank/.compiz'
+let g:netrw_dirhist_9='/home/dank/.crontab'
