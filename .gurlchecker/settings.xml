@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projects>
+  <project working_path="/home/dank/.gurlchecker" proto_file_is_error="yes" cookies_accept="yes" cookies_warn_added="yes" cookies_warn_updated="no" cookies_warn_deleted="no" proto_file_check="no" proto_mailto="no" proto_https="yes" proto_ftp="yes" passive_ftp="yes" proto_mailto_check_mx="no" check_chroot="no" limit_local="yes" no_urls_args="yes" use_proxy="no" proxy_host="" proxy_port="0" chroot_path="" download_images_content="no" download_archives_content="no" check_timeout="30" depth_level="1000" check_wait="0" timeouts_blocked="2" prompt_auth="yes" security_checks="no" security_checks_bad_extensions="yes" security_checks_exclude_images="yes" security_checks_virii="yes" w3c_checks="no" w3c_checks_html="yes" w3c_html_level="warnings" w3c_checks_css="yes" export_labels="yes" export_numbering="yes" debug_mode="no" dump_properties="no">
+    <filters>
+      <directories/>
+      <domains/>
+      <documents/>
+      <images/>
+      <virii_extensions>
+        <item>application</item>
+        <item>audio</item>
+        <item>image</item>
+        <item>text</item>
+        <item>video</item>
+        <item>chemical</item>
+        <item>model</item>
+        <item>multipart</item>
+        <item>x-conference</item>
+        <item>x-epoc</item>
+        <item>x-world</item>
+      </virii_extensions>
+      <html_extensions>
+        <item>cfm</item>
+        <item>html</item>
+        <item>htm</item>
+        <item>pl</item>
+        <item>phtml</item>
+        <item>shtml</item>
+        <item>asp</item>
+        <item>axp</item>
+        <item>aspx</item>
+        <item>php</item>
+        <item>php3</item>
+        <item>php4</item>
+        <item>php5</item>
+      </html_extensions>
+      <css_extensions>
+        <item>css</item>
+      </css_extensions>
+      <bad_extensions>
+        <item>bak</item>
+        <item>bad</item>
+        <item>sav</item>
+        <item>~</item>
+        <item>ok</item>
+        <item>-</item>
+        <item>old</item>
+        <item>orig</item>
+        <item>false</item>
+      </bad_extensions>
+    </filters>
+  </project>
+</projects>
