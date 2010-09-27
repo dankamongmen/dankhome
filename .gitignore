@@ -1,4 +1,6 @@
 .ICEauthority
+.Xauthority
+.adobe/Flash_Player/AssetCache
 .aptitude/cache
 .cups
 .electricsheep/*.avi
