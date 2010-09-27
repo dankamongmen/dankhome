@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<mailboxes>
+  <mailbox type="pop3" name="qemfd.net" check-delay="30" username="dank" hostname="localhost" port="11110"/>
+</mailboxes>
