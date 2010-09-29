@@ -21,6 +21,7 @@ case `hostname` in
 		cd
 		;;
 	hyperbox)
+		ssh-add
 		# don't exit on failures here
 		if ! ssh -f -L 11110:localhost:110 recombinator -N ; then
 			echo "Couldn't set up POP SSH tunnel..."
