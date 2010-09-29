@@ -1,6 +1,7 @@
 [general]
 profile = 
 integration = true
+backend = ini
 
 [gnome_session]
 backend = ini
