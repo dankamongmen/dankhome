@@ -1,0 +1,2 @@
+OPTIONS=race:human,role:valkyrie,align:neutral
+OPTIONS=!autopickup,color
