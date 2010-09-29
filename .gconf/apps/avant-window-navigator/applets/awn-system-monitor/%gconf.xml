@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="dashboard_component_mgmt_component_awntop_cairo_enabled" mtime="1281620818" type="bool" value="true"/>
+	<entry name="component_awntop_cairo_fg" mtime="1281620818" type="string">
+		<stringvalue>FFFFFFBB</stringvalue>
+	</entry>
+	<entry name="component_awntop_cairo_bg" mtime="1281620818" type="string">
+		<stringvalue>999999d4</stringvalue>
+	</entry>
+	<entry name="dashboard_component_mgmt_component_sysmem_enabled" mtime="1281620818" type="bool" value="true"/>
+	<entry name="component_sysmem_shared_colour" mtime="1281620818" type="string">
+		<stringvalue>666666DD</stringvalue>
+	</entry>
+	<entry name="component_sysmem_cached_colour" mtime="1281620818" type="string">
+		<stringvalue>AA0099DD</stringvalue>
+	</entry>
+	<entry name="component_sysmem_buffer_colour" mtime="1281620818" type="string">
+		<stringvalue>0000DDDD</stringvalue>
+	</entry>
+	<entry name="component_sysmem_free_colour" mtime="1281620818" type="string">
+		<stringvalue>00DD22DD</stringvalue>
+	</entry>
+	<entry name="component_sysmem_user_colour" mtime="1281620818" type="string">
+		<stringvalue>DD0000DD</stringvalue>
+	</entry>
+	<entry name="component_sysmem_fg" mtime="1281620818" type="string">
+		<stringvalue>00000000</stringvalue>
+	</entry>
+	<entry name="component_sysmem_bg" mtime="1281620818" type="string">
+		<stringvalue>222299EE</stringvalue>
+	</entry>
+	<entry name="dashboard_component_mgmt_component_loadavg_enabled" mtime="1281620818" type="bool" value="false"/>
+	<entry name="component_loadavg_fg" mtime="1281620818" type="string">
+		<stringvalue>00000000</stringvalue>
+	</entry>
+	<entry name="component_loadavg_bg" mtime="1281620818" type="string">
+		<stringvalue>222299EE</stringvalue>
+	</entry>
+	<entry name="dashboard_component_mgmt_component_uptime_enabled" mtime="1281620818" type="bool" value="false"/>
+	<entry name="component_uptime_fg" mtime="1281620818" type="string">
+		<stringvalue>000000bb</stringvalue>
+	</entry>
+	<entry name="component_uptime_bg" mtime="1281620818" type="string">
+		<stringvalue>999999d6</stringvalue>
+	</entry>
+	<entry name="dashboard_component_mgmt_component_cpu_enabled" mtime="1281620818" type="bool" value="true"/>
+	<entry name="component_cpu_meter_end_c" mtime="1281620818" type="string">
+		<stringvalue>FF0010ee</stringvalue>
+	</entry>
+	<entry name="component_cpu_meter_middle_c" mtime="1281620818" type="string">
+		<stringvalue>EEC83177</stringvalue>
+	</entry>
+	<entry name="component_cpu_meter_start_c" mtime="1281620818" type="string">
+		<stringvalue>00FF10bb</stringvalue>
+	</entry>
+	<entry name="component_cpu_use_2_colour_gradient" mtime="1281620818" type="bool" value="false"/>
+	<entry name="component_cpu_shiny_meter" mtime="1281620818" type="bool" value="true"/>
+	<entry name="component_cpu_refresh_rate" mtime="1281620818" type="int" value="500"/>
+	<entry name="component_cpu_scale" mtime="1281620818" type="float" value="1.7200000286102295"/>
+	<entry name="component_cpu_fg" mtime="1281620818" type="string">
+		<stringvalue>000000ff</stringvalue>
+	</entry>
+	<entry name="component_cpu_bg" mtime="1281620818" type="string">
+		<stringvalue>999999ee</stringvalue>
+	</entry>
+	<entry name="dashboard_component_mgmt_component_date_time_enabled" mtime="1281620818" type="bool" value="false"/>
+	<entry name="component_date_time_fg" mtime="1281620818" type="string">
+		<stringvalue>00000000</stringvalue>
+	</entry>
+	<entry name="component_date_time_bg" mtime="1281620818" type="string">
+		<stringvalue>222299EE</stringvalue>
+	</entry>
+	<entry name="component_date_time_strftime" mtime="1281620818" type="string">
+		<stringvalue>%r</stringvalue>
+	</entry>
+	<entry name="dashboard_no_gtk_fg" mtime="1281620818" type="string">
+		<stringvalue>FFFFFFBB</stringvalue>
+	</entry>
+	<entry name="dashboard_no_gtk_bg" mtime="1281620818" type="string">
+		<stringvalue>999999d4</stringvalue>
+	</entry>
+	<entry name="runonce" mtime="1281831089" type="int" value="1"/>
+	<entry name="dashboard_ignore_gtk_bg_fg" mtime="1281620818" type="bool" value="false"/>
+	<entry name="dashboard_show_awn_diag" mtime="1281620818" type="bool" value="true"/>
+	<entry name="update_frequency" mtime="1281620818" type="int" value="1000"/>
+	<entry name="do_subtitle" mtime="1281620818" type="bool" value="true"/>
+	<entry name="do_gradient" mtime="1281620818" type="bool" value="true"/>
+	<entry name="border_width" mtime="1281620818" type="float" value="2"/>
+	<entry name="border_color" mtime="1281620818" type="string">
+		<stringvalue>FFFFFFFF</stringvalue>
+	</entry>
+	<entry name="graph_color" mtime="1281620818" type="string">
+		<stringvalue>B39AE6FF</stringvalue>
+	</entry>
+	<entry name="bg_color" mtime="1281620818" type="string">
+		<stringvalue>FFFFFF10</stringvalue>
+	</entry>
+</gconf>

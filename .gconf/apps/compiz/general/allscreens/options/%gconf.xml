@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="active_plugins" mtime="1269653613" type="list" ltype="string">
+		<li type="string">
+			<stringvalue>core</stringvalue>
+		</li>
+		<li type="string">
+			<stringvalue>gconf</stringvalue>
+		</li>
+	</entry>
+	<entry name="cursor_theme" mtime="1285734439" type="string">
+		<stringvalue>DMZ-Black</stringvalue>
+	</entry>
+	<entry name="cursor_size" mtime="1285734439" type="int" value="24"/>
+</gconf>

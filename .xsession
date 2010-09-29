@@ -1,4 +1,4 @@
-gnome-settings-daemon
+#gnome-settings-daemon
 mail-notification &
 compiz &
 exec avant-window-navigator
