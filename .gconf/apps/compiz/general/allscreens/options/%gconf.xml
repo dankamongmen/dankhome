@@ -8,8 +8,8 @@
 			<stringvalue>gconf</stringvalue>
 		</li>
 	</entry>
-	<entry name="cursor_theme" mtime="1285753828" type="string">
+	<entry name="cursor_theme" mtime="1285761838" type="string">
 		<stringvalue>DMZ-Black</stringvalue>
 	</entry>
-	<entry name="cursor_size" mtime="1285753828" type="int" value="24"/>
+	<entry name="cursor_size" mtime="1285761838" type="int" value="24"/>
 </gconf>

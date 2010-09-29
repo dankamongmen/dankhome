@@ -19,10 +19,12 @@ case "`basename $0`" in
 	mp)
 		;;
 	mpfs)
-		OPTIONS="$OPTIONS -fs"
+		#OPTIONS="$OPTIONS -fs"
+		OPTIONS="$OPTIONS -x 1920 -y 1200"
 		;;
 	mpfsna)
-		OPTIONS="$OPTIONS -fs -nosound"
+		#OPTIONS="$OPTIONS -fs -nosound"
+		OPTIONS="$OPTIONS -x 1920 -y 1200 -nosound"
 		;;
 	mpna)
 		OPTIONS="$OPTIONS -nosound"
