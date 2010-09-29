@@ -1,3 +1,4 @@
 gnome-settings-daemon
 mail-notification &
-exec compiz
+compiz &
+exec avant-window-navigator
