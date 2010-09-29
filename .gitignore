@@ -12,7 +12,11 @@
 .gurlchecker/cache
 .gurlchecker/projects
 .hplip
+.pcolor
 .pulse-cookie
+.specto/cache
+.specto/specto.log
+.specto/specto.pid
 .ssh/agent-*
 .ssh/id_rsa
 .ssh/id_rsa.pub
