@@ -1,6 +1,10 @@
 [default]
 # Write your default config options here!
 
+slang=en
+spuaa=4
+use-filename-title=1
+
 # xv works well and is the default, but requires lots of memory and supports
 #  only one instance per "port". it doesn't work well with beryl.
 # gl and gl2 both require DRI to work well. gl suggests -dr for a speedup, if
@@ -36,7 +40,6 @@ nomouseinput=1
 fontconfig=yes
 font="Bitstream Vera Sans"
 # anti-aliasing for fonts
-spuaa=4
 stop-xscreensaver=yes
 geometry=50%:50%
 #use-filename-title=yes
