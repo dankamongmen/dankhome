@@ -2,6 +2,7 @@
 .Xauthority
 .adobe/Flash_Player/AssetCache
 .aptitude/cache
+.cache/remuco
 .cups
 .electricsheep/*.avi
 .electricsheep/lock
