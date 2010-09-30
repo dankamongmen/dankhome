@@ -1,5 +1,5 @@
 gnome-settings-daemon
-mail-notification &
 compiz &
-screenlets &
+mail-notification &
+python -u /usr/share/screenlets/Windowlist/WindowlistScreenlet.py &
 exec avant-window-navigator
