@@ -1,16 +1,17 @@
 [Arts & Literature Daily]
 uri = https://www.ethostream.com/CentralAuth/google_auth/index.php?ip=10.0.0.188&mac=00:24:D7:0E:65:AC&iface=br0&siteid=50161&at=free&portal=http://www.thegeorgianterrace.com&ad=720&lang=&tun=10.231.5.198&adv=&url=http://www.aldaily.com/
-filesize = 3147
+filesize = 3242
 error_margin = 0.02
 type = 0
 refresh = 3600000
-updated = False
+updated = True
+last_updated = Thursday 30 Sep 2010 17:29
 
 [Phoronix]
 uri = https://www.ethostream.com/CentralAuth/google_auth/index.php?ip=10.0.0.188&mac=00:24:D7:0E:65:AC&iface=br0&siteid=50161&at=free&portal=http://www.thegeorgianterrace.com&ad=720&lang=&tun=10.231.5.198&adv=&url=http://www.phoronix.com/scan.php?page=home
-filesize = 3288
+filesize = 3383
 error_margin = 0.02
 type = 0
 refresh = 1800000
 updated = True
-last_updated = Friday 20 Aug 2010 15:30
+last_updated = Thursday 30 Sep 2010 17:29
