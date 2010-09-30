@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <gconf>
 	<entry name="icon_alpha" mtime="1281623722" type="float" value="1"/>
-	<entry name="reflection_offset" mtime="1281623708" type="int" value="0"/>
+	<entry name="reflection_offset" mtime="1285885288" type="int" value="0"/>
 	<entry name="reflection_alpha_multiplier" mtime="1281624073" type="float" value="0.30000001192092896"/>
 	<entry name="arrow_icon" mtime="1281624144" type="string">
 		<stringvalue>__awn_internal_arrow1</stringvalue>
