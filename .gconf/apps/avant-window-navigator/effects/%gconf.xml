@@ -3,14 +3,14 @@
 	<entry name="icon_alpha" mtime="1281623722" type="float" value="1"/>
 	<entry name="reflection_offset" mtime="1285885288" type="int" value="0"/>
 	<entry name="reflection_alpha_multiplier" mtime="1281624073" type="float" value="0.30000001192092896"/>
-	<entry name="arrow_icon" mtime="1281624144" type="string">
+	<entry name="arrow_icon" mtime="1285886209" type="string">
 		<stringvalue>__awn_internal_arrow1</stringvalue>
 	</entry>
-	<entry name="show_shadows" mtime="1281624181" type="bool" value="true"/>
+	<entry name="show_shadows" mtime="1285885813" type="bool" value="true"/>
 	<entry name="active_background_icon" mtime="1281624144" type="string">
 		<stringvalue></stringvalue>
 	</entry>
-	<entry name="icon_effect" mtime="1279047332" type="int" value="209715"/>
+	<entry name="icon_effect" mtime="1285885853" type="int" value="209715"/>
 	<entry name="active_rect_outline" mtime="1281624144" type="string">
 		<stringvalue>#0000000000000000</stringvalue>
 	</entry>
