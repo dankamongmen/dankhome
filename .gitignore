@@ -8,6 +8,7 @@
 .electricsheep/lock
 .electricsheep/play_counts
 .fontconfig
+.gconfd/saved_state
 .gnuplot_history
 .gtklp
 .gurlchecker/cache
