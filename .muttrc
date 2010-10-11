@@ -26,12 +26,12 @@ send-hook '~C \.qemfd\.net$' 'set from="nick black <nickblack@qemfd.net>"'
 
 macro generic <f3> ":unset use_from<return>:set from="dankamongmen@acm.org"<return>:set 'mail source set to dankamongmen@acm.org'<return>" \
 	"send mail from dankamongmen@acm.org"
-macro generic <f4> ":unset use_from<return>:set from="nick.black@accelereyes.com"<return>:set 'mail source set to nickblack@qemfd.net'<return>" \
-	"send mail from nick.black@accelereyes.com"
+macro generic <f4> ":unset use_from<return>:set from="dankamongmen@gmail.com"<return>:set 'mail source set to dankamongmen@gmail.com'<return>" \
+	"send mail from dankamongmen@gmail.com"
 macro compose <f3> "<esc>f^Unick black <dank@qemfd.net><return>" \
 	"send mail from dank@qemfd.net"
-macro compose <f4> "<esc>f^Unick black <nick.black@accelereyes.com><return>" \
-	"send mail from nick.black@accelereyes.com"
+macro compose <f4> "<esc>f^Unick black <dankamongmen@gmail.com><return>" \
+	"send mail from dankamongmen@gmail.com"
 
 # spamassassin report and classify as spam
 macro index S "|/usr/bin/spamassassin -r"
@@ -313,3 +313,4 @@ alias concierge Viewpoint Concierge <Viewpoint.Concierge@hoadv.com>
 alias mbh Mary Beth Henderson <mbh@citihomes.com>
 alias lallen Lindsay Allen <lallen@oglethorpe.edu>
 alias lanier Lanier Basenberg <lanierbasenberg@gmail.com>
+alias dinin Paul Dinin <pauldinin@gmail.com>

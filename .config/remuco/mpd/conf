@@ -13,5 +13,5 @@ file-browser-enabled = 1
 custom-mpd-music-dir = /media/music/music
 player-encoding = UTF8
 config-version = 1.4
-file-browser-root-dirs = 
+file-browser-root-dirs = /media/music/music
 
