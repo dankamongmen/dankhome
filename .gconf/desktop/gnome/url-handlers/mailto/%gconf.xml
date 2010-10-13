@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="command" mtime="1285127511" type="string">
+		<stringvalue>mutt %s</stringvalue>
+	</entry>
+</gconf>
