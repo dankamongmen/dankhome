@@ -30,7 +30,7 @@ case "`basename $0`" in
 		OPTIONS="$OPTIONS -nosound"
 		;;
 	mpdvd)
-		OPTIONS="$OPTIONS -aspect 16:9 -fs -dvd-device /dev/dvd"
+		OPTIONS="$OPTIONS -aspect 16:9 -zoom -dvd-device /dev/dvd"
 		echo mplayer $OPTIONS dvd://$1
 		mplayer $OPTIONS dvd://$1
 		shift
