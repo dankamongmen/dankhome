@@ -3,6 +3,7 @@
 .adobe/Flash_Player/AssetCache
 .aptitude/cache
 .cache/remuco
+.compiz/session/
 .cups
 .electricsheep/*.avi
 .electricsheep/lock
