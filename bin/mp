@@ -15,20 +15,34 @@ setterm -cursor off
 
 #set | grep ^DISPLAY= > /dev/null || OPTIONS="$OPTIONS -vo fbdev"
 
+get_dimensions () {
+	# "  dimensions:    1920x1200 pixels (554x346 millimeters)"
+	if set | grep ^DISPLAY > /dev/null ; then
+		DIM="`xdpyinfo | grep dimensions | cut -d: -f2 | cut -dp -f1`"
+		XDIM=`echo $DIM | cut -dx -f1`
+		YDIM=`echo $DIM | cut -dx -f2`
+	else
+		fbset -i
+	fi
+}
+
+get_dimensions
+
 case "`basename $0`" in
 	mp)
 		;;
 	mpfs)
-		OPTIONS="$OPTIONS -fs"
+		OPTIONS="$OPTIONS -zoom -x $XDIM -y $YDIM"
 		;;
 	mpfsna)
-		OPTIONS="$OPTIONS -fs -nosound"
+		OPTIONS="$OPTIONS -zoom -x $XDIM -y $YDIM -nosound"
 		;;
 	mpna)
 		OPTIONS="$OPTIONS -nosound"
 		;;
 	mpdvd)
-		OPTIONS="$OPTIONS -aspect 16:9 -fs -dvd-device /dev/dvd"
+		OPTIONS="$OPTIONS -aspect 16:9 -zoom -x $XDIM -y $YDIM"
+	        OPTIONS="$OPTIONS -dvd-device /dev/dvd -slang en"
 		echo mplayer $OPTIONS dvd://$1
 		mplayer $OPTIONS dvd://$1
 		shift

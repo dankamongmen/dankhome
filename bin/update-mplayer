@@ -13,7 +13,7 @@ fi
 svn-clean
 svn up
 
-DEB_BUILD_OPTIONS="--enable-gui --enable-menu --disable-ossaudio" fakeroot debian/rules
-DEB_BUILD_OPTIONS="--enable-gui --enable-menu --disable-ossaudio" fakeroot debian/rules binary
+DEB_BUILD_OPTIONS="--disable-dga1 --disable-dga2 --enable-gui --enable-menu --disable-ossaudio" fakeroot debian/rules
+DEB_BUILD_OPTIONS="--disable-dga1 --disable-dga2 --enable-gui --enable-menu --disable-ossaudio" fakeroot debian/rules binary
 sudo dpkg -i ../mplayer*deb # FIXME
 rm ../mplayer*deb
