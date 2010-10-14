@@ -1,4 +1,4 @@
 <?xml version="1.0"?>
 <mailboxes>
-  <mailbox type="pop3" name="qemfd.net" username="dank" hostname="localhost" port="11110"/>
+  <mailbox type="pop3" name="qemfd.net" username="dank" authmech="+USERPASS" hostname="localhost" port="11110"/>
 </mailboxes>
