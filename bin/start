@@ -21,7 +21,7 @@ case `hostname` in
 		cd
 		;;
 	hyperbox)
-		ssh-add
+		env SSH_ASKPASS=`which ssh-askpass` ssh-add
 		# don't exit on failures here
 		if ! ssh -f -L 11110:localhost:110 recombinator -N ; then
 			echo "Couldn't set up POP SSH tunnel..."
@@ -39,7 +39,7 @@ case `hostname` in
 		rsync --progress --stats -ziau recombinator.qemfd.net:.purple . || true
 		#rsync --progress --stats -ziau files recombinator.qemfd.net:files || true
 		rsync --progress --stats -ziau recombinator.qemfd.net:files . || true
-		sudo aptitude update
+		#sudo aptitude update
 		;;
 
 	areopagod)
