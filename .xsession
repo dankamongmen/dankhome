@@ -6,4 +6,5 @@ mail-notification &
 #python -u /usr/share/screenlets/Windowlist/WindowlistScreenlet.py &
 python -u /home/dank/src/facebook-notify/facebook-notify.py &
 gnome-screensaver
+gmpc --start-hidden &
 exec avant-window-navigator
