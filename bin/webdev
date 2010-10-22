@@ -1,0 +1,3 @@
+#!/bin/sh
+
+iceweasel -P development -no-remote -jsconsole "$@"
