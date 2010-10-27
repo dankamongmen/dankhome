@@ -20,7 +20,7 @@ use-filename-title=1
 #fbdev,directfb,xvidix
 #vo=xv,gl2,x11,fbdev,caca
 #vo=xvmc,gl2,caca
-vo=xv,vdpau,gl2,fbdev2,caca
+vo=vdpau,xv,gl2,fbdev2,caca
 #dr=1
 #rtc=1
 #fstype=below
