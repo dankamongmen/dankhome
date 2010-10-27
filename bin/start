@@ -8,6 +8,11 @@ usageerr () { usage >&2 ; return 1 ; }
 
 [ $# -eq 0 ] || usageerr
 
+HOMESERV=recombinator.orthanc
+if ! host $HOMESERV ; then
+	HOMESERV=recombinator
+fi
+
 case `hostname` in
 	recombinator)
 		dbus-daemon --session --fork
@@ -24,23 +29,25 @@ case `hostname` in
 	hyperbox)
 		env SSH_ASKPASS=`which ssh-askpass` ssh-add
 		# don't exit on failures here
-		if ! ssh -f -L 11110:localhost:110 recombinator -N ; then
+		notify-send "Performing startup tasks..."
+		if ! ssh -f -L 11110:localhost:110 $HOMESERV -N ; then
 			echo "Couldn't set up POP SSH tunnel..."
 		fi
-		if ! ssh -f -L 6600:localhost:6600 recombinator -N ; then
+		if ! ssh -f -L 6600:localhost:6600 $HOMESERV -N ; then
 			echo "Couldn't set up MPD SSH tunnel..."
 		fi
-		if ! sshfs -o noatime -o reconnect recombinator:/media /media/sshfs ; then
+		if ! sshfs -o noatime -o reconnect $HOMESERV:/media /media/sshfs ; then
 			echo "Couldn't set up SSHfs..."
 		fi
-		if ! sshfs -o noatime -o reconnect recombinator:/home/dank /media/sshfshome ; then
+		if ! sshfs -o noatime -o reconnect $HOMESERV:/home/dank /media/sshfshome ; then
 			echo "Couldn't set up SSHfs..."
 		fi
-		#rsync --progress --stats -ziau .purple recombinator.qemfd.net:.purple || true
-		rsync --progress --stats -ziau recombinator.qemfd.net:.purple . || true
-		#rsync --progress --stats -ziau files recombinator.qemfd.net:files || true
-		rsync --progress --stats -ziau recombinator.qemfd.net:files . || true
+		#rsync --progress --stats -ziau .purple $HOMESERV:.purple || true
+		rsync --progress --stats -ziau $HOMESERV:.purple . || true
+		#rsync --progress --stats -ziau files $HOMESERV:files || true
+		rsync --progress --stats -ziau $HOMESERV:files . || true
 		#sudo aptitude update
+		notify-send "Done initializing hyperbox..."
 		;;
 
 	areopagod)
