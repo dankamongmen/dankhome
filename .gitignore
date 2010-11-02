@@ -10,6 +10,8 @@
 .electricsheep/*.avi
 .electricsheep/lock
 .electricsheep/play_counts
+.esd_auth
+.fetchmail.pid
 .fontconfig
 .gconfd/saved_state
 .gnuplot_history
