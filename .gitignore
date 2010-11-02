@@ -2,6 +2,7 @@
 .Xauthority
 .adobe/Flash_Player/AssetCache
 .aptitude/cache
+.bash_history
 .cache/remuco
 .compiz/session/
 .config/awn
