@@ -22,10 +22,10 @@
 	<entry name="tooltip_font_color" mtime="1285885813" type="string">
 		<stringvalue>#ffffffffffffffff</stringvalue>
 	</entry>
-	<entry name="dialog_title_bg" mtime="1288169203" type="string">
+	<entry name="dialog_title_bg" mtime="1288579356" type="string">
 		<stringvalue>#e9a1f1eefbbcff00</stringvalue>
 	</entry>
-	<entry name="dialog_bg" mtime="1288169203" type="string">
+	<entry name="dialog_bg" mtime="1288579356" type="string">
 		<stringvalue>#e1e1ececf9f9ff00</stringvalue>
 	</entry>
 	<entry name="show_sep" mtime="1281624137" type="bool" value="true"/>

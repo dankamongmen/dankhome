@@ -4,6 +4,7 @@
 .aptitude/cache
 .cache/remuco
 .compiz/session/
+.config/awn
 .cups
 .electricsheep/*.avi
 .electricsheep/lock
