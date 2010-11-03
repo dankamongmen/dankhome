@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <gconf>
-	<entry name="curves_symmetry" mtime="1285886204" type="float" value="0.95999997854232788"/>
+	<entry name="curves_symmetry" mtime="1288668160" type="float" value="0.9100000262260437"/>
 	<entry name="curviness" mtime="1285886192" type="float" value="5"/>
 	<entry name="corner_radius" mtime="1285886281" type="float" value="26"/>
 	<entry name="dialog_gtk_mode" mtime="1281624073" type="bool" value="true"/>
@@ -8,8 +8,8 @@
 	<entry name="current_theme" mtime="1285885813" type="string">
 		<stringvalue>/home/dank/.config/awn/themes/SubtleGlass.awn-theme</stringvalue>
 	</entry>
-	<entry name="icon_font_mode" mtime="1285886332" type="int" value="1"/>
-	<entry name="tooltip_font_name" mtime="1285886236" type="string">
+	<entry name="icon_font_mode" mtime="1288668425" type="int" value="0"/>
+	<entry name="tooltip_font_name" mtime="1288668540" type="string">
 		<stringvalue>DejaVu Sans Bold Oblique Semi-Condensed 12</stringvalue>
 	</entry>
 	<entry name="gtk_theme_mode" mtime="1285885813" type="bool" value="false"/>
@@ -22,14 +22,14 @@
 	<entry name="tooltip_font_color" mtime="1285885813" type="string">
 		<stringvalue>#ffffffffffffffff</stringvalue>
 	</entry>
-	<entry name="dialog_title_bg" mtime="1288579356" type="string">
+	<entry name="dialog_title_bg" mtime="1288760685" type="string">
 		<stringvalue>#e9a1f1eefbbcff00</stringvalue>
 	</entry>
-	<entry name="dialog_bg" mtime="1288579356" type="string">
+	<entry name="dialog_bg" mtime="1288760685" type="string">
 		<stringvalue>#e1e1ececf9f9ff00</stringvalue>
 	</entry>
 	<entry name="show_sep" mtime="1281624137" type="bool" value="true"/>
-	<entry name="draw_pattern" mtime="1281624144" type="bool" value="false"/>
+	<entry name="draw_pattern" mtime="1288668578" type="bool" value="false"/>
 	<entry name="icon_text_outline_color" mtime="1285885929" type="string">
 		<stringvalue>#000000000000ff00</stringvalue>
 	</entry>
