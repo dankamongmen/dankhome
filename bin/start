@@ -29,25 +29,28 @@ case `hostname` in
 	hyperbox)
 		env SSH_ASKPASS=`which ssh-askpass` ssh-add
 		# don't exit on failures here
-		notify-send "Performing startup tasks..."
+		notify-send -i /usr/share/app-install/icons/ssh-askpass-gnome.png "Setting up SSH tunnels..."
 		if ! ssh -f -L 11110:localhost:110 $HOMESERV -N ; then
 			echo "Couldn't set up POP SSH tunnel..."
 		fi
 		if ! ssh -f -L 6600:localhost:6600 $HOMESERV -N ; then
 			echo "Couldn't set up MPD SSH tunnel..."
 		fi
+		notify-send -i /usr/share/icons/gnome-alternative/scalable/places/gnome-fs-ssh.svg "Setting up SSHfs..."
 		if ! sshfs -o noatime -o reconnect $HOMESERV:/media /media/sshfs ; then
 			echo "Couldn't set up SSHfs..."
 		fi
 		if ! sshfs -o noatime -o reconnect $HOMESERV:/home/dank /media/sshfshome ; then
 			echo "Couldn't set up SSHfs..."
 		fi
+		notify-send -i /usr/share/app-install/icons/pidgin.png "Syncing pidgin..."
 		#rsync --progress --stats -ziau .purple $HOMESERV:.purple || true
 		rsync --progress --stats -ziau $HOMESERV:.purple . || true
 		#rsync --progress --stats -ziau files $HOMESERV:files || true
 		rsync --progress --stats -ziau $HOMESERV:files . || true
 		#sudo aptitude update
 		notify-send "Done initializing hyperbox..."
+		pidgin &
 		;;
 
 	areopagod)
