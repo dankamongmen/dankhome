@@ -21,8 +21,8 @@ set reverse_name=yes
 
 alternates	^dank@qemfd\\.net$	^nickblack@qemfd\\.net$
 
-# Switch to securecomputing address in From when sending there
-send-hook '~C \.qemfd\.net$' 'set from="nick black <nickblack@qemfd.net>"'
+# Switch to thousandeyes address in From when sending there
+send-hook '~C \.thousandeyes\.com$' 'set from="nick black <dank@thousandeyes.com>"'
 
 macro generic <f3> ":unset use_from<return>:set from="dank@thousandeyes.com"<return>:set 'mail source set to dank@thousandeyes.com'<return>" \
 	"send mail from dank@thousandeyes.com"
@@ -124,8 +124,6 @@ subscribe debian-devel-announce@lists.debian.org
 subscribe debian-security-announce@lists.debian.org
 subscribe PHISH-NEWS@LISTS.NETSPACE.ORG
 subscribe splinterfaction@googlegroups.com
-subscribe technical@accelereyes.com
-subscribe jacket_dev@accelereyes.com
 set followup_to
 set honor_followup_to=yes
 
@@ -243,7 +241,6 @@ alias johannbaudy Johann Baudy <johann.baudy@gnu-log.net>
 alias splinterfaction splinterfags <splinterfaction@googlegroups.com>
 alias slush mighty slushy <slush@cc.gatech.edu>
 alias c2h6o you can\'t spell computing without ethanol <c2h6o@cc.gatech.edu>
-alias gre gre crew <getrealerect@googlegroups.com>
 
 # GT
 alias wenke Wenke Lee <wenke@cc.gatech.edu>
@@ -319,3 +316,4 @@ alias brooke Brooke Hatfield <brookehatfield@gmail.com>
 alias ricardo Ricardo Oliveira <ricardo@thousandeyes.com>
 alias mohit Mohit Lad <mohit@thousandeyes.com>
 alias sarah Sarah Lovell <sarahlov1218@gmail.com>
+alias jbenson James Benson <jbenson7@aol.com>
