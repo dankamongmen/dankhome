@@ -10,7 +10,7 @@
 	<entry name="active_background_icon" mtime="1281624144" type="string">
 		<stringvalue></stringvalue>
 	</entry>
-	<entry name="icon_effect" mtime="1288168859" type="int" value="279620"/>
+	<entry name="icon_effect" mtime="1291536133" type="int" value="209715"/>
 	<entry name="active_rect_outline" mtime="1281624144" type="string">
 		<stringvalue>#0000000000000000</stringvalue>
 	</entry>

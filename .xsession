@@ -1,13 +1,17 @@
 gnome-settings-daemon
-compiz --sm-client-id $DESKTOP_AUTOSTART &
+/home/dank/bin/start &
+exec /usr/bin/compiz --sm-disable
+# --sm-client-id $GDMSESSION
+
 #/usr/lib/gnome-disk-utility/gdu-notification-daemon &
 #/usr/lib/gnome-volume-manager/gnome-volume-manager
 #python -u /usr/share/screenlets/Windowlist/WindowlistScreenlet.py &
 #python -u /home/dank/src/facebook-notify/facebook-notify.py &
 #screenlets-daemon &
-gnome-screensaver
-/home/dank/bin/start &
-gmpc --start-hidden &
-mail-notification &
-wpa-gui -t &
-exec avant-window-navigator
+
+# these are now done in bin/start
+#wpa_gui -i wlan0 -t &
+#gnome-screensaver
+#gmpc --start-hidden &
+#mail-notification &
+#avant-window-navigator -startup
