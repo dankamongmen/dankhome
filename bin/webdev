@@ -5,7 +5,8 @@ export NSPR_LOG_FILE=/home/dank/mozlog
 rm -rfv ~/.mozilla/firefox/m3sjj1yd.development/compreg.dat ~/.mozilla/firefox/m3sjj1yd.development/xpti.dat 
 rm -rfv ~/.mozilla/firefox/m3sjj1yd.development/extensions/dnstoolbar@thousandeyes.com
 #~/firefox/firefox -P development -no-remote -jsconsole "$@"
-~/local/iceweasel-3.5.15/obj-x86_64-unknown-linux-gnu/dist/bin/iceweasel -P development -jsconsole -no-remote "$@"
+iceweasel -no-remote -jsconsole "$@"
 
 rm -rfv ~/.mozilla/firefox/m3sjj1yd.development/compreg.dat ~/.mozilla/firefox/m3sjj1yd.development/xpti.dat 
-~/local/iceweasel-3.5.15/obj-x86_64-unknown-linux-gnu/dist/bin/iceweasel -P development -jsconsole -no-remote "$@"
+#~/local/iceweasel-3.5.15/obj-x86_64-unknown-linux-gnu/dist/bin/iceweasel -P development -jsconsole -no-remote "$@"
+iceweasel -no-remote -jsconsole "$@"
