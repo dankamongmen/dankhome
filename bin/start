@@ -18,7 +18,7 @@ PATH=$PATH:/usr/sbin:/sbin
 case `hostname` in
 	recombinator)
 		dbus-daemon --session --fork
-		daemonizer -p $TMPDIR/daemonizer.pop.pid -r 0 -- ssh -N -L 11110:localhost:110 qemfd.net &
+		#daemonizer -p $TMPDIR/daemonizer.pop.pid -r 0 -- ssh -N -L 11110:localhost:110 qemfd.net &
 		daemonizer -p $TMPDIR/daemonizer.smtp.pid -r 0 -- ssh -N -L 11111:localhost:25 qemfd.net &
 		! which fetchmail 2> /dev/null || fetchmail
 		commitpidgin
@@ -34,19 +34,19 @@ case `hostname` in
 		# don't exit on failures here
 		wpa_gui -i wlan0 -t &
 		notify-send -i /usr/share/app-install/icons/ssh-askpass-gnome.png "Setting up SSH tunnels..."
-		if ! ssh -f -L 11110:localhost:110 $HOMESERV -N ; then
-			notify-send -i /usr/share/app-install/icons/ssh-askpass-gnome "Couldn't set up POP SSH tunnel..."
-		fi
+		#if ! ssh -f -L 11110:localhost:110 $HOMESERV -N ; then
+		#	notify-send -i /usr/share/app-install/icons/ssh-askpass-gnome "Couldn't set up POP SSH tunnel..."
+		#fi
 		if ! ssh -f -L 6600:localhost:6600 $HOMESERV -N ; then
 			notify-send -i /usr/share/app-install/icons/ssh-askpass-gnome "Couldn't set up MPD SSH tunnel..."
 		else
 			gmpc --start-hidden &
 		fi
 		notify-send -i /usr/share/icons/gnome-alternative/scalable/places/gnome-fs-ssh.svg "Setting up SSHfs..."
-		if ! sshfs -o noatime -o reconnect $HOMESERV:/media /media/sshfs ; then
+		if ! sshfs -o noatime -o reconnect $HOMESERV:/media /media/sshfs -oCiphers=arcfour ; then
 			echo "Couldn't set up SSHfs..."
 		fi
-		if ! sshfs -o noatime -o reconnect $HOMESERV:/home/dank /media/sshfshome ; then
+		if ! sshfs -o noatime -o reconnect $HOMESERV:/home/dank /media/sshfshome -oCiphers=arcfour ; then
 			echo "Couldn't set up SSHfs..."
 		fi
 		notify-send -i /usr/share/app-install/icons/pidgin.png "Syncing pidgin..."
