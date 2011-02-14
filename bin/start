@@ -21,7 +21,7 @@ case `hostname` in
 		#daemonizer -p $TMPDIR/daemonizer.pop.pid -r 0 -- ssh -N -L 11110:localhost:110 qemfd.net &
 		daemonizer -p $TMPDIR/daemonizer.smtp.pid -r 0 -- ssh -N -L 11111:localhost:25 qemfd.net &
 		! which fetchmail 2> /dev/null || fetchmail
-		commitpidgin
+		#commitpidgin
 		if ! sudo aptitude -s -V -v -Z update ; then
 			echo "aptitude returned $?" >&2
 		fi
