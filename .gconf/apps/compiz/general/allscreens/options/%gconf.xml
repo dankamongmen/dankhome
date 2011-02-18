@@ -118,8 +118,8 @@
 			<stringvalue>scaleaddon</stringvalue>
 		</li>
 	</entry>
-	<entry name="cursor_theme" mtime="1291416749" type="string">
-		<stringvalue>DMZ-Black</stringvalue>
+	<entry name="cursor_theme" mtime="1297544114" type="string">
+		<stringvalue>default</stringvalue>
 	</entry>
-	<entry name="cursor_size" mtime="1291416749" type="int" value="24"/>
+	<entry name="cursor_size" mtime="1297544114" type="int" value="18"/>
 </gconf>
