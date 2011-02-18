@@ -36,4 +36,7 @@ if [ -r $HOME/.secret/.gnupg/secring.gpg -a -x "$AGENT" ] ; then
 fi
 unset AGENT
 
+# Turn off beeps in virtual console without disabling speaker entirely
+setterm -blength 0
+
 [ -r .bashrc ] && . .bashrc
