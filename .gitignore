@@ -32,6 +32,8 @@
 .ssh/id_rsa
 .ssh/id_rsa.pub
 .ssh/known_hosts.old
+.subversion/README.txt
+.subversion/servers
 .thumbnails
 .viminfo
 .w3m/cookie
