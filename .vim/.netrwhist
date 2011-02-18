@@ -1,11 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/home/dank/src/thousandeyes/gecko-plugin/trunk/xpi'
-let g:netrw_dirhist_2='/home/dank/.mozilla/firefox/m3sjj1yd.development/extensions'
-let g:netrw_dirhist_3='/home/dank/src/thousandeyes/gecko-plugin/trunk/xpi'
-let g:netrw_dirhist_4='/home/dank/.mozilla/firefox/m3sjj1yd.development/extensions'
-let g:netrw_dirhist_5='/home/dank/.mozilla/firefox/m3sjj1yd.development/extensions/{73a6fe31-595d-460b-a920-fcc0f8843232}'
-let g:netrw_dirhist_6='/home/dank/src/thousandeyes/gecko-plugin/trunk/xpi/locale/en-US'
-let g:netrw_dirhist_7='/home/dank/src/thousandeyes/gecko-plugin/trunk/xpi/chrome/content'
-let g:netrw_dirhist_8='/home/dank/e'
-let g:netrw_dirhist_9='/home/dank/.mozilla/firefox/5m46ip31.default/extensions/firebug@software.joehewitt.com'
+let g:netrw_dirhist_cnt =0
