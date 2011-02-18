@@ -1,6 +1,12 @@
 # this should only be alias where alias is set up in ~/.ssh/config
 
-[ -z "$DISPLAY" ] || export SSH_ASKPASS=ssh-askpass-fullscreen
+if [ -n "$DISPLAY" ] ; then
+	if [ -x `ssh-askpass-gnome` ] ; then
+		export SSH_ASKPASS=ssh-askpass-gnome
+	elif [ -x `ssh-askpass-fullscreen` ] ; then
+		export SSH_ASKPASS=ssh-askpass-fullscreen
+	fi
+fi
 
 if [[ ! -z `which ssh` && -f `which ssh` ]]; then
 
