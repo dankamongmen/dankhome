@@ -30,13 +30,14 @@ case `hostname` in
 		;;
 	eschatomatic)
 		avant-window-navigator -startup &
-		nautilus --no-default-window &
+		# Don't 
+		nautilus --no-default-window
+		ssh-add -l || ssh-add
 		wpa_gui -i wlan0 -t &
-		ssh-add -l || env SSH_ASKPASS=`which ssh-askpass` ssh-add
 		;;
 	hyperbox)
 		avant-window-navigator -startup &
-		ssh-add -l || env SSH_ASKPASS=`which ssh-askpass` ssh-add
+		ssh-add -l || ssh-add
 		wpa_gui -i wlan0 -t &
 		notify-send -i /usr/share/app-install/icons/ssh-askpass-gnome.png "Setting up SSH tunnels..."
 		# don't exit on failures here
