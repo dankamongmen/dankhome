@@ -1,0 +1,3 @@
+if [ -r $HOME/local/p4/bin ] ; then
+	export PATH=$HOME/local/p4/bin:$PATH
+fi
