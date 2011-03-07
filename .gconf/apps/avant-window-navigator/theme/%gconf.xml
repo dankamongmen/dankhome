@@ -1,60 +1,60 @@
 <?xml version="1.0"?>
 <gconf>
-	<entry name="curves_symmetry" mtime="1293165701" type="float" value="0.5"/>
-	<entry name="curviness" mtime="1293165701" type="float" value="10"/>
-	<entry name="corner_radius" mtime="1293165701" type="float" value="10"/>
-	<entry name="dialog_gtk_mode" mtime="1293165701" type="bool" value="true"/>
-	<entry name="panel_angle" mtime="1293165701" type="float" value="45"/>
-	<entry name="current_theme" mtime="1293165704" type="string">
-		<stringvalue>/usr/share/avant-window-navigator/themes/dust.awn-theme</stringvalue>
+	<entry name="curves_symmetry" mtime="1298679374" type="float" value="0.5"/>
+	<entry name="curviness" mtime="1298681442" type="float" value="10"/>
+	<entry name="corner_radius" mtime="1298681431" type="float" value="10"/>
+	<entry name="dialog_gtk_mode" mtime="1298679374" type="bool" value="true"/>
+	<entry name="panel_angle" mtime="1298681451" type="float" value="45"/>
+	<entry name="current_theme" mtime="1298679374" type="string">
+		<stringvalue>/usr/share/avant-window-navigator/themes/dark.awn-theme</stringvalue>
 	</entry>
-	<entry name="icon_font_mode" mtime="1293165704" type="int" value="1"/>
-	<entry name="tooltip_font_name" mtime="1293167658" type="string">
-		<stringvalue>Sans 13</stringvalue>
+	<entry name="icon_font_mode" mtime="1298679846" type="int" value="0"/>
+	<entry name="tooltip_font_name" mtime="1298679432" type="string">
+		<stringvalue>Sans Italic 9</stringvalue>
 	</entry>
-	<entry name="gtk_theme_mode" mtime="1293165704" type="bool" value="false"/>
-	<entry name="tooltip_outline_color" mtime="1293165704" type="string">
+	<entry name="gtk_theme_mode" mtime="1298679374" type="bool" value="false"/>
+	<entry name="tooltip_outline_color" mtime="1298679374" type="string">
 		<stringvalue>#000000000000a8a8</stringvalue>
 	</entry>
-	<entry name="tooltip_bg_color" mtime="1293165704" type="string">
+	<entry name="tooltip_bg_color" mtime="1298679373" type="string">
 		<stringvalue>#000000000000b3b3</stringvalue>
 	</entry>
-	<entry name="tooltip_font_color" mtime="1293165704" type="string">
-		<stringvalue>#ffffffffffffffff</stringvalue>
+	<entry name="tooltip_font_color" mtime="1298679422" type="string">
+		<stringvalue>#3c3eeb66479effff</stringvalue>
 	</entry>
-	<entry name="dialog_title_bg" mtime="1297544146" type="string">
-		<stringvalue>#f26ef1a9f0e4ff00</stringvalue>
+	<entry name="dialog_title_bg" mtime="1299478997" type="string">
+		<stringvalue>#d80fdbc3d45bff00</stringvalue>
 	</entry>
-	<entry name="dialog_bg" mtime="1297544146" type="string">
-		<stringvalue>#ededececebebff00</stringvalue>
+	<entry name="dialog_bg" mtime="1299478997" type="string">
+		<stringvalue>#d3d3d7d7cfcfff00</stringvalue>
 	</entry>
-	<entry name="show_sep" mtime="1281624137" type="bool" value="true"/>
-	<entry name="draw_pattern" mtime="1293165704" type="bool" value="false"/>
-	<entry name="icon_text_outline_color" mtime="1293165704" type="string">
-		<stringvalue>#000000000000ffff</stringvalue>
+	<entry name="show_sep" mtime="1298679366" type="bool" value="true"/>
+	<entry name="draw_pattern" mtime="1298679374" type="bool" value="false"/>
+	<entry name="icon_text_outline_color" mtime="1298679366" type="string">
+		<stringvalue>#d3d3d7d7cfcfff00</stringvalue>
 	</entry>
-	<entry name="icon_text_color" mtime="1293165704" type="string">
-		<stringvalue>#ffffffffffffffff</stringvalue>
+	<entry name="icon_text_color" mtime="1298679843" type="string">
+		<stringvalue>#defff484dfb1ff00</stringvalue>
 	</entry>
-	<entry name="sep_color" mtime="1293165704" type="string">
-		<stringvalue>#ffffffffffff7f7f</stringvalue>
+	<entry name="sep_color" mtime="1298679374" type="string">
+		<stringvalue>#aaaaaaaaaaaaa400</stringvalue>
 	</entry>
-	<entry name="hilight" mtime="1293165704" type="string">
-		<stringvalue>#8d8d84848181ffff</stringvalue>
+	<entry name="hilight" mtime="1298681415" type="string">
+		<stringvalue>#ffffffffffff1111</stringvalue>
 	</entry>
-	<entry name="border" mtime="1293165704" type="string">
-		<stringvalue>#424240403c3cffff</stringvalue>
+	<entry name="border" mtime="1298679374" type="string">
+		<stringvalue>#000000000000cccc</stringvalue>
 	</entry>
-	<entry name="ghistep2" mtime="1293165704" type="string">
-		<stringvalue>#2626262624240000</stringvalue>
+	<entry name="ghistep2" mtime="1298679374" type="string">
+		<stringvalue>#0101010101010a0a</stringvalue>
 	</entry>
-	<entry name="ghistep1" mtime="1293165704" type="string">
-		<stringvalue>#4c4c41413c3cffff</stringvalue>
+	<entry name="ghistep1" mtime="1298681259" type="string">
+		<stringvalue>#0101010101018ebe</stringvalue>
 	</entry>
-	<entry name="gstep2" mtime="1293165704" type="string">
-		<stringvalue>#1e1e1c1c1a1affff</stringvalue>
+	<entry name="gstep2" mtime="1298679374" type="string">
+		<stringvalue>#010101010101bebe</stringvalue>
 	</entry>
-	<entry name="gstep1" mtime="1293165704" type="string">
-		<stringvalue>#424240403c3cffff</stringvalue>
+	<entry name="gstep1" mtime="1298681266" type="string">
+		<stringvalue>#010101010101c8c8</stringvalue>
 	</entry>
 </gconf>

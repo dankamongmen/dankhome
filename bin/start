@@ -28,6 +28,12 @@ case `hostname` in
 		#cd tmp/torrenting && screen nice rtorrent
 		cd
 		;;
+
+	kingfriday)
+		avant-window-navigator -startup &
+		ssh-add -l || env SSH_ASKPASS=`which ssh-askpass` ssh-add
+		;;	
+
 	eschatomatic)
 		avant-window-navigator -startup &
 		# Don't 
@@ -35,6 +41,7 @@ case `hostname` in
 		ssh-add -l || ssh-add
 		wpa_gui -i wlan0 -t &
 		;;
+
 	hyperbox)
 		avant-window-navigator -startup &
 		ssh-add -l || ssh-add

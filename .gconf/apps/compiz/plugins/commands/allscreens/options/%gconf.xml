@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="run_command4_key" mtime="1299331082" type="string">
+		<stringvalue>Disabled</stringvalue>
+	</entry>
+	<entry name="run_command3_key" mtime="1299331082" type="string">
+		<stringvalue>Disabled</stringvalue>
+	</entry>
+	<entry name="run_command2_key" mtime="1299331082" type="string">
+		<stringvalue>Disabled</stringvalue>
+	</entry>
+	<entry name="run_command1_key" mtime="1299331082" type="string">
+		<stringvalue>Disabled</stringvalue>
+	</entry>
+	<entry name="run_command0_key" mtime="1299331082" type="string">
+		<stringvalue>Disabled</stringvalue>
+	</entry>
+	<entry name="command5" mtime="1299331077" type="string">
+		<stringvalue>/usr/bin/gnome-screensaver-command --lock</stringvalue>
+	</entry>
+	<entry name="command4" mtime="1299331077" type="string">
+		<stringvalue>/home/dank/bin/glogout</stringvalue>
+	</entry>
+	<entry name="command3" mtime="1299331077" type="string">
+		<stringvalue>/usr/bin/pidgin</stringvalue>
+	</entry>
+	<entry name="command2" mtime="1299331077" type="string">
+		<stringvalue>/usr/bin/ccsm</stringvalue>
+	</entry>
+	<entry name="command1" mtime="1299331077" type="string">
+		<stringvalue>/usr/bin/x-www-browser</stringvalue>
+	</entry>
+	<entry name="command0" mtime="1299331077" type="string">
+		<stringvalue>/usr/bin/x-terminal-emulator</stringvalue>
+	</entry>
+</gconf>

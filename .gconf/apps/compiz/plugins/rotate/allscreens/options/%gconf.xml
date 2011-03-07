@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="raise_on_rotate" mtime="1299331080" type="bool" value="true"/>
+	<entry name="initiate_button" mtime="1299331080" type="string">
+		<stringvalue>Button0</stringvalue>
+	</entry>
+</gconf>

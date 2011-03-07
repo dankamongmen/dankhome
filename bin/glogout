@@ -10,5 +10,5 @@ if [ -x "$GSS" ] ; then
 #	exit 1
 #else
 fi
-	sudo kill `pidof X`
+	sudo kill `pidof Xorg`
 #fi
