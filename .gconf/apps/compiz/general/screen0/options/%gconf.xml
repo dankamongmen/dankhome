@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="texture_compression" mtime="1299331082" type="bool" value="true"/>
+	<entry name="focus_prevention_match" mtime="1299331082" type="string">
+		<stringvalue>!(class=Polkit-gnome-authentication-agent-1 | class=X-www-browser)</stringvalue>
+	</entry>
+	<entry name="overlapping_outputs" mtime="1299331082" type="int" value="1"/>
+	<entry name="sync_to_vblank" mtime="1299331082" type="bool" value="true"/>
+	<entry name="unredirect_fullscreen_windows" mtime="1299331082" type="bool" value="true"/>
+	<entry name="hsize" mtime="1299331082" type="int" value="4"/>
+</gconf>

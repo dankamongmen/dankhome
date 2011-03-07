@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="initiate_key" mtime="1299331076" type="string">
+		<stringvalue>Disabled</stringvalue>
+	</entry>
+</gconf>
