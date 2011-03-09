@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="min_saturation" mtime="1299331080" type="int" value="100"/>
+	<entry name="max_saturation" mtime="1299331080" type="int" value="100"/>
+	<entry name="min_brightness" mtime="1299331080" type="int" value="40"/>
+	<entry name="max_brightness" mtime="1299331080" type="int" value="100"/>
+	<entry name="min_opacity" mtime="1299331080" type="int" value="30"/>
+	<entry name="max_opacity" mtime="1299331080" type="int" value="80"/>
+	<entry name="windows_start" mtime="1299331080" type="int" value="1"/>
+	<entry name="windows_count" mtime="1299331080" type="int" value="10"/>
+	<entry name="window_match" mtime="1299331080" type="string">
+		<stringvalue>((type=toolbar | type=utility | type=dialog | type=normal) &amp; !(state=skiptaskbar | state=skippager)) | (type = notification)</stringvalue>
+	</entry>
+</gconf>

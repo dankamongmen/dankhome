@@ -10,6 +10,4 @@ if [ -x "$GSS" ] ; then
 	"$GSS" --logout-dialog --gui
 #else
 fi
-#	sudo kill `pidof X`
-#fi
 sudo kill `pidof Xorg` || sudo kill `pidof X` || { "$NSEND" "Shutdown failed" ; exit 1 ; }
