@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="transparent_manual_only" mtime="1299331080" type="bool" value="false"/>
+	<entry name="skydome_animated" mtime="1299331080" type="bool" value="true"/>
+	<entry name="skydome_image" mtime="1299331080" type="string">
+		<stringvalue>/home/dank/files/images/wallpaper/skydome0.jpg</stringvalue>
+	</entry>
+	<entry name="images" mtime="1299331080" type="list" ltype="string">
+	</entry>
+</gconf>

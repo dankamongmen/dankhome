@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="out_opacity" mtime="1299331080" type="float" value="100"/>
+	<entry name="out_brightness" mtime="1299331080" type="float" value="100"/>
+	<entry name="out_saturation" mtime="1299331080" type="float" value="0"/>
+	<entry name="out_time" mtime="1299331080" type="float" value="1"/>
+	<entry name="out_match" mtime="1299331080" type="string">
+		<stringvalue>(iclass=ksmserver &amp; (role=logoutdialog | role=logouteffect)) | (class=Libssui-tool &amp; type=Dialog)</stringvalue>
+	</entry>
+	<entry name="in_opacity" mtime="1299331080" type="float" value="100"/>
+	<entry name="in_brightness" mtime="1299331080" type="float" value="100"/>
+	<entry name="in_saturation" mtime="1299331080" type="float" value="0"/>
+	<entry name="in_time" mtime="1299331080" type="float" value="1"/>
+	<entry name="in_match" mtime="1299331080" type="string">
+		<stringvalue>(iclass=^ksplash)</stringvalue>
+	</entry>
+</gconf>

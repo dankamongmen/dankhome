@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="zoom_button" mtime="1299331080" type="string">
+		<stringvalue>Button3</stringvalue>
+	</entry>
+	<entry name="zoom_key" mtime="1299331080" type="string">
+		<stringvalue>Disabled</stringvalue>
+	</entry>
+	<entry name="pull_button" mtime="1299331080" type="string">
+		<stringvalue>Button0</stringvalue>
+	</entry>
+	<entry name="pull_key" mtime="1299331080" type="string">
+		<stringvalue>Disabled</stringvalue>
+	</entry>
+	<entry name="close_button" mtime="1299331080" type="string">
+		<stringvalue>Button2</stringvalue>
+	</entry>
+	<entry name="close_key" mtime="1299331080" type="string">
+		<stringvalue>Disabled</stringvalue>
+	</entry>
+</gconf>
