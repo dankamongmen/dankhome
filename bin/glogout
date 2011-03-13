@@ -3,12 +3,11 @@
 set -e
 
 GSS="`which gnome-session-save`" || echo "No gnome-session utilitites..."
+NSEND="`which notify-send`" || NSEND="echo"
 
 if [ -x "$GSS" ] ; then
 	#"$GSS" --kill --silent
 	"$GSS" --logout-dialog --gui
-#	exit 1
 #else
 fi
-	sudo kill `pidof Xorg`
-#fi
+sudo kill `pidof Xorg` || sudo kill `pidof X` || { "$NSEND" "Shutdown failed" ; exit 1 ; }

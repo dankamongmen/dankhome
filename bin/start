@@ -31,7 +31,12 @@ case `hostname` in
 
 	kingfriday)
 		avant-window-navigator -startup &
-		ssh-add -l || env SSH_ASKPASS=`which ssh-askpass` ssh-add
+		nautilus --no-default-window
+		ssh-add -l || ssh-add
+		gnome-screensaver
+		notify-send "Done initializing kingfriday..."
+		# experimental -- otherwise start hangs around :/
+		exit
 		;;	
 
 	eschatomatic)
