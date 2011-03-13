@@ -4,8 +4,8 @@
 nvidia-settings --load-config-only
 gnome-settings-daemon
 # we want to run the compiz process
-/usr/bin/compiz --replace --sm-client-id $GDMSESSION &
-exec $HOME/bin/start
+$HOME/bin/start
+exec /usr/bin/compiz --replace --sm-client-id $GDMSESSION
 
 #/usr/lib/gnome-disk-utility/gdu-notification-daemon &
 #/usr/lib/gnome-volume-manager/gnome-volume-manager

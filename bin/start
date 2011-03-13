@@ -45,7 +45,7 @@ case `hostname` in
 		gnome-power-manager &
 		ssh-add -l || ssh-add
 		wpa_gui -i wlan0 -t &
-		exec nautilus --no-default-window --no-desktop
+		nautilus --no-default-window --no-desktop
 		;;
 
 	hyperbox)
