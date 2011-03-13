@@ -1,7 +1,11 @@
+# X startup common across all machines. Put machine-specific stuff into
+# $HOME/bin/start/, where we demux based on hostname.
+
+nvidia-settings --load-config-only
 gnome-settings-daemon
-/home/dank/bin/start &
-exec /usr/bin/compiz --sm-disable
-# --sm-client-id $GDMSESSION
+# we want to run the compiz process
+/usr/bin/compiz --replace --sm-client-id $GDMSESSION &
+exec $HOME/bin/start
 
 #/usr/lib/gnome-disk-utility/gdu-notification-daemon &
 #/usr/lib/gnome-volume-manager/gnome-volume-manager
