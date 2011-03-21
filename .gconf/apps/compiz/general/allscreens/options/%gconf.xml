@@ -1,5 +1,9 @@
 <?xml version="1.0"?>
 <gconf>
+	<entry name="toggle_window_shaded_key" mtime="1299331082" type="string">
+		<stringvalue>Disabled</stringvalue>
+	</entry>
+	<entry name="hide_skip_taskbar_windows" mtime="1299331082" type="bool" value="false"/>
 	<entry name="toggle_window_maximized_vertically_key" mtime="1285769370" type="string">
 		<stringvalue>&lt;Control&gt;Up</stringvalue>
 	</entry>
@@ -20,7 +24,7 @@
 	</entry>
 	<entry name="texture_filter" mtime="1285769370" type="int" value="2"/>
 	<entry name="abi" mtime="1285769368" type="int" value="20090619"/>
-	<entry name="active_plugins" mtime="1285769370" type="list" ltype="string">
+	<entry name="active_plugins" mtime="1299345703" type="list" ltype="string">
 		<li type="string">
 			<stringvalue>core</stringvalue>
 		</li>
@@ -40,6 +44,12 @@
 			<stringvalue>decoration</stringvalue>
 		</li>
 		<li type="string">
+			<stringvalue>gconf</stringvalue>
+		</li>
+		<li type="string">
+			<stringvalue>splash</stringvalue>
+		</li>
+		<li type="string">
 			<stringvalue>dbus</stringvalue>
 		</li>
 		<li type="string">
@@ -47,6 +57,9 @@
 		</li>
 		<li type="string">
 			<stringvalue>inotify</stringvalue>
+		</li>
+		<li type="string">
+			<stringvalue>workarounds</stringvalue>
 		</li>
 		<li type="string">
 			<stringvalue>glib</stringvalue>
@@ -61,6 +74,9 @@
 			<stringvalue>gnomecompat</stringvalue>
 		</li>
 		<li type="string">
+			<stringvalue>fakeargb</stringvalue>
+		</li>
+		<li type="string">
 			<stringvalue>regex</stringvalue>
 		</li>
 		<li type="string">
@@ -73,6 +89,9 @@
 			<stringvalue>png</stringvalue>
 		</li>
 		<li type="string">
+			<stringvalue>bicubic</stringvalue>
+		</li>
+		<li type="string">
 			<stringvalue>imgjpeg</stringvalue>
 		</li>
 		<li type="string">
@@ -80,6 +99,9 @@
 		</li>
 		<li type="string">
 			<stringvalue>svg</stringvalue>
+		</li>
+		<li type="string">
+			<stringvalue>minimize</stringvalue>
 		</li>
 		<li type="string">
 			<stringvalue>wallpaper</stringvalue>
@@ -118,8 +140,8 @@
 			<stringvalue>scaleaddon</stringvalue>
 		</li>
 	</entry>
-	<entry name="cursor_theme" mtime="1297544114" type="string">
-		<stringvalue>default</stringvalue>
+	<entry name="cursor_theme" mtime="1299992060" type="string">
+		<stringvalue>DMZ-Black</stringvalue>
 	</entry>
-	<entry name="cursor_size" mtime="1297544114" type="int" value="18"/>
+	<entry name="cursor_size" mtime="1299992060" type="int" value="24"/>
 </gconf>
