@@ -28,12 +28,32 @@ case `hostname` in
 		#cd tmp/torrenting && screen nice rtorrent
 		cd
 		;;
+
+	kingfriday)
+		avant-window-navigator -startup &
+		nautilus --no-default-window
+		ssh-add -l || ssh-add
+		gnome-screensaver
+		notify-send "Done initializing kingfriday..."
+		# experimental -- otherwise start hangs around :/
+		exit
+		;;	
+
+	eschatomatic)
+		avant-window-navigator -startup &
+		gnome-screensaver
+		gnome-power-manager &
+		ssh-add -l || ssh-add
+		#wpa_gui -i wlan0 -t &
+		exec nautilus --no-default-window --no-desktop
+		;;
+
 	hyperbox)
 		avant-window-navigator -startup &
-		ssh-add -l || env SSH_ASKPASS=`which ssh-askpass` ssh-add
-		# don't exit on failures here
-		wpa_gui -i wlan0 -t &
+		ssh-add -l || ssh-add
+		#wpa_gui -i wlan0 -t &
 		notify-send -i /usr/share/app-install/icons/ssh-askpass-gnome.png "Setting up SSH tunnels..."
+		# don't exit on failures here
 		#if ! ssh -f -L 11110:localhost:110 $HOMESERV -N ; then
 		#	notify-send -i /usr/share/app-install/icons/ssh-askpass-gnome "Couldn't set up POP SSH tunnel..."
 		#fi
