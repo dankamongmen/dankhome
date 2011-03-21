@@ -22,11 +22,11 @@
 	<entry name="tooltip_font_color" mtime="1298679422" type="string">
 		<stringvalue>#3c3eeb66479effff</stringvalue>
 	</entry>
-	<entry name="dialog_title_bg" mtime="1299679506" type="string">
-		<stringvalue>#f26ef1a9f0e4ff00</stringvalue>
+	<entry name="dialog_title_bg" mtime="1300007701" type="string">
+		<stringvalue>#f1a6ee61e97aff00</stringvalue>
 	</entry>
-	<entry name="dialog_bg" mtime="1299679506" type="string">
-		<stringvalue>#ededececebebff00</stringvalue>
+	<entry name="dialog_bg" mtime="1300007701" type="string">
+		<stringvalue>#edede9e9e3e3ff00</stringvalue>
 	</entry>
 	<entry name="show_sep" mtime="1298679366" type="bool" value="true"/>
 	<entry name="draw_pattern" mtime="1298679374" type="bool" value="false"/>
