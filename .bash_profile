@@ -6,6 +6,12 @@ umask 027
 
 export EDITOR="vim"
 export PAGER="less"
+
+# doesn't clean up the dbus instances...
+#if [ -x `which dbus-launch 2> /dev/null` ] ; then
+#	export `dbus-launch --session`
+#fi
+
 # Debian's sensible-browser(1) uses BROWSER, causing gnome-terminal and
 # xfce4-terminal both to invoke links2 under this config...
 #export BROWSER="links2"
