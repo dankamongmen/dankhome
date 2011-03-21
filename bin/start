@@ -39,15 +39,17 @@ case `hostname` in
 
 	eschatomatic)
 		avant-window-navigator -startup &
-		nautilus --no-default-window
+		gnome-screensaver
+		gnome-power-manager &
 		ssh-add -l || ssh-add
-		wpa_gui -i wlan0 -t &
+		#wpa_gui -i wlan0 -t &
+		exec nautilus --no-default-window --no-desktop
 		;;
 
 	hyperbox)
 		avant-window-navigator -startup &
 		ssh-add -l || ssh-add
-		wpa_gui -i wlan0 -t &
+		#wpa_gui -i wlan0 -t &
 		notify-send -i /usr/share/app-install/icons/ssh-askpass-gnome.png "Setting up SSH tunnels..."
 		# don't exit on failures here
 		#if ! ssh -f -L 11110:localhost:110 $HOMESERV -N ; then
