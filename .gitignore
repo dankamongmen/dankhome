@@ -35,6 +35,7 @@
 .subversion/README.txt
 .subversion/servers
 .thumbnails
+.vim/.netrwhist
 .viminfo
 .w3m/cookie
 .w3m/history

@@ -31,12 +31,10 @@ case `hostname` in
 
 	kingfriday)
 		avant-window-navigator -startup &
-		nautilus --no-default-window
+		nautilus --no-default-window &
 		ssh-add -l || ssh-add
 		gnome-screensaver
 		notify-send "Done initializing kingfriday..."
-		# experimental -- otherwise start hangs around :/
-		exit
 		;;	
 
 	eschatomatic)
