@@ -40,12 +40,7 @@ case `hostname` in
 		;;	
 
 	eschatomatic)
-		avant-window-navigator -startup &
-		gnome-screensaver
-		gnome-power-manager &
-		ssh-add -l || ssh-add
-		#wpa_gui -i wlan0 -t &
-		exec nautilus --no-default-window --no-desktop
+		notify-send "Done initializing eschatomatic..."
 		;;
 
 	hyperbox)
