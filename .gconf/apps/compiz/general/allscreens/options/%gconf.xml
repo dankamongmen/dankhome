@@ -1,7 +1,13 @@
 <?xml version="1.0"?>
 <gconf>
-	<entry name="toggle_window_shaded_key" mtime="1299331082" type="string">
+	<entry name="toggle_window_maximized_key" mtime="1300867245" type="string">
+		<stringvalue>&lt;Alt&gt;F10</stringvalue>
+	</entry>
+	<entry name="maximize_window_key" mtime="1300867245" type="string">
 		<stringvalue>Disabled</stringvalue>
+	</entry>
+	<entry name="toggle_window_shaded_key" mtime="1300867245" type="string">
+		<stringvalue>&lt;Control&gt;&lt;Alt&gt;s</stringvalue>
 	</entry>
 	<entry name="hide_skip_taskbar_windows" mtime="1299331082" type="bool" value="false"/>
 	<entry name="toggle_window_maximized_vertically_key" mtime="1285769370" type="string">
@@ -10,21 +16,21 @@
 	<entry name="toggle_window_maximized_horizontally_key" mtime="1285769370" type="string">
 		<stringvalue>&lt;Control&gt;Right</stringvalue>
 	</entry>
-	<entry name="show_desktop_key" mtime="1285769370" type="string">
-		<stringvalue>Disabled</stringvalue>
+	<entry name="show_desktop_key" mtime="1300867245" type="string">
+		<stringvalue>&lt;Super&gt;d</stringvalue>
 	</entry>
-	<entry name="window_menu_button" mtime="1285769370" type="string">
-		<stringvalue>Button0</stringvalue>
+	<entry name="window_menu_button" mtime="1300867245" type="string">
+		<stringvalue>&lt;Alt&gt;Button3</stringvalue>
 	</entry>
-	<entry name="lower_window_button" mtime="1285769370" type="string">
-		<stringvalue>Button0</stringvalue>
+	<entry name="lower_window_button" mtime="1300867245" type="string">
+		<stringvalue>&lt;Alt&gt;Button6</stringvalue>
 	</entry>
-	<entry name="raise_window_button" mtime="1285769370" type="string">
-		<stringvalue>Button0</stringvalue>
+	<entry name="raise_window_button" mtime="1300867245" type="string">
+		<stringvalue>&lt;Control&gt;Button6</stringvalue>
 	</entry>
 	<entry name="texture_filter" mtime="1285769370" type="int" value="2"/>
 	<entry name="abi" mtime="1285769368" type="int" value="20090619"/>
-	<entry name="active_plugins" mtime="1299345703" type="list" ltype="string">
+	<entry name="active_plugins" mtime="1300867444" type="list" ltype="string">
 		<li type="string">
 			<stringvalue>core</stringvalue>
 		</li>
@@ -32,100 +38,88 @@
 			<stringvalue>ccp</stringvalue>
 		</li>
 		<li type="string">
-			<stringvalue>move</stringvalue>
-		</li>
-		<li type="string">
-			<stringvalue>resize</stringvalue>
-		</li>
-		<li type="string">
-			<stringvalue>place</stringvalue>
-		</li>
-		<li type="string">
-			<stringvalue>decoration</stringvalue>
-		</li>
-		<li type="string">
-			<stringvalue>gconf</stringvalue>
-		</li>
-		<li type="string">
 			<stringvalue>splash</stringvalue>
 		</li>
 		<li type="string">
-			<stringvalue>dbus</stringvalue>
-		</li>
-		<li type="string">
-			<stringvalue>commands</stringvalue>
-		</li>
-		<li type="string">
-			<stringvalue>inotify</stringvalue>
-		</li>
-		<li type="string">
-			<stringvalue>workarounds</stringvalue>
-		</li>
-		<li type="string">
-			<stringvalue>glib</stringvalue>
-		</li>
-		<li type="string">
-			<stringvalue>mousepoll</stringvalue>
-		</li>
-		<li type="string">
-			<stringvalue>session</stringvalue>
+			<stringvalue>move</stringvalue>
 		</li>
 		<li type="string">
 			<stringvalue>gnomecompat</stringvalue>
 		</li>
 		<li type="string">
-			<stringvalue>fakeargb</stringvalue>
-		</li>
-		<li type="string">
-			<stringvalue>regex</stringvalue>
-		</li>
-		<li type="string">
-			<stringvalue>text</stringvalue>
-		</li>
-		<li type="string">
-			<stringvalue>video</stringvalue>
-		</li>
-		<li type="string">
-			<stringvalue>png</stringvalue>
+			<stringvalue>dbus</stringvalue>
 		</li>
 		<li type="string">
 			<stringvalue>bicubic</stringvalue>
 		</li>
 		<li type="string">
-			<stringvalue>imgjpeg</stringvalue>
-		</li>
-		<li type="string">
-			<stringvalue>kdecompat</stringvalue>
-		</li>
-		<li type="string">
 			<stringvalue>svg</stringvalue>
 		</li>
 		<li type="string">
-			<stringvalue>minimize</stringvalue>
+			<stringvalue>text</stringvalue>
 		</li>
 		<li type="string">
-			<stringvalue>wallpaper</stringvalue>
+			<stringvalue>decoration</stringvalue>
 		</li>
 		<li type="string">
-			<stringvalue>thumbnail</stringvalue>
-		</li>
-		<li type="string">
-			<stringvalue>fade</stringvalue>
-		</li>
-		<li type="string">
-			<stringvalue>loginout</stringvalue>
-		</li>
-		<li type="string">
-			<stringvalue>cube</stringvalue>
+			<stringvalue>mousepoll</stringvalue>
 		</li>
 		<li type="string">
 			<stringvalue>trailfocus</stringvalue>
 		</li>
 		<li type="string">
-			<stringvalue>3d</stringvalue>
+			<stringvalue>place</stringvalue>
+		</li>
+		<li type="string">
+			<stringvalue>regex</stringvalue>
+		</li>
+		<li type="string">
+			<stringvalue>tile</stringvalue>
+		</li>
+		<li type="string">
+			<stringvalue>png</stringvalue>
+		</li>
+		<li type="string">
+			<stringvalue>resize</stringvalue>
+		</li>
+		<li type="string">
+			<stringvalue>titleinfo</stringvalue>
+		</li>
+		<li type="string">
+			<stringvalue>obs</stringvalue>
+		</li>
+		<li type="string">
+			<stringvalue>commands</stringvalue>
+		</li>
+		<li type="string">
+			<stringvalue>imgjpeg</stringvalue>
+		</li>
+		<li type="string">
+			<stringvalue>wobbly</stringvalue>
+		</li>
+		<li type="string">
+			<stringvalue>animation</stringvalue>
+		</li>
+		<li type="string">
+			<stringvalue>cube</stringvalue>
+		</li>
+		<li type="string">
+			<stringvalue>shift</stringvalue>
+		</li>
+		<li type="string">
+			<stringvalue>resizeinfo</stringvalue>
+		</li>
+		<li type="string">
+			<stringvalue>thumbnail</stringvalue>
+		</li>
+		<li type="string">
+			<stringvalue>wallpaper</stringvalue>
 		</li>
 		<li type="string">
 			<stringvalue>rotate</stringvalue>
+		</li>
+		<li type="string">
+			<stringvalue>3d</stringvalue>
 		</li>
 		<li type="string">
 			<stringvalue>scale</stringvalue>
@@ -134,14 +128,17 @@
 			<stringvalue>cubeaddon</stringvalue>
 		</li>
 		<li type="string">
-			<stringvalue>expo</stringvalue>
+			<stringvalue>switcher</stringvalue>
 		</li>
 		<li type="string">
-			<stringvalue>scaleaddon</stringvalue>
+			<stringvalue>cubemodel</stringvalue>
+		</li>
+		<li type="string">
+			<stringvalue>expo</stringvalue>
 		</li>
 	</entry>
-	<entry name="cursor_theme" mtime="1299992060" type="string">
-		<stringvalue>DMZ-Black</stringvalue>
+	<entry name="cursor_theme" mtime="1300867245" type="string">
+		<stringvalue></stringvalue>
 	</entry>
-	<entry name="cursor_size" mtime="1299992060" type="int" value="24"/>
+	<entry name="cursor_size" mtime="1300867245" type="int" value="18"/>
 </gconf>

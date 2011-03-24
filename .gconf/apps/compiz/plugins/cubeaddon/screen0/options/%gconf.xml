@@ -16,12 +16,12 @@
 	<entry name="top_color" mtime="1299331080" type="string">
 		<stringvalue>#ffffffff</stringvalue>
 	</entry>
-	<entry name="bottom_clamp" mtime="1299331080" type="bool" value="false"/>
-	<entry name="top_clamp" mtime="1299331080" type="bool" value="false"/>
-	<entry name="bottom_aspect" mtime="1299331080" type="bool" value="false"/>
-	<entry name="top_aspect" mtime="1299331080" type="bool" value="false"/>
-	<entry name="bottom_scale" mtime="1299331080" type="bool" value="false"/>
-	<entry name="top_scale" mtime="1299331080" type="bool" value="false"/>
+	<entry name="bottom_clamp" mtime="1300867245" type="bool" value="true"/>
+	<entry name="top_clamp" mtime="1300867245" type="bool" value="true"/>
+	<entry name="bottom_aspect" mtime="1300867245" type="bool" value="true"/>
+	<entry name="top_aspect" mtime="1300867245" type="bool" value="true"/>
+	<entry name="bottom_scale" mtime="1300867245" type="bool" value="true"/>
+	<entry name="top_scale" mtime="1300867245" type="bool" value="true"/>
 	<entry name="adjust_bottom" mtime="1299331080" type="bool" value="false"/>
 	<entry name="adjust_top" mtime="1299331080" type="bool" value="false"/>
 	<entry name="draw_bottom" mtime="1299331080" type="bool" value="false"/>
@@ -30,9 +30,9 @@
 	<entry name="deform_caps" mtime="1299331080" type="bool" value="true"/>
 	<entry name="cylinder_manual_only" mtime="1299331080" type="bool" value="false"/>
 	<entry name="unfold_deformation" mtime="1299331080" type="bool" value="true"/>
-	<entry name="deformation" mtime="1299331080" type="int" value="2"/>
+	<entry name="deformation" mtime="1300867245" type="int" value="1"/>
 	<entry name="mode" mtime="1299331080" type="int" value="0"/>
-	<entry name="zoom_manual_only" mtime="1299331080" type="bool" value="false"/>
+	<entry name="zoom_manual_only" mtime="1300867245" type="bool" value="true"/>
 	<entry name="auto_zoom" mtime="1299331080" type="bool" value="true"/>
 	<entry name="intensity" mtime="1299331080" type="float" value="0.40000000596046448"/>
 	<entry name="ground_size" mtime="1299331080" type="float" value="0.5"/>

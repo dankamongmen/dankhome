@@ -1,10 +1,15 @@
 <?xml version="1.0"?>
 <gconf>
-	<entry name="transparent_manual_only" mtime="1299331080" type="bool" value="false"/>
-	<entry name="skydome_animated" mtime="1299331080" type="bool" value="true"/>
+	<entry name="skydome" mtime="1300867244" type="bool" value="true"/>
+	<entry name="in" mtime="1300867244" type="bool" value="true"/>
+	<entry name="transparent_manual_only" mtime="1300867244" type="bool" value="true"/>
+	<entry name="skydome_animated" mtime="1300867244" type="bool" value="false"/>
 	<entry name="skydome_image" mtime="1299331080" type="string">
 		<stringvalue>/home/dank/files/images/wallpaper/skydome0.jpg</stringvalue>
 	</entry>
-	<entry name="images" mtime="1299331080" type="list" ltype="string">
+	<entry name="images" mtime="1300867244" type="list" ltype="string">
+		<li type="string">
+			<stringvalue>/usr/share/images/desktop-base/debian-blueish-wallpaper-640x480.png</stringvalue>
+		</li>
 	</entry>
 </gconf>
