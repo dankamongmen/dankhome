@@ -16,10 +16,10 @@
 	<entry name="hide_docks" mtime="1299331080" type="bool" value="false"/>
 	<entry name="curve" mtime="1299331080" type="float" value="0.5"/>
 	<entry name="aspect_ratio" mtime="1299331080" type="float" value="1"/>
-	<entry name="vp_distance" mtime="1299331080" type="float" value="0"/>
-	<entry name="distance" mtime="1299331080" type="float" value="0.61000001430511475"/>
+	<entry name="vp_distance" mtime="1300867245" type="float" value="0.10000000149011612"/>
+	<entry name="distance" mtime="1300867245" type="float" value="0"/>
 	<entry name="deform" mtime="1299331080" type="int" value="2"/>
-	<entry name="expo_animation" mtime="1299331080" type="int" value="1"/>
+	<entry name="expo_animation" mtime="1300867245" type="int" value="0"/>
 	<entry name="expo_immediate_move" mtime="1299331080" type="bool" value="false"/>
 	<entry name="zoom_time" mtime="1299331080" type="float" value="0.5"/>
 	<entry name="prev_vp_button" mtime="1299331080" type="string">
@@ -28,11 +28,11 @@
 	<entry name="next_vp_button" mtime="1299331080" type="string">
 		<stringvalue>Button5</stringvalue>
 	</entry>
-	<entry name="exit_button" mtime="1299331080" type="string">
-		<stringvalue>Button1</stringvalue>
-	</entry>
-	<entry name="dnd_button" mtime="1299331080" type="string">
+	<entry name="exit_button" mtime="1300867245" type="string">
 		<stringvalue>Button3</stringvalue>
+	</entry>
+	<entry name="dnd_button" mtime="1300867245" type="string">
+		<stringvalue>Button1</stringvalue>
 	</entry>
 	<entry name="double_click_time" mtime="1299331080" type="int" value="500"/>
 	<entry name="expo_edge" mtime="1299331080" type="string">
@@ -41,7 +41,7 @@
 	<entry name="expo_button" mtime="1299331080" type="string">
 		<stringvalue>Button0</stringvalue>
 	</entry>
-	<entry name="expo_key" mtime="1299331090" type="string">
-		<stringvalue>Disabled</stringvalue>
+	<entry name="expo_key" mtime="1300867245" type="string">
+		<stringvalue>&lt;Super&gt;e</stringvalue>
 	</entry>
 </gconf>

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <gconf>
 	<entry name="key_bindings_toggle" mtime="1299331080" type="bool" value="true"/>
-	<entry name="show_desktop" mtime="1299331080" type="bool" value="false"/>
+	<entry name="show_desktop" mtime="1300867244" type="bool" value="true"/>
 	<entry name="initiate_all_key" mtime="1299331089" type="string">
 		<stringvalue>Disabled</stringvalue>
 	</entry>

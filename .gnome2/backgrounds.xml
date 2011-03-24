@@ -2,6 +2,14 @@
 <!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
 <wallpapers>
   <wallpaper deleted="false">
+    <name>virus_large.jpg</name>
+    <filename>/home/dank/files/images/renderings/virus_large.jpg</filename>
+    <options>stretched</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#6666baba0000</pcolor>
+    <scolor>#dfbb1e10b0de</scolor>
+  </wallpaper>
+  <wallpaper deleted="true">
     <name>Debian</name>
     <filename>/usr/share/images/desktop-base/desktop-background</filename>
     <options>zoom</options>
@@ -9,7 +17,7 @@
     <pcolor>#00009999cccc</pcolor>
     <scolor>#000066669999</scolor>
   </wallpaper>
-  <wallpaper deleted="false">
+  <wallpaper deleted="true">
     <name>Cosmos</name>
     <filename>/usr/share/backgrounds/cosmos/background-1.xml</filename>
     <options>zoom</options>
@@ -18,11 +26,35 @@
     <scolor>#6666baba0000</scolor>
   </wallpaper>
   <wallpaper deleted="false">
-    <name>No Desktop Background</name>
-    <filename>(none)</filename>
-    <options>zoom</options>
+    <name>aidsrobots.jpeg</name>
+    <filename>/home/dank/files/images/renderings/aidsrobots.jpeg</filename>
+    <options>stretched</options>
     <shade_type>solid</shade_type>
     <pcolor>#6666baba0000</pcolor>
-    <scolor>#6666baba0000</scolor>
+    <scolor>#dfbb1e10b0de</scolor>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>No Desktop Background</name>
+    <filename>(none)</filename>
+    <options>scaled</options>
+    <shade_type>horizontal-gradient</shade_type>
+    <pcolor>#6666baba0000</pcolor>
+    <scolor>#dfbb1e10b0de</scolor>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>40563.jpg</name>
+    <filename>/home/dank/files/images/renderings/40563.jpg</filename>
+    <options>stretched</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#6666baba0000</pcolor>
+    <scolor>#dfbb1e10b0de</scolor>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>apocalypse-311.jpg</name>
+    <filename>/home/dank/files/images/renderings/apocalypse-311.jpg</filename>
+    <options>stretched</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#6666baba0000</pcolor>
+    <scolor>#dfbb1e10b0de</scolor>
   </wallpaper>
 </wallpapers>

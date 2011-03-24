@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <gconf>
-	<entry name="command_window_screenshot" mtime="1299331077" type="string">
-		<stringvalue>/usr/bin/gnome-screenshot -w -d 3</stringvalue>
+	<entry name="command_window_screenshot" mtime="1300867237" type="string">
+		<stringvalue>gnome-screenshot --window</stringvalue>
 	</entry>
-	<entry name="command_screenshot" mtime="1299331077" type="string">
-		<stringvalue>/usr/bin/gnome-screenshot -d 3</stringvalue>
+	<entry name="command_screenshot" mtime="1300867237" type="string">
+		<stringvalue>gnome-screenshot</stringvalue>
 	</entry>
-	<entry name="run_key" mtime="1299331082" type="string">
-		<stringvalue>Disabled</stringvalue>
+	<entry name="run_key" mtime="1300867237" type="string">
+		<stringvalue>&lt;Alt&gt;F2</stringvalue>
 	</entry>
-	<entry name="main_menu_key" mtime="1299331082" type="string">
-		<stringvalue>Disabled</stringvalue>
+	<entry name="main_menu_key" mtime="1300867237" type="string">
+		<stringvalue>&lt;Alt&gt;F1</stringvalue>
 	</entry>
 </gconf>
