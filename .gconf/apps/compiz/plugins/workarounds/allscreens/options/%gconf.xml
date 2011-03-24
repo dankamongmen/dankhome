@@ -4,14 +4,14 @@
 		<stringvalue>any</stringvalue>
 	</entry>
 	<entry name="sticky_alldesktops" mtime="1299331082" type="bool" value="false"/>
-	<entry name="force_glx_sync" mtime="1299331082" type="bool" value="false"/>
+	<entry name="force_glx_sync" mtime="1300867237" type="bool" value="true"/>
 	<entry name="fglrx_xgl_fix" mtime="1299331082" type="bool" value="false"/>
-	<entry name="aiglx_fragment_fix" mtime="1299331082" type="bool" value="false"/>
+	<entry name="aiglx_fragment_fix" mtime="1300867237" type="bool" value="true"/>
 	<entry name="convert_urgency" mtime="1299331082" type="bool" value="false"/>
-	<entry name="qt_fix" mtime="1299331082" type="bool" value="true"/>
+	<entry name="qt_fix" mtime="1300867237" type="bool" value="false"/>
 	<entry name="java_fix" mtime="1299331082" type="bool" value="true"/>
-	<entry name="notification_daemon_fix" mtime="1299331082" type="bool" value="true"/>
+	<entry name="notification_daemon_fix" mtime="1300867237" type="bool" value="false"/>
 	<entry name="ooo_menu_fix" mtime="1299331082" type="bool" value="true"/>
-	<entry name="firefox_menu_fix" mtime="1299331082" type="bool" value="true"/>
+	<entry name="firefox_menu_fix" mtime="1300867237" type="bool" value="false"/>
 	<entry name="legacy_fullscreen" mtime="1299331082" type="bool" value="false"/>
 </gconf>

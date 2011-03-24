@@ -1,22 +1,22 @@
 <?xml version="1.0"?>
 <gconf>
-	<entry name="run_command4_key" mtime="1299331082" type="string">
+	<entry name="run_command4_key" mtime="1300867245" type="string">
 		<stringvalue>Disabled</stringvalue>
 	</entry>
-	<entry name="run_command3_key" mtime="1299331082" type="string">
+	<entry name="run_command3_key" mtime="1300867245" type="string">
 		<stringvalue>Disabled</stringvalue>
 	</entry>
-	<entry name="run_command2_key" mtime="1299331082" type="string">
+	<entry name="run_command2_key" mtime="1300867245" type="string">
 		<stringvalue>Disabled</stringvalue>
 	</entry>
-	<entry name="run_command1_key" mtime="1299331082" type="string">
+	<entry name="run_command1_key" mtime="1300867245" type="string">
 		<stringvalue>Disabled</stringvalue>
 	</entry>
-	<entry name="run_command0_key" mtime="1299331082" type="string">
+	<entry name="run_command0_key" mtime="1300867245" type="string">
 		<stringvalue>Disabled</stringvalue>
 	</entry>
-	<entry name="command5" mtime="1299331077" type="string">
-		<stringvalue>/usr/bin/gnome-screensaver-command --lock</stringvalue>
+	<entry name="command5" mtime="1300867237" type="string">
+		<stringvalue></stringvalue>
 	</entry>
 	<entry name="command4" mtime="1299331077" type="string">
 		<stringvalue>/home/dank/bin/glogout</stringvalue>

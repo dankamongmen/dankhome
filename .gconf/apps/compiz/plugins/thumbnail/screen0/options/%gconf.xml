@@ -3,7 +3,7 @@
 	<entry name="font_color" mtime="1299331080" type="string">
 		<stringvalue>#000000ff</stringvalue>
 	</entry>
-	<entry name="font_size" mtime="1299331080" type="int" value="9"/>
+	<entry name="font_size" mtime="1300867244" type="int" value="12"/>
 	<entry name="font_bold" mtime="1299331080" type="bool" value="true"/>
 	<entry name="title_enabled" mtime="1299331080" type="bool" value="true"/>
 	<entry name="mipmap" mtime="1299331080" type="bool" value="true"/>

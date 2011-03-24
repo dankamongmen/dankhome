@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <gconf>
-	<entry name="brightness" mtime="1299331082" type="float" value="100"/>
-	<entry name="saturation" mtime="1299331082" type="float" value="100"/>
+	<entry name="brightness" mtime="1300867236" type="float" value="50"/>
+	<entry name="saturation" mtime="1300867236" type="float" value="50"/>
 	<entry name="display_time" mtime="1299331082" type="float" value="2"/>
 	<entry name="fade_time" mtime="1299331082" type="float" value="1"/>
 	<entry name="logo" mtime="1299331082" type="string">
@@ -11,7 +11,7 @@
 		<stringvalue>splash_background.png</stringvalue>
 	</entry>
 	<entry name="firststart" mtime="1299331082" type="bool" value="true"/>
-	<entry name="initiate_key" mtime="1299331082" type="string">
-		<stringvalue>&lt;Control&gt;F11</stringvalue>
+	<entry name="initiate_key" mtime="1300867236" type="string">
+		<stringvalue>Disabled</stringvalue>
 	</entry>
 </gconf>
