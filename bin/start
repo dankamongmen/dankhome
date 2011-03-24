@@ -30,10 +30,6 @@ case `hostname` in
 		;;
 
 	kingfriday)
-		avant-window-navigator -startup &
-		nautilus --no-default-window &
-		ssh-add -l || ssh-add
-		gnome-screensaver
 		notify-send "Done initializing kingfriday..."
 		;;	
 
