@@ -21,7 +21,7 @@
 	<entry name="top_next_button" mtime="1299331080" type="string">
 		<stringvalue>Button0</stringvalue>
 	</entry>
-	<entry name="top_next_key" mtime="1299331080" type="string">
-		<stringvalue>space</stringvalue>
+	<entry name="top_next_key" mtime="1300867245" type="string">
+		<stringvalue>Disabled</stringvalue>
 	</entry>
 </gconf>

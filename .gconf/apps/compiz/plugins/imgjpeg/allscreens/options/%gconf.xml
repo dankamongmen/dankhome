@@ -1,4 +1,4 @@
 <?xml version="1.0"?>
 <gconf>
-	<entry name="quality" mtime="1299331077" type="int" value="100"/>
+	<entry name="quality" mtime="1300867237" type="int" value="80"/>
 </gconf>

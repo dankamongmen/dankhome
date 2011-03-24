@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
 <gconf>
 	<entry name="overlay_icon" mtime="1299331080" type="int" value="2"/>
-	<entry name="speed" mtime="1299331080" type="float" value="4"/>
+	<entry name="speed" mtime="1300867244" type="float" value="1.5"/>
 </gconf>
