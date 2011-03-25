@@ -137,8 +137,8 @@
 			<stringvalue>expo</stringvalue>
 		</li>
 	</entry>
-	<entry name="cursor_theme" mtime="1300867245" type="string">
-		<stringvalue></stringvalue>
+	<entry name="cursor_theme" mtime="1301066479" type="string">
+		<stringvalue>default</stringvalue>
 	</entry>
-	<entry name="cursor_size" mtime="1300867245" type="int" value="18"/>
+	<entry name="cursor_size" mtime="1301066479" type="int" value="18"/>
 </gconf>
