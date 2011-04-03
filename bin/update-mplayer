@@ -12,6 +12,9 @@ fi
 
 svn-clean
 svn up
+cd ffmpeg
+git pull
+cd -
 
 DEB_BUILD_OPTIONS="--disable-dga1 --disable-dga2 --enable-gui --enable-menu --disable-ossaudio" fakeroot debian/rules
 DEB_BUILD_OPTIONS="--disable-dga1 --disable-dga2 --enable-gui --enable-menu --disable-ossaudio" fakeroot debian/rules binary
