@@ -11,6 +11,10 @@
 export HISTCONTROL=ignoredups
 export HISTFILESIZE=10000
 
+# these values are used when setting SHELLOPTS, equivalent to set -o vi
+export EDITOR="vim"
+export PAGER="less"
+
 # check the window size after each command and, if necessary, update the values
 # of LINES and COLUMNS.
 shopt -s checkwinsize
