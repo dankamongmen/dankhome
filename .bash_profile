@@ -4,9 +4,6 @@
 
 umask 027
 
-export EDITOR="vim"
-export PAGER="less"
-
 # doesn't clean up the dbus instances...
 #if [ -x `which dbus-launch 2> /dev/null` ] ; then
 #	export `dbus-launch --session`
