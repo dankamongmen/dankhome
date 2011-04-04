@@ -7,9 +7,14 @@
 # if not running interactively, do nothing
 #if [ -n "$PS1" ] ; then
 
-# don't put duplicate lines in the history. See bash(1) for more options
+DANKRC="$HOME/.svnhome"
+[ -d $DANKRC ] || DANKRC=$HOME
+
+# See bash(1) for more options
+# don't put duplicate entries in the history.
 export HISTCONTROL=ignoredups
 export HISTFILESIZE=10000
+export HISTFILE="$DANKRC/.bash_history-$HOSTNAME"
 
 # these values are used when setting SHELLOPTS, equivalent to set -o vi
 export EDITOR="vim"
@@ -18,9 +23,6 @@ export PAGER="less"
 # check the window size after each command and, if necessary, update the values
 # of LINES and COLUMNS.
 shopt -s checkwinsize
-
-DANKRC="$HOME/.svnhome"
-[ -d $DANKRC ] || DANKRC=$HOME
 
 if [ "$TERM" != "dumb" ] ; then
 	if [ -n "`ls --version 2> /dev/null | grep '(GNU coreutils)'`" ] ; then
