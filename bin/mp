@@ -19,11 +19,11 @@ get_dimensions () {
 	# "  dimensions:    1920x1200 pixels (554x346 millimeters)"
 	if set | grep ^DISPLAY > /dev/null ; then
 		DIM="`xdpyinfo | grep dimensions | cut -d: -f2 | cut -dp -f1`"
-		XDIM=`echo $DIM | cut -dx -f1`
-		YDIM=`echo $DIM | cut -dx -f2`
 	else
-		fbset -i
+		DIM=`fbset -i | grep ^mode | cut -d\" -f2 | cut -d\" -f1`
 	fi
+	XDIM=`echo $DIM | cut -dx -f1`
+	YDIM=`echo $DIM | cut -dx -f2`
 }
 
 get_dimensions
