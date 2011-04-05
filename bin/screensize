@@ -1,0 +1,21 @@
+#!/bin/sh
+
+set -e
+set -o nounset
+set -o pipefail
+
+usage () { echo "usage: `basename $0` diag-inches x-native y-native" ; }
+usageerr () { usage >&2 ; return 1 ; }
+
+[ $# -eq 3 ] || usageerr
+
+DIAGINCHES="$1"
+XRESNATIVE="$2"
+YRESNATIVE="$3"
+
+DIAGMM=`echo "scale=5;sqrt($XRESNATIVE^2 + $YRESNATIVE^2)" | bc | cut -d. -f1`
+echo "Diagonal: $DIAGMM mm"
+echo -n "Xres: "
+echo "scale=5;($DIAGINCHES / $DIAGMM) * $XRESNATIVE * 25.4" | bc
+echo -n "Yres: "
+echo "scale=5;($DIAGINCHES / $DIAGMM) * $YRESNATIVE * 25.4" | bc
