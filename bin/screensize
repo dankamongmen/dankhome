@@ -14,7 +14,7 @@ XRESNATIVE="$2"
 YRESNATIVE="$3"
 
 DIAGMM=`echo "scale=5;sqrt($XRESNATIVE^2 + $YRESNATIVE^2)" | bc | cut -d. -f1`
-echo "Diagonal: $DIAGMM mm"
+echo "Pixel diagonal: $DIAGMM mm"
 echo -n "Xres: "
 echo "scale=5;($DIAGINCHES / $DIAGMM) * $XRESNATIVE * 25.4" | bc
 echo -n "Yres: "
