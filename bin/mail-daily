@@ -20,6 +20,7 @@ if [ -r $HOME/Mail/spamfp ] ; then
 fi
 
 cd $HOME/Mail
+git add *
 git commit -a -m "Git commit `date`"
 
 rm -f $HOME/var/log/procmaillog
