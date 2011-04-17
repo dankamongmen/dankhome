@@ -18,4 +18,8 @@ if [ -r $HOME/Mail/spamfp ] ; then
 	mv -v $HOME/Mail/spamfp $HOME/Mail/spam-archive/spamfp-$DAY
 	sa-learn -D --ham --mbox --use-ignores --sync $HOME/Mail/spam-archive/spamfp-$DAY
 fi
+
+cd $HOME/Mail
+git commit -a -m "Git commit `date`"
+
 rm -f $HOME/var/log/procmaillog
