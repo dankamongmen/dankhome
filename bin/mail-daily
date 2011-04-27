@@ -4,6 +4,10 @@ set -e
 set -o nounset
 set -o pipefail
 
+cd $HOME/Mail
+git add *
+git commit -a -m "Git commit `date`"
+
 amispammer -i `dig +short qemfd.net` -f dank@qemfd.net -t dank
 amispammer -d qemfd.net -f dank@qemfd.net -t dank
 DAY="`date +%Y-%j`"
@@ -18,9 +22,5 @@ if [ -r $HOME/Mail/spamfp ] ; then
 	mv -v $HOME/Mail/spamfp $HOME/Mail/spam-archive/spamfp-$DAY
 	sa-learn -D --ham --mbox --use-ignores --sync $HOME/Mail/spam-archive/spamfp-$DAY
 fi
-
-cd $HOME/Mail
-git add *
-git commit -a -m "Git commit `date`"
 
 rm -f $HOME/var/log/procmaillog
