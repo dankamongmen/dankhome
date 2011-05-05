@@ -1,0 +1,5 @@
+# HW depot
+export P4PORT=p4proxy-austin:2001
+
+# SW depot
+#export P4PORT=p4proxy-austin:2006
