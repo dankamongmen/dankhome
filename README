@@ -1,0 +1,52 @@
+*omphalos* by nick black <nickblack@linux.com>
+==============================================
+
+"Gaze into your omphalos." - James Joyce, Ulysses
+
+Omphalos is an integrated tool for network enumeration and domination. It
+is designed around Linux's rtnetlink(7) layer and PACKET_MMAP capabilities.
+Whereas other tools are geared towards either reconnaissance or directed
+attacks, omphalos is designed to "spray the area".
+
+I. Requirements
+II. Building and installation
+III. Usage
+
+===================================================================
+I. Requirements
+===================================================================
+
+libpcap and libcap are used at both build and runtime.
+
+Omphalos currently only builds or runs on a Linux kernel with PACKET_MMAP
+sockets. Packet transmission requires at least a 2.6.29 kernel.
+
+===================================================================
+II. Building and installation
+===================================================================
+
+If filesystem-based capabilities are supported, it might be desirable to
+bestow CAP_SETUID privileges (this is *not* equivalent to a setuid binary).
+See "Usage" regarding switch to the "nobody" user when CAP_SETUID is
+possessed: this can help defend users from malicious files, even if they're
+not allowed to open packet sockets. If non-root users should be able to use
+network capabilities, add CAP_NET_ADMIN and CAP_NET_RAW to the binary. This
+can be accomplished by running "make sudobless" or running tools/addcaps.
+
+If MADV_HUGEPAGE is available at compilation time, madvise() will be used
+to advise hugepage backing for important, large data structures including
+the ringbuffers. This ought significantly improve performance.
+
+===================================================================
+III. Usage
+===================================================================
+
+Several capabilities are required for omphalos's usage of packet and
+netlink sockets. Omphalos *does not* need to run as root, and generally
+should not be. See "Building and installation" for details on setting up
+the omphalos binary's privileges.
+
+If omphalos possesses the CAP_SETUID capability (as it always will if run
+as root), it will by default attempt to become the "nobody" user. This can
+be suppressed via an empty argument to the -u option (-u ""), but helps
+defend against malicious input.
