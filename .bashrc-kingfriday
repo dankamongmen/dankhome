@@ -1,5 +1,7 @@
 # HW depot
-export P4PORT=p4proxy-austin:2001
+#export P4PORT=p4proxy-austin:2001
 
 # SW depot
-#export P4PORT=p4proxy-austin:2006
+export P4PORT=p4proxy-austin.nvidia.com:2006
+
+export P4CLIENT=nblack-ocg
