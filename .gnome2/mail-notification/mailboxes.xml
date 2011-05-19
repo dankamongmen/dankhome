@@ -1,4 +1,2 @@
 <?xml version="1.0"?>
-<mailboxes>
-  <mailbox type="system-vfs" name="qemfd.net" check-delay="120"/>
-</mailboxes>
+<mailboxes/>
