@@ -9,8 +9,8 @@
 		<stringvalue>/usr/share/avant-window-navigator/themes/dark.awn-theme</stringvalue>
 	</entry>
 	<entry name="icon_font_mode" mtime="1298679846" type="int" value="0"/>
-	<entry name="tooltip_font_name" mtime="1298679432" type="string">
-		<stringvalue>Sans Italic 9</stringvalue>
+	<entry name="tooltip_font_name" mtime="1302647404" type="string">
+		<stringvalue>Bitstream Vera Sans Bold Oblique 10</stringvalue>
 	</entry>
 	<entry name="gtk_theme_mode" mtime="1298679374" type="bool" value="false"/>
 	<entry name="tooltip_outline_color" mtime="1298679374" type="string">
@@ -22,10 +22,10 @@
 	<entry name="tooltip_font_color" mtime="1298679422" type="string">
 		<stringvalue>#3c3eeb66479effff</stringvalue>
 	</entry>
-	<entry name="dialog_title_bg" mtime="1301115263" type="string">
+	<entry name="dialog_title_bg" mtime="1304562684" type="string">
 		<stringvalue>#f1a6ee61e97aff00</stringvalue>
 	</entry>
-	<entry name="dialog_bg" mtime="1301115263" type="string">
+	<entry name="dialog_bg" mtime="1304562684" type="string">
 		<stringvalue>#edede9e9e3e3ff00</stringvalue>
 	</entry>
 	<entry name="show_sep" mtime="1298679366" type="bool" value="true"/>
