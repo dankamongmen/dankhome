@@ -16,6 +16,9 @@ fi
 PATH=$PATH:/usr/sbin:/sbin
 
 case `hostname` in
+	skynet)
+		export `dbus-launch`
+		;;
 	recombinator)
 		dbus-daemon --session --fork
 		#daemonizer -p $TMPDIR/daemonizer.pop.pid -r 0 -- ssh -N -L 11110:localhost:110 qemfd.net &

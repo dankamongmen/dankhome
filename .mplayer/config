@@ -32,11 +32,11 @@ vo=xv,vdpau,xv,gl2,fbdev2,caca
 #rtc=1
 #fstype=below
 # See http://www.pulseaudio.org/wiki/PerfectSetup
-#ao=pulse
-#mixer=hw:0
-ao=alsa
+ao=pulse
+mixer=hw:0
+#ao=alsa
 #volume=500.1
-mixer-channel=PCM
+#mixer-channel=PCM
 #idx=yes
 framedrop=1
 autosync=1

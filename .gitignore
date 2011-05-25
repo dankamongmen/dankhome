@@ -2,7 +2,7 @@
 .Xauthority
 .adobe/Flash_Player/AssetCache
 .aptitude/cache
-.bash_history
+.bash_history*
 .cache
 .compiz/session/
 .config/awn
@@ -21,6 +21,7 @@
 .gurlchecker/cache
 .gurlchecker/projects
 .hplip
+.lesshst
 .links2/links.his
 .ncmpcpp/error.log
 .pcolor
@@ -28,7 +29,7 @@
 .specto/cache
 .specto/specto.log
 .specto/specto.pid
-.ssh/agent-*
+.ssh/agent*
 .ssh/id_rsa
 .ssh/id_rsa.pub
 .ssh/known_hosts.old

@@ -1,13 +1,13 @@
+user "dank"
 id3v1_encoding "utf8"
 filesystem_charset "UTF-8"
-music_directory "/media/music/music"
-playlist_directory "/media/music/playlists"
+music_directory "/media/ghettostore/music"
+playlist_directory "/media/ghettostore/playlists"
 db_file "/home/dank/var/lib/mpd/database"
 log_file "/home/dank/var/log/mpd.log"
-#error_file "/home/dank/var/log/mpd.err"
 pid_file "/home/dank/var/lib/mpd/pidlock"
 state_file "/home/dank/var/lib/mpd/statefile"
-#bind_to_address "127.0.0.1"
+bind_to_address "127.0.0.1"
 
 zeroconf_enabled "yes"
 zeroconf_name "recombinator_mpd"
@@ -15,19 +15,18 @@ zeroconf_name "recombinator_mpd"
 #samplerate_converter "Medium Sinc"
 #buffer_before_play 20%
 #metadata_to_use none
-user "dank"
 # See http://www.pulseaudio.org/wiki/PerfectSetup
-#audio_output {
-#	type "pulse"
-#	name "PulseAudio"
-#}
 audio_output {
-	type "alsa"
-	name "Intel HDAudio ALSA"
-	device "default"
-	buffer_time "2000000"
-	use_mmap "yes"
+	type "pulse"
+	name "PulseAudio"
 }
-mixer_type "alsa"
+#audio_output {
+#	type "alsa"
+#	name "Intel HDAudio ALSA"
+#	device "default"
+#	buffer_time "2000000"
+#	use_mmap "yes"
+#}
+#mixer_type "alsa"
 #mixer_device "dmix"
 #mixer_control "Master"
