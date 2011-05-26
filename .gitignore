@@ -6,7 +6,10 @@
 .cache
 .compiz/session/
 .config/awn
+.config/user-dirs.dirs
+.config/user-dirs.locale
 .cups
+.dbus
 .electricsheep/*.avi
 .electricsheep/lock
 .electricsheep/play_counts
