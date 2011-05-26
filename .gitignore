@@ -19,6 +19,7 @@
 files/
 .fontconfig
 .gconf/apps/compiz/
+.gconf/apps/gnome-terminal/
 .gconf/desktop/
 .gconfd/saved_state
 .gitconfig
