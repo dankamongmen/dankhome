@@ -6,6 +6,7 @@
 .cache
 .compiz/session/
 .config/awn
+.config/compiz
 .config/user-dirs.dirs
 .config/user-dirs.locale
 .cups
@@ -17,11 +18,14 @@
 .fetchmail.pid
 files/
 .fontconfig
+.gconf/apps/compiz/
+.gconf/desktop/
 .gconfd/saved_state
 .gitconfig
 .gnome2/accels
 .gnome2/yelp
 .gnuplot_history
+.gstreamer-0.10/
 .gtklp
 .gurlchecker/cache
 .gurlchecker/projects
@@ -35,6 +39,7 @@ files/
 .pcolor
 .pulse/
 .pulse-cookie
+.purple
 .specto/cache
 .specto/specto.log
 .specto/specto.pid

@@ -1,1 +1,2 @@
-. /etc/X11/xinit/xinitrc
+gnome-settings-daemon
+exec compiz
