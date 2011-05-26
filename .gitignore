@@ -32,7 +32,7 @@ files/
 .hplip
 .lesshst
 .lftp/
-.links2/links.his
+.links2/
 .lyrics
 .mpdcron/mpdcron.pid
 .ncmpcpp/error.log
