@@ -26,6 +26,7 @@ files/
 .lesshst
 .lftp/
 .links2/links.his
+.lyrics
 .mpdcron/mpdcron.pid
 .ncmpcpp/error.log
 .pcolor
