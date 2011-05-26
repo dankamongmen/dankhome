@@ -56,3 +56,4 @@ var/log/mpd.log
 .wireshark
 .wpa_cli_history
 .xsession-errors
+.xsession-errors.old
