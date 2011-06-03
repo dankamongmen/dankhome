@@ -1,3 +1,7 @@
-if [ -r $HOME/local/p4/bin ] ; then
-	export PATH=$HOME/local/p4/bin:$PATH
+if [ -d "$HOME/local/p4/bin" ] ; then
+	export PATH="$HOME/local/p4/bin:$PATH"
+fi
+
+if [ -r "$HOME/.p4config" ] ; then
+	export P4CONFIG="$HOME/.p4config"
 fi
