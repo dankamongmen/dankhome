@@ -24,6 +24,7 @@ files/
 .gconfd/saved_state
 .gitconfig
 .gnome2/accels
+.gnome2/keyrings
 .gnome2/yelp
 .gnuplot_history
 .gstreamer-0.10/
@@ -31,12 +32,16 @@ files/
 .gurlchecker/cache
 .gurlchecker/projects
 .hplip
+.icons
 .lesshst
 .lftp/
 .links2/
 .lyrics
+Mail
 .mpdcron/mpdcron.pid
 .ncmpcpp/error.log
+.p4config
+.p4tickets
 .pcolor
 .pulse/
 .pulse-cookie
