@@ -1,0 +1,10 @@
+format="%n - %t"
+format=".* - %n - %t"
+format="%a - %A (%d) - %n - %t"
+format="%a - %A - %n - %t"
+format="%a - %t"
+maj=1
+clear_tags=1
+
+# don't use preserve_time, lest mpd not pick up the changes!
+# preserve_time=1
