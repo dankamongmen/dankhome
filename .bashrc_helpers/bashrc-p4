@@ -5,3 +5,4 @@ fi
 # P4 will look for a file by this name in the root of your client workspace. If
 # it's found, P4 will use its variable definitions.
 export P4CONFIG=.p4rc
+export P4USER=nblack
