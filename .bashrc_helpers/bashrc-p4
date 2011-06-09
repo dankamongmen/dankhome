@@ -6,3 +6,4 @@ fi
 # it's found, P4 will use its variable definitions.
 export P4CONFIG=.p4rc
 export P4USER=nblack
+export P4RCACHE="$HOME/var/cache/p4"
