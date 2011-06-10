@@ -1,7 +1,0 @@
-<?xml version="1.0"?>
-<gconf>
-	<entry name="raise_on_rotate" mtime="1300867244" type="bool" value="false"/>
-	<entry name="initiate_button" mtime="1300867244" type="string">
-		<stringvalue>&lt;Control&gt;&lt;Alt&gt;Button1</stringvalue>
-	</entry>
-</gconf>

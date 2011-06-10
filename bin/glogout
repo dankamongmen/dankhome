@@ -8,6 +8,6 @@ NSEND="`which notify-send`" || NSEND="echo"
 if [ -x "$GSS" ] ; then
 	#"$GSS" --kill --silent
 	"$GSS" --logout-dialog --gui
-#else
+else
+	sudo kill `pidof Xorg` || sudo kill `pidof X` || { "$NSEND" "Shutdown failed" ; exit 1 ; }
 fi
-sudo kill `pidof Xorg` || sudo kill `pidof X` || { "$NSEND" "Shutdown failed" ; exit 1 ; }

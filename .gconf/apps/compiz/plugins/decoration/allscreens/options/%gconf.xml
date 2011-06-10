@@ -1,7 +1,0 @@
-<?xml version="1.0"?>
-<gconf>
-	<entry name="mipmap" mtime="1300867236" type="bool" value="false"/>
-	<entry name="shadow_color" mtime="1299331076" type="string">
-		<stringvalue>#00000000</stringvalue>
-	</entry>
-</gconf>
