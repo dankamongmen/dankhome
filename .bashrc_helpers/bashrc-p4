@@ -1,3 +1,9 @@
 if [ -r $HOME/local/p4/bin ] ; then
-	export PATH=$HOME/local/p4/bin:$PATH
+	if [ -n "$PATH" ] ; then
+		export PATH=$PATH:$HOME/local/p4/bin
+	else
+		export PATH=$HOME/local/p4/bin
+	fi
+	export P4RCACHE=$HOME/tmp/p4rcache
+	export P4CONFIG=.p4rc
 fi
