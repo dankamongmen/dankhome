@@ -1,8 +1,0 @@
-<?xml version="1.0"?>
-<gconf>
-	<entry name="enabled" mtime="1281608351" type="bool" value="true"/>
-	<entry name="needs_terminal" mtime="1281608351" type="bool" value="false"/>
-	<entry name="command" mtime="1287695024" type="string">
-		<stringvalue>sensible-browser %s</stringvalue>
-	</entry>
-</gconf>

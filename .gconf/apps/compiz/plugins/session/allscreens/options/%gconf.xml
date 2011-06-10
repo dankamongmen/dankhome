@@ -1,7 +1,0 @@
-<?xml version="1.0"?>
-<gconf>
-	<entry name="ignore_match" mtime="1299331077" type="string">
-		<stringvalue></stringvalue>
-	</entry>
-	<entry name="save_legacy" mtime="1299331077" type="bool" value="false"/>
-</gconf>

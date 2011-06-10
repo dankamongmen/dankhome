@@ -20,7 +20,7 @@ if [[ ! -z `which ssh` && -f `which ssh` ]]; then
 	alias havoc="ssh havoc"
 	alias hogwarts="ssh hogwarts"
 
-	# nvidia
+	# NVIDIA
 	alias kf="ssh kingfriday"
 
 fi
