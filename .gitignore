@@ -1,5 +1,8 @@
 .ICEauthority
+.Skype/
+.TinyCA/
 .Xauthority
+.abook/
 .adobe/Flash_Player/AssetCache
 .aptitude/cache
 .bash_history*
@@ -24,6 +27,7 @@
 .dbus
 .ddccontrol/
 .dia
+.dmrc
 .electricsheep/*.avi
 .electricsheep/lock
 .electricsheep/play_counts
@@ -34,12 +38,15 @@ files/
 .fonts.conf
 .fontconfig
 .fonts
+.fotoxx/
 .gconf/apps/
 .gconf/desktop/
 .gconf/system/
 .gconfd/saved_state
 .gitconfig
 .gksu.lock
+.gmerlin/
+.gnash/
 .gnome2/
 .gnuplot_history
 .gstreamer-0.10/
@@ -102,6 +109,7 @@ var/log/mpd.log
 .viminfo
 .w3m/cookie
 .w3m/history
+.webex
 .wireshark
 .wpa_cli_history
 .xsession-errors
