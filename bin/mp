@@ -23,7 +23,7 @@ get_dimensions () {
 		DIM=`fbset -i | grep ^mode | cut -d\" -f2 | cut -d\" -f1`
 	fi
 	XDIM=`echo $DIM | cut -dx -f1`
-	YDIM=`echo $DIM | cut -dx -f2`
+	YDIM=`echo $DIM | cut -dx -f2 | cut -d- -f1`
 }
 
 get_dimensions
