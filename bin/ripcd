@@ -14,4 +14,6 @@ eject -t || true
 # $@ options can include:
 #  use -t and -T to change external and internal track number origin
 #  provide optional list of tracks
-abcde -M -p -P -U -V -x "$@"
+# -M has been dropped
+# -P goes to stdout?!
+abcde -d /dev/cdrom3 -p -U -V -x "$@"

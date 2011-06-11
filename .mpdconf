@@ -30,3 +30,10 @@ audio_output {
 #mixer_type "alsa"
 #mixer_device "dmix"
 #mixer_control "Master"
+
+# fifo output (ncmpcpp visualizations, etc)
+audio_output {
+	type "fifo"
+	name "mpdfifo"
+	path "/home/dank/var/lib/mpd/fifo"
+} 
