@@ -1,0 +1,12 @@
+check_hash = yes
+encryption = allow_incoming,try_outgoing,enable_retry
+download_rate=350
+upload_rate=108
+directory = ~/var/lib/rtorrent
+session = ~/var/lib/rtorrent
+#session_lock = yes
+port_range = 6901-6901
+#stop_on_ratio=2
+#max_memory_usage=134217728
+#bind = 216.27.163.101
+#ip = 216.27.163.101
