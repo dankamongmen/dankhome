@@ -17,13 +17,13 @@ use-filename-title=1
 # fbdev2 works better than fbdev on at least intel
 # directfb usually locks the terminal/machine
 # dga -- says framebuffer allocation failed, obsolete
+#vdpau rsults in segfaults after x has run for awhile (NVIDIA 216.12)
 #fbdev,directfb,xvidix
 #vo=xv,gl2,x11,fbdev,caca
 #vo=xvmc,gl2,caca
 
-#vdpau rsults in segfaults after x has run for awhile (NVIDIA 216.12)
 #vo=vdpau,xv,gl2,fbdev2,caca
-vo=xv,vdpau,xv,gl2,fbdev2,caca
+vo=gl2,xv,vdpau,xv,fbdev2,caca
 
 # Prefer the VDPAU codecs, but fall back if need be
 #vc=ffmpeg12vdpau,ffwmv3vdpau,ffvc1vdpau,ffh264vdpau,ffodivxvdpau,
