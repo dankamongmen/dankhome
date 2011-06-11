@@ -17,8 +17,10 @@ Mail/
 .camel_certs/
 .cgobanrc
 .compiz/session/
+.config/Doxygen.org/
 .config/Flavio Tordini/
 .config/Last.fm/
+.config/MusicBrainz/
 .config/Nokia/
 .config/RawTherapee/
 .config/SourceForge/
@@ -34,8 +36,12 @@ Mail/
 .config/enchant/
 .config/evolution/
 .config/f-spot/
+.config/font-manager/
+.config/fontgroups.xml
+.config/frogr
 .config/gaupol/
 .config/glade-3.conf
+.config/gmpc/
 .config/gnome-color-manager/
 .config/google-chrome/
 .config/google-googletalkplugin/
@@ -44,6 +50,7 @@ Mail/
 .config/gwibber/
 .config/homebank/
 .config/indicators/
+.config/inkscape/
 .config/Kitware/
 .config/last-exit/
 .config/menus/
@@ -54,6 +61,7 @@ Mail/
 .config/pithos.ini
 .config/pitivi/
 .config/postler/
+.config/qtcurve/
 .config/smplayer/
 .config/spek/
 .config/Screenlets/
@@ -73,6 +81,7 @@ Mail/
 .debug/
 .dia
 .dmrc
+.dvdcss/CACHEDIR.TAG
 .electricsheep/*.avi
 .electricsheep/lock
 .electricsheep/play_counts
@@ -81,6 +90,7 @@ Mail/
 .fantasdic/
 .fetchmail.pid
 files/
+.flickr/
 .fltk/
 .fonts.conf
 .fontconfig
@@ -110,6 +120,7 @@ files/
 .gphpedit/
 .gphoto/
 .granule
+.grsync/
 .gstreamer-0.10/
 .gtk-bookmarks
 .gtklp
@@ -138,6 +149,7 @@ local/*
 .miro/
 .mozilla/
 .mpdcron/mpdcron.pid
+.mplayer/gui*
 .mutt_certificates
 .ncmpcpp/error.log
 .nemiver/
