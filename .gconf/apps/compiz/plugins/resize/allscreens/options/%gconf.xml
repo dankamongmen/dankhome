@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<gconf>
-	<entry name="initiate_button" mtime="1300867236" type="string">
-		<stringvalue>Button0</stringvalue>
-	</entry>
-	<entry name="initiate_key" mtime="1300867236" type="string">
-		<stringvalue>&lt;Alt&gt;F8</stringvalue>
-	</entry>
-</gconf>

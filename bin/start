@@ -9,16 +9,18 @@ usageerr () { usage >&2 ; return 1 ; }
 [ $# -eq 0 ] || usageerr
 
 HOMESERV=recombinator.orthanc
-if ! host $HOMESERV ; then
+if ! host $HOMESERV 2>&1 > /dev/null ; then
 	HOMESERV=recombinator
 fi
 
 PATH=$PATH:/usr/sbin:/sbin
 
 case `hostname` in
+	skynet)
+		# start dbus FIXME
+		;;
 	recombinator)
 		dbus-daemon --session --fork
-		#daemonizer -p $TMPDIR/daemonizer.pop.pid -r 0 -- ssh -N -L 11110:localhost:110 qemfd.net &
 		daemonizer -p $TMPDIR/daemonizer.smtp.pid -r 0 -- ssh -N -L 11111:localhost:25 qemfd.net &
 		! which fetchmail 2> /dev/null || fetchmail
 		#commitpidgin

@@ -1,6 +1,0 @@
-<?xml version="1.0"?>
-<gconf>
-	<entry name="mouse_poll_interval" mtime="1299331077" type="int" value="40"/>
-	<entry name="index" mtime="1299331077" type="int" value="8"/>
-	<entry name="abi" mtime="1299331077" type="int" value="20080116"/>
-</gconf>
