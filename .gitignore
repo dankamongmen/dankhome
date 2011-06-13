@@ -80,6 +80,7 @@ Mail/
 .debug/
 .dia
 .dmrc
+Downloads/
 .dvdcss/CACHEDIR.TAG
 .electricsheep/*.avi
 .electricsheep/lock
@@ -165,6 +166,7 @@ local/*
 .packagesearch
 .pcolor
 .phoronix-test-suite
+Pictures/
 .pki
 .printer-groups.xml
 .pulse/
