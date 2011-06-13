@@ -1,0 +1,59 @@
+#!/bin/sh
+
+set -e || exit 1
+
+git_submodule_up() {
+	cd "$1"
+	rm -rf build
+	git pull
+	git submodule update
+	mkdir build
+	cd build
+	cmake ..
+	make
+	sudo make install
+	cd ../..
+}
+
+git_cmake_up() {
+	cd "$1"
+	rm -rf build
+	git pull
+	mkdir build
+	cd build
+	cmake ..
+	make
+	sudo make install
+	cd ../..
+}
+
+git_python_up() {
+	cd "$1"
+	git pull
+	python setup.py clean
+	python setup.py build
+	sudo python setup.py install
+	cd ..
+}
+
+cd mesa
+git pull
+make distclean rm_config
+./configure --enable-texture-float --enable-xcb --disable-gallium-r300
+make
+sudo make install
+
+cd ../drm
+git pull
+make distclean
+./configure
+make
+sudo make install
+
+git_cmake_up compiz
+git_cmake_up libcompizconfig
+git_python_up compizconfig-python
+git_python_up ccsm
+git_submodule_up plugins-main
+git_submodule_up plugins-extra
+git_submodule_up plugins-unsupported
