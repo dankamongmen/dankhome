@@ -36,7 +36,20 @@ git_python_up() {
 	cd ..
 }
 
-cd mesa
+cd dri2proto
+git pull
+make clean
+sudo make install
+
+cd ../xf86-video-intel
+git pull
+make distclean
+./autogen --prefix=/usr
+./configure  --enable-kms-only --enable-sna
+make
+sudo make install
+
+cd ../mesa
 git pull
 make distclean rm_config
 ./configure --enable-texture-float --enable-xcb --disable-gallium-r300
@@ -46,6 +59,7 @@ sudo make install
 cd ../drm
 git pull
 make distclean
+./autogen.sh --prefix=/usr --exec-prefix=/
 ./configure
 make
 sudo make install
