@@ -83,7 +83,7 @@ if !has( "X11" )
 endif
 
 " Extensions to defaults
-set suffixes+=class
+set suffixes+=class,cl
 set viminfo+=h
 
 let c_gnu=1
