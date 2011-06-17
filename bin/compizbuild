@@ -2,6 +2,8 @@
 
 set -e || exit 1
 
+CONCURRENCY=`grep '^processor' /proc/cpuinfo | wc -l`
+
 git_submodule_up() {
 	cd "$1"
 	rm -rf build
@@ -11,6 +13,7 @@ git_submodule_up() {
 	cd build
 	cmake ..
 	make
+	make -j$CONCURRENCY
 	sudo make install
 	cd ../..
 }
@@ -22,7 +25,7 @@ git_cmake_up() {
 	mkdir build
 	cd build
 	cmake ..
-	make
+	make -j$CONCURRENCY
 	sudo make install
 	cd ../..
 }
@@ -44,16 +47,17 @@ sudo make install
 cd ../xf86-video-intel
 git pull
 make distclean
-./autogen --prefix=/usr
+./autogen.sh --prefix=/usr
 ./configure  --enable-kms-only --enable-sna
-make
+make -j$CONCURRENCY
 sudo make install
 
 cd ../mesa
 git pull
 make distclean rm_config
-./configure --enable-texture-float --enable-xcb --disable-gallium-r300
-make
+./configure --enable-texture-float --enable-xcb --disable-gallium-r300 \
+		--enable-gles1 --enable-gles2
+make -j$CONCURRENCY
 sudo make install
 
 cd ../drm
@@ -61,7 +65,7 @@ git pull
 make distclean
 ./autogen.sh --prefix=/usr --exec-prefix=/
 ./configure
-make
+make -j$CONCURRENCY
 sudo make install
 
 git_cmake_up compiz
