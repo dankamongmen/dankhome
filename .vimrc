@@ -119,6 +119,7 @@ if has( "unix" )
 	set grepprg=grep\ -Hn
     endif
     nmap nmap T :!dict <cword><CR> 
+    map <F9> :!p4 edit %<CR>
 endif
 
 if has("autocmd")
