@@ -1,11 +1,11 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 set -e || exit 1
 
 CONCURRENCY=`grep '^processor' /proc/cpuinfo | wc -l`
 
 git_submodule_up() {
-	cd "$1"
+	pushd "$1"
 	rm -rf build
 	git pull
 	git submodule update
@@ -13,30 +13,32 @@ git_submodule_up() {
 	cd build
 	cmake ..
 	make
-	make -j$CONCURRENCY
+	#make -j$CONCURRENCY
+	make
 	sudo make install
-	cd ../..
+	popd
 }
 
 git_cmake_up() {
-	cd "$1"
+	pushd "$1"
 	rm -rf build
 	git pull
 	mkdir build
 	cd build
 	cmake ..
-	make -j$CONCURRENCY
+	#make -j$CONCURRENCY
+	make
 	sudo make install
-	cd ../..
+	popd
 }
 
 git_python_up() {
-	cd "$1"
+	pushd "$1"
 	git pull
 	python setup.py clean
 	python setup.py build
 	sudo python setup.py install
-	cd ..
+	popd
 }
 
 cd dri2proto
@@ -46,9 +48,10 @@ sudo make install
 
 cd ../xf86-video-intel
 git pull
-make distclean
+[ ! -e Makefile ] || make distclean
 ./autogen.sh --prefix=/usr
-./configure  --enable-kms-only --enable-sna
+make clean
+./configure  --enable-sna --enable-dri
 make -j$CONCURRENCY
 sudo make install
 
@@ -67,6 +70,7 @@ make distclean
 ./configure
 make -j$CONCURRENCY
 sudo make install
+cd ..
 
 git_cmake_up compiz
 git_cmake_up libcompizconfig
