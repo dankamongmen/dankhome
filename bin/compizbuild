@@ -1,0 +1,81 @@
+#!/usr/bin/env bash
+
+set -e || exit 1
+
+CONCURRENCY=`grep '^processor' /proc/cpuinfo | wc -l`
+
+git_submodule_up() {
+	pushd "$1"
+	rm -rf build
+	git pull
+	git submodule update
+	mkdir build
+	cd build
+	cmake ..
+	make
+	#make -j$CONCURRENCY
+	make
+	sudo make install
+	popd
+}
+
+git_cmake_up() {
+	pushd "$1"
+	rm -rf build
+	git pull
+	mkdir build
+	cd build
+	cmake ..
+	#make -j$CONCURRENCY
+	make
+	sudo make install
+	popd
+}
+
+git_python_up() {
+	pushd "$1"
+	git pull
+	python setup.py clean
+	python setup.py build
+	sudo python setup.py install
+	popd
+}
+
+cd dri2proto
+git pull
+make clean
+sudo make install
+
+cd ../xf86-video-intel
+git pull
+[ ! -e Makefile ] || make distclean
+./autogen.sh --prefix=/usr
+make clean
+./configure  --enable-sna --enable-dri
+make -j$CONCURRENCY
+sudo make install
+
+cd ../mesa
+git pull
+make distclean rm_config
+./configure --enable-texture-float --enable-xcb --disable-gallium-r300 \
+		--enable-gles1 --enable-gles2
+make -j$CONCURRENCY
+sudo make install
+
+cd ../drm
+git pull
+make distclean
+./autogen.sh --prefix=/usr --exec-prefix=/
+./configure
+make -j$CONCURRENCY
+sudo make install
+cd ..
+
+git_cmake_up compiz
+git_cmake_up libcompizconfig
+git_python_up compizconfig-python
+git_python_up ccsm
+git_submodule_up plugins-main
+git_submodule_up plugins-extra
+git_submodule_up plugins-unsupported

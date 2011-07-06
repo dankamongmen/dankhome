@@ -1,4 +1,5 @@
-if [ -r $HOME/local/p4/bin ] ; then
+if [ -d "$HOME/local/p4/bin" ] ; then
+	export PATH="$HOME/local/p4/bin:$PATH"
 	if [ -n "$PATH" ] ; then
 		export PATH=$PATH:$HOME/local/p4/bin
 	else
