@@ -5,3 +5,5 @@
 export P4PORT=p4proxy-austin.nvidia.com:2006
 
 export P4CLIENT=nblack-ocg-$HOSTNAME
+
+export PATH=~/src/ocg/sw/compiler/gpgpu/built/tools_debug/x86_64_Linux/bin/:$PATH

@@ -83,7 +83,7 @@ if !has( "X11" )
 endif
 
 " Extensions to defaults
-set suffixes+=class
+set suffixes+=class,cl
 set viminfo+=h
 
 let c_gnu=1
@@ -119,6 +119,7 @@ if has( "unix" )
 	set grepprg=grep\ -Hn
     endif
     nmap nmap T :!dict <cword><CR> 
+    map <F9> :!p4 edit %<CR>
 endif
 
 if has("autocmd")
