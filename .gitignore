@@ -118,6 +118,7 @@ files/
 .gnuplot_history
 .goldendict/
 .google/
+.gpg-agent-info
 .gphpedit/
 .gphoto/
 .granule
@@ -185,6 +186,7 @@ src/
 .ssh/agent*
 .ssh/id_rsa
 .ssh/id_rsa.pub
+.ssh/identity.pub
 .ssh/known_hosts.old
 .starplotrc
 .stellarium/log.txt
