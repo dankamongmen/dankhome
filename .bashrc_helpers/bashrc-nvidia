@@ -5,3 +5,8 @@ alias dptxas="ptxas --cdbg=3"
 alias dvs="perl ~/src/ocg/sw/automation/dvs/dvsbuild/dvsbuild.pl -b iceweasel"
 alias p4m="~/src/ocg/sw/main/apps/p4review/p4rmerge.pl"
 alias p4r="~/src/ocg/sw/main/apps/p4review/p4review.pl"
+
+alias cuda="pushd $OCG/compiler/gpgpu"
+alias driver="pushd $OCG/dev/gpu_drv/module_compiler"
+alias ocg="pushd $OCG/dev/gpu_drv/module_compiler/drivers/common/cop"
+
