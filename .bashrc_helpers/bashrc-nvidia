@@ -3,5 +3,5 @@
 #export CC=gcc-4.4
 alias dptxas="ptxas --cdbg=3"
 alias dvs="perl ~/src/ocg/sw/automation/dvs/dvsbuild/dvsbuild.pl -b iceweasel"
-alias p4m="~/src/ocg/sw/main/apps/p4review/p4merge.pl"
+alias p4m="~/src/ocg/sw/main/apps/p4review/p4rmerge.pl"
 alias p4r="~/src/ocg/sw/main/apps/p4review/p4review.pl"
