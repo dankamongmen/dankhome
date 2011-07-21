@@ -8,10 +8,6 @@ export P4DIFF="diff -ur"
 
 OCG=$HOME/src/ocg/sw
 
-alias cuda="pushd $OCG/compiler/gpgpu"
-alias driver="pushd $OCG/dev/gpu_drv/module_compiler"
-alias ocg="pushd $OCG/dev/gpu_drv/module_compiler/drivers/common/cop"
-
 export PATH=~/src/ocg/sw/compiler/gpgpu/built/tools_debug/x86_64_Linux/bin/:$PATH
 
 cd
