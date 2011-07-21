@@ -1,5 +1,7 @@
 # Helper bashrc for working on NVIDIA's OCG
 
+OCG=$HOME/src/ocg/sw
+
 #export CC=gcc-4.4
 alias dptxas="ptxas --cdbg=3"
 alias dvs="perl ~/src/ocg/sw/automation/dvs/dvsbuild/dvsbuild.pl -b iceweasel"
@@ -10,3 +12,4 @@ alias cuda="pushd $OCG/compiler/gpgpu"
 alias driver="pushd $OCG/dev/gpu_drv/module_compiler"
 alias ocg="pushd $OCG/dev/gpu_drv/module_compiler/drivers/common/cop"
 
+unset OCG
