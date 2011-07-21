@@ -11,10 +11,9 @@ FB=fbcmd
 
 OUTDIR="$1"
 
-FRIENDS=`$FB friends | cut -d\  -f1`
+FRIENDS=`$FB friends | sed -e '1d' | cut -d\  -f1`
 echo "Found `echo $FRIENDS | wc -w` friends"
 for i in $FRIENDS ; do
 	echo "Acquiring pictures for $i..."
-	[ -d "$OUTDIR/$i" ] || mkdir "$OUTDIR/$i"
-	$FB OPICS "$i" -of='[oname]/[aid]-[pid].jpg' -ppsize=1
+	$FB -auto_mkdir=1 OPICS "$i" "$1" -of='[oname]/[aid]-[pid].jpg' -ppsize=1
 done

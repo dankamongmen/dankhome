@@ -33,6 +33,10 @@ PATH=/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/bin:/sbin
 }
 
 :0:
+* ^To.*omphalos-dev@googlegroups.com
+omphalos-dev
+
+:0:
 * ^From.*gatech.edu$
 /var/mail/dank
 
