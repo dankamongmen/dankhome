@@ -6,8 +6,4 @@ export P4PORT=p4proxy-austin.nvidia.com:2006
 
 export P4DIFF="diff -ur"
 
-OCG=$HOME/src/ocg/sw
-
-export PATH=~/src/ocg/sw/compiler/gpgpu/built/tools_debug/x86_64_Linux/bin/:$PATH
-
 cd
