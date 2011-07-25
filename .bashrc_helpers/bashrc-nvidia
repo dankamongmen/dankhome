@@ -2,7 +2,8 @@
 
 OCG=$HOME/src/ocg/sw
 
-#export CC=gcc-4.4
+export PATH=$OCG/compiler/gpgpu/built/tools_debug/x86_64_Linux/bin/:$PATH
+
 alias dptxas="ptxas --cdbg=3"
 alias dvs="perl ~/src/ocg/sw/automation/dvs/dvsbuild/dvsbuild.pl -b iceweasel"
 alias p4m="~/src/ocg/sw/main/apps/p4review/p4rmerge.pl"
