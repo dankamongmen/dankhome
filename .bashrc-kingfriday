@@ -9,3 +9,5 @@ export P4DIFF="diff -ur"
 OCG=$HOME/src/ocg/sw
 
 export PATH=$OCG/compiler/gpgpu/built/tools_debug/x86_64_Linux/bin/:$PATH
+
+cd
