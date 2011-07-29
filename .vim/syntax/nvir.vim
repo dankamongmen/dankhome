@@ -8,20 +8,21 @@ endif
 
 syn case ignore
 
-syn match asmReg0	"R[0-9]*0\([^0-9]\)\@="
-syn match asmReg1	"R[0-9]*1\([^0-9]\)\@="
-syn match asmReg2	"R[0-9]*2\([^0-9]\)\@="
-syn match asmReg3	"R[0-9]*3\([^0-9]\)\@="
-syn match asmReg4	"R[0-9]*4\([^0-9]\)\@="
-syn match asmReg5	"R[0-9]*5\([^0-9]\)\@="
-syn match asmReg6	"R[0-9]*6\([^0-9]\)\@="
-syn match asmReg7	"R[0-9]*7\([^0-9]\)\@="
-syn match asmReg8	"R[0-9]*8\([^0-9]\)\@="
-syn match asmReg9	"R[0-9]*9\([^0-9]\)\@="
-syn match asmPReg	"P[0-9][0-9]*\([^0-9]\)\@="
+syn match asmReg0	"R[0-9]*0\(\.B\|\.F\|\.U\?\(I\|L\)\|\([^0-9]\)\@=\)"
+syn match asmReg1	"R[0-9]*1\(\.B\|\.F\|\.U\?\(I\|L\)\|\([^0-9]\)\@=\)"
+syn match asmReg2	"R[0-9]*2\(\.B\|\.F\|\.U\?\(I\|L\)\|\([^0-9]\)\@=\)"
+syn match asmReg3	"R[0-9]*3\(\.B\|\.F\|\.U\?\(I\|L\)\|\([^0-9]\)\@=\)"
+syn match asmReg4	"R[0-9]*4\(\.B\|\.F\|\.U\?\(I\|L\)\|\([^0-9]\)\@=\)"
+syn match asmReg5	"R[0-9]*5\(\.B\|\.F\|\.U\?\(I\|L\)\|\([^0-9]\)\@=\)"
+syn match asmReg6	"R[0-9]*6\(\.B\|\.F\|\.U\?\(I\|L\)\|\([^0-9]\)\@=\)"
+syn match asmReg7	"R[0-9]*7\(\.B\|\.F\|\.U\?\(I\|L\)\|\([^0-9]\)\@=\)"
+syn match asmReg8	"R[0-9]*8\(\.B\|\.F\|\.U\?\(I\|L\)\|\([^0-9]\)\@=\)"
+syn match asmReg9	"R[0-9]*9\(\.B\|\.F\|\.U\?\(I\|L\)\|\([^0-9]\)\@=\)"
+syn match asmPReg	"P[0-9][0-9]*\(\.B\|\.F\|\.U\?\(I\|L\)\|\([^0-9]\)\@=\)"
 syn match asmBB		"BB[0-9][0-9]*\([^0-9]\)\@="
 syn match nvirNT	".NEXT_TRUE.*"
 syn match nvirNF	".NEXT_FALSE.*"
+syn match hexconst	"0x\x\+\(\.F\|\.U\?\(I\|L\)\)\?"
 
 syn case match
 
@@ -37,33 +38,40 @@ if version >= 508 || !exists("did_asm_syntax_inits")
   endif
 
   " The default methods for highlighting.  Can be overridden later
-  HiLink asmReg0     Special
-  HiLink asmReg1       Todo
-  HiLink asmReg2     Comment
-  HiLink asmReg3        Error
+  HiLink asmReg0        nvirR0
+  HiLink asmReg1        nvirR1
+  HiLink asmReg2        nvirR2
+  HiLink asmReg3        nvirR3
   HiLink asmReg4	nvirR4
-  HiLink asmReg5	Include
+  HiLink asmReg5	nvirR5
   HiLink asmReg6        nvirR6
-  HiLink asmReg7       Macro
+  HiLink asmReg7        nvirR7
   HiLink asmReg8	nvirR8
   HiLink asmReg9        nvirR9
 
-  HiLink asmPReg	Conditional
-  HiLink asmBB		Label
+  HiLink asmPReg	nvirPR
+  HiLink asmBB		nvirBB
   HiLink nvirNT		nvirNTH
   HiLink nvirNF		nvirNFH
 
-  "HiLink hexNumber      Number
-  "HiLink decNumber      Number
+  HiLink hexconst       Number
+  HiLink decconst       Number
   "HiLink octNumber      Number
   "HiLink binNumber      Number
 
-hi Conditional ctermfg=DarkGreen guifg=SeaGreen gui=bold
-hi Label ctermfg=Black guifg=Black ctermbg=Yellow guibg=Yellow gui=italic cterm=italic
+hi Number ctermfg=DarkGreen guifg=DarkGreen
+hi nvirR0 ctermfg=Magenta guifg=Magenta
+hi nvirR1 ctermfg=Green guifg=Green
+hi nvirR2 ctermfg=Cyan guifg=Cyan
+hi nvirR3 ctermfg=DarkRed guifg=DarkRed
 hi nvirR4 ctermfg=Brown guifg=Brown
+hi nvirR5 ctermfg=Yellow guifg=Yellow
 hi nvirR6 ctermfg=DarkMagenta guifg=DarkMagenta
-hi nvirR8 ctermfg=LightGrey guifg=LightGrey
-hi nvirR9 ctermfg=LightGrey guifg=LightGrey
+hi nvirR7 ctermfg=LightRed guifg=LightRed
+hi nvirR8 ctermfg=Grey guifg=Grey
+hi nvirR9 ctermfg=Blue guifg=Blue
+hi nvirPR  ctermfg=DarkBlue guifg=DarkBlue cterm=bold gui=bold
+hi nvirBB  ctermfg=DarkBlue guifg=DarkBlue
 hi nvirNTH ctermfg=Black ctermbg=LightGreen guifg=Black guibg=LightGreen
 hi nvirNFH ctermfg=Black ctermbg=LightRed guifg=Black guibg=LightRed
 
