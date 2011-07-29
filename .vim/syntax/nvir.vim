@@ -46,7 +46,7 @@ if version >= 508 || !exists("did_asm_syntax_inits")
   HiLink asmReg6        nvirR6
   HiLink asmReg7       Macro
   HiLink asmReg8	nvirR8
-  HiLink asmReg9        Type
+  HiLink asmReg9        nvirR9
 
   HiLink asmPReg	Conditional
   HiLink asmBB		Label
@@ -58,22 +58,14 @@ if version >= 508 || !exists("did_asm_syntax_inits")
   "HiLink octNumber      Number
   "HiLink binNumber      Number
 
-  if &background == "dark"
-  	hi Conditional ctermfg=DarkGreen guifg=SeaGreen gui=bold
-	hi Label ctermfg=Black guifg=Black ctermbg=Yellow guibg=Yellow gui=italic cterm=italic
-	hi nvirR4 ctermfg=Brown guifg=Brown
-	hi nvirR6 ctermfg=DarkMagenta guifg=DarkMagenta
-	hi nvirR8 ctermfg=LightGrey guifg=LightGrey
-	hi nvirNTH ctermfg=Black ctermbg=LightGreen guifg=Black guibg=LightGreen
-	hi nvirNFH ctermfg=Black ctermbg=LightRed guifg=Black guibg=LightRed
-  else
-  	hi Conditional ctermfg=DarkGreen guifg=SeaGreen gui=bold
-	hi Label ctermfg=Black guifg=Black ctermbg=Yellow guibg=Yellow gui=italic cterm=italic
-	hi nvirR4 ctermfg=Brown guifg=Brown
-	hi nvirR6 ctermfg=DarkMagenta guifg=DarkMagenta
-	hi nvirNTH ctermfg=Black ctermbg=LightGreen guifg=Black guibg=LightGreen
-	hi nvirNFH ctermfg=Black ctermbg=LightRed guifg=Black guibg=LightRed
-  endif
+hi Conditional ctermfg=DarkGreen guifg=SeaGreen gui=bold
+hi Label ctermfg=Black guifg=Black ctermbg=Yellow guibg=Yellow gui=italic cterm=italic
+hi nvirR4 ctermfg=Brown guifg=Brown
+hi nvirR6 ctermfg=DarkMagenta guifg=DarkMagenta
+hi nvirR8 ctermfg=LightGrey guifg=LightGrey
+hi nvirR9 ctermfg=LightGrey guifg=LightGrey
+hi nvirNTH ctermfg=Black ctermbg=LightGreen guifg=Black guibg=LightGreen
+hi nvirNFH ctermfg=Black ctermbg=LightRed guifg=Black guibg=LightRed
 
   delcommand HiLink
 endif
