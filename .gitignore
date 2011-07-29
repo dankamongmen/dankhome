@@ -101,6 +101,7 @@ files/
 .fonts
 .fotoxx/
 .gconf/
+.gconf.path
 .gconfd/saved_state
 .gdesklets/
 .gegl-0.0/
@@ -141,6 +142,7 @@ files/
 .jmol
 .lesshst
 .lftp/
+libexec/
 .libquicktime_codecs
 .libreoffice/
 .links2/
@@ -152,6 +154,7 @@ local/*
 .macromedia
 .massxpert
 .miro/
+.mono/
 .mozilla/
 .mpdcron/mpdcron.pid
 .mplayer/gui*
