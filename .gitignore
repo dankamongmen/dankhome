@@ -1,5 +1,8 @@
+Downloads/
 .ICEauthority
 Mail/
+.PhotoFilmStrip
+Pictures/
 .Skype/
 .TinyCA/
 .Xauthority
@@ -11,6 +14,7 @@ Mail/
 .avidemux/
 .audacity-data/
 .bash_history*
+.bitcoin/
 .bzr.log
 .cache
 .calibre/
@@ -80,7 +84,6 @@ Mail/
 .debug/
 .dia
 .dmrc
-Downloads/
 .dvdcss/CACHEDIR.TAG
 .electricsheep/*.avi
 .electricsheep/lock
@@ -98,6 +101,7 @@ files/
 .fonts
 .fotoxx/
 .gconf/
+.gconf.path
 .gconfd/saved_state
 .gdesklets/
 .gegl-0.0/
@@ -138,6 +142,7 @@ files/
 .jmol
 .lesshst
 .lftp/
+libexec/
 .libquicktime_codecs
 .libreoffice/
 .links2/
@@ -149,6 +154,7 @@ local/*
 .macromedia
 .massxpert
 .miro/
+.mono/
 .mozilla/
 .mpdcron/mpdcron.pid
 .mplayer/gui*
@@ -167,7 +173,6 @@ local/*
 .packagesearch
 .pcolor
 .phoronix-test-suite
-Pictures/
 .pki
 .printer-groups.xml
 .pulse/
