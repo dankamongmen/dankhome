@@ -132,9 +132,9 @@ if has("autocmd")
 	    au!
 	endif
 		au BufRead * set formatoptions=tcql nocindent comments&
-		au BufRead *.cc,*.c,*.h,*.cpp,*.java,*.cu set formatoptions=croql cindent comments=sr:/*,mb:*,el:*/,:// nospell
+		au BufRead,BufNewFile *.cc,*.c,*.h,*.cpp,*.java,*.cu set formatoptions=croql cindent comments=sr:/*,mb:*,el:*/,:// nospell
 		au BufRead *.scm set lisp nospell
-		au BufRead *.adb,*.ads set shiftwidth=3
+		au BufRead,BufNewFile *.nvir set nospell filetype=nvir
 	if version > 500
 	    augroup END
 	endif
