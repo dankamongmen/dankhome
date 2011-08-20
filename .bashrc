@@ -25,6 +25,9 @@ export PAGER="less"
 shopt -s checkwinsize
 
 if [ "$TERM" != "dumb" ] ; then
+	if [ "$TERM" == "xterm" ] ; then
+		export TERM=xterm-256color
+	fi
 	if [ -n "`ls --version 2> /dev/null | grep '(GNU coreutils)'`" ] ; then
 		if [ -r $DANKRC/dankcolors ] ; then
 			eval "`dircolors -b $DANKRC/dankcolors`";
