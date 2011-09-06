@@ -145,7 +145,11 @@ endif
 
 "colorscheme django
 "colorscheme advantage
-colorscheme blugrine
+"colorscheme blugrine
+
+
+let solarized_termtrans=1
+colorscheme solarized
 
 " modify selected text using combining diacritics
 command! -range -nargs=0 Overline        call s:CombineSelection(<line1>, <line2>, '0305')

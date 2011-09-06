@@ -27,7 +27,9 @@ case `hostname` in
 		if ! sudo aptitude -s -V -v -Z update ; then
 			echo "aptitude returned $?" >&2
 		fi
-		#cd tmp/torrenting && screen nice rtorrent
+		#if ! mount | grep ^/media/sshfs ; then
+		#	sshfs -o reconnect -o ro skynet:/media /media/sshfs
+		#fi
 		cd
 		;;
 
