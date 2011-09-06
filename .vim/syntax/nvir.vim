@@ -18,12 +18,13 @@ syn match asmReg6	"v\?R[0-9]*6\(\.B\|\.F\|\.U\?\(I\|L\)\|\([^0-9]\)\@=\)"
 syn match asmReg7	"v\?R[0-9]*7\(\.B\|\.F\|\.U\?\(I\|L\)\|\([^0-9]\)\@=\)"
 syn match asmReg8	"v\?R[0-9]*8\(\.B\|\.F\|\.U\?\(I\|L\)\|\([^0-9]\)\@=\)"
 syn match asmReg9	"v\?R[0-9]*9\(\.B\|\.F\|\.U\?\(I\|L\)\|\([^0-9]\)\@=\)"
-syn match asmPReg	"P[0-9][0-9]*\(\.B\|\.F\|\.U\?\(I\|L\)\|\([^0-9]\)\@=\)"
+syn match asmPReg	"P[0-9]\([0-9]*\)\(\.B\|\.F\|\.U\?\(I\|L\)\|\([^0-9]\)\@=\)"
 syn match asmBB		"BB[0-9][0-9]*\(_\d\d*\)\?"
 syn match asmBBNew	"BB-\d\d*"
 syn match nvirNT	".NEXT_TRUE.*"
 syn match nvirNF	".NEXT_FALSE.*"
 syn match hexconst	"0x\x\+\(\.F\|\.U\?\(I\|L\)\)\?"
+syn match spreg		"\(ctaid\|ntid\|tid\|nctaid\).\(x\|y\|z\)"
 
 syn case match
 
@@ -61,6 +62,7 @@ if version >= 508 || !exists("did_asm_syntax_inits")
   "HiLink octNumber      Number
   "HiLink binNumber      Number
 
+hi spreg ctermfg=Yellow guifg=Yellow
 hi Number ctermfg=DarkGreen guifg=DarkGreen
 hi nvirR0 ctermfg=Magenta guifg=Magenta
 hi nvirR1 ctermfg=Green guifg=Green
@@ -72,9 +74,9 @@ hi nvirR6 ctermfg=DarkMagenta guifg=DarkMagenta
 hi nvirR7 ctermfg=LightRed guifg=LightRed
 hi nvirR8 ctermfg=Grey guifg=Grey
 hi nvirR9 ctermfg=Blue guifg=Blue
-hi nvirPR  ctermfg=DarkBlue guifg=DarkBlue cterm=bold gui=bold
-hi nvirBB  ctermfg=DarkBlue guifg=DarkBlue
-hi nvirBBNew  ctermfg=Black guifg=DarkBlack ctermbg=Blue guifg=Blue
+hi nvirPR ctermfg=DarkBlue guifg=DarkBlue cterm=bold gui=bold
+hi nvirBB ctermfg=DarkBlue guifg=DarkBlue
+hi nvirBBNew ctermfg=Black guifg=DarkBlack ctermbg=Blue guifg=Blue
 hi nvirNTH ctermfg=Black ctermbg=LightGreen guifg=Black guibg=LightGreen
 hi nvirNFH ctermfg=Black ctermbg=LightRed guifg=Black guibg=LightRed
 
