@@ -120,7 +120,9 @@ files/
 .gnupg/random_seed
 .gnupg/secring*
 .gnuplot_history
-.goldendict/
+.goldendict/config
+.goldendict/history
+.goldendict/index/
 .google/
 .gpg-agent-info
 .gphpedit/
