@@ -1,0 +1,21 @@
+#!/bin/sh
+
+set -e
+
+for i in wav sine pink ; do 
+	if [ "$i" != "wav" ] ; then
+		echo "Testing 2-channel 44.1KHz (CD-Audio) digital output..."
+		speaker-test -c2 --device pcm.hdmi_hw --rate 44100 -P2 -t $i
+	fi
+
+	echo "Testing 2-channel 48KHz (CD-Audio) digital output..."
+	speaker-test -c2 --device pcm.hdmi_hw --rate 48000 -P2 -t $i
+
+	if [ "$i" != "wav" ] ; then
+		echo "Testing 6-channel 44.1KHz (CD-Audio) digital output..."
+		speaker-test -c6 --device pcm.hdmi_hw --rate 44100 -P2 -t $i
+	fi
+
+	echo "Testing 6-channel 48KHz (CD-Audio) digital output..."
+	speaker-test -c6 --device pcm.hdmi_hw --rate 48000 -P2 -t $i
+done
