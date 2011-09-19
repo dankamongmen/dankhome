@@ -20,6 +20,10 @@ get_dimensions () {
 	if set | grep ^DISPLAY > /dev/null ; then
 		DIM="`xdpyinfo | grep dimensions | cut -d: -f2 | cut -dp -f1`"
 	else
+		if ! which fbset ; then
+			echo "fbset isn't in the path" >&2
+			return 1
+		fi
 		DIM=`fbset -i | grep ^mode | cut -d\" -f2 | cut -d\" -f1`
 	fi
 	XDIM=`echo $DIM | cut -dx -f1`

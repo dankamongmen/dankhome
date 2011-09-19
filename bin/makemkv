@@ -1,3 +1,4 @@
 #!/bin/sh
 
-LD_LIBRARY_PATH=/usr/local/lib/ /usr/local/bin/makemkv
+# makemkv itself won't run if run from anywhere but /usr/bin :/
+LD_LIBRARY_PATH=/usr/local/lib/ /usr/bin/makemkv
