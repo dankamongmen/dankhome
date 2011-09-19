@@ -1,3 +1,5 @@
+view_sort=name
+view_sort_current=main,name
 check_hash = yes
 encryption = allow_incoming,try_outgoing,enable_retry
 download_rate=350
