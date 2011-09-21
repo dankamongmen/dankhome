@@ -20,16 +20,13 @@ case `hostname` in
 		# start dbus FIXME
 		;;
 	recombinator)
-		dbus-daemon --session --fork
+		#dbus-daemon --session --fork
 		daemonizer -p $TMPDIR/daemonizer.smtp.pid -r 0 -- ssh -N -L 11111:localhost:25 qemfd.net &
 		! which fetchmail 2> /dev/null || fetchmail
 		#commitpidgin
 		if ! sudo aptitude -s -V -v -Z update ; then
 			echo "aptitude returned $?" >&2
 		fi
-		#if ! mount | grep ^/media/sshfs ; then
-		#	sshfs -o reconnect -o ro skynet:/media /media/sshfs
-		#fi
 		cd
 		;;
 
@@ -38,6 +35,11 @@ case `hostname` in
 		;;	
 
 	eschatomatic)
+		for i in ghettostore ghettospare quadtera ; do
+			if ! mount | grep ^/media/$i ; then
+				sudo mount -t nfs skynet.orthanc:/media/$i -o ro,guest /mnt/$i
+			fi
+		done
 		notify-send "Done initializing eschatomatic..."
 		;;
 
