@@ -38,6 +38,11 @@ case `hostname` in
 		;;	
 
 	eschatomatic)
+		for i in ghettostore ghettospare quadtera ; do
+			if ! mount | grep ^/media/$i ; then
+				sudo mount -t nfs skynet.orthanc:/media/$i -o ro,guest /mnt/$i
+			fi
+		done
 		notify-send "Done initializing eschatomatic..."
 		;;
 
