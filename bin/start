@@ -23,6 +23,7 @@ case `hostname` in
 		#dbus-daemon --session --fork
 		daemonizer -p $TMPDIR/daemonizer.smtp.pid -r 0 -- ssh -N -L 11111:localhost:25 qemfd.net &
 		! which fetchmail 2> /dev/null || fetchmail
+		postqueue -f
 		#commitpidgin
 		if ! sudo aptitude -s -V -v -Z update ; then
 			echo "aptitude returned $?" >&2
