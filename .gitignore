@@ -14,6 +14,10 @@ Pictures/
 .avidemux/
 .audacity-data/
 .bash_history*
+bin/p4
+bin/p4r
+bin/p4s
+bin/unix-build
 .bitcoin/
 .bzr.log
 .cache
