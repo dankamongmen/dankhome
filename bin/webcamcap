@@ -1,0 +1,3 @@
+#!/bin/sh
+
+mencoder tv:// -tv driver=v4l2:width=1280:height=720:device=/dev/video0 -ovc lavc -oac null -o webcam.avi
