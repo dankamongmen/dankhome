@@ -22,7 +22,10 @@ use-filename-title=1
 #vo=xv,gl2,x11,fbdev,caca
 #vo=xvmc,gl2,caca
 
+# ensure vdpau is working via "vdpauinfo"
 #vo=vdpau,xv,gl2,fbdev2,caca
+
+# ensure vaapi is working via "vainfo"
 vo=vaapi,xv,gl2,xv,fbdev2,caca
 
 # Prefer the VDPAU codecs, but fall back if need be
