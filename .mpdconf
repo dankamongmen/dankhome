@@ -16,18 +16,20 @@ zeroconf_name "recombinator_mpd"
 #buffer_before_play 20%
 #metadata_to_use none
 # See http://www.pulseaudio.org/wiki/PerfectSetup
-#audio_output {
-#	type "pulse"
-#	name "PulseAudio"
-#}
 audio_output {
-	type "alsa"
-	name "Intel HDAudio ALSA"
-	device "default"
-	buffer_time "2000000"
-	use_mmap "yes"
+	type "pulse"
+	name "PulseAudio"
 }
-mixer_type "alsa"
+#audio_output {
+#	type "alsa"
+#	name "Intel HDAudio ALSA"
+#	buffer_time "2000000"
+#	use_mmap "yes"
+#	device "hw:0,0"
+	# Default resamples at 48k, despite 44.1k natural rate
+	#device "default"
+#}
+#mixer_type "alsa"
 #mixer_device "dmix"
 #mixer_control "Master"
 

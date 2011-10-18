@@ -26,7 +26,8 @@ use-filename-title=1
 #vo=vdpau,xv,gl2,fbdev2,caca
 
 # ensure vaapi is working via "vainfo"
-vo=vaapi,xv,gl2,xv,fbdev2,caca
+vo=vaapi,xv,gl2,
+#fbdev2,caca
 
 # Prefer the VDPAU codecs, but fall back if need be
 #vc=ffmpeg12vdpau,ffwmv3vdpau,ffvc1vdpau,ffh264vdpau,ffodivxvdpau,
@@ -35,11 +36,16 @@ vo=vaapi,xv,gl2,xv,fbdev2,caca
 #rtc=1
 #fstype=below
 # See http://www.pulseaudio.org/wiki/PerfectSetup
-#ao=pulse
+ao=pulse
 #mixer=hw:0
-ao=alsa
-volume=500.1
-mixer-channel=PCM
+
+# Use 44.1k (no dmix resampling) -- use this for audio
+#ao=alsa:device=hw=0,0
+
+# Use dmix to sample to 48k -- best for apps
+#ao=alsa
+#volume=500.1
+#mixer-channel=PCM
 #idx=yes
 framedrop=1
 autosync=1
