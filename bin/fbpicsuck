@@ -14,7 +14,4 @@ OUTDIR="$1"
 
 FRIENDS=`$FB friends | sed -e '1d' | cut -d\  -f1`
 echo "Found `echo $FRIENDS | wc -w` friends"
-echo "$FRIENDS" | xargs $PAR $FB -auto_mkdir=1 OPICS "$i" "$1" -of='[oname]/[aid]-[pid].jpg' -ppsize=1 --
-for i in $FRIENDS ; do
-	echo "Acquiring pictures for $i..."
-done
+echo "$FRIENDS" | xargs $PAR -i $FB -auto_mkdir=1 OPICS {} "$1" -of='[oname]/[aid]-[pid].jpg' -ppsize=1 --
