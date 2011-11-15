@@ -5,7 +5,7 @@ set -o nounset
 set -o pipefail
 
 cd $HOME/Mail
-git add *
+git add -- *
 git commit -a -m "Git commit `date`"
 
 #amispammer -i `dig +short qemfd.net` -f dank@qemfd.net -t dank
