@@ -1,3 +1,4 @@
 #!/bin/sh
 
-mencoder tv:// -tv driver=v4l2:width=1280:height=720:device=/dev/video0 -ovc lavc -oac null -o webcam.avi
+#padsp mencoder tv:// -tv driver=v4l2:width=960:height=720:device=/dev/video0: -ovc lavc -oac copy -lavcopts vcodec=mpeg4:acodec=mp3 -o webcam.avi
+mencoder tv:// -tv driver=v4l2:width=960:height=720:device=/dev/video0: -ovc lavc -oac copy -lavcopts vcodec=mpeg4:acodec=mp3 -o webcam.avi

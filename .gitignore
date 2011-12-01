@@ -14,6 +14,7 @@ Pictures/
 .avidemux/
 .audacity-data/
 .bash_history*
+bin/fbcmd
 bin/p4
 bin/p4r
 bin/p4s
@@ -188,6 +189,7 @@ local/*
 .pyrit/
 .recently-used
 .rnd
+.sane/
 .secret/
 .shutter/
 .specto/cache
@@ -221,5 +223,6 @@ var/log/mpd.log
 .wireshark
 .wpa_cli_history
 .wxglade/
+.xscreensaver
 .xsession-errors
 .xsession-errors.old

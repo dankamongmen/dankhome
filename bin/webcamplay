@@ -1,6 +1,6 @@
 #!/bin/sh
 
-#mplayer tv:// -tv driver=v4l2:width=1280:height=720:device=/dev/video0
+#mplayer tv:// -tv driver=v4l2:width=960:height=720:device=/dev/video0
 
 # doesn't actually get the audio...FIXME
-mplayer tv:// -tv driver=v4l2:forceaudio:adevice=/dev/snd/pcmC1D0c:width=1280:height=720
+mplayer tv:// -tv driver=v4l2:forceaudio:adevice=/dev/snd/pcmC1D0c:width=960:height=720
