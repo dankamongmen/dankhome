@@ -82,6 +82,7 @@ bin/unix-build
 .config/veusz.org/
 .config/vlc/
 .config/wpa_supplicant/
+.covers/
 .credentials
 .cups
 .dbus
@@ -206,6 +207,7 @@ src/
 .stellarium/stars/
 .subversion/README.txt
 .subversion/servers
+.sup/
 .synaptic/
 .thumbnails
 tmp/*
@@ -223,6 +225,7 @@ var/log/mpd.log
 .wireshark
 .wpa_cli_history
 .wxglade/
+.xbmc/
 .xscreensaver
 .xsession-errors
 .xsession-errors.old
