@@ -96,6 +96,7 @@ for i in $DANKRC/.bashrc_helpers/* ; do
 done
 unset i
 
+# Ehhh...I'd rather have my TMPDIR cleaned each boot, I think...
 if [ -z "$TMPDIR" ] ; then
 	TMPDIR=$HOME
 	[ ! -d /tmp ] || export TMPDIR=/tmp
@@ -109,9 +110,6 @@ if ! `which vim > /dev/null` ; then
 else
 	alias vi=vim
 fi
-
-export DEBFULLNAME="Nick Black"
-export DEBEMAIL="nick.black@sprezzatech.com"
 
 # from gnupg-agent(1)
 export GPG_TTY=`tty`
