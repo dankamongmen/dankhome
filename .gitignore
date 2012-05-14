@@ -148,6 +148,8 @@ files/
 .icons
 .java
 .jmol
+.jnewsrc-lock
+.jnewsrc.time
 .lesshst
 .lftp/
 libexec/
