@@ -11,7 +11,13 @@ umask 027
 
 # Debian's sensible-browser(1) uses BROWSER, causing gnome-terminal and
 # xfce4-terminal both to invoke links2 under this config...
-#export BROWSER="links2"
+if set | grep ^SSH_TTY > /dev/null || tty | grep -v /pts/ > /dev/null ; then
+	if which w3m > /dev/null 2>&1 ; then
+		export BROWSER="w3m"
+	elif which links2 > /dev/null 2>&1 ; then
+		export BROWSER="links2"
+	fi
+fi
 
 #if `tty | grep /dev/tty1$ > /dev/null` ; then
 #	for i in `seq 2 7` ; do

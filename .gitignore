@@ -1,8 +1,12 @@
+Downloads/
 .ICEauthority
 Mail/
+.PhotoFilmStrip
+Pictures/
 .Skype/
 .TinyCA/
 .Xauthority
+.AbiSuite/
 .abook/
 .adobe/Flash_Player/AssetCache
 .alexandria/
@@ -11,6 +15,12 @@ Mail/
 .avidemux/
 .audacity-data/
 .bash_history*
+bin/fbcmd
+bin/p4
+bin/p4r
+bin/p4s
+bin/unix-build
+.bitcoin/
 .bzr.log
 .cache
 .calibre/
@@ -73,6 +83,7 @@ Mail/
 .config/veusz.org/
 .config/vlc/
 .config/wpa_supplicant/
+.covers/
 .credentials
 .cups
 .dbus
@@ -80,7 +91,6 @@ Mail/
 .debug/
 .dia
 .dmrc
-Downloads/
 .dvdcss/CACHEDIR.TAG
 .electricsheep/*.avi
 .electricsheep/lock
@@ -95,9 +105,9 @@ files/
 .fltk/
 .fonts.conf
 .fontconfig
-.fonts
 .fotoxx/
 .gconf/
+.gconf.path
 .gconfd/saved_state
 .gdesklets/
 .gegl-0.0/
@@ -116,8 +126,11 @@ files/
 .gnupg/random_seed
 .gnupg/secring*
 .gnuplot_history
-.goldendict/
+.goldendict/config
+.goldendict/history
+.goldendict/index/
 .google/
+.gpg-agent-info
 .gphpedit/
 .gphoto/
 .granule
@@ -137,6 +150,7 @@ files/
 .jmol
 .lesshst
 .lftp/
+libexec/
 .libquicktime_codecs
 .libreoffice/
 .links2/
@@ -148,6 +162,7 @@ local/*
 .macromedia
 .massxpert
 .miro/
+.mono/
 .mozilla/
 .mpdcron/mpdcron.pid
 .mplayer/gui*
@@ -166,7 +181,6 @@ local/*
 .packagesearch
 .pcolor
 .phoronix-test-suite
-Pictures/
 .pki
 .printer-groups.xml
 .pulse/
@@ -176,6 +190,7 @@ Pictures/
 .pyrit/
 .recently-used
 .rnd
+.sane/
 .secret/
 .shutter/
 .specto/cache
@@ -185,12 +200,14 @@ src/
 .ssh/agent*
 .ssh/id_rsa
 .ssh/id_rsa.pub
+.ssh/identity.pub
 .ssh/known_hosts.old
 .starplotrc
 .stellarium/log.txt
 .stellarium/stars/
 .subversion/README.txt
 .subversion/servers
+.sup/
 .synaptic/
 .thumbnails
 tmp/*
@@ -208,5 +225,7 @@ var/log/mpd.log
 .wireshark
 .wpa_cli_history
 .wxglade/
+.xbmc/
+.xscreensaver
 .xsession-errors
 .xsession-errors.old

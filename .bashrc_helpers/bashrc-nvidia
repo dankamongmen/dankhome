@@ -1,4 +1,0 @@
-# Helper bashrc for working on NVIDIA's OCG
-
-#export CC=gcc-4.4
-alias dptxas="ptxas --cdbg=3"

@@ -3,10 +3,10 @@
 # none of this ought be necessary, really; ssh-askpass is a symlink into
 # /etc/alternatives on debian. might need it elsewhere, though?
 if [ -n "$DISPLAY" ] ; then
-	if [ -x `ssh-askpass-gnome 2> /dev/null` ] ; then
-		export SSH_ASKPASS=ssh-askpass-gnome
-	elif [ -x `ssh-askpass-fullscreen 2> /dev/null` ] ; then
+	if [ -x `which ssh-askpass-fullscreen 2> /dev/null` ] ; then
 		export SSH_ASKPASS=ssh-askpass-fullscreen
+	elif [ -x `which ssh-askpass-gnome 2> /dev/null` ] ; then
+		export SSH_ASKPASS=ssh-askpass-gnome
 	fi
 fi
 
@@ -14,11 +14,11 @@ if [[ ! -z `which ssh` && -f `which ssh` ]]; then
 
 	# vps
 	alias qemfd="ssh qemfd.net"
-	alias recombinator="ssh recombinator.qemfd.net"
+	alias recombinator="ssh recombinator"
+	alias skynet="ssh skynet.qemfd.net"
 
 	# tech community boxen
 	alias havoc="ssh havoc"
-	alias hogwarts="ssh hogwarts"
 
 	# NVIDIA
 	alias kf="ssh kingfriday"

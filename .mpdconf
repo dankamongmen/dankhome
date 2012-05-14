@@ -23,9 +23,11 @@ audio_output {
 #audio_output {
 #	type "alsa"
 #	name "Intel HDAudio ALSA"
-#	device "default"
 #	buffer_time "2000000"
 #	use_mmap "yes"
+#	device "hw:0,0"
+	# Default resamples at 48k, despite 44.1k natural rate
+	#device "default"
 #}
 #mixer_type "alsa"
 #mixer_device "dmix"

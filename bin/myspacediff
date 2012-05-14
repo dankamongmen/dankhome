@@ -1,0 +1,58 @@
+#!/usr/bin/env perl
+
+use WWW::Myspace;
+use WWW::Myspace::FriendChanges;
+
+binmode STDOUT, ":utf8";
+
+my $myspace = new WWW::Myspace(
+	account_name => 'dank@qemfd.net',
+	password => 'kopKenmic.',
+	cache_file => '.myspace-cache',
+	human => 0,
+#	human => 1,
+);
+
+unless ( $myspace->logged_in ) { die "Login failed\n"; }
+
+print "Using cache: ".$myspace->cache_dir."\n";
+print "Account: ".$myspace->account_name."\n";
+print "User: ".$myspace->user_name." ID: ".$myspace->my_friend_id."\n";
+print "Friend count: ".$myspace->friend_count."\n";
+print 'homepage: ', $myspace->current_page->decoded_content."\n";
+
+my $notifiers = $myspace->get_notifications;
+print "Getting notifications...";
+foreach $code ( keys( %notifiers ) ) {
+	print "\n".$notifiers{ $code };
+}
+print "\n";
+
+
+foreach my $friend ( $myspace->get_friends ){
+	print ${friend}." = ".$myspace->friend_url($friend)." (".$myspace->friend_user_name($friend).")\n" ;
+#	print "http://profile.myspace.com/index.cfm?".
+#		"fuseaction=user.viewprofile&friendID=".
+#		${id}."\n";
+}
+
+print @friend." friends";
+
+my $foo = WWW::Myspace::FriendChanges->new( $myspace );
+
+# Get the list of deleted friends.
+@deleted_friends = $foo->deleted_friends;
+
+print deleted_friends;
+
+# Get the list of new friends
+@added_friends = $foo->added_friends;
+
+print added_friends;
+
+# Write the current friend list into the cache file.
+$foo->write_cache;
+
+$myspace->logout();
+
+print "Successfully logged out, thanks for playing\n";

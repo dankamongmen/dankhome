@@ -16,4 +16,4 @@ eject -t || true
 #  provide optional list of tracks
 # -M has been dropped
 # -P goes to stdout?!
-abcde -d /dev/cdrom3 -p -U -V -x "$@"
+abcde -p -U -V -x "$@"

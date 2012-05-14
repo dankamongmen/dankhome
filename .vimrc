@@ -132,9 +132,9 @@ if has("autocmd")
 	    au!
 	endif
 		au BufRead * set formatoptions=tcql nocindent comments&
-		au BufRead *.cc,*.c,*.h,*.cpp,*.java,*.cu set formatoptions=croql cindent comments=sr:/*,mb:*,el:*/,:// nospell
+		au BufRead,BufNewFile *.cc,*.c,*.h,*.cpp,*.java,*.cu set formatoptions=croql cindent comments=sr:/*,mb:*,el:*/,:// nospell
 		au BufRead *.scm set lisp nospell
-		au BufRead *.adb,*.ads set shiftwidth=3
+		au BufRead,BufNewFile *.ptx,*.nvir set nospell filetype=nvir
 	if version > 500
 	    augroup END
 	endif
@@ -145,7 +145,11 @@ endif
 
 "colorscheme django
 "colorscheme advantage
-colorscheme blugrine
+"colorscheme blugrine
+
+
+let solarized_termtrans=1
+colorscheme solarized
 
 " modify selected text using combining diacritics
 command! -range -nargs=0 Overline        call s:CombineSelection(<line1>, <line2>, '0305')

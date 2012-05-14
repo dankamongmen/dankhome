@@ -10,7 +10,7 @@ ui gtk2
 #offline
 # name and email setting (if non-default)
 # realname "Nick Black"
-email "dank@qemfd.net"
+email "nick.black@sprezzatech.com"
 # Disable fallback mode by commenting out the following:
 no-cc
 header "X-Debbugs-CC: dank@qemfd.net"

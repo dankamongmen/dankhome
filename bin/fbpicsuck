@@ -6,15 +6,12 @@ usage () { echo "usage: `basename $0` outputdir" ; }
 usageerr () { usage >&2 ; exit 1 ; }
 
 FB=fbcmd
+PAR=parallel # from Debian's moreutils
 
 [ $# -eq 1 ] || usageerr
 
 OUTDIR="$1"
 
-FRIENDS=`$FB friends | cut -d\  -f1`
+FRIENDS=`$FB friends | sed -e '1d' | cut -d\  -f1`
 echo "Found `echo $FRIENDS | wc -w` friends"
-for i in $FRIENDS ; do
-	echo "Acquiring pictures for $i..."
-	[ -d "$OUTDIR/$i" ] || mkdir "$OUTDIR/$i"
-	$FB OPICS "$i" -of='[oname]/[aid]-[pid].jpg' -ppsize=1
-done
+echo "$FRIENDS" | xargs $PAR -i $FB -auto_mkdir=1 OPICS {} "$1" -of='[oname]/[aid]-[pid].jpg' -ppsize=1 --

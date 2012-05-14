@@ -20,6 +20,10 @@ get_dimensions () {
 	if set | grep ^DISPLAY > /dev/null ; then
 		DIM="`xdpyinfo | grep dimensions | cut -d: -f2 | cut -dp -f1`"
 	else
+		if ! which fbset ; then
+			echo "fbset isn't in the path" >&2
+			return 1
+		fi
 		DIM=`fbset -i | grep ^mode | cut -d\" -f2 | cut -d\" -f1`
 	fi
 	XDIM=`echo $DIM | cut -dx -f1`
@@ -28,6 +32,8 @@ get_dimensions () {
 
 get_dimensions
 
+# Use -volume 0 rather than -nosound to only start muted (ie, leave open the
+# possibility of unmuting).
 case "`basename $0`" in
 	mp)
 		;;
@@ -35,10 +41,10 @@ case "`basename $0`" in
 		OPTIONS="$OPTIONS -zoom -x $XDIM -y $YDIM"
 		;;
 	mpfsna)
-		OPTIONS="$OPTIONS -zoom -x $XDIM -y $YDIM -nosound"
+		OPTIONS="$OPTIONS -zoom -x $XDIM -y $YDIM -volume 0"
 		;;
 	mpna)
-		OPTIONS="$OPTIONS -nosound"
+		OPTIONS="$OPTIONS -volume 0"
 		;;
 	mpdvd)
 		OPTIONS="$OPTIONS -aspect 16:9 -zoom -x $XDIM -y $YDIM"

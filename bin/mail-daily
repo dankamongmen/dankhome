@@ -5,11 +5,11 @@ set -o nounset
 set -o pipefail
 
 cd $HOME/Mail
-git add *
+git add -- *
 git commit -a -m "Git commit `date`"
 
-amispammer -i `dig +short qemfd.net` -f dank@qemfd.net -t dank
-amispammer -d qemfd.net -f dank@qemfd.net -t dank
+#amispammer -i `dig +short qemfd.net` -f dank@qemfd.net -t dank
+#amispammer -d qemfd.net -f dank@qemfd.net -t dank
 DAY="`date +%Y-%j`"
 if [ -r $HOME/Mail/spam ] ; then
 	mv -v $HOME/Mail/spam $HOME/Mail/spam-archive/spam-$DAY
