@@ -67,7 +67,7 @@ set shiftround
 " set showcmd
 set showmatch				" match brackets
 set shortmess=atI
-set tags=.tags,out/tags,~/var/cache/glibc-tags
+set tags=tags,.tags,out/tags,~/var/cache/glibc-tags
 set notagrelative
 "set t_Co=256
 set vb t_vb=
