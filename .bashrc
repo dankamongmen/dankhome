@@ -111,6 +111,10 @@ else
 	alias vi=vim
 fi
 
+export DEBKEY="9978711C"
+export DEBFULLNAME="nick black"
+export DEBEMAIL="nick.black@sprezzatech.com"
+
 # from gnupg-agent(1)
 export GPG_TTY=`tty`
 
