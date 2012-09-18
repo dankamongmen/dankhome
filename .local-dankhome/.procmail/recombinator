@@ -33,6 +33,10 @@ PATH=/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/bin:/sbin
 }
 
 :0:
+* ^From.*bugzilla@sprezzatech.com
+sprezzabugs
+
+:0:
 * ^To.*omphalos-dev@googlegroups.com
 omphalos-dev
 

@@ -1,0 +1,16 @@
+#!/bin/sh
+
+set -e
+
+usage () { echo "usage: `basename $0` [ initrd | directory ]" ; return 0 ; }
+usageerr () { usage >&2 ; return 1 ; }
+
+[ $# -eq 1 ] || usageerr
+
+if [ -f "$1" ] ; then
+	echo "Unpacking $1..."
+	gzip -dc < "$1" | cpio -i
+else
+	echo "Packing $1..."
+	find "$1" -print -depth | cpio -o -H | gzip
+fi
