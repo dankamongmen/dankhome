@@ -14,7 +14,6 @@ svn-clean
 svn up
 rm -rf ffmpeg
 
-DEB_BUILD_OPTIONS="--disable-dga1 --disable-dga2 --enable-gui --enable-menu --disable-ossaudio --enable-tv-v4l2" fakeroot debian/rules
-DEB_BUILD_OPTIONS="--disable-dga1 --disable-dga2 --enable-gui --enable-menu --disable-ossaudio --enable-tv-v4l2" fakeroot debian/rules binary
-sudo dpkg -i ../mplayer*deb # FIXME
-rm ../mplayer*deb
+./configure --disable-dga1 --disable-dga2 --enable-gui --enable-menu --disable-ossaudio --enable-tv-v4l2
+make -j8
+sudo make install
