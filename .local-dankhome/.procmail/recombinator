@@ -41,6 +41,14 @@ sprezzabugs
 omphalos-dev
 
 :0:
+* ^To.*debian-boot@lists.debian.org
+debian-boot
+
+:0:
+* ^CC.*debian-boot@lists.debian.org
+debian-boot
+
+:0:
 * ^From.*gatech.edu$
 /var/mail/dank
 
