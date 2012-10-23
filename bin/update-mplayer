@@ -10,10 +10,9 @@ if ! svn info 2> /dev/null > /dev/null 2>&1 ; then
 	exit 1
 fi
 
-svn-clean
 svn up
 rm -rf ffmpeg
 
-./configure --disable-dga1 --disable-dga2 --enable-gui --enable-menu --disable-ossaudio --enable-tv-v4l2
-make -j8
-sudo make install
+dpkg-buildpackage -j8 -k$DEBKEY
+sudo dpkg -i ../mplayer*deb # FIXME
+rm ../mplayer*deb
