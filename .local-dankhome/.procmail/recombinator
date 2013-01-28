@@ -45,6 +45,10 @@ omphalos-dev
 debian-boot
 
 :0:
+* ^To.*@zfsonlinux.org
+zfs
+
+:0:
 * ^CC.*debian-boot@lists.debian.org
 debian-boot
 
