@@ -20,7 +20,4 @@ if [[ ! -z `which ssh` && -f `which ssh` ]]; then
 	# tech community boxen
 	alias havoc="ssh havoc"
 
-	# NVIDIA
-	alias kf="ssh kingfriday"
-
 fi
