@@ -120,12 +120,10 @@ export GPG_TTY=`tty`
 if [ -f "${HOME}/.gpg-agent-info" ]; then
 	. "${HOME}/.gpg-agent-info"
 else
-	gpg-agent --daemon --enable-ssh-support \
-		--write-env-file "${HOME}/.gpg-agent-info"
+	gpg-agent --daemon --write-env-file "${HOME}/.gpg-agent-info"
 	. "${HOME}/.gpg-agent-info"
 fi
 export GPG_AGENT_INFO
-export SSH_AUTH_SOCK
 
 # See http://www.xcombinator.com/2008/07/23/mac-os-x-color-showing-escwhatever-for-git-diff-colors-and-more/
 # and the less(1) man page.
