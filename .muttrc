@@ -1,1 +1,118 @@
-files/muttrc
+#make it pretty 
+set menu_scroll
+color hdrdefault cyan black
+color quoted    green black
+color signature cyan black
+color attachment brightyellow black
+color indicator black cyan
+color status    brightgreen blue
+color tree      red black
+color markers   brightred black
+color tilde     blue black
+
+set folder="~/Mail"	# root mail directory, used for '+ and '=' substitution
+set realname="nick black"
+set from="nick.black@sprezzatech.com"	# default; override with my_hdr in hooks
+#set envelope_from_address="nick.black@sprezzatech.com"
+
+alternates dank@qemfd.net dankamongmen@gmail.com nickblack@linux.com info@sprezzatech.com
+
+# !!! We're not actually doing this anymore!!! set record= follows!!!
+#
+# Blind-cc a copy of everything we send to ourselves. We don't use the "$record"
+# variable, because that gets overridden by "$save_name" (which we use to save
+# to recipient directories, to preserve threading there).
+#my_hdr Bcc: dank@qemfd.net
+# do a check on recipient address and save to that mailbox...
+#set save_name = 'yes'
+# ...even if it doesn't exist
+#set force_name = 'yes'
+set record='~/Mail/sent'
+set postponed='~/Mail/postponed'
+
+set beep='yes'
+set beep_new='yes'
+
+# sort based off thread, then date. group threads by message id's, not subject.
+set sort = 'threads'
+set strict_threads = 'yes'
+set sort_aux = 'score'
+#set sort_aux = 'last-date-received'
+
+# if we reply to ourselves, actually reply to original recipients
+set reply_self = 'yes'
+
+# reply using the address where we received the mail, iff it's in our
+# 'alternates' list above. accept the real name as provided.
+set reverse_name = 'yes'
+set reverse_realname = 'yes'		# this is the default
+
+# remove empty mailboxes upon close
+set save_empty = 'no'
+
+# replace addresses with real names from alias list in index menu
+set reverse_alias = 'yes'
+
+# imitate the old search-body function
+macro index \eb '/~b ' 'search in message bodies'
+
+set edit_hdrs		# make headers visible while editing mail
+set include		# quote message when replying
+set fast_reply		# use old subject/from: when replying
+unset bounce_delivered	# don't add Delivered-To header to (b)ounces
+set move=no		# Read messages stay in the spool
+set confirmappend=no	# Allow saves to existing folders without confirmation
+set confirmcreate=yes	# Require confirmation for new folders
+set followup_to=yes	# Use Mail-Followup-To: when sending to lists
+set history=20		# keep a large string input ringbuffer
+set delete=yes		# don't prompt for delete on exit
+
+set attribution="%n left as an exercise for the reader:"
+set forward_format="[%s]"
+
+#ignore everything, essentially, save message-specific headers
+ignore *
+unignore from: date subject to cc bcc
+
+bind index 'j' next-entry
+bind index 'k' previous-entry
+
+# we use a real editor, with 76-char wrapping. invoke spellchecking.
+set editor="vim \"+set tw=76\" +/^$/"
+
+#use utf-8 before iso-8859-1
+set send_charset="us-ascii:utf-8:iso-8859-1"
+
+# print it pretty (from muttprint(1) man page)
+set print_command="muttprint"
+
+# IMAP stuff
+set header_cache="~/var/cache/mutt-headers/"
+set message_cachedir="~/var/cache/mutt-bodies/"
+
+set mail_check=90
+set timeout=15
+set envelope_from=yes
+set query_command="lbdbq '%s*'"
+set postpone=ask-yes
+set pipe_decode		# Helps 'urlview' work better.
+set ssl_starttls=yes
+unset confirmappend
+set pager_index_lines=10
+unset suspend
+unset markers                   # can't directly open links
+unset allow_8bit
+
+# Sent mail gets appended to 'sent' folder via our Bcc: 'my_hdr' command
+set copy=yes
+#set fcc_attach=yes
+#set fcc_clear=yes
+
+set xterm_set_titles=yes
+
+source ~/.mutt_lists
+set alias_file=~/.mutt_aliases
+set certificate_file=~/.mutt_certificates
+source $alias_file
+
+alternative_order text/plain text/enriched text/html
