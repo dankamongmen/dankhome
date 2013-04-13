@@ -118,6 +118,7 @@ export DEBEMAIL="nick.black@sprezzatech.com"
 # from gnupg-agent(1)
 export GPG_TTY=`tty`
 if [ -f "${HOME}/.gpg-agent-info" ]; then
+	# FIXME test and ensure it's valid
 	. "${HOME}/.gpg-agent-info"
 else
 	gpg-agent --daemon --write-env-file "${HOME}/.gpg-agent-info"
