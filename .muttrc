@@ -12,10 +12,10 @@ color tilde     blue black
 
 set folder="~/Mail"	# root mail directory, used for '+ and '=' substitution
 set realname="nick black"
-set from="nick.black@sprezzatech.com"	# default; override with my_hdr in hooks
+set from="dankamongmen@gmail.com" # default; override with my_hdr in hooks
 #set envelope_from_address="nick.black@sprezzatech.com"
 
-alternates dank@qemfd.net dankamongmen@gmail.com nickblack@linux.com info@sprezzatech.com
+alternates dank@qemfd.net nickblack@linux.com info@sprezzatech.com nick.black@sprezzatech.com
 
 # !!! We're not actually doing this anymore!!! set record= follows!!!
 #

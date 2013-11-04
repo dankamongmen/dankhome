@@ -38,10 +38,10 @@ case "`basename $0`" in
 	mp)
 		;;
 	mpfs)
-		OPTIONS="$OPTIONS -zoom -x $XDIM -y $YDIM"
+		OPTIONS="$OPTIONS -zoom -fs -x $XDIM -y $YDIM"
 		;;
 	mpfsna)
-		OPTIONS="$OPTIONS -zoom -x $XDIM -y $YDIM -volume 0"
+		OPTIONS="$OPTIONS -zoom -fs -x $XDIM -y $YDIM -volume 0"
 		;;
 	mpna)
 		OPTIONS="$OPTIONS -volume 0"
