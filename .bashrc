@@ -7,6 +7,8 @@
 # if not running interactively, do nothing
 #if [ -n "$PS1" ] ; then
 
+# Allow $HOME/.svnhome in case we can't keep dankhome within our actual home
+# directory. If $HOME/.svnhome doesn't exist, assume we're using $HOME.
 DANKRC="$HOME/.svnhome"
 [ -d $DANKRC ] || DANKRC=$HOME
 
@@ -15,6 +17,11 @@ DANKRC="$HOME/.svnhome"
 export HISTCONTROL=ignoredups
 export HISTFILESIZE=10000
 export HISTFILE="$DANKRC/.bash_history-$HOSTNAME"
+
+# Append to history file rather than rewriting it
+shopt -s histappend
+# Allow failed history substitutions to be edited
+shopt -s histreedit
 
 # these values are used when setting SHELLOPTS, equivalent to set -o vi
 export EDITOR="vim"
