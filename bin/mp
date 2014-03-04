@@ -8,6 +8,16 @@ exithandle () {
 	echo "restored terminal settings"
 }
 
+BIN=`which mpv` 
+if [ -z "$BIN" ] ; then
+	BIN=`which mplayer`
+	if [ -z "$BIN" ] ; then
+		echo "Couldn't find suitable binary" >&2
+		exit 1
+	fi
+fi
+echo "Player binary: $BIN"
+
 trap exithandle EXIT HUP INT QUIT || { echo "Couldn't register exit handler." >&2 ; exit 1 ; }
 
 setterm -blank 0
@@ -60,6 +70,6 @@ case "`basename $0`" in
 esac
 
 for i in "$@" ; do
-	echo mplayer $OPTIONS "$i"
-	mplayer $OPTIONS "$i"
+	echo "$BIN" $OPTIONS "$i"
+	"$BIN" $OPTIONS "$i"
 done
