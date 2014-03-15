@@ -151,6 +151,11 @@ which xml > /dev/null 2>&1 || alias xml="xmlstarlet"
 export LANG=en_US.UTF-8
 export NNTPSERVER=news.gmane.org
 
+# enable programmable completion features
+if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
+	. /etc/bash_completion
+fi
+
 unset MAILCHECK
 unset MAILPATH
 unset MAIL
