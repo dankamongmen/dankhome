@@ -8,3 +8,4 @@ usageerr () { usage >&2 ; return 1 ; }
 [ $# -eq 1 ] || usageerr
 
 sa-learn --progress --spam --mbox "$1"
+rm "$1"
