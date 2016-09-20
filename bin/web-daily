@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-
-set -e
-set -o nounset
-set -o pipefail
-
-DAY="`date +%Y-%j`"
-fbcmd FRIENDS > "$HOME/files/facebook/facebook-$DAY"

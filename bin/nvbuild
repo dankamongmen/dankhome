@@ -1,9 +1,0 @@
-#!/bin/sh
-
-set -e
-
-if unix-build nvmake "$@" NV_COLOR_OUTPUT=1 VERBOSE=1 ; then
-	notify-send "nvbuild $@ done"
-else
-	notify-send "nvbuild $@ failure"
-fi
