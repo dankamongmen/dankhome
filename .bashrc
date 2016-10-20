@@ -120,7 +120,7 @@ fi
 
 export DEBKEY="9978711C"
 export DEBFULLNAME="Nick Black"
-export DEBEMAIL="nickblack@linux.com"
+export DEBEMAIL="dankamongmen@gmail.com"
 
 # from gng-agent(1)
 export GPG_TTY=`tty`
