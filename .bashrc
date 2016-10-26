@@ -144,7 +144,6 @@ export GPG_TTY=`tty`
 # and the less(1) man page.
 export LESS="-eirX"
 
-alias apt-file="apt-file -c ~/var/cache/apt-file"
 alias grep="grep --color"
 alias egrep="egrep --color"
 which xml > /dev/null 2>&1 || alias xml="xmlstarlet"
