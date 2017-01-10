@@ -161,3 +161,18 @@ function! s:CombineSelection(line1, line2, cp)
 	execute 'let char = "\u'.a:cp.'"'
 	execute a:line1.','.a:line2.'s/\%V[^[:cntrl:]]\%V/&'.char.'/ge'
 endfunction
+
+" Keep undo history across sessions
+" see :help undo-persistence
+if exists("+undofile")
+  " create dir if it doesn't exist
+  if isdirectory($HOME . '/.vim/undo') == 0
+    :silent !mkdir -p ~/.vim/undo > /dev/null 2>&1
+  endif
+  " if path ends in two slashes, file name will use complete path
+  " :help dir
+  set undodir=~/.vim/undo//
+  set undofile
+  set undolevels=500
+  set undoreload=500
+endif
