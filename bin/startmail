@@ -1,6 +1,0 @@
-#!/bin/sh
-
-ssh -4 -N -f \
-	-L 11111:localhost:25 \
-	-L 11110:localhost:110 qemfd.net
-fetchmail
