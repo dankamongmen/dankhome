@@ -1,9 +1,0 @@
-#!/bin/sh
-
-set -e || exit 1
-
-# FIXME bad tmpfile handling!
-sudo acpidump -b -t DSDT -o `basename $0`.tmp
-iasl -d `basename $0`.tmp
-iasl -tc `basename $0`.dsl
-rm -f `basename $0`.tmp
