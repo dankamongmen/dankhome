@@ -19,4 +19,7 @@ if [[ ! -z `which ssh` && -f `which ssh` ]]; then
 	# tech community boxen
 	alias havoc="ssh havoc"
 
+	# luma
+	alias lumassh="sshpass -f/media/trap/professional/luma/router-password ssh -oUser=root"
+
 fi
