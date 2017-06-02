@@ -13,7 +13,7 @@ set grid ytics
 unset border
 
 # Show human-readable axes, e.g. 100k instead of 100000
-set format '%.0s%c'
+#set format '%.0s%c'
 
 # set default point size
 set pointsize "1.2"
