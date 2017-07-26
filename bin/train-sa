@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+set -e
+
+usage () { echo "usage: `basename $0` mbox" ; return 0 ; }
+usageerr () { usage >&2 ; return 1 ; }
+
+[ $# -eq 1 ] || usageerr
+
+sa-learn --progress --spam --mbox "$1"
+rm "$1"
