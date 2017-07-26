@@ -150,6 +150,7 @@ files/
 .jmol
 .jnewsrc-lock
 .jnewsrc.time
+.kde
 .lesshst
 .lftp/
 libexec/

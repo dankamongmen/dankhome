@@ -14,13 +14,9 @@ if [[ ! -z `which ssh` && -f `which ssh` ]]; then
 
 	# vps
 	alias qemfd="ssh qemfd.net"
-	alias recombinator="ssh recombinator"
 	alias skynet="ssh skynet.qemfd.net"
 
 	# tech community boxen
 	alias havoc="ssh havoc"
-
-	# NVIDIA
-	alias kf="ssh kingfriday"
 
 fi

@@ -7,6 +7,8 @@
 # if not running interactively, do nothing
 #if [ -n "$PS1" ] ; then
 
+# Allow $HOME/.svnhome in case we can't keep dankhome within our actual home
+# directory. If $HOME/.svnhome doesn't exist, assume we're using $HOME.
 DANKRC="$HOME/.svnhome"
 [ -d $DANKRC ] || DANKRC=$HOME
 
@@ -15,6 +17,11 @@ DANKRC="$HOME/.svnhome"
 export HISTCONTROL=ignoredups
 export HISTFILESIZE=10000
 export HISTFILE="$DANKRC/.bash_history-$HOSTNAME"
+
+# Append to history file rather than rewriting it
+shopt -s histappend
+# Allow failed history substitutions to be edited
+shopt -s histreedit
 
 # these values are used when setting SHELLOPTS, equivalent to set -o vi
 export EDITOR="vim"
@@ -111,8 +118,26 @@ else
 	alias vi=vim
 fi
 
+export DEBKEY="9978711C"
+export DEBFULLNAME="Nick Black"
+export DEBEMAIL="nick.black@sprezzatech.com"
+
 # from gnupg-agent(1)
 export GPG_TTY=`tty`
+if [ -f "${HOME}/.gpg-agent-info" ]; then
+	. "${HOME}/.gpg-agent-info"
+	GPGSOCK="`echo $GPG_AGENT_INFO | cut -d: -f1`"
+	# FIXME relies upon /tmp getting cleared out
+	if [ ! -e "$GPGSOCK" ] ; then
+		unset GPG_AGENT_INFO
+	fi
+	unset GPGSOCK
+fi
+if [ -z "$GPG_AGENT_INFO" ] ; then
+	gpg-agent --daemon --write-env-file "${HOME}/.gpg-agent-info"
+	. "${HOME}/.gpg-agent-info"
+fi
+export GPG_AGENT_INFO
 
 # See http://www.xcombinator.com/2008/07/23/mac-os-x-color-showing-escwhatever-for-git-diff-colors-and-more/
 # and the less(1) man page.
@@ -125,6 +150,11 @@ which xml > /dev/null 2>&1 || alias xml="xmlstarlet"
 
 export LANG=en_US.UTF-8
 export NNTPSERVER=news.gmane.org
+
+# enable programmable completion features
+if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
+	. /etc/bash_completion
+fi
 
 unset MAILCHECK
 unset MAILPATH
