@@ -13,9 +13,8 @@ DANKRC="$HOME/.svnhome"
 [ -d $DANKRC ] || DANKRC=$HOME
 
 # See bash(1) for more options
-# don't put duplicate entries in the history.
-export HISTCONTROL=ignoredups
-export HISTFILESIZE=10000
+export HISTCONTROL=erasedups
+export HISTFILESIZE=50000
 export HISTFILE="$DANKRC/.bash_history-$HOSTNAME"
 
 # Append to history file rather than rewriting it

@@ -46,7 +46,11 @@ fi
 unset AGENT
 
 # Turn off beeps in virtual console without disabling speaker entirely
-setterm -blength 0
+if tty | grep ^/dev/tty > /dev/null ; then
+	echo -n "Disabling console beep..."
+	setterm -blength 0
+	echo "done."
+fi
 
 # Assume white-on-black terminal (see colors(3NCURSES), ncurses (3NCURSES))
 export NCURSES_ASSUMED_COLORS=7,0
