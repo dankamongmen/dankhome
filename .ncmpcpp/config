@@ -20,7 +20,6 @@ mouse_support="no"
 #show_hidden_files_in_local_broswer="yes"
 main_window_color="cyan"
 color1="white"
-main_window_highlight_color="green"
 
 # no longer supported in ncmpcpp 0.6+
 #mpd_communication_mode="notifications"
