@@ -205,6 +205,7 @@ src/
 .ssh/id_rsa.pub
 .ssh/identity.pub
 .ssh/known_hosts.old
+.ssh/known_hosts
 .starplotrc
 .stellarium/log.txt
 .stellarium/stars/
