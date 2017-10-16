@@ -40,7 +40,7 @@ if [ "$TERM" != "dumb" ] ; then
 		else
 			eval "`dircolors -b`";
 		fi
-		alias ls='ls --color=auto';
+		alias ls='ls --color=auto --quoting-style=literal';
 	elif [ "`uname`" == "FreeBSD" ] ; then
 		export CLICOLOR=yes
 		# foregroundbackground pairs for:
