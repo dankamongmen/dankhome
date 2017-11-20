@@ -117,12 +117,6 @@ else
 	alias vi=vim
 fi
 
-export DEBKEY="9978711C"
-export DEBFULLNAME="Nick Black"
-export DEBEMAIL="dankamongmen@gmail.com"
-# for dpkg-buildpackage
-export DEB_SIGN_KEYID="21CBFACC"
-
 # from gng-agent(1)
 export GPG_TTY=`tty`
 # gnupg is now auto-started on demand
