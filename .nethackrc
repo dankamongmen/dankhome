@@ -1,2 +1,2 @@
-OPTIONS=race:human,role:valkyrie,align:neutral
-OPTIONS=!autopickup,color
+OPTIONS=race:human,role:valkyrie,align:lawful
+OPTIONS=!mail,!autopickup,color
