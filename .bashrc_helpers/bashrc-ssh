@@ -14,12 +14,9 @@ if [[ ! -z `which ssh` && -f `which ssh` ]]; then
 
 	# vps
 	alias qemfd="ssh qemfd.net"
-	alias schwarzgerat="ssh schwarzgerat.qemfd.net"
+	alias schwarzgerat="ssh 10.88.0.2"
 
 	# tech community boxen
 	alias havoc="ssh havoc"
-
-	# luma
-	alias lumassh="sshpass -f/media/trap/professional/luma/router-password ssh -oUser=root"
 
 fi
