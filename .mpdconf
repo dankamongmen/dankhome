@@ -11,14 +11,14 @@
 # be disabled and audio files will only be accepted over ipc socket (using
 # file:// protocol) or streaming files over an accepted protocol.
 #
-music_directory		"/media/passport/music"
+music_directory		"/media/trap/music"
 #
 # This setting sets the MPD internal playlist directory. The purpose of this
 # directory is storage for playlists created by MPD. The server will use 
 # playlist files not created by the server but only if they are in the MPD
 # format. This setting defaults to playlist saving being disabled.
 #
-playlist_directory		"/home/dank/var/lib/mpd/playlists"
+playlist_directory		"/media/trap/playlists"
 #
 # This setting sets the location of the MPD database. This file is used to
 # load the database at server start up and store the database while the 
@@ -35,7 +35,7 @@ db_file			"/home/dank/var/lib/mpd/tag_cache"
 # The special value "syslog" makes MPD use the local syslog daemon. This
 # setting defaults to logging to syslog, otherwise logging is disabled.
 #
-log_file			"/home/dank/var/log/mpd/mpd.log"
+log_file			"/home/dank/var/log/mpd.log"
 #
 # This setting sets the location of the file which stores the process ID
 # for use of mpd --kill and some init scripts. This setting is disabled by
@@ -65,7 +65,7 @@ sticker_file                   "/home/dank/var/lib/mpd/sticker.sql"
 # initialization. This setting is disabled by default and MPD is run as the
 # current user.
 #
-#user				"mpd"
+user				"dank"
 #
 # This setting specifies the group that MPD will run as. If not specified
 # primary group of user specified with "user" setting will be used (if set).
@@ -96,7 +96,7 @@ bind_to_address		"localhost"
 # argument is recommended for troubleshooting, though can quickly stretch
 # available resources on limited hardware storage.
 #
-#log_level			"default"
+log_level			"verbose"
 #
 # If you have a problem with your MP3s ending abruptly it is recommended that 
 # you set this argument to "no" to attempt to fix the problem. If this solves
@@ -159,7 +159,7 @@ bind_to_address		"localhost"
 # The argument to this setting will be the Zeroconf / Avahi unique name for
 # this MPD server on the network.
 #
-#zeroconf_name			"Music Player"
+zeroconf_name			"schwarzgerät"
 #
 ###############################################################################
 
@@ -335,7 +335,7 @@ audio_output {
 # mpd.conf man page or the libsamplerate documentation. By default, this is
 # setting is disabled.
 #
-#samplerate_converter		"Fastest Sinc Interpolator"
+samplerate_converter		"Best Sinc Interpolator"
 #
 ###############################################################################
 
@@ -417,3 +417,9 @@ id3v1_encoding			"UTF-8"
 #
 ###############################################################################
 
+audio_output {
+    type                    "fifo"
+    name                    "my_fifo"
+    path                    "/home/dank/var/lib/mpd/fifo"
+    format                  "44100:16:2"
+}
