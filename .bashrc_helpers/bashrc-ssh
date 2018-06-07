@@ -14,7 +14,7 @@ if [[ ! -z `which ssh` && -f `which ssh` ]]; then
 
 	# vps
 	alias qemfd="ssh qemfd.net"
-	alias schwarzgerat="ssh 10.88.0.2"
+	alias schwarzgerat="ssh schwarzgerat"
 
 	# tech community boxen
 	alias havoc="ssh havoc"
