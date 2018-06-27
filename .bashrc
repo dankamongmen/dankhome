@@ -103,11 +103,11 @@ done
 unset i
 
 # Ehhh...I'd rather have my TMPDIR cleaned each boot, I think...
-if [ -z "$TMPDIR" ] ; then
-	TMPDIR=$HOME
-	[ ! -d /tmp ] || export TMPDIR=/tmp
-	[ ! -d $HOME/tmp ] || export TMPDIR=$HOME/tmp
-fi
+#if [ -z "$TMPDIR" ] ; then
+#	TMPDIR=$HOME
+#	[ ! -d /tmp ] || export TMPDIR=/tmp
+#	[ ! -d $HOME/tmp ] || export TMPDIR=$HOME/tmp
+#fi
 
 if ! `which vim > /dev/null` ; then
 	if ! echo "`readlink -f \`which vi\``" | grep vim > /dev/null ; then
