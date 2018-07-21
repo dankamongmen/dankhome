@@ -1,2 +1,6 @@
-OPTIONS=race:human,role:valkyrie,align:neutral
-OPTIONS=!autopickup,color
+OPTIONS=race:human,role:valkyrie,align:lawful
+OPTIONS=!mail,!autopickup,color
+OPTIONS=boulder:0
+OPTIONS=!autoopen
+OPTIONS=catname:DrChomps,dogname:DrChomps,horsename:Garuda
+OPTIONS=hilite_pet

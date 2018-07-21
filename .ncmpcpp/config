@@ -1,6 +1,5 @@
 mpd_music_dir="/media/trap/music"
 mpd_crossfade_time="0"
-visualizer_fifo_path="/home/dank/var/lib/mpd/fifo"
 allow_for_physical_item_deletion="no"
 #ask_before_clearing_main_playlist="yes"
 clock_display_seconds="yes"
@@ -19,6 +18,14 @@ mouse_support="no"
 main_window_color="cyan"
 color1="white"
 lyrics_directory="/media/trap/lyrics"
+user_interface=alternative
+
+visualizer_fifo_path="/home/dank/var/lib/mpd/fifo"
+visualizer_output_name = "my_fifo"
+visualizer_sync_interval = "30"
+visualizer_in_stereo = "yes"
+visualizer_type = "spectrum"
+visualizer_look = "+|"
 
 # no longer supported in ncmpcpp 0.6+
 #mpd_communication_mode="notifications"

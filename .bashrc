@@ -40,7 +40,7 @@ if [ "$TERM" != "dumb" ] ; then
 		else
 			eval "`dircolors -b`";
 		fi
-		alias ls='ls --color=auto';
+		alias ls='ls --color=auto --quoting-style=literal';
 	elif [ "`uname`" == "FreeBSD" ] ; then
 		export CLICOLOR=yes
 		# foregroundbackground pairs for:
@@ -103,11 +103,11 @@ done
 unset i
 
 # Ehhh...I'd rather have my TMPDIR cleaned each boot, I think...
-if [ -z "$TMPDIR" ] ; then
-	TMPDIR=$HOME
-	[ ! -d /tmp ] || export TMPDIR=/tmp
-	[ ! -d $HOME/tmp ] || export TMPDIR=$HOME/tmp
-fi
+#if [ -z "$TMPDIR" ] ; then
+#	TMPDIR=$HOME
+#	[ ! -d /tmp ] || export TMPDIR=/tmp
+#	[ ! -d $HOME/tmp ] || export TMPDIR=$HOME/tmp
+#fi
 
 if ! `which vim > /dev/null` ; then
 	if ! echo "`readlink -f \`which vi\``" | grep vim > /dev/null ; then
@@ -116,12 +116,6 @@ if ! `which vim > /dev/null` ; then
 else
 	alias vi=vim
 fi
-
-export DEBKEY="9978711C"
-export DEBFULLNAME="Nick Black"
-export DEBEMAIL="dankamongmen@gmail.com"
-# for dpkg-buildpackage
-export DEB_SIGN_KEYID="21CBFACC"
 
 # from gng-agent(1)
 export GPG_TTY=`tty`
