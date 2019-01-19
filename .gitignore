@@ -220,6 +220,7 @@ var/cache/
 var/lib/
 var/log/mpd.log
 .vim/.netrwhist
+.vim/undo
 .viminfo
 .w3m/cookie
 .w3m/history

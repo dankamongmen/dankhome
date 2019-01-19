@@ -72,7 +72,8 @@ set notagrelative
 "set t_Co=256
 set vb t_vb=
 set visualbell
-set tabstop=8
+" set tabstop=8
+set tabstop=2 shiftwidth=2 expandtab
 
 " Set the terminal window's title. This can be done without X11 support.
 set title
