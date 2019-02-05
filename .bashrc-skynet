@@ -1,2 +1,0 @@
-export P4DIFF="diff -ur"
-cd
