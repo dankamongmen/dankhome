@@ -78,8 +78,8 @@ unignore from: date subject to cc bcc
 bind index 'j' next-entry
 bind index 'k' previous-entry
 
-# we use a real editor, with 76-char wrapping. invoke spellchecking.
-set editor="vim \"+set tw=76\" +/^$/"
+# we use a real editor, with 64 wrapping. invoke spellchecking.
+set editor="vim \"+set tw=64\" +/^$/"
 
 #use utf-8 before iso-8859-1
 set send_charset="us-ascii:utf-8:iso-8859-1"
@@ -117,3 +117,6 @@ set certificate_file=~/.mutt_certificates
 source $alias_file
 
 alternative_order text/plain text/enriched text/html
+
+set pgp_sign_as="9A2FFF747994E287BEC422F15F43400C21CBFACC"
+set pgp_replysign
