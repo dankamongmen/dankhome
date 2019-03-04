@@ -4,7 +4,6 @@ TMP=`mktemp -t \`basename $0\`.XXXXXXXXXX`
 TMP2=`mktemp -t \`basename $0\`.XXXXXXXXXX`
 ( lspci && lsusb ) > "$TMP" 2>&1
 sudo update-pciids || { echo "Error downloading new PCI ids!" ; }
-sudo update-usbids || { echo "Error downloading new USB ids!" ; }
 ( lspci && lsusb ) > "$TMP2" 2>&1
 diff -ur "$TMP" "$TMP2" && echo "No differences!" || true
 rm -f "$TMP" "$TMP2"
