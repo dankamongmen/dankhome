@@ -1,4 +1,4 @@
-mpd_music_dir="/media/trap/music"
+mpd_music_dir="/media/music"
 mpd_crossfade_time="0"
 allow_for_physical_item_deletion="no"
 #ask_before_clearing_main_playlist="yes"
@@ -17,7 +17,7 @@ mouse_support="no"
 #show_hidden_files_in_local_broswer="yes"
 main_window_color="cyan"
 color1="white"
-lyrics_directory="/media/trap/lyrics"
+lyrics_directory="/media/lyrics"
 user_interface=alternative
 
 visualizer_fifo_path="/home/dank/var/lib/mpd/fifo"
