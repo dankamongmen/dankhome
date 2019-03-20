@@ -14,9 +14,13 @@ DANKRC="$HOME/.svnhome"
 
 # See bash(1) for more options
 export HISTCONTROL=erasedups
-export HISTFILESIZE=50000
+export HISTFILESIZE=
+export HISTSIZE=
 export HISTFILE="$DANKRC/.bash_history-$HOSTNAME"
-
+export HISTTIMEFORMAT="[%F %T] "
+# Force prompt to write history after every command.
+# http://superuser.com/questions/20900/bash-history-loss
+#PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 # Append to history file rather than rewriting it
 shopt -s histappend
 # Allow failed history substitutions to be edited
