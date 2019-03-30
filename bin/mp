@@ -1,10 +1,10 @@
 #!/bin/bash
 
-OPTIONS="-alang en"
+OPTIONS="-alang en --stop-screensaver"
 
 exithandle () {
 	setterm -cursor on
-	setterm -blank 15
+	#setterm -blank 15
 	echo "restored terminal settings"
 }
 
@@ -20,7 +20,7 @@ echo "Player binary: $BIN"
 
 trap exithandle EXIT HUP INT QUIT || { echo "Couldn't register exit handler." >&2 ; exit 1 ; }
 
-setterm -blank 0
+#setterm -blank 0
 setterm -cursor off
 
 #set | grep ^DISPLAY= > /dev/null || OPTIONS="$OPTIONS -vo fbdev"
@@ -48,16 +48,16 @@ case "`basename $0`" in
 	mp)
 		;;
 	mpfs)
-		OPTIONS="$OPTIONS -zoom -fs -x $XDIM -y $YDIM"
+		OPTIONS="$OPTIONS -fs"
 		;;
 	mpfsna)
-		OPTIONS="$OPTIONS -zoom -fs -x $XDIM -y $YDIM -volume 0"
+		OPTIONS="$OPTIONS -fs -volume 0"
 		;;
 	mpna)
 		OPTIONS="$OPTIONS -volume 0"
 		;;
 	mpdvd)
-		OPTIONS="$OPTIONS -aspect 16:9 -zoom -x $XDIM -y $YDIM"
+		OPTIONS="$OPTIONS -aspect 16:9"
 	        OPTIONS="$OPTIONS -dvd-device /dev/dvd -slang en"
 		echo mplayer $OPTIONS dvd://$1
 		mplayer $OPTIONS dvd://$1
