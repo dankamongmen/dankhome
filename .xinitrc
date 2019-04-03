@@ -3,7 +3,7 @@
 # for launching compiz directly
 #setxkbmap -option terminate:ctrl_alt_bksp
 #xfce4-panel &
-#xscreensaver &
+#xscreensaver -nosplash &
 #exec compiz
 
 # for launching compiz through xfce4-session
