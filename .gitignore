@@ -35,7 +35,6 @@ bin/unix-build
 .config/RawTherapee/
 .config/SourceForge/
 .config/VideoCut/
-.config/autostart/
 .config/awn/
 .config/brasero/
 .config/calibre/
@@ -168,6 +167,7 @@ local/*
 .mono/
 .mozilla/
 .mpdcron/mpdcron.pid
+.mpdscribble/mpdscribble.conf
 .mplayer/gui*
 .mutt_certificates
 .ncmpcpp/error.log
