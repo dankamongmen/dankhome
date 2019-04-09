@@ -45,6 +45,7 @@ if [ "$TERM" != "dumb" ] ; then
 			eval "`dircolors -b`";
 		fi
 		alias ls='ls --color=auto --quoting-style=literal';
+    export S_COLORS=auto # for iostat on arch
 	elif [ "`uname`" == "FreeBSD" ] ; then
 		export CLICOLOR=yes
 		# foregroundbackground pairs for:
