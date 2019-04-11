@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Version=1.1
+Name=compiz
+Comment=Compiz window manager (XFCE only)
+Exec=/usr/bin/fusion-icon -f
+OnlyShowIn=XFCE;
+
