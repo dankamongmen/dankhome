@@ -170,6 +170,7 @@ local/*
 .mpdscribble/mpdscribble.conf
 .mplayer/gui*
 .mutt_certificates
+.mysql_history
 .ncmpcpp/error.log
 .nemiver/
 .nv/
@@ -225,6 +226,7 @@ var/log/mpd.log
 .w3m/cookie
 .w3m/history
 .webex
+.wget-hsts
 .wine/
 .winff/
 .wireshark
