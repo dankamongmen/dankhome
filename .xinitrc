@@ -18,4 +18,4 @@ fi
 #exec compiz
 
 # for launching compiz through xfce4-session
-exec xfce4-session
+exec startxfce4

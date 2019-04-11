@@ -5,4 +5,5 @@ Name=compiz
 Comment=Compiz window manager (XFCE only)
 Exec=/usr/bin/fusion-icon -f
 OnlyShowIn=XFCE;
+Hidden=true
 
