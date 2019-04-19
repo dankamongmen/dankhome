@@ -94,6 +94,7 @@ bin/unix-build
 .electricsheep/*.avi
 .electricsheep/lock
 .electricsheep/play_counts
+.emerald/theme/theme.ini.bak
 .eresi_history
 .esd_auth
 .fantasdic/
@@ -155,6 +156,7 @@ files/
 libexec/
 .libquicktime_codecs
 .libreoffice/
+.links/
 .links2/
 .lives
 .lives-dir/
