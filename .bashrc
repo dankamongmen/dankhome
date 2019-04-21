@@ -147,6 +147,9 @@ export LESS="-eirX"
 # coreutils 8.30 went to 12-hour time by default, augh
 alias date="date '+%a %d %b %Y %T %Z (%z)'"
 
+# ISO 8601 time in observant applications (ls -l, etc.)
+export TIME_STYLE=long-iso
+
 alias grep="grep --color"
 alias egrep="egrep --color"
 which xml > /dev/null 2>&1 || alias xml="xmlstarlet"
