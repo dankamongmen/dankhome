@@ -1,0 +1,12 @@
+# the "index" thing is necessary because this presents two devices, only
+# distinguished by that, and one doesn't work! joy
+SUBSYSTEM=="video4linux", ATTRS{idVendor}=="046d", ATTRS{idProduct}=="082d", \
+  ATTRS{index}=="0", SYMLINK+="video-c920"
+
+SUBSYSTEM=="video4linux", ATTRS{idVendor}=="046d", ATTRS{idProduct}=="0821", \
+  SYMLINK+="video-c910"
+
+# Rosewill (Z-Star Microelectronics Corp. Venus) crapcam
+# Need ATTR{index} and *NOT* ATTRS{index} here -- don't match uptree
+SUBSYSTEM=="video4linux", ATTRS{idVendor}=="0ac8", ATTRS{idProduct}=="3420", \
+  ATTR{index}=="0", SYMLINK+="video-rosewill"
