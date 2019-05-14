@@ -15,7 +15,7 @@ fi
 #setxkbmap -option terminate:ctrl_alt_bksp
 #xfce4-panel &
 #xscreensaver -nosplash &
-#exec compiz
+#exec fusion-icon -f
 
 # for launching compiz through xfce4-session
 exec startxfce4
