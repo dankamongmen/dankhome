@@ -1,3 +1,6 @@
 [submodule ".vim/pack/default/start/vim-polyglot"]
 	path = .vim/pack/default/start/vim-polyglot
 	url = https://github.com/sheerun/vim-polyglot
+[submodule ".vim/pack/themes/opt/solarized8"]
+	path = .vim/pack/themes/opt/solarized8
+	url = https://github.com/lifepillar/vim-solarized8.git
