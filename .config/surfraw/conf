@@ -1,0 +1,2 @@
+def SURFRAW_text_browser w3m
+defyn SURFRAW_graphical no
