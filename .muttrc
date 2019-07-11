@@ -85,7 +85,7 @@ set editor="vim \"+set tw=64\" +/^$/"
 set send_charset="us-ascii:utf-8:iso-8859-1"
 
 # print it pretty (from muttprint(1) man page)
-set print_command="muttprint"
+set print_command="muttprint -p TO_FILE:muttprint.pdf"
 
 # IMAP stuff
 set header_cache="~/var/cache/mutt-headers/"
