@@ -1,0 +1,3 @@
+if [[ ! -z `which git` ]]; then
+  alias gclone="git clone --recurse-submodules"
+fi
