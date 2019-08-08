@@ -1,0 +1,1 @@
+KERNEL=="hidraw*", ATTRS{idVendor}=="256f", ATTRS{idProduct}=="c650", RUN+="/usr/local/bin/cadmousectl -s 50 -S 0"
