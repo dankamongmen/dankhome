@@ -1,0 +1,5 @@
+[Match]
+MACAddress=00:17:b6:00:69:9b
+[Link]
+Name=aqc107
+Description=Aquantia AQC107 802.3bz PCIe3 x4
