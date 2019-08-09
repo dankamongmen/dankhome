@@ -147,6 +147,9 @@ export LESS="-eirX"
 # coreutils 8.30 went to 12-hour time by default, augh
 alias date="date '+%a %d %b %Y %T %Z (%z)'"
 
+# hate hate hate missing submodules
+alias gclone="git clone --recurse-submodules"
+
 # ISO 8601 time in observant applications (ls -l, etc.)
 export TIME_STYLE=long-iso
 
