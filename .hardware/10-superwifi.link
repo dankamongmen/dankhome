@@ -1,5 +1,5 @@
 [Match]
-MACAddress=54:ee:75:f4:b7:a0
+MACAddress=00:0a:52:22:e4:01
 [Link]
 Name=ccrane2800
 Description=CCrane Super WiFi 3 (rt2800usb)

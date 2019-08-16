@@ -1,0 +1,4 @@
+[Match]
+Name=iw8265
+[Network]
+DHCP=ipv4
