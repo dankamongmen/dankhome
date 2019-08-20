@@ -160,7 +160,6 @@ libexec/
 .links2/
 .lives
 .lives-dir/
-.local
 local/*
 .lyrics
 .macromedia
