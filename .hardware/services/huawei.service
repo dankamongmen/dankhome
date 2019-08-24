@@ -1,0 +1,19 @@
+[Service]
+# We don't have exec until systemd 240, and oneshot still doesn't support
+# Restart as of 2019-06-08 (weird), so settle for simple (which, unlike
+# oneshot, has timeout logic we want to disable).
+Type=simple
+TimeoutSec=infinity
+Restart=on-failure
+RestartSec=30s
+ExecStartPre=/bin/sleep 8
+ExecStartPre=/bin/sh -c "qmicli -d $(readlink -f /dev/cdc-huawei) --dms-set-operating-mode=online"
+ExecStartPre=/bin/sleep 5
+ExecStartPre=/bin/sh -c "qmicli -d $(readlink -f /dev/cdc-huawei) --wds-start-network=internet --client-no-release-cid"
+ExecStart=/sbin/dhclient -v huawei
+
+[Unit]
+Description=Establish Google Fi cellular service
+
+[Install]
+WantedBy=sys-subsystem-net-devices-huawei.device
