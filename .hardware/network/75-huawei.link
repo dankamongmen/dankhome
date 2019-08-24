@@ -1,4 +1,0 @@
-[Match]
-Driver=qmi_wwan
-[Link]
-Name=huawei
