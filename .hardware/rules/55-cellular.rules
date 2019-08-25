@@ -1,0 +1,17 @@
+# Run usb_modeswitch on the Huawei E397u-53
+SUBSYSTEM=="usb", ATTR{idVendor}=="12d1", ATTR{idProduct}=="1505", \
+  RUN+="usb_modeswitch -v 12d1 -p 1505 -M '55534243123456780000000000000011062000000101000100000000000000'"
+
+# Once we're reloaded as deivceID 0x1506, don't stick me with your mtp-probes
+SUBSYSTEM=="usb", ATTR{idVendor}=="12d1", ATTR{idProduct}=="1506", \
+  ENV{MTP_NO_PROBE}="1"
+
+SUBSYSTEM=="usb", ATTR{idVendor}=="1bc7", ATTR{idProduct}=="1201", \
+  ENV{MTP_NO_PROBE}="1"
+
+# Create predictable symlinks to cdc-wdmX devices
+SUBSYSTEM=="usbmisc", ATTRS{idVendor}=="12d1", ATTRS{idProduct}=="1506", SYMLINK+="cdc-huawei"
+SUBSYSTEM=="usbmisc", ATTRS{idVendor}=="1bc7", ATTRS{idProduct}=="1201", SYMLINK+="cdc-telit"
+
+SUBSYSTEM=="net", ATTRS{idVendor}=="12d1", ATTRS{idProduct}=="1506", NAME="huawei"
+SUBSYSTEM=="net", ATTRS{idVendor}=="1bc7", ATTRS{idProduct}=="1201", NAME="telit"

@@ -160,10 +160,13 @@ which xml > /dev/null 2>&1 || alias xml="xmlstarlet"
 export LANG=en_US.UTF-8
 export NNTPSERVER=news.gmane.org
 
+# Get a default theme for QT apps (requires running qt5ct to configure)
+export QT_QPA_PLATFORMTHEME=qt5ct
+
 # enable programmable completion features
-if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
-	. /etc/bash_completion
-fi
+#if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
+#	. /etc/bash_completion
+#fi
 
 unset MAILCHECK
 unset MAILPATH
