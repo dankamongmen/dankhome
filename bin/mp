@@ -8,9 +8,9 @@ exithandle () {
 	echo "restored terminal settings"
 }
 
-BIN=`which mplayer`
+BIN=`which mpv`
 if [ -z "$BIN" ] ; then
-	BIN=`which mpv`
+	BIN=`which mplayer`
 	if [ -z "$BIN" ] ; then
 		echo "Couldn't find suitable binary" >&2
 		exit 1
