@@ -237,3 +237,7 @@ var/log/mpd.log
 .xscreensaver
 .xsession-errors
 .xsession-errors.old
+.Heaven
+.Superposition
+.MakeMKV/screen.conf
+.MakeMKV/update.conf
