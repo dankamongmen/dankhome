@@ -26,6 +26,7 @@ bin/unix-build
 .calibre/
 .camel_certs/
 .cgobanrc
+.compiz/images
 .compiz/session/
 .config/Doxygen.org/
 .config/Flavio Tordini/
@@ -90,7 +91,9 @@ bin/unix-build
 .debug/
 .dia
 .dmrc
+.docker
 .dvdcss/CACHEDIR.TAG
+.eclipse
 .electricsheep/*.avi
 .electricsheep/lock
 .electricsheep/play_counts
@@ -111,6 +114,7 @@ files/
 .gconfd/saved_state
 .gdesklets/
 .gegl-0.0/
+.ghidra
 .gimp-2.6/
 .gitconfig
 .gksu.lock
@@ -133,6 +137,7 @@ files/
 .gpg-agent-info
 .gphpedit/
 .gphoto/
+.gradle
 .granule
 .grsync/
 .gstreamer-0.10/
@@ -151,6 +156,7 @@ files/
 .jnewsrc-lock
 .jnewsrc.time
 .kde
+.kismet
 .lesshst
 .lftp/
 libexec/
