@@ -1,6 +1,5 @@
 export DEBEMAIL="dankamongmen@gmail.com"
 export DEBFULLNAME="nick black"
-export DEBKEY="8B40D8605C4FD3B5"
 # for dpkg-buildpackage
 export DEB_SIGN_KEYID="5F43400C21CBFACC"
 
