@@ -1,5 +1,4 @@
 export DEBEMAIL="dankamongmen@gmail.com"
-export DEBFULLNAME="nick black"
+export DEBFULLNAME="Nick Black (Gmail forwarding address)"
 # for dpkg-buildpackage
-export DEB_SIGN_KEYID="5F43400C21CBFACC"
-
+export DEB_SIGN_KEYID=dankamongmen@gmail.com
