@@ -62,7 +62,6 @@ set nowrap
 set ruler
 set rulerformat=%20(%f\ %y\ %2l\ (%p%%)\ %3c\ (%B)\ %o%)
 set scrolloff=7
-set shiftwidth=8
 set shiftround
 " set showcmd
 set showmatch				" match brackets
@@ -72,8 +71,8 @@ set notagrelative
 "set t_Co=256
 set vb t_vb=
 set visualbell
-set tabstop=4
-"set tabstop=2 shiftwidth=2 expandtab
+"set tabstop=4 shiftwidth=4
+set tabstop=2 shiftwidth=2 expandtab
 
 " Set the terminal window's title. This can be done without X11 support.
 set title
