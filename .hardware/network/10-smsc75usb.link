@@ -1,0 +1,5 @@
+[Match]
+MACAddress=80:3f:5d:08:12:5e
+
+[Link]
+Name=smsc75usb

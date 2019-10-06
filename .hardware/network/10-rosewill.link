@@ -1,0 +1,5 @@
+[Match]
+MACAddress=78:44:76:99:02:fe
+
+[Link]
+Name=rt2800

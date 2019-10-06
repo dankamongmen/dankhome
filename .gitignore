@@ -21,6 +21,7 @@ bin/p4r
 bin/p4s
 bin/unix-build
 .bitcoin/
+.bundle/
 .bzr.log
 .cache
 .calibre/
@@ -28,6 +29,7 @@ bin/unix-build
 .cgobanrc
 .compiz/images
 .compiz/session/
+.conda/
 .config/Doxygen.org/
 .config/Flavio Tordini/
 .config/Last.fm/
@@ -59,6 +61,7 @@ bin/unix-build
 .config/gtk-2.0/
 .config/gwibber/
 .config/homebank/
+.config/htop/
 .config/indicators/
 .config/inkscape/
 .config/Kitware/
@@ -71,6 +74,7 @@ bin/unix-build
 .config/pithos.ini
 .config/pitivi/
 .config/postler/
+.config/pulse/
 .config/qtcurve/
 .config/smplayer/
 .config/spek/
