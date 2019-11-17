@@ -99,6 +99,19 @@ for i in `seq 255 -1 128`; do
 done
 resetOutput
 
+#Background
+for clbg in $(seq 40 47) $(seq 100 107) 49 ; do
+  #Foreground
+  for clfg in $(seq 30 37) $(seq 90 97) 39 ; do
+    #Formatting
+    for attr in 0 1 2 4 5 7 ; do
+      #Print the result
+        echo -en "\e[${attr};${clbg};${clfg}m ^[${attr};${clbg};${clfg}m \e[0m"
+    done
+    echo #Newline
+ done
+done
+
 awk 'BEGIN{
     s="/\\/\\/\\/\\/\\"; s=s s s s s s s s;
     for (colnum = 0; colnum<77; colnum++) {
