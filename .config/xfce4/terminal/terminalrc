@@ -31,6 +31,8 @@ ScrollingBar=TERMINAL_SCROLLBAR_NONE
 ShortcutsNoHelpkey=TRUE
 FontName=Hack 12
 MiscSearchDialogOpacity=100
-MiscShowUnsafePasteDialog=FALSE
+MiscShowUnsafePasteDialog=TRUE
 ScrollingOnOutput=FALSE
+BackgroundMode=TERMINAL_BACKGROUND_TRANSPARENT
+BackgroundDarkness=0.700000
 
