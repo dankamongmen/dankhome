@@ -56,6 +56,11 @@ if [ "$TERM" != "dumb" ] ; then
 		export LSCOLORS=EaGaFadaCaDaDaHbabHCaC
 	fi
 fi
+if [ "$TERM" = "xterm-256color" ] ; then
+  if grep gnome-terminal /proc/$PPID/cmdline > /dev/null ; then
+    export TERM=gnome-256color
+  fi
+fi
 
 # default creation policy of mode_t & rwxr-xr-x
 umask 022
