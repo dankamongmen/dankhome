@@ -170,7 +170,7 @@ export QT_QPA_PLATFORMTHEME=qt5ct
 
 # taken from https://wiki.archlinux.org/index.php/Color_output_in_console#man
 man() {
-    LESS_TERMCAP_md=$'\e[01;31m' \
+    LESS_TERMCAP_md=$'\e[01;35m' \
     LESS_TERMCAP_me=$'\e[0m' \
     LESS_TERMCAP_se=$'\e[0m' \
     LESS_TERMCAP_so=$'\e[01;44;33m' \
