@@ -36,10 +36,9 @@ shopt -s checkwinsize
 
 if [ "$TERM" != "dumb" ] ; then
   # alacritty-direct is selected in alacritty.yml
+  # kitty-direct is selected in kitty.conf
 	if [ "$TERM" == "xterm" ] ; then
 		export TERM=xterm-direct
-  elif [ "$TERM" == "xterm-kitty" ] ; then
-    export TERM=kitty-direct
 	fi
 	if [ -n "`ls --version 2> /dev/null | grep '(GNU coreutils)'`" ] ; then
 		if [ -r $DANKRC/dankcolors ] ; then
@@ -173,7 +172,7 @@ export QT_QPA_PLATFORMTHEME=qt5ct
 
 # taken from https://wiki.archlinux.org/index.php/Color_output_in_console#man
 man() {
-    LESS_TERMCAP_md=$'\e[01;31m' \
+    LESS_TERMCAP_md=$'\e[01;35m' \
     LESS_TERMCAP_me=$'\e[0m' \
     LESS_TERMCAP_se=$'\e[0m' \
     LESS_TERMCAP_so=$'\e[01;44;33m' \
