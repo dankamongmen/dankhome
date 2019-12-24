@@ -35,8 +35,10 @@ export PAGER="less"
 shopt -s checkwinsize
 
 if [ "$TERM" != "dumb" ] ; then
+  # alacritty-direct is selected in alacritty.yml
+  # kitty-direct is selected in kitty.conf
 	if [ "$TERM" == "xterm" ] ; then
-		export TERM=xterm-256color
+		export TERM=xterm-direct
 	fi
 	if [ -n "`ls --version 2> /dev/null | grep '(GNU coreutils)'`" ] ; then
 		if [ -r $DANKRC/dankcolors ] ; then
@@ -55,11 +57,6 @@ if [ "$TERM" != "dumb" ] ; then
 		#  directory writable by others sans sticky bit (aC)
 		export LSCOLORS=EaGaFadaCaDaDaHbabHCaC
 	fi
-fi
-if [ "$TERM" = "xterm-256color" ] ; then
-  if grep gnome-terminal /proc/$PPID/cmdline > /dev/null ; then
-    export TERM=gnome-256color
-  fi
 fi
 
 # default creation policy of mode_t & rwxr-xr-x
