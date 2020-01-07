@@ -37,7 +37,7 @@ shopt -s checkwinsize
 if [ "$TERM" != "dumb" ] ; then
   # alacritty-direct is selected in alacritty.yml
   # kitty-direct is selected in kitty.conf
-	if [ "$TERM" == "xterm" ] ; then
+	if [ "$TERM" == "xterm" -o "$TERM" == "xterm-256color" ] ; then
 		export TERM=xterm-direct
 	fi
 	if [ -n "`ls --version 2> /dev/null | grep '(GNU coreutils)'`" ] ; then
