@@ -10,7 +10,7 @@ env:
   # each instance of Alacritty. If it is not present, alacritty will
   # check the local terminfo database and use `alacritty` if it is
   # available, otherwise `xterm-256color` is used.
-  TERM: xterm-direct
+  TERM: alacritty
 
 #window:
   # Window dimensions (changes require restart)
@@ -148,7 +148,7 @@ env:
     #style: Bold Italic
 
   # Point size
-  #size: 11.0
+  size: "10.0"
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
