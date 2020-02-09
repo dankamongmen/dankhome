@@ -1,6 +1,6 @@
 #!/bin/bash
 
-OPTIONS="-alang en --stop-screensaver"
+OPTIONS="--alang=en --stop-screensaver"
 
 exithandle () {
 	setterm -cursor on
@@ -42,7 +42,7 @@ get_dimensions () {
 
 get_dimensions
 
-# Use -volume 0 rather than -nosound to only start muted (ie, leave open the
+# Use --volume=0 rather than -nosound to only start muted (ie, leave open the
 # possibility of unmuting).
 case "`basename $0`" in
 	mp)
@@ -51,10 +51,10 @@ case "`basename $0`" in
 		OPTIONS="$OPTIONS -fs"
 		;;
 	mpfsna)
-		OPTIONS="$OPTIONS -fs -volume 0"
+		OPTIONS="$OPTIONS -fs --volume=0"
 		;;
 	mpna)
-		OPTIONS="$OPTIONS -volume 0"
+		OPTIONS="$OPTIONS --volume=0"
 		;;
 	mpdvd)
 		OPTIONS="$OPTIONS -aspect 16:9"
