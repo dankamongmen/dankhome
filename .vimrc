@@ -68,7 +68,7 @@ set showmatch				" match brackets
 set shortmess=atI
 set tags=tags,.tags,out/tags,~/var/cache/glibc-tags
 set notagrelative
-"set t_Co=256
+set t_Co=256
 set vb t_vb=
 set visualbell
 "set tabstop=8 shiftwidth=8
@@ -143,7 +143,7 @@ if has("autocmd")
 
 endif
 
-set termguicolors
+set notermguicolors
 colorscheme solarized8_high
 "let solarized_termtrans=1
 "colorscheme solarized
