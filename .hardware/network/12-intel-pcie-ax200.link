@@ -1,0 +1,6 @@
+[Match]
+MACAddress=50:eb:71:0e:a8:4e
+[Link]
+AutoNegotiation=no
+NamePolicy=
+Name=ax200
