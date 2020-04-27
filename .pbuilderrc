@@ -1,0 +1,2 @@
+# see https://wiki.ubuntu.com/PbuilderHowto
+PBUILDERSATISFYDEPENDSCMD="/usr/lib/pbuilder/pbuilder-satisfydepends-gdebi"
