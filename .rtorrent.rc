@@ -11,3 +11,5 @@ max_downloads_global=0
 port_range = 6901-6901
 #stop_on_ratio=2
 #max_memory_usage=134217728
+#d.max_file_size=-1
+dht=auto
