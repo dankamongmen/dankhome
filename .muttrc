@@ -117,6 +117,7 @@ set certificate_file=~/.mutt_certificates
 source $alias_file
 
 alternative_order text/plain text/enriched text/html
+auto_view text/html
 
 set pgp_sign_as="9A2FFF747994E287BEC422F15F43400C21CBFACC"
 set pgp_replysign
