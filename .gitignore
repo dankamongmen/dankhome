@@ -203,6 +203,7 @@ local/*
 .purple/
 .pyNeighborhood/
 .pyrit/
+.python_history
 .recently-used
 .rnd
 .sane/
@@ -244,6 +245,8 @@ var/log/mpd.log
 .wpa_cli_history
 .wxglade/
 .xbmc/
+.xfce4-session.verbose-log
+.xfce4-session.verbose-log.last
 .xscreensaver
 .xsession-errors
 .xsession-errors.old
