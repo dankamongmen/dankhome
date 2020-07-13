@@ -39,9 +39,9 @@ if [ "$TERM" != "dumb" ] ; then
   # kitty-direct is selected in kitty.conf
 	#if [ "$TERM" == "xterm" -o "$TERM" == "xterm-256color" ] ; then
 	if [ "$TERM" == "xterm" ] ; then
-		#export TERM=xterm-256color
+		export TERM=xterm-256color
     # FIXME only want to do this for VTE-derived terminals
-    export TERM=vte-256color
+    #export TERM=vte-256color
   elif [ "$TERM" == "vte" -o "$TERM" == "xterm-256color" ] ; then
     export TERM=vte-256color
 	fi
