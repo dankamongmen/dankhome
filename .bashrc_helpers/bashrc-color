@@ -4,7 +4,7 @@ else
 	PCOLOR=white
 fi
 
-if [ -x "$HOME/bin/color" ] ; then
+if [ -x "$HOME/.local/bin/color" ] ; then
 	case $TERM in
 	xterm*)
 		# http://www.faqs.org/docs/Linux-mini/Xterm-Title.html#ss4.3
