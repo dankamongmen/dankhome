@@ -70,39 +70,17 @@ umask 022
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(lesspipe)"
 
-# Construct our PATH. Use PATHDIRS to list all directories wanted, in ascending
-# order of search priority (least important first). After passing sanity
-# checks, they will be prepended into PATH.
-PATHDIRS="$PATH"
-PATHDIRS="$PATHDIRS /usr/games" # Nethack!
-# FIXME only do this on machines where we wish to use Java
-PATHDIRS="$PATHDIRS /usr/local/java/bin"
-# FIXME only do these on machines where we wish to use X
-PATHDIRS="$PATHDIRS /usr/X11R6/bin /usr/X11R6/sbin"
-PATHDIRS="$PATHDIRS /usr/X11/bin /usr/X11/sbin"
-# End FIXME
-PATHDIRS="$PATHDIRS /bin /sbin"
-PATHDIRS="$PATHDIRS /usr/bin /usr/sbin"
-PATHDIRS="$PATHDIRS /usr/local/bin /usr/local/sbin"
-PATHDIRS="$PATHDIRS $HOME/bin $HOME/sbin"
-
-PATHFINAL=""
-for pathdir in $PATHDIRS ; do
-	# FIXME check that we have list directory permissions
-	# FIXME check that realpath $pathdir doesn't equal something else
-	if [ -d $pathdir ] ; then
-		if [ -n "$PATHFINAL" ] ; then
-			PATHFINAL="$pathdir:$PATHFINAL"
-		else
-			PATHFINAL="$pathdir"
-		fi
-	fi
+# Construct our PATH. List all directories wanted, in ascending order of search
+# priority (least important first). After passing sanity checks, they will be
+# prepended into PATH.
+for i in /usr/games /usr/local/java/bin /usr/X11R6/bin /usr/X11R6/sbin \
+         /usr/X11/bin /usr/X11/sbin /bin /sbin /usr/bin /usr/sbin \
+         /usr/local/bin /usr/local/sbin $HOME/.local/bin $HOME/.local/sbin ;
+do
+  if [ -d "$i" ] ; then
+    PATH="$i:PATH"
+  fi
 done
-PATH=$PATHFINAL
-unset PATHFINAL
-
-unset pathdir
-unset PATHDIRS
 
 # if we've a host-specific bashrc, source it
 if [ -r $DANKRC/.bashrc-$HOSTNAME ] ; then
