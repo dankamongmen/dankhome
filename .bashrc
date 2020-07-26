@@ -78,7 +78,7 @@ for i in /usr/games /usr/local/java/bin /usr/X11R6/bin /usr/X11R6/sbin \
          /usr/local/bin /usr/local/sbin $HOME/.local/bin $HOME/.local/sbin ;
 do
   if [ -d "$i" ] ; then
-    PATH="$i:PATH"
+    PATH="$i:$PATH"
   fi
 done
 
