@@ -75,7 +75,8 @@ umask 022
 # prepended into PATH.
 for i in /usr/games /usr/local/java/bin /usr/X11R6/bin /usr/X11R6/sbin \
          /usr/X11/bin /usr/X11/sbin /bin /sbin /usr/bin /usr/sbin \
-         /usr/local/bin /usr/local/sbin $HOME/.local/bin $HOME/.local/sbin ;
+         /usr/local/bin /usr/local/sbin $HOME/.local/bin $HOME/.local/sbin \
+         $HOME/.cargo/bin ;
 do
   if [ -d "$i" ] ; then
     PATH="$i:$PATH"
