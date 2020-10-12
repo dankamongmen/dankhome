@@ -161,6 +161,7 @@ files/
 .jnewsrc.time
 .kde
 .kismet
+.kodi
 .lesshst
 .lftp/
 libexec/
@@ -170,7 +171,7 @@ libexec/
 .links2/
 .lives
 .lives-dir/
-local/*
+.local/*
 .lyrics
 .macromedia
 .massxpert
@@ -254,3 +255,6 @@ var/log/mpd.log
 .Superposition
 .MakeMKV/screen.conf
 .MakeMKV/update.conf
+var
+Videos
+Webcam
