@@ -1,0 +1,7 @@
+info=yes
+display-info=yes
+display-experimental=yes
+pedantic=yes
+show-overrides=yes
+color=auto
+verbose=yes
