@@ -1,0 +1,13 @@
+# see https://wiki.debian.org/PbuilderTricks
+
+#DEPSPATH="$DEPSBASE/$DEPS"
+#if [ -n "$DEPS" ] && [ -d "$DEPSPATH" ] ; then
+#  apt-get install --assume-yes apt-utils
+#  ( cd "$DEPSPATH"; apt-ftparchive packages . > Packages )
+#  echo "deb [trusted=yes] file://$DEPSPATH ./" >> /etc/apt/sources.list
+#  apt-get update
+#fi
+
+apt-get install --assume-yes apt-utils
+echo "deb [trusted=yes] https://www.dsscaw.com/repos/apt/debian unstable main" >> /etc/apt/sources.list
+apt-get update
