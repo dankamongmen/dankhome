@@ -27,5 +27,5 @@ xrdb -merge ~/.Xresources
 #xscreensaver -nosplash &
 #exec fusion-icon -f
 
-# for launching compiz through xfce4-session
+# for launching compiz through xfce4-session/xsession
 exec startxfce4

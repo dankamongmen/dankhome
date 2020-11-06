@@ -8,6 +8,7 @@
 #  apt-get update
 #fi
 
-apt-get install --assume-yes apt-utils
-echo "deb [trusted=yes] https://www.dsscaw.com/repos/apt/debian unstable main" >> /etc/apt/sources.list
+apt-get install --assume-yes apt-utils ca-certificates gnupg2 curl
+echo "deb https://www.dsscaw.com/repos/apt/debian unstable main" >> /etc/apt/sources.list
+curl https://www.dsscaw.com/repos/9EA957D484A4266A.asc | apt-key add -
 apt-get update
