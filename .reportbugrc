@@ -13,7 +13,7 @@ ui gtk2
 email "dankamongmen@gmail.com"
 # Disable fallback mode by commenting out the following:
 no-cc
-header "X-Debbugs-CC: dank@qemfd.net"
+list-cc-me
 smtphost reportbug.debian.org
 # You can add other settings after this line.  See
 # /etc/reportbug.conf for a full listing of options.
