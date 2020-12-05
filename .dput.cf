@@ -6,3 +6,19 @@ allow_unsigned_uploads = 0
 progress_indicator = 2
 # Allow uploads for UNRELEASED packages
 allowed_distributions = .*
+
+[notcursesppa]
+fqdn = ppa.launchpad.net
+method = ftp
+incoming = ~dankamongmen/ubuntu/notcurses/focal
+login = anonymous
+allow_unsigned_uploads = 0
+progress_indicator = 2
+
+[growlightppa]
+fqdn = ppa.launchpad.net
+method = ftp
+incoming = ~dankamongmen/ubuntu/growlight/focal
+login = anonymous
+allow_unsigned_uploads = 0
+progress_indicator = 2
