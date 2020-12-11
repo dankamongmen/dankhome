@@ -139,6 +139,9 @@ alias gclone="git clone --recurse-submodules"
 # ISO 8601 time in observant applications (ls -l, etc.)
 export TIME_STYLE=long-iso
 
+# color in iproute2
+alias ip="ip -c"
+
 alias grep="grep --color"
 alias egrep="egrep --color"
 which xml > /dev/null 2>&1 || alias xml="xmlstarlet"
