@@ -29,9 +29,10 @@ MiscSearchDialogOpacity=100
 MiscShowUnsafePasteDialog=TRUE
 TitleInitial=shantith shantith shantith
 ScrollingUnlimited=TRUE
-FontName=Hack 11
+FontName=Liberation Mono 11
 BackgroundMode=TERMINAL_BACKGROUND_TRANSPARENT
 BackgroundDarkness=0.700000
 ColorPalette=#000000;#cc0000;#4e9a06;#c4a000;#3465a4;#75507b;#06989a;#d3d7cf;#555753;#ef2929;#8ae234;#fce94f;#739fcf;#ad7fa8;#34e2e2;#eeeeec
 ScrollingOnOutput=FALSE
+ShortcutsNoHelpkey=TRUE
 
