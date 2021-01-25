@@ -21,7 +21,9 @@ Pictures/
 .cache
 .calibre/
 .camel_certs/
+.cargo/
 .cgobanrc
+.cmake/
 .compiz/images
 .compiz/session/
 .conda/
@@ -113,6 +115,7 @@ files/
 .gconfd/saved_state
 .gdesklets/
 .gegl-0.0/
+.gem/
 .ghidra
 .gimp-2.6/
 .gitconfig
@@ -185,6 +188,7 @@ libexec/
 .ocrfeeder
 .openme
 .openshot
+.oracle_jre_usage/
 .p4config
 .p4ob/
 .p4qt/
@@ -202,6 +206,7 @@ libexec/
 .python_history
 .recently-used
 .rnd
+.rtlsdr_scanner/
 .sane/
 .secret/
 .shutter/
