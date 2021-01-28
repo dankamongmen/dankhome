@@ -26,6 +26,7 @@ Pictures/
 .cmake/
 .compiz/images
 .compiz/session/
+.conan/
 .conda/
 .config/Doxygen.org/
 .config/Flavio Tordini/
@@ -210,6 +211,7 @@ libexec/
 .sane/
 .secret/
 .shutter/
+.spamassassin/
 .specto/cache
 .specto/specto.log
 .specto/specto.pid
