@@ -1,0 +1,22 @@
+URxvt*termName: rxvt-256color
+URxvt*scrollBar: false
+URxvt*scrollBar_right: false
+URxvt*scrollBar_floating: false
+URxvt*background: Black
+URxvt*foreground: White
+
+xterm*background: black
+xterm*foreground: lightgray
+xterm*bidi.enabled: 0
+XTerm*faceNameDoublesize: WenQuanYi WenQuanYi Bitmap Song
+XTerm*faceName: Hack
+XTerm*faceSize: 14
+XTerm*renderFont: true
+!xterm*font: *-fixed-*-*-*-18-*
+xterm*directColor: true
+XTerm*decTerminalID: vt340
+XTerm*numColorRegisters: 256
+XTerm*utf8: 1
+XTerm*eightBitInput: false
+XTerm*allowWindowOps: False
+XTerm*disallowedWindowOps: 1,2,3,4,5,6,7,8,9,11,13,18,19,20,21,GetSelection,SetSelection,SetWinLines,SetXprop
