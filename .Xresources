@@ -14,8 +14,10 @@ XTerm*faceSize: 14
 XTerm*renderFont: true
 !xterm*font: *-fixed-*-*-*-18-*
 xterm*directColor: true
-XTerm*decTerminalID: vt340
-XTerm*numColorRegisters: 256
+XTerm*decGraphicsID: 340
+XTerm*decTerminalID: 420
+XTerm*numColorRegisters: 1024
+XTerm*sixelScrolling: true
 XTerm*utf8: 1
 XTerm*eightBitInput: false
 XTerm*allowWindowOps: False
