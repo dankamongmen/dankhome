@@ -18,6 +18,7 @@ XTerm*decGraphicsID: 340
 XTerm*decTerminalID: 420
 XTerm*numColorRegisters: 1024
 XTerm*sixelScrolling: true
+XTerm*maxGraphicSize: 1980x1440
 XTerm*utf8: 1
 XTerm*eightBitInput: false
 XTerm*allowWindowOps: False
