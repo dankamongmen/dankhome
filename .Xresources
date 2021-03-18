@@ -10,13 +10,13 @@ xterm*foreground: lightgray
 xterm*bidi.enabled: 0
 XTerm*faceNameDoublesize: WenQuanYi WenQuanYi Bitmap Song
 XTerm*faceName: Hack
-XTerm*faceSize: 14
+XTerm*faceSize: 12
 XTerm*renderFont: true
 !xterm*font: *-fixed-*-*-*-18-*
 xterm*directColor: true
 XTerm*decGraphicsID: 340
 XTerm*decTerminalID: 420
-XTerm*numColorRegisters: 1024
+XTerm*numColorRegisters: 256
 XTerm*sixelScrolling: true
 XTerm*maxGraphicSize: 1980x1440
 XTerm*utf8: 1
