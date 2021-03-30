@@ -173,3 +173,6 @@ if exists("+undofile")
   set undolevels=500
   set undoreload=500
 endif
+
+" needed for terminals lacking bce terminfo(5) capability
+let &t_ut=''
