@@ -1,3 +1,7 @@
+URxvt*faceNameDoublesize: WenQuanYi WenQuanYi Bitmap Song
+URxvt*faceName: Hack
+URxvt*faceSize: 12
+URxvt*renderFont: true
 URxvt*termName: rxvt-256color
 URxvt*scrollBar: false
 URxvt*scrollBar_right: false
@@ -7,7 +11,6 @@ URxvt*foreground: White
 
 xterm*background: black
 xterm*foreground: lightgray
-xterm*bidi.enabled: 0
 XTerm*faceNameDoublesize: WenQuanYi WenQuanYi Bitmap Song
 XTerm*faceName: Hack
 XTerm*faceSize: 12
@@ -16,7 +19,7 @@ XTerm*renderFont: true
 xterm*directColor: true
 XTerm*decGraphicsID: 340
 XTerm*decTerminalID: 420
-XTerm*numColorRegisters: 256
+XTerm*numColorRegisters: 1024
 XTerm*sixelScrolling: true
 XTerm*maxGraphicSize: 1980x1440
 XTerm*utf8: 1
