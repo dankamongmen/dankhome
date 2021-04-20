@@ -36,13 +36,10 @@ shopt -s checkwinsize
 
 if [ "$TERM" != "dumb" ] ; then
   # alacritty-direct is selected in alacritty.yml
-  # kitty-direct is selected in kitty.conf
-	#if [ "$TERM" == "xterm" -o "$TERM" == "xterm-256color" ] ; then
+  # xterm-kitty is selected in kitty.conf
 	if [ "$TERM" == "xterm" ] ; then
 		export TERM=xterm-256color
-    # FIXME only want to do this for VTE-derived terminals
-    #export TERM=vte-256color
-  elif [ "$TERM" == "vte" -o "$TERM" == "xterm-256color" ] ; then
+  elif [ "$TERM" == "vte" ] ; then
     export TERM=vte-256color
 	fi
 	if [ -n "`ls --version 2> /dev/null | grep '(GNU coreutils)'`" ] ; then
