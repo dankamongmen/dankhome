@@ -19,7 +19,7 @@ XTerm*renderFont: true
 xterm*directColor: true
 XTerm*decGraphicsID: 340
 XTerm*decTerminalID: 420
-XTerm*numColorRegisters: 1024
+XTerm*numColorRegisters: 256
 XTerm*sixelScrolling: true
 XTerm*maxGraphicSize: 1980x1440
 XTerm*utf8: 1
