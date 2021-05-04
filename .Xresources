@@ -6,11 +6,13 @@ URxvt*termName: rxvt-256color
 URxvt*scrollBar: false
 URxvt*scrollBar_right: false
 URxvt*scrollBar_floating: false
-URxvt*background: Black
-URxvt*foreground: White
+URxvt*background: white
+URxvt*foreground: black
 
-xterm*background: black
-xterm*foreground: lightgray
+!xterm*background: black
+!xterm*foreground: lightgray
+XTerm*background: darkgray
+XTerm*foreground: white
 XTerm*faceNameDoublesize: WenQuanYi WenQuanYi Bitmap Song
 XTerm*faceName: Hack
 XTerm*faceSize: 12
@@ -21,6 +23,7 @@ XTerm*decGraphicsID: 340
 XTerm*decTerminalID: 420
 XTerm*numColorRegisters: 256
 XTerm*sixelScrolling: true
+! the height here ought be evenly divisible by six
 XTerm*maxGraphicSize: 1980x1440
 XTerm*utf8: 1
 XTerm*eightBitInput: false
