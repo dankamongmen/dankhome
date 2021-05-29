@@ -1,0 +1,7 @@
+# from https://raphaelhertzog.com/2012/08/08/how-to-use-quilt-to-manage-patches-in-debian-packages
+for where in ./ ../ ../../ ../../../ ../../../../ ../../../../../; do
+    if [ -e ${where}debian/rules -a -d ${where}debian/patches ]; then
+        export QUILT_PATCHES=debian/patches
+        break
+    fi
+done
