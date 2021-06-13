@@ -26,6 +26,7 @@ XTerm*sixelScrolling: true
 ! the height here ought be evenly divisible by six
 XTerm*maxGraphicSize: 1980x1440
 XTerm*utf8: 1
+XTerm*utf8Title: 1
 XTerm*eightBitInput: false
 XTerm*allowWindowOps: False
 XTerm*disallowedWindowOps: 1,2,3,4,5,6,7,8,9,11,13,18,19,20,21,GetSelection,SetSelection,SetWinLines,SetXprop
