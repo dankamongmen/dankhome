@@ -50,8 +50,9 @@ if [ "$TERM" != "dumb" ] ; then
 		fi
 		alias ls='ls --color=auto --quoting-style=literal';
     export S_COLORS=auto # for iostat on arch
-	elif [ "`uname`" == "FreeBSD" ] ; then
+	elif [ "`uname`" == "FreeBSD" -o "`uname`" == "Darwin" ] ; then
 		export CLICOLOR=yes
+		alias ls='ls -G'
 		# foregroundbackground pairs for:
 		#  directory (Ea) softlink (Ga) socket (Fa) pipe (da) exec (Ca)
 		#  block dev (Da) char dev (Da) setuid (Hb) setgid (ab)
