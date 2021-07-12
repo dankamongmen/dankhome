@@ -49,9 +49,12 @@ unset AGENT
 
 # Turn off beeps in virtual console without disabling speaker entirely
 if tty | grep ^/dev/tty > /dev/null ; then
-	echo -n "Disabling console beep..."
-	setterm -blength 0
-	echo "done."
+	# OS X sshd puts you on e.g. /dev/ttysXXX, and lacks setterm
+	if which setterm > /dev/null ; then
+		echo -n "Disabling console beep..."
+		setterm -blength 0
+		echo "done."
+	fi
 fi
 
 # Assume white-on-black terminal (see colors(3NCURSES), ncurses (3NCURSES))
