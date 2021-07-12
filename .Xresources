@@ -25,6 +25,7 @@ XTerm*numColorRegisters: 256
 XTerm*sixelScrolling: true
 ! the height here ought be evenly divisible by six
 XTerm*maxGraphicSize: 1980x1440
+!XTerm*maxGraphicSize: 800x460
 XTerm*utf8: 1
 XTerm*utf8Title: 1
 XTerm*eightBitInput: false
