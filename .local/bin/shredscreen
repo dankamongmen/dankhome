@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+# needs bash's echo
+
+set -e
+
+if [ -z "$LINES" ] ; then
+  LINES=$(tput lines)
+fi
+
+[ -n "$LINES" ] || { echo "No LINES variable" >&2 ; exit 1 ; }
+
+echo -n "Shredding..."
+a=0
+while [ $a -ne $LINES ] ; do
+  echo -ne '\e[T' && tput hpa 0 && echo -n "Shredding...$((LINES-a)) left"
+  sleep 0.05
+  a=$((a+1))
+done
