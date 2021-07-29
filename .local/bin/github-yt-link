@@ -1,8 +1,10 @@
 #!/bin/sh
 
-echo -e
+set -e
 
 VID="$1"
 ALT="$2"
+
+[ -n "$ALT" ] || { echo "Need ID + alternate text" >&2 ; exit 1 ; }
 
 echo "[![$ALT](http://img.youtube.com/vi/$VID/0.jpg)](http://www.youtube.com/watch?v=$VID \"$ALT\")"
