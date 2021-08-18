@@ -98,8 +98,8 @@ unset i
 #	[ ! -d $HOME/tmp ] || export TMPDIR=$HOME/tmp
 #fi
 
-if ! `which vim > /dev/null` ; then
-	if ! echo "`readlink -f \`which vi\``" | grep vim > /dev/null ; then
+if ! `command -v vim > /dev/null` ; then
+	if ! echo "`readlink -f \`command -v vi\``" | grep vim > /dev/null ; then
 		alias vi=vim
 	fi
 else
@@ -142,7 +142,7 @@ alias ip="ip -c"
 
 alias grep="grep --color"
 alias egrep="egrep --color"
-which xml > /dev/null 2>&1 || alias xml="xmlstarlet"
+command -v xml > /dev/null 2>&1 || alias xml="xmlstarlet"
 
 export LANG=en_US.UTF-8
 export NNTPSERVER=news.gmane.org
@@ -171,3 +171,4 @@ unset MAILPATH
 unset MAIL
 
 unset DANKRC
+. "$HOME/.cargo/env"

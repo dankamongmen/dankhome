@@ -5,18 +5,18 @@
 umask 027
 
 # doesn't clean up the dbus instances...
-#if [ -x `which dbus-launch 2> /dev/null` ] ; then
+#if [ -x `command -v dbus-launch 2> /dev/null` ] ; then
 #	export `dbus-launch --session`
 #fi
 
 # Debian's sensible-browser(1) uses BROWSER, causing gnome-terminal and
 # xfce4-terminal both to invoke links2 under this config...
 if set | grep ^SSH_TTY > /dev/null || tty | grep -v /pts/ > /dev/null ; then
-	if which w3m > /dev/null 2>&1 ; then
+	if command -v w3m > /dev/null 2>&1 ; then
 		export BROWSER="w3m"
-	elif which links2 > /dev/null 2>&1 ; then
+	elif command -v links2 > /dev/null 2>&1 ; then
 		export BROWSER="links2"
-	elif which links > /dev/null 2>&1 ; then
+	elif command -v links > /dev/null 2>&1 ; then
 		export BROWSER="links"
 	fi
 fi
@@ -34,7 +34,7 @@ fi
 ### End surfraw addition.
 
 # Largely copied from the gpg-agent man page
-AGENT=`which gpg-agent 2>/dev/null`
+AGENT=`command -v gpg-agent 2>/dev/null`
 if [ -r $HOME/.secret/.gnupg/secring.gpg -a -x "$AGENT" ] ; then
 	if test -f $HOME/.gpg-agent-info && kill -0 `cut -d: -f 2 $HOME/.gpg-agent-info` 2>/dev/null; then
 		GPG_AGENT_INFO=`cat $HOME/.gpg-agent-info`
@@ -50,7 +50,7 @@ unset AGENT
 # Turn off beeps in virtual console without disabling speaker entirely
 if tty | grep ^/dev/tty > /dev/null ; then
 	# OS X sshd puts you on e.g. /dev/ttysXXX, and lacks setterm
-	if which setterm > /dev/null ; then
+	if command -v setterm > /dev/null ; then
 		echo -n "Disabling console beep..."
 		setterm -blength 0
 		echo "done."
@@ -64,3 +64,4 @@ export NCURSES_ASSUMED_COLORS=7,0
 export NO_AT_BRIDGE=1
 
 [ -r .bashrc ] && . .bashrc
+. "$HOME/.cargo/env"
