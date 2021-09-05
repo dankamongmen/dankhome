@@ -8,9 +8,9 @@ exithandle () {
 	echo "restored terminal settings"
 }
 
-BIN=`which mpv`
+BIN=`command -v mpv`
 if [ -z "$BIN" ] ; then
-	BIN=`which mplayer`
+	BIN=`command -v mplayer`
 	if [ -z "$BIN" ] ; then
 		echo "Couldn't find suitable binary" >&2
 		exit 1
@@ -30,7 +30,7 @@ get_dimensions () {
 	if set | grep ^DISPLAY > /dev/null ; then
 		DIM="`xdpyinfo | grep dimensions | cut -d: -f2 | cut -dp -f1`"
 	else
-		if ! which fbset ; then
+		if ! command -v fbset ; then
 			echo "fbset isn't in the path" >&2
 			return 1
 		fi
