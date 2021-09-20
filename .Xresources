@@ -11,6 +11,7 @@ URxvt*foreground: black
 
 !xterm*background: black
 !xterm*foreground: lightgray
+!XTerm*modifyOtherKeys: 1
 XTerm*background: gray20
 XTerm*foreground: white
 XTerm*faceNameDoublesize: WenQuanYi WenQuanYi Bitmap Song
