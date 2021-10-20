@@ -16,6 +16,9 @@ XTerm*background: gray20
 XTerm*foreground: white
 XTerm*faceNameDoublesize: WenQuanYi WenQuanYi Bitmap Song
 XTerm*faceName: Hack
+XTerm*allowTcapOps: true
+XTerm*disallowedTcapOps:
+XTerm*termName: xterm-256color
 XTerm*faceSize: 12
 XTerm*renderFont: true
 !xterm*font: *-fixed-*-*-*-18-*
