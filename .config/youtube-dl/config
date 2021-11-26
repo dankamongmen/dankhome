@@ -1,0 +1,4 @@
+--fragment-retries 1000
+--abort-on-unavailable-fragment
+--buffer-size 65536
+--http-chunk-size 2M
