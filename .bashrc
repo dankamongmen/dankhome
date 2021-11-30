@@ -174,3 +174,8 @@ unset DANKRC
 if [ -r "$HOME/.cargo/env" ] ; then
 	. "$HOME/.cargo/env"
 fi
+
+
+# BEGIN_KITTY_SHELL_INTEGRATION
+if test -e "$HOME/src/dankamongmen/kitty/shell-integration/kitty.bash"; then source "$HOME/src/dankamongmen/kitty/shell-integration/kitty.bash"; fi
+# END_KITTY_SHELL_INTEGRATION

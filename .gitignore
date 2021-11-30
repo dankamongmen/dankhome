@@ -22,7 +22,11 @@ Pictures/
 .cache
 .calibre/
 .camel_certs/
-.cargo/
+.cargo/.package-cache
+.cargo/bin
+.cargo/credentials
+.cargo/git
+.cargo/registry
 .cgobanrc
 .cmake/
 .compiz/images
