@@ -177,5 +177,5 @@ fi
 
 
 # BEGIN_KITTY_SHELL_INTEGRATION
-if test -e "$HOME/src/dankamongmen/kitty/shell-integration/kitty.bash"; then source "$HOME/src/dankamongmen/kitty/shell-integration/kitty.bash"; fi
+if test -n "$KITTY_INSTALLATION_DIR" -a -e "$KITTY_INSTALLATION_DIR/shell-integration/bash/kitty.bash"; then source "$KITTY_INSTALLATION_DIR/shell-integration/bash/kitty.bash"; fi
 # END_KITTY_SHELL_INTEGRATION
