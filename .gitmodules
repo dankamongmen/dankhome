@@ -4,3 +4,6 @@
 [submodule ".vim/pack/themes/opt/solarized8"]
 	path = .vim/pack/themes/opt/solarized8
 	url = https://github.com/lifepillar/vim-solarized8.git
+[submodule ".local/share/OpenSCAD/.local/share/OpenSCAD/libraries/MCAD"]
+	path = .local/share/OpenSCAD/.local/share/OpenSCAD/libraries/MCAD
+	url = https://github.com/openscad/MCAD.git
