@@ -7,7 +7,6 @@ directory = ~/var/lib/rtorrent
 session = ~/var/lib/rtorrent
 max_uploads_global=0
 max_downloads_global=0
-#session_lock = yes
 port_range = 6901-6901
 #stop_on_ratio=2
 #max_memory_usage=134217728
