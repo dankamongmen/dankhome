@@ -1,22 +1,25 @@
 #!/bin/bash
 
-OPTIONS="--alang=en --stop-screensaver"
-
 exithandle () {
 	setterm -cursor on
 	#setterm -blank 15
 	echo "restored terminal settings"
 }
 
-BIN=`command -v mpv`
-if [ -z "$BIN" ] ; then
-	BIN=`command -v mplayer`
-	if [ -z "$BIN" ] ; then
-		echo "Couldn't find suitable binary" >&2
-		exit 1
+if [ -z "$MPBIN" ] ; then
+	MPBIN=`command -v mpv`
+	if [ -z "$MPBIN" ] ; then
+		MPBIN=`command -v mplayer`
+		if [ -z "$MPBIN" ] ; then
+			echo "Couldn't find suitable binary" >&2
+			exit 1
+		fi
+	else
+		# no --alang not --stop-screensaver for mplayer as of 2022
+		OPTIONS="$OPTIONS --alang=en --stop-screensaver"
 	fi
 fi
-echo "Player binary: $BIN"
+echo "Player binary: $MPBIN"
 
 trap exithandle EXIT HUP INT QUIT || { echo "Couldn't register exit handler." >&2 ; exit 1 ; }
 
@@ -70,6 +73,6 @@ case "`basename $0`" in
 esac
 
 for i in "$@" ; do
-	echo "$BIN" $OPTIONS "$i"
-	"$BIN" $OPTIONS "$i"
+	echo "$MPBIN" $OPTIONS "$i"
+	"$MPBIN" $OPTIONS "$i"
 done

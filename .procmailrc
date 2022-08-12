@@ -1,0 +1,100 @@
+# Sample .procmailrc file
+# #----------------------------------------------------------------------#
+# # Your procmail logfile will grow rapidly so remember to comment out
+# # the first line "LOGFILE=$HOME/.procmailrc.log" once you've verified
+# # that procmail is performing as expected
+#
+LOGFILE=$HOME/var/log/procmaillog
+INBOX=/var/spool/mail/dank
+VERBOSE=no
+COMSAT=no
+MAILDIR=$HOME/Mail
+PATH=/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/bin:/sbin
+
+:0fw
+| /usr/bin/spamc
+
+# This is taken from http://tldp.org/HOWTO/Mutt-GnuPG-PGP-HOWTO-8.html#ss8.1,
+# "Verify and decrypt automatically messages without PGP/MIME"
+:0
+* !^Content-Type: message/
+* !^Content-Type: multipart/
+* !^Content-Type: application/pgp
+{
+    :0 fBw
+    * ^-----BEGIN PGP MESSAGE-----
+    * ^-----END PGP MESSAGE-----
+    | formail \
+        -i "Content-Type: application/pgp; format=text; x-action=encrypt"
+
+    :0 fBw
+    * ^-----BEGIN PGP SIGNED MESSAGE-----
+    * ^-----BEGIN PGP SIGNATURE-----
+    * ^-----END PGP SIGNATURE-----
+    | formail \
+        -i "Content-Type: application/pgp; format=text; x-action=sign"
+}
+
+:0:
+* ^From.*pwccare1@mbopartners.com
+/dev/null
+
+:0:
+* ^From.*bugzilla@sprezzatech.com
+sprezzabugs
+
+:0
+* ^From.*wa-jit@microsoft.com
+{
+  :0 c
+  * ^Subject:\/.*
+  | /bin/sh /home/dank/.local/bin/msftjit
+}
+
+:0:
+* ^Subject.*\[llvm/circt\].*
+llvm
+
+:0:
+* ^Subject.*\[llvm/llvm-project\].*
+llvm
+
+:0:
+* ^Subject.*\[llvm/mlir-npcomp\].*
+llvm
+
+:0:
+* ^To.*omphalos-dev@googlegroups.com
+omphalos-dev
+
+:0:
+* ^To.*debian-boot@lists.debian.org
+debian-boot
+
+:0:
+* ^CC.*debian-boot@lists.debian.org
+debian-boot
+
+:0:
+* ^To.*devel@lists.fedoraproject.org
+fedora
+
+:0:
+* ^To.*@zfsonlinux.org
+zfs
+
+:0:
+* ^To.*linux-can@vger.kernel.org
+linux-can
+
+:0:
+* ^CC.*linux-can@vger.kernel.org
+linux-can
+
+:0:
+* ^From.*gatech.edu$
+/var/mail/dank
+
+:0:
+* ^X-Spam-Status: Yes
+spam
