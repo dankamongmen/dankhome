@@ -13,10 +13,13 @@ if [ -z "$MPBIN" ] ; then
 		if [ -z "$MPBIN" ] ; then
 			echo "Couldn't find suitable binary" >&2
 			exit 1
+		else
+			MUTEOPTS="--ao null"
 		fi
 	else
 		# no --alang not --stop-screensaver for mplayer as of 2022
 		OPTIONS="$OPTIONS --alang=en --stop-screensaver"
+		MUTEOPTS="--ao=null"
 	fi
 fi
 echo "Player binary: $MPBIN"
@@ -54,10 +57,10 @@ case "`basename $0`" in
 		OPTIONS="$OPTIONS -fs"
 		;;
 	mpfsna)
-		OPTIONS="$OPTIONS -fs --volume=0"
+		OPTIONS="$OPTIONS -fs --volume=0 $MUTEOPTS"
 		;;
 	mpna)
-		OPTIONS="$OPTIONS --volume=0"
+		OPTIONS="$OPTIONS --volume=0 $MUTEOPTS"
 		;;
 	mpdvd)
 		OPTIONS="$OPTIONS -aspect 16:9"
