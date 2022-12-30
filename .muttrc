@@ -57,6 +57,10 @@ set reverse_alias = 'yes'
 # imitate the old search-body function
 macro index \eb '/~b ' 'search in message bodies'
 
+# mark all messages read
+macro index A "T ~O | ~N\n;N" "mark all new as read"
+#    "<tag-pattern>~N<enter><tag-prefix><clear-flag>N<untag-pattern>.<enter>" \
+
 set edit_hdrs		# make headers visible while editing mail
 set include		# quote message when replying
 set fast_reply		# use old subject/from: when replying
