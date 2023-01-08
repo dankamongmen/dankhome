@@ -12,6 +12,7 @@ port_range = 6901-6901
 #max_memory_usage=134217728
 #d.max_file_size=-1
 dht=auto
+system.file.allocate=1
 
 log.open_file = "rtorrent", ~/var/log/rtorrent.log
 log.add_output = "info", "rtorrent"
