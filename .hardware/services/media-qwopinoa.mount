@@ -1,0 +1,13 @@
+[Unit]
+Description=Schwarzgerät qwopino NFS
+
+[Mount]
+What=192.168.88.100:/media/qwop
+Where=/media/qwopinoa
+Options=vers=4
+Type=nfs
+TimeoutSec=30
+ForceUnmount=true
+
+[Install]
+WantedBy=multi-user.target
