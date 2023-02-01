@@ -254,6 +254,7 @@ src/
 .stellarium/stars/
 .subversion/README.txt
 .subversion/servers
+.sudo_as_admin_successful
 .sup/
 .synaptic/
 .task
