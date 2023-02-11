@@ -205,13 +205,16 @@ libexec/
 .mpdcron/mpdcron.pid
 .mpdscribble/mpdscribble.conf
 .mplayer/gui*
+.mutt_aliases
 .mutt_certificates
+.mutt_lists
 .mysql_history
 .ncmpcpp/error.log
 .nemiver/
 .nv/
 .nvidia-settings-rc
 .ocrfeeder
+.octave_hist
 .openme
 .openshot
 .oracle_jre_usage/
@@ -234,6 +237,7 @@ libexec/
 .rnd
 .rpmdb
 .rtlsdr_scanner/
+.rustup/
 .sane/
 .secret/
 .shutter/
@@ -248,6 +252,7 @@ src/
 .ssh/identity.pub
 .ssh/known_hosts.old
 .ssh/known_hosts
+.ssh/*.pem
 .stack
 .starplotrc
 .stellarium/log.txt
@@ -288,6 +293,7 @@ var
 .xfce4-session.verbose-log.last
 .xsession-errors
 .xsession-errors.old
+.yarnrc
 .Heaven
 .Superposition
 .MakeMKV/screen.conf
