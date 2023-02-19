@@ -33,6 +33,7 @@ Pictures/
 .compiz/session/
 .conan/
 .conda/
+.config/.isolated-storage
 .config/Doxygen.org/
 .config/Flavio Tordini/
 .config/Last.fm/
@@ -54,6 +55,7 @@ Pictures/
 .config/fontgroups.xml
 .config/frogr
 .config/gaupol/
+.config/ghb
 .config/glade-3.conf
 .config/gmpc/
 .config/gnome-color-manager/
