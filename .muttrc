@@ -127,3 +127,6 @@ set pgp_sign_as="9A2FFF747994E287BEC422F15F43400C21CBFACC"
 set pgp_replysign
 
 set attach_save_dir=/home/dank
+
+# https://people.kernel.org/monsieuricon/fix-your-mutt
+set message_id_format = "<%Y%02m%02d%02H%02M%02S.G%c%p@%f>"
