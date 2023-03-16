@@ -1,0 +1,10 @@
+[Match]
+Name=r8152
+
+[Network]
+DHCP=ipv4
+
+[DHCP]
+RouteMetric=10
+LinkLocalAddressing=no                                                                                                              
+LLDP=true

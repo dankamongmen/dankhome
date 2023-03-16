@@ -1,0 +1,8 @@
+[Match]
+Name=br0
+
+[Network]
+Address=192.168.88.1/24
+ConfigureWithoutCarrier=yes
+LinkLocalAddressing=no                                                                                                              
+LLDP=true

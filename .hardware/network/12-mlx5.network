@@ -1,0 +1,13 @@
+[Match]
+Name=mlx5
+
+[Address]
+Address=192.168.89.5/30
+
+[Link]
+RequiredForOnline=no
+
+[Network]
+LinkLocalAddressing=no                                                                                                              
+LLDP=true
+ConfigureWithoutCarrier=yes

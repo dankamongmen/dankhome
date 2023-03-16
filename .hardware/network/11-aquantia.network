@@ -1,0 +1,8 @@
+[Match]
+Name=aqc107
+
+[Address]
+Address=192.168.89.1/30
+
+[Link]
+RequiredForOnline=no
