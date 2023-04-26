@@ -136,7 +136,6 @@ files/
 .gem/
 .ghidra
 .gimp-2.6/
-.gitconfig
 .githubrc
 .gksu.lock
 .gmerlin/

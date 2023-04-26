@@ -1,0 +1,25 @@
+# This is Git's per-user configuration file.
+[user]
+	name = nick black
+	email = dankamongmen@gmail.com
+	signingkey = 9A2FFF747994E287BEC422F15F43400C21CBFACC
+[push]
+	default = simple
+	autoSetupRemote = yes
+[commit]
+	gpgsign = true
+[core]
+	autocrlf = input
+	quotepath = off
+[status]
+	submoduleSummary = true
+[diff]
+	noprefix = true
+[remote "origin"]
+	prune = true
+[pull]
+	rebase = false
+[init]
+	defaultBranch = master
+[url "git@salsa.debian.org:installer-team/"]
+	pushInsteadOf = https://salsa.debian.org/installer-team/
