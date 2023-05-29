@@ -7,7 +7,7 @@ set print pretty on
 set pagination off
 set confirm off
 
-set index-cache on
+set index-cache enabled
 
 define xxd
 dump binary memory dump.bin $arg0 $arg0+$arg1
