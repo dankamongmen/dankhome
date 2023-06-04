@@ -1,0 +1,6 @@
+[Match]
+MACAddress=f0:a6:54:14:9f:61
+
+[Link]
+Name=mt7921e
+Description=Aorus onboard mt7921e wireless
