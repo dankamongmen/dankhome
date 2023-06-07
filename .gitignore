@@ -274,7 +274,6 @@ tmp/*
 var/cache/
 var/lib/
 var/log/mpd.log
-var
 .vim/.netrwhist
 .vim/*.swn
 .vim/*.swo
