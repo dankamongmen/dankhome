@@ -50,6 +50,7 @@ Pictures/
 .config/conduit/
 .config/dconf/
 .config/enchant/
+.config/evince/
 .config/evolution/
 .config/f-spot/
 .config/font-manager/
@@ -65,6 +66,7 @@ Pictures/
 .config/gthumb/
 .config/gtk-2.0/
 .config/gwibber/
+.config/higan/
 .config/homebank/
 .config/htop/
 .config/indicators/
