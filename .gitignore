@@ -74,8 +74,10 @@ Pictures/
 .config/menus/
 .config/monitors.xml
 .config/nautilus-actions/
+.config/ncmpcpp/error.log
 .config/ovito/
 .config/oxygen-gtk/
+.config/pavucontrol.ini
 .config/pithos.ini
 .config/pitivi/
 .config/postler/
