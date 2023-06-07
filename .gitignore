@@ -274,7 +274,7 @@ tmp/*
 .traceevent
 .trousers
 var/cache/
-var/lib/
+var/lib/mpd/*
 var/log/mpd.log
 .vim/.netrwhist
 .vim/*.swn
