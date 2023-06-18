@@ -1,0 +1,7 @@
+[Match]
+MACAddress=2c:59:e5:73:38:e0
+
+[Link]
+Name=qlc0
+MTUBytes=1500
+CombinedChannels=1
