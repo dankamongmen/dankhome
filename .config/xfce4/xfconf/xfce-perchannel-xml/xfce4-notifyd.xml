@@ -44,6 +44,9 @@
     <property name="muted_applications" type="array">
       <value type="string" value="solaar"/>
     </property>
+    <property name="excluded-from-log" type="array">
+      <value type="string" value="flameshot"/>
+    </property>
   </property>
   <property name="initial-opacity" type="double" value="0.80000000000000004"/>
   <property name="log-level" type="uint" value="1"/>
@@ -53,4 +56,6 @@
   <property name="do-slideout" type="bool" value="true"/>
   <property name="expire-timeout" type="int" value="15"/>
   <property name="log-max-size-enabled" type="bool" value="true"/>
+  <property name="date-time-format" type="int" value="0"/>
+  <property name="date-time-custom-format" type="string" value="%a %H:%M:%S"/>
 </channel>
