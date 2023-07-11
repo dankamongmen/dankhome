@@ -16,12 +16,8 @@
       <property name="background-alpha" type="uint" value="47"/>
       <property name="autohide-behavior" type="uint" value="1"/>
       <property name="plugin-ids" type="array">
-        <value type="int" value="2"/>
         <value type="int" value="1"/>
-        <value type="int" value="3"/>
         <value type="int" value="9"/>
-        <value type="int" value="5"/>
-        <value type="int" value="7"/>
       </property>
       <property name="position-locked" type="bool" value="true"/>
       <property name="length" type="uint" value="1"/>
@@ -56,43 +52,6 @@
       <property name="digital-layout" type="uint" value="3"/>
     </property>
     <property name="plugin-6" type="string" value="xfce4-clipman-plugin"/>
-    <property name="plugin-2" type="string" value="whiskermenu"/>
-    <property name="plugin-3" type="string" value="weather">
-      <property name="msl" type="int" value="285"/>
-      <property name="timezone" type="string" value="America/New_York"/>
-      <property name="offset" type="string" value="-04:00"/>
-      <property name="cache-max-age" type="int" value="172800"/>
-      <property name="power-saving" type="bool" value="true"/>
-      <property name="units" type="empty">
-        <property name="temperature" type="int" value="0"/>
-        <property name="pressure" type="int" value="2"/>
-        <property name="windspeed" type="int" value="0"/>
-        <property name="precipitation" type="int" value="0"/>
-        <property name="altitude" type="int" value="0"/>
-        <property name="apparent-temperature" type="int" value="0"/>
-      </property>
-      <property name="round" type="bool" value="true"/>
-      <property name="single-row" type="bool" value="true"/>
-      <property name="tooltip-style" type="int" value="1"/>
-      <property name="forecast" type="empty">
-        <property name="layout" type="int" value="1"/>
-        <property name="days" type="int" value="5"/>
-      </property>
-      <property name="theme-dir" type="string" value="/usr/share/xfce4/weather/icons/liquid"/>
-      <property name="scrollbox" type="empty">
-        <property name="show" type="bool" value="true"/>
-        <property name="animate" type="bool" value="true"/>
-        <property name="lines" type="int" value="1"/>
-        <property name="color" type="string" value="rgba(0,0,0,0)"/>
-        <property name="use-color" type="bool" value="false"/>
-      </property>
-      <property name="location" type="empty">
-        <property name="name" type="string" value="Atlanta, Georgia"/>
-        <property name="latitude" type="string" value="33.833599"/>
-        <property name="longitude" type="string" value="-84.379700"/>
-      </property>
-    </property>
-    <property name="plugin-7" type="string" value="xfce4-mpc-plugin"/>
     <property name="plugin-8" type="string" value="statusnotifier">
       <property name="known-items" type="array">
         <value type="string" value="AppRun.wrapped"/>
@@ -127,12 +86,6 @@
         <value type="string" value="org.ayatana.indicator.messages"/>
       </property>
       <property name="square-icons" type="bool" value="false"/>
-    </property>
-    <property name="plugin-5" type="string" value="indicator">
-      <property name="known-indicators" type="array">
-        <value type="string" value="libayatana-application.so"/>
-        <value type="string" value="org.ayatana.indicator.messages"/>
-      </property>
     </property>
   </property>
 </channel>
