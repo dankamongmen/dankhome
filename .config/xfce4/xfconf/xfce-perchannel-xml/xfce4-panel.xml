@@ -18,6 +18,9 @@
       <property name="plugin-ids" type="array">
         <value type="int" value="1"/>
         <value type="int" value="9"/>
+        <value type="int" value="2"/>
+        <value type="int" value="3"/>
+        <value type="int" value="4"/>
       </property>
       <property name="position-locked" type="bool" value="true"/>
       <property name="length" type="uint" value="1"/>
@@ -46,10 +49,14 @@
       </property>
     </property>
     <property name="plugin-1" type="string" value="clock">
-      <property name="mode" type="uint" value="2"/>
+      <property name="mode" type="uint" value="4"/>
       <property name="digital-format" type="string" value="%a %d %b, %R"/>
       <property name="digital-time-format" type="string" value="%a %d %b, %R"/>
       <property name="digital-layout" type="uint" value="3"/>
+      <property name="show-meridiem" type="bool" value="false"/>
+      <property name="show-military" type="bool" value="true"/>
+      <property name="show-seconds" type="bool" value="true"/>
+      <property name="flash-separators" type="bool" value="false"/>
     </property>
     <property name="plugin-6" type="string" value="xfce4-clipman-plugin"/>
     <property name="plugin-8" type="string" value="statusnotifier">
@@ -86,6 +93,18 @@
         <value type="string" value="org.ayatana.indicator.messages"/>
       </property>
       <property name="square-icons" type="bool" value="false"/>
+    </property>
+    <property name="plugin-2" type="string" value="whiskermenu"/>
+    <property name="plugin-3" type="string" value="power-manager-plugin"/>
+    <property name="plugin-4" type="string" value="systray">
+      <property name="known-legacy-items" type="array">
+        <value type="string" value="gmpc"/>
+        <value type="string" value="xfce4-power-manager"/>
+      </property>
+      <property name="known-items" type="array">
+        <value type="string" value="openrgb"/>
+        <value type="string" value="indicator-solaar"/>
+      </property>
     </property>
   </property>
 </channel>
