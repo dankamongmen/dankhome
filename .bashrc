@@ -106,6 +106,8 @@ else
 	alias vi=vim
 fi
 
+alias tc='tc -c=auto'
+
 # from gng-agent(1)
 export GPG_TTY=`tty`
 # gnupg is now auto-started on demand
