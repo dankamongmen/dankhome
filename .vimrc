@@ -38,8 +38,7 @@ set fileencoding=utf-8
 filetype plugin on
 filetype indent on
 
-set spell
-setlocal spell spelllang=en_us
+set spell spelllang=en_us
 set spellfile=~/.vim/dict.add
 
 set backspace="2"
