@@ -94,7 +94,11 @@
       </property>
       <property name="square-icons" type="bool" value="false"/>
     </property>
-    <property name="plugin-2" type="string" value="whiskermenu"/>
+    <property name="plugin-2" type="string" value="whiskermenu">
+      <property name="recent" type="array">
+        <value type="string" value="kodi.desktop"/>
+      </property>
+    </property>
     <property name="plugin-3" type="string" value="power-manager-plugin"/>
     <property name="plugin-4" type="string" value="systray">
       <property name="known-legacy-items" type="array">

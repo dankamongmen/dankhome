@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <channel name="xfce4-notifyd" version="1.0">
-  <property name="notify-location" type="uint" value="2"/>
   <property name="theme" type="string" value="Smoke"/>
   <property name="applications" type="empty">
     <property name="known_applications" type="array">
@@ -49,13 +48,14 @@
     </property>
   </property>
   <property name="initial-opacity" type="double" value="0.80000000000000004"/>
-  <property name="log-level" type="uint" value="1"/>
-  <property name="log-level-apps" type="uint" value="0"/>
   <property name="notification-log" type="bool" value="true"/>
-  <property name="primary-monitor" type="uint" value="0"/>
   <property name="do-slideout" type="bool" value="true"/>
   <property name="expire-timeout" type="int" value="15"/>
   <property name="log-max-size-enabled" type="bool" value="true"/>
   <property name="date-time-format" type="int" value="0"/>
   <property name="date-time-custom-format" type="string" value="%a %H:%M:%S"/>
+  <property name="show-notifications-on" type="string" value="active-monitor"/>
+  <property name="log-level" type="string" value="always"/>
+  <property name="log-level-apps" type="string" value="all"/>
+  <property name="notify-location" type="string" value="top-right"/>
 </channel>
