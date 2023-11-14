@@ -97,6 +97,7 @@ Pictures/
 .config/veusz.org/
 .config/vlc/
 .config/wpa_supplicant/
+.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml
 .covers/
 .credentials
 .cups
