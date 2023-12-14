@@ -117,6 +117,7 @@ Pictures/
 .electron
 .elementary
 .emerald/theme/theme.ini.bak
+.emerald/theme/*.png
 .enthought
 .eresi_history
 .esd_auth
