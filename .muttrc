@@ -85,8 +85,8 @@ bind index 'k' previous-entry
 # we use a real editor, with 64 wrapping. invoke spellchecking.
 set editor="vim \"+set tw=64\" +/^$/"
 
-#use utf-8 before iso-8859-1
-set send_charset="us-ascii:utf-8:iso-8859-1"
+#use utf-8 or even ascii before iso-8859-1
+set send_charset="utf-8:us-ascii:iso-8859-1"
 
 # print it pretty (from muttprint(1) man page)
 set print_command="muttprint -p TO_FILE:muttprint.pdf"
