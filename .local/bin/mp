@@ -13,13 +13,13 @@ if [ -z "$MPBIN" ] ; then
 		if [ -z "$MPBIN" ] ; then
 			echo "Couldn't find suitable binary" >&2
 			exit 1
-		else
-			MUTEOPTS="--ao null"
+		#else
+			#MUTEOPTS="--ao null"
 		fi
 	else
 		# no --alang not --stop-screensaver for mplayer as of 2022
 		OPTIONS="$OPTIONS --alang=en --stop-screensaver"
-		MUTEOPTS="--ao=null"
+		#MUTEOPTS="--ao=null"
 	fi
 fi
 echo "Player binary: $MPBIN"
@@ -50,11 +50,13 @@ get_dimensions
 
 # Use --volume=0 rather than -nosound to only start muted (ie, leave open the
 # possibility of unmuting).
+DEFVOL=50
 case "`basename $0`" in
 	mp)
+		OPTIONS="$OPTIONS --volume=$DEFVOL"
 		;;
 	mpfs)
-		OPTIONS="$OPTIONS -fs"
+		OPTIONS="$OPTIONS -fs --volume=$DEFVOL"
 		;;
 	mpfsna)
 		OPTIONS="$OPTIONS -fs --volume=0 $MUTEOPTS"
@@ -64,7 +66,7 @@ case "`basename $0`" in
 		;;
 	mpdvd)
 		OPTIONS="$OPTIONS -aspect 16:9"
-	        OPTIONS="$OPTIONS -dvd-device /dev/dvd -slang en"
+	        OPTIONS="$OPTIONS --volume=$DEFVOL -dvd-device /dev/dvd -slang en"
 		echo mplayer $OPTIONS dvd://$1
 		mplayer $OPTIONS dvd://$1
 		shift
