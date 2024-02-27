@@ -1,4 +1,6 @@
 [Match]
 MACAddress=24:8a:07:1f:06:5a
+
 [Link]
 Name=mlx5
+MTUBytes=3050
