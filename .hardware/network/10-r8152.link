@@ -1,0 +1,5 @@
+[Match]
+MACAddress=4c:e1:73:42:1d:f1
+
+[Link]
+Name=r8152
