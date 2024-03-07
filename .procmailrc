@@ -1,9 +1,3 @@
-# Sample .procmailrc file
-# #----------------------------------------------------------------------#
-# # Your procmail logfile will grow rapidly so remember to comment out
-# # the first line "LOGFILE=$HOME/.procmailrc.log" once you've verified
-# # that procmail is performing as expected
-#
 LOGFILE=$HOME/var/log/procmaillog
 INBOX=/var/spool/mail/dank
 VERBOSE=no
@@ -12,7 +6,7 @@ MAILDIR=$HOME/Mail
 PATH=/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/bin:/sbin
 
 :0fw
-| /usr/bin/spamc
+| /usr/bin/spamc -4
 
 # This is taken from http://tldp.org/HOWTO/Mutt-GnuPG-PGP-HOWTO-8.html#ss8.1,
 # "Verify and decrypt automatically messages without PGP/MIME"
@@ -43,14 +37,6 @@ PATH=/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/bin:/sbin
 * ^From.*bugzilla@sprezzatech.com
 sprezzabugs
 
-:0
-* ^From.*wa-jit@microsoft.com
-{
-  :0 c
-  * ^Subject:\/.*
-  | /bin/sh /home/dank/.local/bin/msftjit
-}
-
 :0:
 * ^Subject.*\[llvm/circt\].*
 llvm
@@ -61,6 +47,10 @@ llvm
 
 :0:
 * ^Subject.*\[llvm/mlir-npcomp\].*
+llvm
+
+:0:
+* ^Subject.*\[llvm/llvm-test-suite\].*
 llvm
 
 :0:
