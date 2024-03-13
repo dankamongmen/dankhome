@@ -1,5 +1,7 @@
 #!/bin/bash
 
+DEFVOL=50
+
 exithandle () {
 	setterm -cursor on
 	#setterm -blank 15
@@ -50,7 +52,6 @@ get_dimensions
 
 # Use --volume=0 rather than -nosound to only start muted (ie, leave open the
 # possibility of unmuting).
-DEFVOL=20
 case "`basename $0`" in
 	mp)
 		OPTIONS="$OPTIONS --volume=$DEFVOL"
