@@ -8,3 +8,5 @@ aptitude::UI::Minibuf-Prompts "true";
 aptitude::UI::Menubar-Autohide "true";
 aptitude::UI::Exit-On-Last-Close "true";
 aptitude::UI::Prompt-On-Exit "false";
+aptitude::AutoClean-After-Update "true";
+aptitude::Clean-After-Install "true";
