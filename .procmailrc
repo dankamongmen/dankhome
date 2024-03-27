@@ -42,6 +42,10 @@ sprezzabugs
 llvm
 
 :0:
+* ^Subject.*\[llvm/llvm-lnt\].*
+llvm
+
+:0:
 * ^Subject.*\[llvm/llvm-project\].*
 llvm
 
