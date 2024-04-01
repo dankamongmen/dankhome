@@ -1,7 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=Ctrl-Alt-Bk
-NoDisplay=true
-Comment=Enable ctrl+alt+backspace for X kill
-Version=1.1
-Exec=/usr/bin/setxkbmap -option terminate:ctrl_alt_bksp
