@@ -23,3 +23,5 @@
 	defaultBranch = master
 [url "git@salsa.debian.org:installer-team/"]
 	pushInsteadOf = https://salsa.debian.org/installer-team/
+[DEFAULT]
+	sign-tags = true
