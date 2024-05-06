@@ -13,6 +13,8 @@ Pictures/
 .arduino
 .aqbanking/
 .aptitude/cache
+.aspell.en.prepl
+.aspell.en.pws
 .avidemux/
 .audacity-data/
 .bash_history*
@@ -58,6 +60,7 @@ Pictures/
 .config/frogr
 .config/gaupol/
 .config/ghb
+.config/GIMP
 .config/glade-3.conf
 .config/gmpc/
 .config/gnome-color-manager/
@@ -77,6 +80,8 @@ Pictures/
 .config/monitors.xml
 .config/nautilus-actions/
 .config/ncmpcpp/error.log
+.config/okularpartrc
+.config/okularrc
 .config/ovito/
 .config/oxygen-gtk/
 .config/pavucontrol.ini
@@ -154,11 +159,15 @@ files/
 .gnomint/
 .gnss-sdr
 .gnucash/
+.gnupg/.gpg-v21-migrated
 .gnupg/gpg-agent*
 .gnupg/private-keys-v1.d/
 .gnupg/pubring.gpg~
+.gnupg/pubring.kbx*
 .gnupg/random_seed
 .gnupg/secring*
+.gnupg/tofu.db
+.gnupg/trustlist.txt
 .gnuplot_history
 .goldendict/config
 .goldendict/history
@@ -242,6 +251,7 @@ libexec/
 .pyNeighborhood/
 .pyrit/
 .python_history
+.rbenv
 .recently-used
 .rnd
 .rpmdb
