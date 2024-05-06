@@ -17,6 +17,7 @@ Pictures/
 .aspell.en.pws
 .avidemux/
 .audacity-data/
+.aws/credentials
 .bash_history*
 .bitcoin/
 .bundle/
@@ -172,6 +173,7 @@ files/
 .goldendict/config
 .goldendict/history
 .goldendict/index/
+.goobook_auth.json
 .google/
 .gpg-agent-info
 .gphpedit/
@@ -249,6 +251,7 @@ libexec/
 .pulse-cookie
 .purple/
 .pyNeighborhood/
+.pypirc
 .pyrit/
 .python_history
 .rbenv
@@ -316,6 +319,7 @@ var/log/mpd.log
 .Superposition
 .MakeMKV/screen.conf
 .MakeMKV/update.conf
+.MakeMKV/_private_data.tar
 .units_history
 .vagrant.d
 Videos
