@@ -8,9 +8,11 @@ exithandle () {
 	echo "restored terminal settings"
 }
 
+VOLFLAG="--volume="
 if [ -z "$MPBIN" ] ; then
 	MPBIN=`command -v mpv`
 	if [ -z "$MPBIN" ] ; then
+		VOLFLAG="-volume "
 		MPBIN=`command -v mplayer`
 		if [ -z "$MPBIN" ] ; then
 			echo "Couldn't find suitable binary" >&2
@@ -50,24 +52,24 @@ get_dimensions () {
 
 get_dimensions
 
-# Use --volume=0 rather than -nosound to only start muted (ie, leave open the
+# Use $VOLFLAG=0 rather than -nosound to only start muted (ie, leave open the
 # possibility of unmuting).
 case "`basename $0`" in
 	mp)
-		OPTIONS="$OPTIONS --volume=$DEFVOL"
+		OPTIONS="$OPTIONS ${VOLFLAG}$DEFVOL"
 		;;
 	mpfs)
-		OPTIONS="$OPTIONS -fs --volume=$DEFVOL"
+		OPTIONS="$OPTIONS -fs ${VOLFLAG}$DEFVOL"
 		;;
 	mpfsna)
-		OPTIONS="$OPTIONS -fs --volume=0 $MUTEOPTS"
+		OPTIONS="$OPTIONS -fs ${VOLFLAG}0 $MUTEOPTS"
 		;;
 	mpna)
-		OPTIONS="$OPTIONS --volume=0 $MUTEOPTS"
+		OPTIONS="$OPTIONS ${VOLFLAG}0 $MUTEOPTS"
 		;;
 	mpdvd)
 		OPTIONS="$OPTIONS -aspect 16:9"
-	        OPTIONS="$OPTIONS --volume=$DEFVOL -dvd-device /dev/dvd -slang en"
+	        OPTIONS="$OPTIONS ${VOLFLAG}$DEFVOL -dvd-device /dev/dvd -slang en"
 		echo mplayer $OPTIONS dvd://$1
 		mplayer $OPTIONS dvd://$1
 		shift
