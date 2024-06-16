@@ -17,10 +17,14 @@
 	noprefix = true
 [remote "origin"]
 	prune = true
+[transfer]
+	fsckObjects = true
 [pull]
 	rebase = false
 [init]
 	defaultBranch = master
+[fetch "fsck"]
+  missingSpaceBeforeDate = ignore
 [url "git@salsa.debian.org:installer-team/"]
 	pushInsteadOf = https://salsa.debian.org/installer-team/
 [DEFAULT]
