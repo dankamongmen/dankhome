@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DEFVOL=20
+DEFVOL=50
 
 exithandle () {
 	setterm -cursor on
