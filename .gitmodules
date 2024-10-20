@@ -7,3 +7,12 @@
 [submodule ".local/share/OpenSCAD/.local/share/OpenSCAD/libraries/MCAD"]
 	path = .local/share/OpenSCAD/libraries/MCAD/MCAD
 	url = https://github.com/openscad/MCAD.git
+[submodule ".local/share/OpenSCAD/libraries/BOSL2"]
+	path = .local/share/OpenSCAD/libraries/BOSL2
+	url = https://github.com/BelfrySCAD/BOSL2.git
+[submodule ".local/share/OpenSCAD/libraries/PolyGear"]
+	path = .local/share/OpenSCAD/libraries/PolyGear
+	url = https://github.com/dpellegr/PolyGear.git
+[submodule ".local/share/OpenSCAD/libraries/MCAD"]
+	path = .local/share/OpenSCAD/libraries/MCAD
+	url = https://github.com/openscad/MCAD.git
