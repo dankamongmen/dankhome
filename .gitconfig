@@ -29,3 +29,8 @@
 	pushInsteadOf = https://salsa.debian.org/installer-team/
 [DEFAULT]
 	sign-tags = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
