@@ -8,7 +8,7 @@
 	(property "Reference" "J5"
 		(at -3.88 0 180)
 		(layer "F.SilkS")
-		(uuid "0dab4393-caa1-4aec-85fe-3ded85f0de31")
+		(uuid "d86312d5-7f6d-4af8-9151-2fd6438f9399")
 		(effects
 			(font
 				(size 1 1)
@@ -16,10 +16,10 @@
 			)
 		)
 	)
-	(property "Value" "Screw_Terminal_01x04"
+	(property "Value" "5kg load cell"
 		(at 7.6 4.75 180)
 		(layer "F.Fab")
-		(uuid "c0ff45c2-55f4-4abf-bb38-ad2e87f1b31b")
+		(uuid "2f9bdc2f-e278-44c3-bb61-36239f550e3f")
 		(effects
 			(font
 				(size 1 1)
@@ -32,7 +32,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "5af624af-c074-4db6-9099-b617734bbcce")
+		(uuid "1cbb3a37-b6bd-4577-8945-24c181020112")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -45,7 +45,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "7b462797-645b-46a8-8179-b2279cacef7e")
+		(uuid "2fd6cace-2e74-4468-97a2-ac43dddfce75")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -58,7 +58,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "5cf49d9f-026c-4c9c-b604-81817d77cdc6")
+		(uuid "afc7e154-348e-4887-97aa-67f4aa575f07")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -75,7 +75,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "64fe60b6-4f7e-4bb1-bcaa-da0ba039a316")
+		(uuid "feb93921-62e5-4bd5-8cfd-8702bb0a2c72")
 	)
 	(fp_line
 		(start -2.54 -3.81)
@@ -85,7 +85,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "b9aa0c49-1fc5-4e52-9ee3-1fc67dd23c9a")
+		(uuid "57edbdee-73a4-4d0e-873e-5af49b1ffbef")
 	)
 	(fp_line
 		(start -2.54 3.81)
@@ -95,7 +95,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "37f58d1d-ff9c-4fa4-a886-6ec588adfee2")
+		(uuid "4d30f090-cde0-4e6a-81fa-6e28cc1d273e")
 	)
 	(fp_line
 		(start 17.78 2.54)
@@ -105,7 +105,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "9c27dee5-83fe-42a6-848e-464bddbb8d1b")
+		(uuid "3a77f2c6-1222-43f5-ad6d-55816c6dc542")
 	)
 	(fp_line
 		(start 17.78 3.81)
@@ -115,7 +115,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "62d9cf71-f842-4716-8716-b09e940d7796")
+		(uuid "f5b6e1c9-18a5-41d7-a8d3-1ac0523cde8e")
 	)
 	(fp_line
 		(start -2.73 -4)
@@ -125,7 +125,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "a67610da-9e3a-4014-b2e0-5e11954d2bc8")
+		(uuid "4a0378ae-e8ff-43b8-a8b9-c64f5f266e9d")
 	)
 	(fp_line
 		(start -2.73 -4)
@@ -135,7 +135,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "bd1e6643-78fb-4ed6-8b6c-7ec0f58771a1")
+		(uuid "292a0143-5ad1-497e-9800-4129fa7aacf1")
 	)
 	(fp_line
 		(start 17.97 4)
@@ -145,7 +145,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "f6d11df2-8469-4465-b228-e7ce9dfa990d")
+		(uuid "a7a3577d-0167-444d-b3fd-a209e82e3d50")
 	)
 	(fp_line
 		(start 17.97 4)
@@ -155,7 +155,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "10a27ef7-6009-4d6d-91d5-1d33c026ebcc")
+		(uuid "921d503d-ec70-45fc-b672-6db4db5a1047")
 	)
 	(fp_line
 		(start -2.48 -3.75)
@@ -165,7 +165,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "4c8a763a-b75d-4990-9b7f-27ce354131f9")
+		(uuid "08459ad7-9ce8-49e0-b2c0-4a459fe5befc")
 	)
 	(fp_line
 		(start -2.48 2.55)
@@ -175,7 +175,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "fca00b76-98a3-4589-a9df-82c81bd58352")
+		(uuid "4a49c44e-a179-49ac-a627-fe26038bcf0d")
 	)
 	(fp_line
 		(start -2.48 3.75)
@@ -185,7 +185,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "6170766c-6b0b-4857-8bde-1d8acf4653f0")
+		(uuid "649a4458-22e3-4f01-80f5-e1f1a8951be7")
 	)
 	(fp_line
 		(start -2.43 3.75)
@@ -195,7 +195,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "b62f3520-4462-4b1a-a18f-a1b0bd6d500e")
+		(uuid "218bb8de-c38c-4149-b7ba-53fd2e1ba94d")
 	)
 	(fp_line
 		(start 17.72 -3.75)
@@ -205,7 +205,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "0b8b9190-a673-41fe-a6bb-38f63308fbb2")
+		(uuid "bfd4bab1-afc1-4d37-a50a-d336b5629f96")
 	)
 	(fp_line
 		(start 17.72 3.75)
@@ -215,12 +215,12 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "7a6a64b3-c50f-4e25-af4d-655a6b175fbf")
+		(uuid "392f37d3-e414-44bc-8dac-56933b516e55")
 	)
 	(fp_text user "${REFERENCE}"
 		(at -4.84 2 180)
 		(layer "F.Fab")
-		(uuid "8195c463-1fd3-4048-940d-3a43f4dedb88")
+		(uuid "addc089f-f8de-48c5-bb1f-738ef96b31b4")
 		(effects
 			(font
 				(size 1 1)
@@ -234,7 +234,7 @@
 		(drill 1.52)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "308281cb-4cdf-4337-b76f-c639516d8d34")
+		(uuid "50a86525-292a-4f4c-bda5-db1aa2a9495b")
 	)
 	(pad "2" thru_hole circle
 		(at 5.08 0)
@@ -242,7 +242,7 @@
 		(drill 1.52)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "24b84510-262d-41be-9caa-5675315abc84")
+		(uuid "94b55108-ce04-49cc-b8e6-7ee6b5db9387")
 	)
 	(pad "3" thru_hole circle
 		(at 10.16 0)
@@ -250,7 +250,7 @@
 		(drill 1.52)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "eed4dee3-37ef-462c-8e76-b17998eab778")
+		(uuid "2dd23156-a62d-4371-a3ca-25a274c3f50f")
 	)
 	(pad "4" thru_hole circle
 		(at 15.24 0)
@@ -258,9 +258,9 @@
 		(drill 1.52)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "3bac7367-8465-4b40-bfb8-8ba5422d92cc")
+		(uuid "4824c05b-fe51-410e-b1d2-27b75dd8dca2")
 	)
-	(model "/home/dank/hx/Screw Terminal Block 5mm 4-way.step"
+	(model "/home/dank/.local/share/kicad/8.0/3dmodels/Screw Terminal Block 5mm 4-way.step"
 		(offset
 			(xyz 7.5 0 0)
 		)
