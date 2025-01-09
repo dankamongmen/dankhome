@@ -1,0 +1,290 @@
+(footprint "WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm_ThermalVias"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "8-Lead Plastic WSON, 2x2mm Body, 0.5mm Pitch, WSON-8, http://www.ti.com/lit/ds/symlink/lm27761.pdf")
+	(tags "WSON 8 1EP ThermalVias")
+	(property "Reference" "U2"
+		(at 0.38 -1.9 0)
+		(layer "F.SilkS")
+		(uuid "8d327737-2a2d-4e09-88fb-0737ddfc825e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "TPS62162DSG"
+		(at 0.01 2.14 0)
+		(layer "F.Fab")
+		(uuid "12caec7c-425f-4242-b5c7-5be27f323104")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "dank:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm_ThermalVias"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9c870d24-6486-4a7f-9992-38a8b12791e8")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tps62170.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "49b8a227-77e5-4eb5-98c0-5f9e4d794bd6")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "500mA Step-Down Converter with DCS-Control, adjustable output, 3-17V input voltage, WSON-8"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "867e7ca3-3f04-403a-a7c2-8993656009a1")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_poly
+		(pts
+			(xy -1.37 -1.07) (xy -1.65 -1.07) (xy -1.37 -1.35) (xy -1.37 -1.07)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.SilkS")
+		(uuid "1dfd5bd3-55f7-4180-b41d-522b238e7ec3")
+	)
+	(fp_line
+		(start -1.6 -1.25)
+		(end -1.6 1.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "4bb6050c-92ea-424d-bdc4-09d3953a2bbb")
+	)
+	(fp_line
+		(start -1.6 -1.25)
+		(end 1.6 -1.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "665fdbf2-211a-47b6-9d5b-ab18ff7839cf")
+	)
+	(fp_line
+		(start -1.6 1.25)
+		(end 1.6 1.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "869ea2da-ea2e-439c-ac97-3d9b23472841")
+	)
+	(fp_line
+		(start 1.6 -1.25)
+		(end 1.6 1.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "c460b323-ded3-44a6-af58-56bae2acd721")
+	)
+	(fp_line
+		(start -1 1)
+		(end -1 -0.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "332b3650-e554-4d0e-8621-dbed74b49dac")
+	)
+	(fp_line
+		(start -0.5 -1)
+		(end -1 -0.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a4129781-bdb0-4154-a16d-2c14169851a9")
+	)
+	(fp_line
+		(start -0.5 -1)
+		(end 1 -1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "fca00416-3e38-4fed-97e8-4bbaa24b60bd")
+	)
+	(fp_line
+		(start 1 -1)
+		(end 1 1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "46546698-e060-496f-a457-0431a64853ef")
+	)
+	(fp_line
+		(start 1 1)
+		(end -1 1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "0a777124-69d3-4217-90e2-910e56687671")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "8d52af06-9f39-4d54-888e-b6055ca85303")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "" smd rect
+		(at 0 -0.4)
+		(size 0.75 0.65)
+		(layers "F.Paste")
+		(uuid "d14c92d6-d7fc-4572-ac36-51fcfd4c5ef2")
+	)
+	(pad "" smd rect
+		(at 0 0.4)
+		(size 0.75 0.65)
+		(layers "F.Paste")
+		(uuid "8f1ec3c5-fbf8-432f-b391-9d3aba669f90")
+	)
+	(pad "1" smd roundrect
+		(at -0.95 -0.75)
+		(size 0.5 0.25)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "4c0c199d-725f-4a66-8212-fe9a3c903280")
+	)
+	(pad "2" smd roundrect
+		(at -0.95 -0.25)
+		(size 0.5 0.25)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "e946e079-5168-4832-b72d-1ea8347de935")
+	)
+	(pad "3" smd roundrect
+		(at -0.95 0.25)
+		(size 0.5 0.25)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "b1da9c69-694c-4750-8a7e-c3dec03d4177")
+	)
+	(pad "4" smd roundrect
+		(at -0.95 0.75)
+		(size 0.5 0.25)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "cbaad150-632f-4163-a05a-3a79e9644a36")
+	)
+	(pad "5" smd roundrect
+		(at 0.95 0.75)
+		(size 0.5 0.25)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "5c4ef10b-47ef-4537-9e22-6858dd09d2a6")
+	)
+	(pad "6" smd roundrect
+		(at 0.95 0.25)
+		(size 0.5 0.25)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "e9f2ca53-3cd5-4848-9bca-e6442f75ca91")
+	)
+	(pad "7" smd roundrect
+		(at 0.95 -0.25)
+		(size 0.5 0.25)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "e730948f-aab3-4c64-89de-4a76a61a7d6c")
+	)
+	(pad "8" smd roundrect
+		(at 0.95 -0.75)
+		(size 0.5 0.25)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "9ebed949-dbc9-4cf2-9347-2d7858db8c47")
+	)
+	(pad "9" thru_hole circle
+		(at 0 -0.5)
+		(size 1 1)
+		(drill 0.5)
+		(layers "*.Cu")
+		(remove_unused_layers no)
+		(uuid "0781f4e9-ca2c-4222-acc0-fbf9c1e59e6b")
+	)
+	(pad "9" smd rect
+		(at 0 0)
+		(size 0.9 1.6)
+		(layers "F.Cu" "F.Mask")
+		(uuid "a1357214-d8a1-4a11-b0b0-78fa6f2001c8")
+	)
+	(pad "9" smd rect
+		(at 0 0)
+		(size 0.9 1.6)
+		(layers "B.Cu")
+		(uuid "1aab4b7c-1985-41f1-a59d-d79d6d25cd6b")
+	)
+	(pad "9" thru_hole circle
+		(at 0 0.5)
+		(size 1 1)
+		(drill 0.5)
+		(layers "*.Cu")
+		(remove_unused_layers no)
+		(uuid "a27b3828-381a-4859-8cf4-d4d97e72b44a")
+	)
+	(model "${KICAD8_3DMODEL_DIR}/Package_SON.3dshapes/WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

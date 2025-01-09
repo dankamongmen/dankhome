@@ -1,0 +1,280 @@
+(footprint "TerminalBlock_bornier-6_P5.08mm"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "simple 6pin terminal block, pitch 5.08mm, revamped version of bornier6")
+	(tags "terminal block bornier6")
+	(property "Reference" "J5"
+		(at 13.9 -4.5 0)
+		(layer "F.SilkS")
+		(uuid "a31d7d41-4710-46af-8c5c-3d51069c5c05")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Screw_Terminal_01x06"
+		(at 12.7 4.75 0)
+		(layer "F.Fab")
+		(uuid "07df6c9b-20a4-436b-9ee1-de74a9c27f0a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "TerminalBlock:TerminalBlock_bornier-6_P5.08mm"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3fec6da7-ec1c-44a8-bd66-cc7bba4f70f3")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8f36813d-e006-4129-96a2-bc58bdc408d2")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Generic screw terminal, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "66c91048-6e08-4a95-b88b-ee8c8b6a6f3c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -2.54 -3.81)
+		(end -2.54 3.81)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "30952fb6-2c56-440d-b12b-279c33e865d3")
+	)
+	(fp_line
+		(start -2.54 -3.81)
+		(end 27.94 -3.81)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "68c0d43c-018e-42ef-ae30-252418de4710")
+	)
+	(fp_line
+		(start -2.54 2.54)
+		(end 27.94 2.54)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6bc17fe9-c4e6-4e1d-816d-018556f7599e")
+	)
+	(fp_line
+		(start -2.54 3.81)
+		(end 27.94 3.81)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d2e8f776-6c83-4060-962d-fe8042c52e47")
+	)
+	(fp_line
+		(start 27.94 3.81)
+		(end 27.94 -3.81)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "37ef414f-59c5-4ed5-9574-8d78f48ec74b")
+	)
+	(fp_line
+		(start -2.75 -4)
+		(end -2.75 4)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "40802a20-0522-41ba-aca8-4bcc8858019a")
+	)
+	(fp_line
+		(start -2.75 -4)
+		(end 28.15 -4)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "f22f4fb1-32ed-4877-9062-87aa852f3d3d")
+	)
+	(fp_line
+		(start 28.15 4)
+		(end -2.75 4)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "fe776af6-ac4c-4df1-bed0-88c029117e8e")
+	)
+	(fp_line
+		(start 28.15 4)
+		(end 28.15 -4)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "0776a491-a614-4637-b8f9-19eb514b5753")
+	)
+	(fp_line
+		(start -2.5 -3.75)
+		(end -2.5 3.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b044f6d3-d049-41c7-964e-4081db22329f")
+	)
+	(fp_line
+		(start -2.5 2.55)
+		(end 27.9 2.55)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "7392353f-5759-4882-ba6c-483e97ee19c7")
+	)
+	(fp_line
+		(start -2.5 3.75)
+		(end 27.9 3.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b76ce0ea-2eb8-4b39-b653-691213a54b8a")
+	)
+	(fp_line
+		(start 27.9 -3.75)
+		(end -2.5 -3.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "bc144290-4c34-4221-b23d-37920a9ada04")
+	)
+	(fp_line
+		(start 27.9 3.75)
+		(end 27.9 -3.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "41dcb18f-5dd2-4b6e-bfea-0cdcd777b7fc")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 12.7 0 0)
+		(layer "F.Fab")
+		(uuid "4f25e6c4-bec1-4c47-a47a-0cafda37a2ef")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 3 3)
+		(drill 1.52)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "a9ca57e6-6ca5-4584-a57c-5fc96e24266c")
+	)
+	(pad "2" thru_hole circle
+		(at 5.08 0)
+		(size 3 3)
+		(drill 1.52)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "b3421001-d4af-44e0-acbe-2893b3ee71a5")
+	)
+	(pad "3" thru_hole circle
+		(at 10.16 0)
+		(size 3 3)
+		(drill 1.52)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "e2517141-4323-4cd1-a558-084acaaab1a3")
+	)
+	(pad "4" thru_hole circle
+		(at 15.24 0)
+		(size 3 3)
+		(drill 1.52)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "1dec0a6c-5a47-439f-bb14-b0ef5c18edfd")
+	)
+	(pad "5" thru_hole circle
+		(at 20.32 0)
+		(size 3 3)
+		(drill 1.52)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "bd318ca2-7537-48f6-8fea-9ae919d12d02")
+	)
+	(pad "6" thru_hole circle
+		(at 25.4 0)
+		(size 3 3)
+		(drill 1.52)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "989843c5-5397-4709-86ee-9ff1e7a7d0ac")
+	)
+	(model "/home/dank/hx/Screw Terminal Block 5mm Blue 6-way.step"
+		(offset
+			(xyz 12.5 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
+)

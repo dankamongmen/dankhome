@@ -1,0 +1,389 @@
+(footprint "Sparkfun HX711 SEN-13879"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "UHX1"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "e462934e-b8d4-4614-8c63-986205bd4600")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "SEN13879"
+		(at 0 1 0)
+		(layer "F.Fab")
+		(uuid "d9c0dac1-96f4-4300-b274-1ef9d549fa69")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "dank:Sparkfun HX711 SEN-13879"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "256256ee-019a-49d0-9154-271bad39244a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://learn.sparkfun.com/tutorials/load-cell-amplifier-hx711-breakout-hookup-guide"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "46cd79e9-0174-4eec-8490-86ac295e5491")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "24-bit 2-channel ADC intended for use with load cells"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "18fcaffb-b535-4a62-bfd0-fd9e9d17856c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start -15.367 11.557)
+		(end 15.367 -11.557)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "1ad6ce5b-a167-4c22-9d32-81499107c823")
+	)
+	(fp_circle
+		(center -12.7 -8.89)
+		(end -10.796 -8.89)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill solid)
+		(layer "Edge.Cuts")
+		(uuid "82b209ab-539a-4aab-8502-e7b3454bd71a")
+	)
+	(fp_circle
+		(center -12.7 8.89)
+		(end -10.796 8.89)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill solid)
+		(layer "Edge.Cuts")
+		(uuid "223234c6-6524-4e00-8d37-3077e952c79c")
+	)
+	(fp_circle
+		(center 12.7 -8.89)
+		(end 14.604 -8.89)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill solid)
+		(layer "Edge.Cuts")
+		(uuid "14d74232-078c-4f88-a0d4-694f947b4d21")
+	)
+	(fp_circle
+		(center 12.7 8.89)
+		(end 14.604 8.89)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill solid)
+		(layer "Edge.Cuts")
+		(uuid "695939fe-ad40-40c7-89ec-f57c05d873a5")
+	)
+	(fp_text user "B+"
+		(at 3 3 0)
+		(layer "F.SilkS")
+		(uuid "15cc0254-f1a1-410a-83a5-46c9c4e35f30")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.127)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "A-"
+		(at -12 0.5 0)
+		(layer "F.SilkS")
+		(uuid "189e1cea-72bd-4420-9911-80c4fa82d6c1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.127)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "SCK"
+		(at 9.5 3 0)
+		(layer "F.SilkS")
+		(uuid "1dba3968-5f83-4631-8e78-cb79abf62bfe")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.127)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "SHD"
+		(at -12 5.5 0)
+		(layer "F.SilkS")
+		(uuid "32904764-6e3e-44c9-a429-93fb458be97c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.127)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "VDD"
+		(at 9.5 -4.5 0)
+		(layer "F.SilkS")
+		(uuid "54e4124d-60b5-4562-8642-4644f3fec865")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.127)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "VCC"
+		(at 9.5 -2 0)
+		(layer "F.SilkS")
+		(uuid "6f29d562-4f6e-453e-bb34-d69c3a39df04")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.127)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "GND"
+		(at -12 -2 0)
+		(layer "F.SilkS")
+		(uuid "77873605-0390-48ae-bc4b-0d06c4c2b2b2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.127)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "GND"
+		(at 9.5 5.5 0)
+		(layer "F.SilkS")
+		(uuid "91893754-bbe9-46f7-8e08-175e707e4f89")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.127)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "A+"
+		(at -12 3 0)
+		(layer "F.SilkS")
+		(uuid "9fb5a60f-0b70-44ea-b2cf-3d36adf0a889")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.127)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "AVDD"
+		(at -12 -4.5 0)
+		(layer "F.SilkS")
+		(uuid "a58bed65-ba0f-422d-bec6-07d3a1c67657")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.127)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "B-"
+		(at 3 5.5 0)
+		(layer "F.SilkS")
+		(uuid "ae2b4fe0-bbe2-4ac3-9be3-e9e25d9da014")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.127)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "DAT"
+		(at 9.5 0.5 0)
+		(layer "F.SilkS")
+		(uuid "d2806e86-9d70-4524-bb49-2e3bc976c81d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.127)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ac348a7e-81b1-462e-b773-34346a1e6842")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 14 -5)
+		(size 2.226 2.226)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "3edd7475-adc9-4d91-925b-02c25acac9df")
+	)
+	(pad "2" thru_hole circle
+		(at 14 -2.5)
+		(size 2.226 2.226)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "4e09b755-51c6-4f4e-a354-a1b8c0498166")
+	)
+	(pad "3" thru_hole circle
+		(at 14 0)
+		(size 2.226 2.226)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "4f6c317c-e72f-4032-a6f9-cfe1cd493123")
+	)
+	(pad "4" thru_hole circle
+		(at 14 2.5)
+		(size 2.226 2.226)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "af39ad55-dc20-4c53-b393-61754cc4f676")
+	)
+	(pad "5" thru_hole circle
+		(at 14 5)
+		(size 2.226 2.226)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "8ddf5a19-5846-4916-832d-ef7abb7f76a2")
+	)
+	(pad "6" thru_hole circle
+		(at -14 5)
+		(size 2.226 2.226)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "7c3badf2-9c18-4d08-996e-67760df4c12d")
+	)
+	(pad "7" thru_hole circle
+		(at -14 2.5)
+		(size 2.226 2.226)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "14df90fc-9bae-4e30-8899-478f9703ac19")
+	)
+	(pad "8" thru_hole circle
+		(at -14 0)
+		(size 2.226 2.226)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "9dc5a19d-d3f8-4850-a9a9-bbb737f26b67")
+	)
+	(pad "9" thru_hole circle
+		(at -14 -2.5)
+		(size 2.226 2.226)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "8ecd7046-bf91-4d9f-81a3-4b4b2afe768d")
+	)
+	(pad "10" thru_hole circle
+		(at -14 -5)
+		(size 2.226 2.226)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "0dfbd3cc-af76-4619-952e-e325ec4e5a2e")
+	)
+	(pad "11" thru_hole circle
+		(at 6.38 2.5)
+		(size 2.226 2.226)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "8f692ada-b772-440a-b1f1-3769a07ff3ce")
+	)
+	(pad "12" thru_hole circle
+		(at 6.38 5)
+		(size 2.226 2.226)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "8da66a93-63ea-415f-80c9-45038bbc4540")
+	)
+	(model "/home/dank/hx/HX711.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

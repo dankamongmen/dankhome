@@ -1,0 +1,212 @@
+(footprint "MFRC522 board"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "B"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "d12a0acb-7b1b-4fc2-8d66-eae5ebc9dff1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "MFRC522 board"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "39ce0e60-a131-44d1-a806-f152aa0723db")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e20498c5-529d-4442-8d10-8815f8d815be")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d3576a95-14e1-48ca-9f42-c1b971ddd6c1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e6e10515-04de-4573-be52-3a451742efad")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start -29.75 -19.5)
+		(end 29.75 19.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "Edge.Cuts")
+		(uuid "4e0363ad-9596-429e-a2e6-de537a573294")
+	)
+	(fp_circle
+		(center -28 -10.16)
+		(end -27.4476 -10.16)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "Edge.Cuts")
+		(uuid "4448a999-3d24-4284-8bb2-6399b3ffa10c")
+	)
+	(fp_circle
+		(center -28 -7.62)
+		(end -27.4476 -7.62)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "Edge.Cuts")
+		(uuid "04ba9c80-9c42-477a-bb68-cd876605958c")
+	)
+	(fp_circle
+		(center -28 -5.08)
+		(end -27.4476 -5.08)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "Edge.Cuts")
+		(uuid "1bc8a05f-8c54-44a1-be1f-c905bc59f7c4")
+	)
+	(fp_circle
+		(center -28 -2.54)
+		(end -27.4476 -2.54)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "Edge.Cuts")
+		(uuid "9b576553-0e97-4a5d-ab9d-bc88d92c98fe")
+	)
+	(fp_circle
+		(center -28 0)
+		(end -27.4476 0)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "Edge.Cuts")
+		(uuid "e4f784aa-a7a2-4304-91a4-813c57898caf")
+	)
+	(fp_circle
+		(center -28 2.54)
+		(end -27.4476 2.54)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "Edge.Cuts")
+		(uuid "b356f4ab-2b48-4f27-84e7-a8c0b3731c6e")
+	)
+	(fp_circle
+		(center -28 5.08)
+		(end -27.4476 5.08)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "Edge.Cuts")
+		(uuid "459f2934-ad02-4bb1-9a20-24bd7f097ff0")
+	)
+	(fp_circle
+		(center -28 7.62)
+		(end -27.4476 7.62)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "Edge.Cuts")
+		(uuid "360ea479-9a3c-4ee4-9ef4-4c7a4de11253")
+	)
+	(fp_circle
+		(center -28 10.16)
+		(end -27.4476 10.16)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "Edge.Cuts")
+		(uuid "fffce63f-7a43-48a5-bd3d-75de71ebd629")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "2b93c0c6-d3cd-4f82-9b44-a673a01446fd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at -28 -10)
+		(size 1 1)
+		(drill 1.52)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "33a42039-beaf-4979-860f-70d29926672c")
+	)
+	(model "/home/dank/RC522 v8.step"
+		(opacity 0.5000)
+		(offset
+			(xyz -29.75 19.5 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 90)
+		)
+	)
+)

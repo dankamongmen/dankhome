@@ -1,0 +1,190 @@
+(footprint "XTAL_ABS07AIG-32.768KHZ-9-1-T"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0.007 -1.8064 0)
+		(layer "F.SilkS")
+		(uuid "95bc6a6f-61c6-4657-94db-c02b3031063d")
+		(effects
+			(font
+				(size 0.64 0.64)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "XTAL_ABS07AIG-32.768KHZ-9-1-T"
+		(at 9.7606 1.8064 0)
+		(layer "F.Fab")
+		(uuid "8b5e29d4-10ba-44cc-844c-cb4b9341fd79")
+		(effects
+			(font
+				(size 0.64 0.64)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b717d7da-bd9b-4e6b-bed6-4de3b554576b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6803c4cb-1a34-4c2d-85b3-79ef755f0be9")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1dd773e9-daf4-4d1e-bb3c-3461d449bc44")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -0.455 -0.75)
+		(end 0.455 -0.75)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "97d660da-a493-411a-a80f-64260e019b5e")
+	)
+	(fp_line
+		(start -0.455 0.75)
+		(end 0.455 0.75)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9c457053-db47-47ca-b9ee-52391cb6dc65")
+	)
+	(fp_line
+		(start -2.025 -1.15)
+		(end -2.025 1.15)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "62834ff3-6671-4f17-b63d-f550614c956d")
+	)
+	(fp_line
+		(start -2.025 1.15)
+		(end 2.025 1.15)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "084cb516-cbf9-4153-910c-00baf6a81502")
+	)
+	(fp_line
+		(start 2.025 -1.15)
+		(end -2.025 -1.15)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "476d4e45-11cc-4ce5-bef7-796d872b311f")
+	)
+	(fp_line
+		(start 2.025 1.15)
+		(end 2.025 -1.15)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "d15d1782-b68c-4b4b-9af8-10415e390534")
+	)
+	(fp_line
+		(start -1.6 -0.75)
+		(end -1.6 0.75)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "4d3080e3-47b9-4cc8-9874-9e6946bb90a3")
+	)
+	(fp_line
+		(start -1.6 -0.75)
+		(end 1.6 -0.75)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "bf2d0f98-028c-4bd2-9f80-0f00511bd97c")
+	)
+	(fp_line
+		(start -1.6 0.75)
+		(end 1.6 0.75)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "45c903a1-461d-4267-95ee-dadbf5b9ce07")
+	)
+	(fp_line
+		(start 1.6 -0.75)
+		(end 1.6 0.75)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "1e730d67-09d4-4d30-94c8-db67441bf351")
+	)
+	(pad "1" smd rect
+		(at -1.275 0)
+		(size 1 1.8)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.102)
+		(uuid "6b69650d-ddac-41d8-9d83-141ea858fa93")
+	)
+	(pad "2" smd rect
+		(at 1.275 0)
+		(size 1 1.8)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.102)
+		(uuid "f96fc82d-314a-4560-8679-f56ccc22b71a")
+	)
+	(model "/home/dank/hx/KiCADv6/ABS07AIG-32.768KHZ-9-1-T.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
+)
