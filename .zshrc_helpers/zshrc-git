@@ -1,0 +1,4 @@
+if [[ ! -z `command -v git` ]]; then
+  alias gclone="git clone --recurse-submodules"
+fi
+alias espize="cd ~/src/esp-idf && source export.sh && cd -"

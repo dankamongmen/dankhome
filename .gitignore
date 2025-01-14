@@ -31,6 +31,7 @@ Pictures/
 .audacity-data/
 .aws/credentials
 .bash_history*
+.bash_sessions
 .bitcoin/
 .bundle/
 .bzr.log
@@ -449,3 +450,4 @@ var/log/mpd.log
 .vagrant.d
 Videos
 Webcam
+.zsh_history
