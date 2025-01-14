@@ -8,23 +8,23 @@
 	(property "Reference" "IC1"
 		(at -0.538 -5.31 -90)
 		(layer "F.SilkS")
-		(uuid "d7b972e2-0711-48e6-baef-1d8dca9ffafc")
+		(uuid "5ef33f72-ffa9-4088-9f54-829b4e9d837c")
 		(effects
 			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
+				(size 1 1)
+				(thickness 0.15)
 			)
 		)
 	)
 	(property "Value" "NAU7802KGI"
-		(at 0 0 0)
+		(at 2 -5 90)
 		(layer "F.SilkS")
 		(hide yes)
-		(uuid "d1603380-6528-4401-a3cb-0bf97ba5029c")
+		(uuid "f323a1c2-f8b2-4aca-bdeb-710e316a8834")
 		(effects
 			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
+				(size 1 1)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -32,7 +32,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "d6ccbb45-e136-45fb-af74-0f31e43116d4")
+		(uuid "2572a3e2-9b5b-45c5-994c-a28ba517c8cb")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -44,7 +44,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "8069f9e8-e5a3-4216-82ea-48013eb0c629")
+		(uuid "f7503e59-6249-4720-9f08-d32e536ca805")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -56,10 +56,101 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "bfa656e7-6be3-4ab9-ae1b-a968c77e0a97")
+		(uuid "c44be592-79e5-47d2-a276-3c424dbed214")
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Height" "0.533"
+		(at -2 -5.75 90)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "67e6bc38-a89c-4733-b3e6-94aed166b50b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer_Name" "Nuvoton"
+		(at 1.75 5.5 90)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b69f7fe0-634c-4870-b3e7-09ac2b83df0d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer_Part_Number" "NAU7802KGI"
+		(at -1.75 4.5 90)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9e650ff5-57a4-4a28-89a0-be17defe1d49")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Mouser Part Number" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c94d7181-cfb1-4e1d-ba7e-bb9bc99e9261")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Mouser Price/Stock" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "355ca475-498e-4b9b-8ef0-f9b1683d519c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Arrow Part Number" "NAU7802KGI"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f737d828-1582-4135-91f3-a3b6afe11ab3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Arrow Price/Stock" "https://www.arrow.com/en/products/nau7802kgi/nuvoton-technology"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7c479992-7d51-4170-8c60-5eda73a258b3")
+		(effects
+			(font
+				(size 1 1)
 				(thickness 0.15)
 			)
 		)
@@ -73,7 +164,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "85755768-2f86-4bc2-8941-a8acf3f476e3")
+		(uuid "2f1889f8-80a7-4894-a804-f2fa8772ba21")
 	)
 	(fp_line
 		(start -3.225 9.652)
@@ -83,7 +174,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "efa3856c-0577-4864-934a-b3aebc49606e")
+		(uuid "27c1f633-d276-46b2-90a3-fdadae6a3ff1")
 	)
 	(fp_line
 		(start -4.919 -9.902)
@@ -93,7 +184,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "7288fae9-c54d-4f48-a3d6-4ca89192acb4")
+		(uuid "d6b31b95-a377-406d-ad6b-aeee1e96afae")
 	)
 	(fp_line
 		(start -4.919 9.902)
@@ -103,7 +194,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "8a47124f-8666-4b16-9041-516fa1cca199")
+		(uuid "6cbacdd7-9268-433a-9213-daf5cdea818e")
 	)
 	(fp_line
 		(start 4.919 -9.902)
@@ -113,7 +204,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "a7eac538-8e35-4d43-9b58-8e254c3c60ab")
+		(uuid "17899b61-4aeb-418a-a8a9-1cbd0c7a3975")
 	)
 	(fp_line
 		(start 4.919 9.902)
@@ -123,7 +214,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "3b1dfcf0-06d2-4ea8-b0ab-810831d705a7")
+		(uuid "b39c9da9-195e-44b0-b329-8ca098d6b5a8")
 	)
 	(fp_line
 		(start -3.225 -9.652)
@@ -133,7 +224,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "b79f141d-4974-40fb-882d-6ae7ca5294e3")
+		(uuid "250688f6-ca2a-49ac-bacf-1160ece596e8")
 	)
 	(fp_line
 		(start -3.225 -8.382)
@@ -143,7 +234,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "45725573-832f-43eb-beee-b6adfeafaf98")
+		(uuid "24abab57-7373-4aa3-b38d-5734cd261ee9")
 	)
 	(fp_line
 		(start -3.225 9.652)
@@ -153,7 +244,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "6810d936-2928-4308-a985-1aa9e312beb5")
+		(uuid "1fc2edba-3c1c-4783-bd7e-c27efcf5401d")
 	)
 	(fp_line
 		(start 3.225 -9.652)
@@ -163,7 +254,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "1e7eecf4-a324-4103-a991-5dc848e5c2ce")
+		(uuid "862d6a0b-4dee-4f83-8bf8-518ce1ee262f")
 	)
 	(fp_line
 		(start 3.225 9.652)
@@ -173,16 +264,16 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "5b4816bd-5ab4-48b3-8324-0c63afd8580f")
+		(uuid "fc2a873d-fe4f-45e1-9266-eab482c74a5b")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 0 0)
 		(layer "F.Fab")
-		(uuid "c4656f43-55c3-4e2b-b5ff-fcbcc299dd24")
+		(uuid "ff2eaab3-af64-49ee-ab07-91872e0db310")
 		(effects
 			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
+				(size 1 1)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -192,7 +283,7 @@
 		(drill 0.708)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "1bbc1763-edcd-43c9-8159-59cb7a6eb819")
+		(uuid "d3f94daf-21a7-45bc-8e74-8251a3dbbbd9")
 	)
 	(pad "2" thru_hole circle
 		(at -3.962 -6.35)
@@ -200,7 +291,7 @@
 		(drill 0.708)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "05592bf3-606d-4fdb-a547-a32d22cd506a")
+		(uuid "19c463ed-deec-4c11-890b-4d02c17fac16")
 	)
 	(pad "3" thru_hole circle
 		(at -3.962 -3.81)
@@ -208,7 +299,7 @@
 		(drill 0.708)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "d4a4a473-2350-4615-b59e-67f1febdee83")
+		(uuid "d3b19c96-562c-40e1-8d19-a81a978e1534")
 	)
 	(pad "4" thru_hole circle
 		(at -3.962 -1.27)
@@ -216,7 +307,7 @@
 		(drill 0.708)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "d2a619a6-bd71-450c-9035-072ac343b687")
+		(uuid "a6652833-c53a-4b76-b12b-d695cc4920e1")
 	)
 	(pad "5" thru_hole circle
 		(at -3.962 1.27)
@@ -224,7 +315,7 @@
 		(drill 0.708)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "31d89833-7219-44be-9888-b47625cc92e5")
+		(uuid "1aec6fee-f59e-45ba-b597-cc57c58da061")
 	)
 	(pad "6" thru_hole circle
 		(at -3.962 3.81)
@@ -232,7 +323,7 @@
 		(drill 0.708)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "fa97071d-41cf-483e-a21a-5a41c59917e8")
+		(uuid "2c8c2291-ca0e-4289-a8ae-d4eb37afe751")
 	)
 	(pad "7" thru_hole circle
 		(at -3.962 6.35)
@@ -240,7 +331,7 @@
 		(drill 0.708)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "0dd122ab-2dff-4b95-9795-e37bca6dbe05")
+		(uuid "c7cad79b-1b6b-491e-9e59-2a3a36c7352d")
 	)
 	(pad "8" thru_hole circle
 		(at -3.962 8.89)
@@ -248,7 +339,7 @@
 		(drill 0.708)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "128278fb-8b25-4856-a196-92d639f332ec")
+		(uuid "8a691c38-4b0c-453a-88cf-e3331b366c4c")
 	)
 	(pad "9" thru_hole circle
 		(at 3.962 8.89)
@@ -256,7 +347,7 @@
 		(drill 0.708)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "cacf31da-8332-4959-b1b8-226cab44aa8e")
+		(uuid "85cea290-bea0-407d-b008-dde6b284b59d")
 	)
 	(pad "10" thru_hole circle
 		(at 3.962 6.35)
@@ -264,7 +355,7 @@
 		(drill 0.708)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "91237f26-f5e6-4c92-b69e-f171b58117ed")
+		(uuid "84662f1b-507b-4e9d-9f2b-6ad869763d3a")
 	)
 	(pad "11" thru_hole circle
 		(at 3.962 3.81)
@@ -272,7 +363,7 @@
 		(drill 0.708)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "7a79bf52-66ba-4c65-b6fc-7149a7fbbb18")
+		(uuid "dbf95c95-c156-4a15-b131-2a59360430d5")
 	)
 	(pad "12" thru_hole circle
 		(at 3.962 1.27)
@@ -280,7 +371,7 @@
 		(drill 0.708)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "4b703789-be7b-4344-8d6c-1860dc2d481b")
+		(uuid "3370f3cd-be0b-48d0-bc8c-ecb48b0b8671")
 	)
 	(pad "13" thru_hole circle
 		(at 3.962 -1.27)
@@ -288,7 +379,7 @@
 		(drill 0.708)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "40108eb8-4bea-46c6-855b-2ebd3550db5b")
+		(uuid "46a446b7-8733-4d55-b0ed-30b5da6b7ec4")
 	)
 	(pad "14" thru_hole circle
 		(at 3.962 -3.81)
@@ -296,7 +387,7 @@
 		(drill 0.708)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "20900a75-51f2-4783-91fc-013bda5d7c4b")
+		(uuid "0c1bac70-55a6-48ad-b4f2-4349cfaa1610")
 	)
 	(pad "15" thru_hole circle
 		(at 3.962 -6.35)
@@ -304,7 +395,7 @@
 		(drill 0.708)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "026a5d12-fdfd-4c77-b31a-5b10159384b9")
+		(uuid "e9e7bdc0-4269-4bcd-bb1a-ae2acb49066b")
 	)
 	(pad "16" thru_hole circle
 		(at 3.962 -8.89)
@@ -312,7 +403,7 @@
 		(drill 0.708)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "9343d48e-a08c-40d0-8cad-d84454eff3a6")
+		(uuid "937ada0e-94fe-4c71-a7d3-6d2c8b537bbc")
 	)
 	(model "/home/dank/.local/share/kicad/8.0/3dmodels/NAU7802KGI.stp"
 		(offset
