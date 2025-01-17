@@ -1,13 +1,7 @@
 # ~/.bash_profile: executed by bash(1) for login shells.
 # see /usr/share/doc/bash/examples/startup-files for examples.
-# the files are located in the bash-doc package.
 
 umask 027
-
-# doesn't clean up the dbus instances...
-#if [ -x `command -v dbus-launch 2> /dev/null` ] ; then
-#	export `dbus-launch --session`
-#fi
 
 # Debian's sensible-browser(1) uses BROWSER, causing gnome-terminal and
 # xfce4-terminal both to invoke links2 under this config...
@@ -20,12 +14,6 @@ if set | grep ^SSH_TTY > /dev/null || tty | grep -v /pts/ > /dev/null ; then
 		export BROWSER="links"
 	fi
 fi
-
-#if `tty | grep /dev/tty1$ > /dev/null` ; then
-#	for i in `seq 2 7` ; do
-#		sudo openvt -u
-#	done
-#fi
 
 ### Added by surfraw. To remove use surfraw-update-path -remove
 if [ -d /usr/lib/surfraw ] ; then
@@ -63,5 +51,5 @@ export NCURSES_ASSUMED_COLORS=7,0
 # I don't want your stinking AT bridge
 export NO_AT_BRIDGE=1
 
-[ -r .bashrc ] && . .bashrc
+. .bashrc
 . "$HOME/.cargo/env"
