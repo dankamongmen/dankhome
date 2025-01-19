@@ -1,0 +1,13 @@
+[env]
+TERM = "alacritty"
+
+[font]
+size = 11.0
+
+[font.normal]
+family = "Hack"
+style = "Regular"
+
+[window.dimensions]
+columns = 80
+lines = 78
