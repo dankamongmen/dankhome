@@ -37,9 +37,9 @@ shopt -s checkwinsize
 if [ "$TERM" != "dumb" ] ; then
   # alacritty-direct is selected in alacritty.yml
   # xterm-kitty is selected in kitty.conf
-	if [ "$TERM" == "xterm" ] ; then
+	if [ "$TERM" = "xterm" ] ; then
 		export TERM=xterm-256color
-  elif [ "$TERM" == "vte" ] ; then
+  elif [ "$TERM" = "vte" ] ; then
     export TERM=vte-256color
 	fi
 	if [ -n "`ls --version 2> /dev/null | grep '(GNU coreutils)'`" ] ; then
@@ -50,7 +50,7 @@ if [ "$TERM" != "dumb" ] ; then
 		fi
 		alias ls='ls --color=auto --quoting-style=literal';
     export S_COLORS=auto # for iostat on arch
-	elif [ "`uname`" == "FreeBSD" -o "`uname`" == "Darwin" ] ; then
+	elif [ "`uname`" = "FreeBSD" -o "`uname`" = "Darwin" ] ; then
 		export CLICOLOR=yes
 		alias ls='ls -G'
 		# foregroundbackground pairs for:
@@ -147,9 +147,6 @@ alias egrep="egrep --color"
 command -v xml > /dev/null 2>&1 || alias xml="xmlstarlet"
 
 export LANG=en_US.UTF-8
-
-# Get a default theme for QT apps (requires running qt5ct to configure)
-export QT_QPA_PLATFORMTHEME=qt5ct
 
 # enable programmable completion features
 #if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
