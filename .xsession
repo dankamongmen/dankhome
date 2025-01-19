@@ -2,13 +2,13 @@
 
 # for launching compiz directly
 setxkbmap -option terminate:ctrl_alt_bksp
-xfce4-panel &
-xfsettingsd &
+#xfce4-panel &
+#xfsettingsd &
 
 # started by /etc/xdg/autostart
 #xscreensaver -nosplash &
 
-exec compiz
+#exec compiz
 
 # for launching compiz through xfce4-session
-#exec xfce4-session
+exec xfce4-session
