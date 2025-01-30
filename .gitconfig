@@ -7,7 +7,7 @@
 	default = simple
 	autoSetupRemote = yes
 [commit]
-  #gpgsign = true
+  gpgsign = true
 [core]
 	autocrlf = input
 	quotepath = off
