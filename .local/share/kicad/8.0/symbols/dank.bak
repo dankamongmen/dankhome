@@ -970,8 +970,8 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "C2"
-			(at 6.096 5.588 90)
+		(property "Reference" "C3"
+			(at 5.0801 -3.81 90)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -979,8 +979,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" ".01u"
-			(at 3.048 7.366 90)
+		(property "Value" ".1u"
+			(at 2.5401 -3.81 90)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -1008,7 +1008,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "High-temperature 1206 ceramic capacitor"
 			(at 0 0 0)
 			(effects
 				(font
