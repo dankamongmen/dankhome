@@ -17,13 +17,13 @@ if [ -z "$MPBIN" ] ; then
 		if [ -z "$MPBIN" ] ; then
 			echo "Couldn't find suitable binary" >&2
 			exit 1
-		#else
-			#MUTEOPTS="--ao null"
+		else
+			MUTEOPTS="--ao null"
 		fi
 	else
 		# no --alang not --stop-screensaver for mplayer as of 2022
 		OPTIONS="$OPTIONS --alang=en --stop-screensaver"
-		#MUTEOPTS="--ao=null"
+		MUTEOPTS="--ao=null"
 	fi
 fi
 echo "Player binary: $MPBIN"
@@ -52,8 +52,6 @@ get_dimensions () {
 
 get_dimensions
 
-# Use $VOLFLAG=0 rather than -nosound to only start muted (ie, leave open the
-# possibility of unmuting).
 case "`basename $0`" in
 	mp)
 		OPTIONS="$OPTIONS ${VOLFLAG}$DEFVOL"

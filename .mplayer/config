@@ -10,6 +10,7 @@ use-filename-title=1
 # gl and gl2 both require DRI to work well. gl suggests -dr for a speedup, if
 #  it works with our hardware. -glfinish gives possibly more correct output at
 #  a possible speed cost. they are unwieldy with xfwm, at best eating CPU.
+# gl2 says "you really ought be using gl"
 # gl* doesn't work well with translucent desktops.
 # gl (as opposed to gl2) blocks upon workspace changes
 # x11 can't fullscreen, but almost always works
@@ -22,15 +23,17 @@ use-filename-title=1
 #vo=xv,gl2,x11,fbdev,caca
 #vo=xvmc,gl2,caca
 
+vo=gl
 # ensure vdpau is working via "vdpauinfo"
 #vo=vdpau,xv,gl2,fbdev2,caca
 
 # ensure vaapi is working via "vainfo"
-vo=gl,gl,xv,vaapi,xvmv,fbdev2,caca
+#vo=gl,xv,vaapi,xvmv,fbdev2,caca
 
 # Prefer the VDPAU codecs, but fall back if need be
 #vc=ffmpeg12vdpau,ffwmv3vdpau,ffvc1vdpau,ffh264vdpau,ffodivxvdpau,
 
+nolirc=yes
 #dr=1
 #rtc=1
 #fstype=below
