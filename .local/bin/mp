@@ -23,7 +23,10 @@ if [ -z "$MPBIN" ] ; then
 	else
 		# no --alang not --stop-screensaver for mplayer as of 2022
 		OPTIONS="$OPTIONS --alang=en --stop-screensaver"
-		MUTEOPTS="--ao=null"
+		# using ao=null means we can't bring audio back. ensure we
+		# use pulse instead of pipewire directly, and we don't have
+		# weird effects when volume is 0.
+		#MUTEOPTS="--ao=null"
 	fi
 fi
 echo "Player binary: $MPBIN"
