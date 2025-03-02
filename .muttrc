@@ -18,6 +18,8 @@ set from="nick black <dankamongmen@gmail.com>"
 
 alternates dank@qemfd.net nickblack@linux.com
 
+set text_flowed
+
 # !!! We're not actually doing this anymore!!! set record= follows!!!
 #
 # Blind-cc a copy of everything we send to ourselves. We don't use the "$record"

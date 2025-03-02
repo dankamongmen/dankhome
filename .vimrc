@@ -143,6 +143,8 @@ if has("autocmd")
 
 endif
 
+au FileType mail setlocal formatoptions+=w
+
 set notermguicolors
 colorscheme solarized8_high
 "let solarized_termtrans=1
