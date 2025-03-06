@@ -50,8 +50,27 @@ Pictures/
 .conan/
 .conda/
 .config/.isolated-storage
+.config/awesome/
+.config/conky/
+.config/cura/
 .config/Doxygen.org/
+.config/eog/
+.config/flameshot/
+.config/fontconfig/
+.config/fstl-app/
 .config/Flavio Tordini/
+.config/galculator/
+.config/gdrive3/
+.config/gh/
+.config/ghostty/
+.config/go/
+.config/google-chrome-unstable/
+.config/gource
+.config/gpick/
+.config/gqrx/
+.config/gravit/
+.config/gtk-3.0/
+.config/gtk-4.0/
 .config/Last.fm/
 .config/MusicBrainz/
 .config/Nokia/
@@ -89,7 +108,9 @@ Pictures/
 .config/indicators/
 .config/inkscape/
 .config/Kitware/
+.config/konsolerc
 .config/last-exit/
+.config/Logic/
 .config/menus/
 .config/monitors.xml
 .config/nautilus-actions/
