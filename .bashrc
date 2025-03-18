@@ -42,24 +42,6 @@ if [ "$TERM" != "dumb" ] ; then
   elif [ "$TERM" = "vte" ] ; then
     export TERM=vte-256color
 	fi
-	if [ -n "`ls --version 2> /dev/null | grep '(GNU coreutils)'`" ] ; then
-		if [ -r $DANKRC/dankcolors ] ; then
-			eval "`dircolors -b $DANKRC/dankcolors`";
-		else
-			eval "`dircolors -b`";
-		fi
-		alias ls='ls --color=auto --quoting-style=literal';
-    export S_COLORS=auto # for iostat on arch
-	elif [ "`uname`" = "FreeBSD" -o "`uname`" = "Darwin" ] ; then
-		export CLICOLOR=yes
-		alias ls='ls -G'
-		# foregroundbackground pairs for:
-		#  directory (Ea) softlink (Ga) socket (Fa) pipe (da) exec (Ca)
-		#  block dev (Da) char dev (Da) setuid (Hb) setgid (ab)
-		#  directory writable by others with sticky bit (HC)
-		#  directory writable by others sans sticky bit (aC)
-		export LSCOLORS=EaGaFadaCaDaDaHbabHCaC
-	fi
 fi
 
 # default creation policy of mode_t & rwxr-xr-x
@@ -71,8 +53,7 @@ umask 022
 # Construct our PATH. List all directories wanted, in ascending order of search
 # priority (least important first). After passing sanity checks, they will be
 # prepended into PATH.
-for i in /usr/games /usr/local/java/bin /usr/X11R6/bin /usr/X11R6/sbin \
-         /usr/X11/bin /usr/X11/sbin /bin /sbin /usr/bin /usr/sbin \
+for i in /usr/games /bin /sbin /usr/bin /usr/sbin \
          /usr/local/bin /usr/local/sbin $HOME/.local/bin $HOME/.local/sbin \
          $HOME/.cargo/bin $HOME/go/bin;
 do

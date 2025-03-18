@@ -1,22 +1,24 @@
-if [ -r $HOME/.pcolor ] ; then
-	PCOLOR=`cat $HOME/.pcolor`
-else
-	PCOLOR=white
-fi
+if [ "$TERM" != "dumb" ] ; then
+	if [ -r $HOME/.pcolor ] ; then
+		PCOLOR=`cat $HOME/.pcolor`
+	else
+		PCOLOR=white
+	fi
 
-if [ -x "$HOME/.local/bin/color" ] ; then
-	case $TERM in
-	xterm*)
-		# http://www.faqs.org/docs/Linux-mini/Xterm-Title.html#ss4.3
-		export PROMPT_COMMAND='echo -ne "\\e]0;$HOSTNAME:$PWD ($USER)\a"'
-		;;
-	*)
-		#unset PROMPT_COMMAND
-		;;
-	esac
-	export PS1=`color -p $PCOLOR`'[\h]($?) \$'`color -p none`' '
-else
-	export PS1='[\h]($?) \$ '
+	if [ -x "$HOME/.local/bin/color" ] ; then
+		case $TERM in
+		xterm*)
+			# http://www.faqs.org/docs/Linux-mini/Xterm-Title.html#ss4.3
+			export PROMPT_COMMAND='echo -ne "\\e]0;$HOSTNAME:$PWD ($USER)\a"'
+			;;
+		*)
+			#unset PROMPT_COMMAND
+			;;
+		esac
+		export PS1=`color -p $PCOLOR`'[\h]($?) \$'`color -p none`' '
+	else
+		export PS1='[\h]($?) \$ '
+	fi
 fi
 
 unset PCOLOR
