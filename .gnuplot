@@ -65,8 +65,5 @@ set style line 15 linecolor rgbcolor red_100 linewidth @my_line_width pt 11
 set style line 16 linecolor rgbcolor brown_100 linewidth @my_line_width pt 7
 set style line 17 linecolor rgbcolor "#224499" linewidth @my_line_width pt 5
 
-# needed to apply any 'set style's we've defined
-set style increment user
-
 # set key options
 set key outside box width 2 height 2 enhanced spacing 2
