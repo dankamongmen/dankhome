@@ -10,10 +10,10 @@ exithandle () {
 
 VOLFLAG="--volume="
 if [ -z "$MPBIN" ] ; then
-	MPBIN=`command -v mpv`
+	MPBIN=$(command -v mpv)
 	if [ -z "$MPBIN" ] ; then
 		VOLFLAG="-volume "
-		MPBIN=`command -v mplayer`
+		MPBIN=$(command -v mplayer)
 		if [ -z "$MPBIN" ] ; then
 			echo "Couldn't find suitable binary" >&2
 			exit 1
