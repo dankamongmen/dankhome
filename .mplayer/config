@@ -23,9 +23,8 @@ use-filename-title=1
 #vo=xv,gl2,x11,fbdev,caca
 #vo=xvmc,gl2,caca
 
-vo=gl
 # ensure vdpau is working via "vdpauinfo"
-#vo=vdpau,xv,gl2,fbdev2,caca
+vo=vdpau,gl,xv,gl2,fbdev2,caca
 
 # ensure vaapi is working via "vainfo"
 #vo=gl,xv,vaapi,xvmv,fbdev2,caca
