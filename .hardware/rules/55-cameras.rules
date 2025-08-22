@@ -11,3 +11,5 @@ SUBSYSTEM=="video4linux", ATTRS{idVendor}=="046d", ATTRS{idProduct}=="0821", \
 # Need ATTR{index} and *NOT* ATTRS{index} here -- don't match uptree
 SUBSYSTEM=="video4linux", ATTRS{idVendor}=="0ac8", ATTRS{idProduct}=="3420", \
   ATTR{index}=="0", SYMLINK+="video-rosewill"
+
+SUBSYSTEM=="dma_heap", GROUP="video", MODE="0660"
