@@ -37,8 +37,8 @@ nolirc=yes
 #rtc=1
 #fstype=below
 # See http://www.pulseaudio.org/wiki/PerfectSetup
-ao=pulse
-mixer=hw:0
+ao=pipewire
+#mixer=hw:0
 
 # Use 44.1k (no dmix resampling) -- use this for audio
 #ao=alsa:device=hw=0,0
