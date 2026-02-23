@@ -45,11 +45,5 @@ if tty | grep ^/dev/tty > /dev/null ; then
 	fi
 fi
 
-# Assume white-on-black terminal (see colors(3NCURSES), ncurses (3NCURSES))
-export NCURSES_ASSUMED_COLORS=7,0
-
-# I don't want your stinking AT bridge
-export NO_AT_BRIDGE=1
-
 . .bashrc
 . "$HOME/.cargo/env"

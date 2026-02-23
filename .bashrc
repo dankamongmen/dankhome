@@ -156,6 +156,15 @@ fi
 
 export GTK_A11Y='none'
 
+# Assume white-on-black terminal (see colors(3NCURSES), ncurses (3NCURSES))
+export NCURSES_ASSUMED_COLORS=7,0
+
+# I don't want your stinking AT bridge
+export NO_AT_BRIDGE=1
+
+# installed R libraries
+export R_LIBS_USER=$HOME/var/lib/R
+
 # BEGIN_KITTY_SHELL_INTEGRATION
 if test -n "$KITTY_INSTALLATION_DIR" -a -e "$KITTY_INSTALLATION_DIR/shell-integration/bash/kitty.bash"; then source "$KITTY_INSTALLATION_DIR/shell-integration/bash/kitty.bash"; fi
 # END_KITTY_SHELL_INTEGRATION
