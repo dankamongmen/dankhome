@@ -1,3 +1,4 @@
 truecolor on
 defutf8 on
 deflogin off
+scrollback 10000
