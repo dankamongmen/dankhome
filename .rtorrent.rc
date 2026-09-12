@@ -1,5 +1,4 @@
 encryption = allow_incoming,try_outgoing,enable_retry
-encoding_list = UTF-8
 check_hash = yes
 download_rate=8192
 upload_rate=8192
